@@ -1,78 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/01.代理类/Linux下搭建ShadowSocks服务器.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/01.代理类/02.SSH加密隧道-科学上网临时手段.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/01.代理类/01.Linux下搭建ShadowSocks服务器.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/05.nginx/nginx反向代理配置.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/07.实用技巧/01.通过CloudFlare实现30x跳转.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/07.实用技巧/通过CloudFlare实现30x跳转.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/03.蜜罐/01.apache简易蜜罐.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/02.GIT/1.gitbook.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/02.GIT/2.gitlab搭建.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/04.docker/docker compose模板文件.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/04.暂未分类/06.社工钓鱼/01.钓鱼环境搭建.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/03.beego框架/beego框架.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/03.beego框架/02.beego_api开发.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -92,12 +20,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/04.一些遇到的问题/交叉编译.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/04.使用GO模拟登陆.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -127,12 +49,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/02.GO实例/01.GO常用实例.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/02.GO实例/06.使用GO上传图片.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -146,24 +62,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/02.GO实例/02.使用GO编写POC.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/03.使用GO编写POC.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/01.GO入门基础.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/03.编程开发/GO/02.GO常用实例.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -337,150 +235,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/3.内存马/01.Tomcat内存马.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/3.内存马/02.Spring内存马.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/3.内存马/03.Java Agent 内存马.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/05.JNDI注入.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/01.JVM类加载机制.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/12.IDEA调试JAR.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/06.IDEA断点调试.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/07.Java加载字节码.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/04.RMI基础.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/09.EL表达式.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/02.Java反射机制.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/10.SpEL表达式.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/08.javassist字节码编程.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/03.Java序列化与反序列化.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/1.审计基础/11.OGNL表达式.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/03.log4j反序列化漏洞分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/02.URLDNS链分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/08.ysoserial-C3P0分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/07.Fastjson1.2.68分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/09.log4j2_rce分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/04.Fastjson 1.2.24反序列化漏洞分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/05.Fastjson的dnslog探测方式分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/01.Apache_Commons_Collections中的反序列化.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/2.各种分析/06.Fastjson各版本漏洞分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/02.URLDNS链分析.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -542,198 +296,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/02.代码审计/02.C:C++/01.工具Flawfinder.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/99.杂项/02.安卓刷机.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/99.杂项/01.模拟器推荐.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/99.杂项/03.Nexus6 root.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/99.杂项/02.Pixel 3刷机.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/03.objection/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/05.hook 实战/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/05.hook 实战/01.【实例一】加密+签名分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/01.环境搭建/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/04.brida/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/99.frida技巧.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/02.hook函数/01.hook函数【入门】.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida Hook/02.hook函数/02.hook函数【进阶】.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/04.xposed-hook/01.Xserver.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/02.drozer测试四大组件/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/98.常规测试流程/01.Android APP常规测试流程.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/01.adb使用/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/06.移动端各种方式抓包/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/00.前置基础知识/01.安卓简介.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/00.前置基础知识/02.HTTP单向验证+双向验证解释.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/04.mobsf 漏扫/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/03.objection/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/05.hook 实战/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/05.hook 实战/01.【实例一】加密+签名分析.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/05.hook 实战/02.【实例二】证书双向验证抓包.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/01.环境搭建/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/04.brida/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/99.frida技巧.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/02.hook函数/01.hook函数【入门】.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/03.frida-hook/02.hook函数/02.hook函数【进阶】.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/07.移动安全/05.mobsf-漏扫/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/03.暂未分类/01.代理类/Linux下搭建ShadowSocks服务器.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -859,18 +421,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/06.免杀/powershell/01.Powershell扫盲.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/06.免杀/powershell/02.powershell混淆.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/99.暂未分类/05.nginx/nginx反向代理配置.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -919,13 +469,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/99.暂未分类/02.GIT/1.gitbook.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/99.暂未分类/02.GIT/2.gitlab搭建.html</loc>
+    <loc>https://blog.gm7.org/个人知识库/99.暂未分类/02.GIT/00.git/01.删除GitHub上的历史commit.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -944,24 +488,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/99.暂未分类/01.自建网盘/02.静态资源托管推荐/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/99.暂未分类/07.chatGPT/00.chatGPT API.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/99.暂未分类/07.chatGPT/02.疑似通过GPT3.5白嫖GPT4.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/99.暂未分类/07.chatGPT/01.绕过chatGPT限制.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -986,48 +512,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/05.AI/01.chatGPT/01.绕过chatGPT限制.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/2.Malleable-C2-Profiles.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/7.进阶：隐藏C2（通过CDN）.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/4.目录和菜单中文说明.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/5.Beacon.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/3.启动.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/6.进阶：隐藏C2（通过特征）.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/05.C2/01.CS/1.破解CS.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1087,30 +571,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/10.XSLT/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/17.子域名接管/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/12.SSRF/SSRF.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/12.SSRF/01.DNS重绑定.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/04.SSRF/SSRF.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1118,12 +578,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/04.SSRF/01.DNS重绑定.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/19.文件包含漏洞/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1159,18 +613,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/04.XXE/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/07.XPATH注入/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/17.XPATH注入/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1201,18 +643,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/06.未授权访问/02.Redis未授权访问漏洞利用.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/06.未授权访问/01.未授权访问漏洞总结.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/14.SAML测试/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1220,24 +650,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/07.任意文件下载:读取/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/14.列目录漏洞/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/20.LDAP注入/LDAP注入.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/21.JSONP数据劫持/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1268,12 +680,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/03.MySQL/05.UDF提权.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/01.注入点检测.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1327,18 +733,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/Oracle/02.各种注入手法.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/Oracle/01.常用符号:函数:语句归类.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/07.Access/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1381,25 +775,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/MySQL/02.各种注入手法.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/MySQL/01.常用符号:函数:语句归类.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/02.数据库识别/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/02.数据库识别.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1417,31 +793,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/MSSQL/02.各种注入手法.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/MSSQL/01.常用符号:函数:语句归类.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/12.子域名接管/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/18.条件竞争/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/15.任意文件下载:读取/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1459,12 +811,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/08.SAML测试/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1472,36 +818,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/postmessage xss.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/13.GraphQL测试/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/16.文件上传/文件上传攻击.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/16.文件上传/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/16.文件上传/01.文件上传攻击面.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/09.XSSI/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1526,18 +842,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/16.CSV注入/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/11.XS-Leaks/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/05.SSTI注入/index.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1657,37 +961,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/2.绕过CDN寻找真实IP/1.绕过CDN寻找真实IP.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/3.信息收集之其他信息收集.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/02.网络空间搜索引擎.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/index.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/05.浏览器插件.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/03.C段扫描工具.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1700,18 +974,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/01.绕过CDN寻找真实IP.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/06.端口对应渗透（端口渗透备忘录）.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/03.IP段信息收集/04.组合工具.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1849,31 +1111,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/04.其他应用收集/03.APP.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/04.其他应用收集/05.PC应用.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/04.其他应用收集/04.PC应用.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/2.信息收集之子域名收集.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/01.主域名收集/03.证书查询.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1903,12 +1141,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/01.主域名收集/02.WHOIS查询.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/01.主域名收集/04.WHOIS查询.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1927,12 +1159,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/01.主域名收集/04.DNS共享记录查询.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/01.主域名收集/07.Hackerone.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -1945,25 +1171,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/1.资产收集/1.信息收集之主域名收集.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/02.Google Hacking.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/05.网盘信息收集.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/04.JS信息收集.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -1976,12 +1184,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/04.语雀.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/06.邮箱信息收集.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -2000,12 +1202,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/09.社工库信息收集.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/01.信息收集/3.敏感信息收集/07.历史页面.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -2083,12 +1279,6 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/07.WAF绕过/WAF绕过通用思路.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/05.小程序测试/01.获取微信小程序源码.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
@@ -2132,30 +1322,6 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/10.C2/01.CS/1.破解CS.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/05.APP小程序/04.证书双向验证抓包.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/05.APP小程序/02.Xserver.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/05.APP小程序/03.HTTP单向验证+双向验证解释.html</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/05.APP小程序/01.获取微信小程序源码.html</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>

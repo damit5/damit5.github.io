@@ -15,6 +15,8 @@ then
     # 这两条命令有区别吗？？？为啥结果差这么多
     # sed -i '' "s@$last_h2@$last_h2_modify@g" 更新日志.html
     perl -pi -e "s|$last_h2|$last_h2_modify|g" 更新日志.html
+    git add 更新日志.html
+    git commit -m "`date +'%y-%m-%d %H:%M:%S'` 同步更新日志"
     # push
     git push -u origin master
 

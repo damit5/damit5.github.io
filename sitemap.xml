@@ -1279,6 +1279,12 @@
     <priority>0.8</priority>
 </url>
 <url>
+    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.html</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.html</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>always</changefreq>

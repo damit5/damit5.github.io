@@ -679,6 +679,18 @@
     <priority>0.8</priority>
 </url>
 <url>
+    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/13.代码注入/index.html</loc>
+    <lastmod>2023-05-16</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/16.CORS跨域数据劫持/index.html</loc>
+    <lastmod>2023-05-16</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/14.SAML测试/index.html</loc>
     <lastmod>2023-05-16</lastmod>
     <changefreq>always</changefreq>
@@ -859,6 +871,12 @@
     <priority>0.8</priority>
 </url>
 <url>
+    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/17.CSV注入/index.html</loc>
+    <lastmod>2023-05-16</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/23.子域名接管/index.html</loc>
     <lastmod>2023-05-16</lastmod>
     <changefreq>always</changefreq>
@@ -914,6 +932,18 @@
 </url>
 <url>
     <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/06.条件竞争/index.html</loc>
+    <lastmod>2023-05-16</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/25.XPATH注入/index.html</loc>
+    <lastmod>2023-05-16</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://blog.gm7.org/个人知识库/01.渗透测试/02.WEB漏洞/24.列目录漏洞/index.html</loc>
     <lastmod>2023-05-16</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>

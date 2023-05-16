@@ -9,7 +9,7 @@ require(["gitbook"], function(gitbook) {
       let img = images[i];
 
       // 检查图片地址是否包含"logo"或"shields.io"
-      if (img.src.includes("logo") || img.src.includes("shields.io") || img.src.includes("netlify")) {
+      if (/logo|shields\.io|netlify|robohash\.org/.test(img.src)) {
         continue; // 不缩小带有"logo"或"shields.io"的图片
       }
       
@@ -19,6 +19,8 @@ require(["gitbook"], function(gitbook) {
       img.style.display = 'block';
       img.style.marginLeft = 'auto';
       img.style.marginRight = 'auto';
+      // 增加阴影
+      img.style.boxShadow = '0px 0px 5px rgba(0, 0, 0, 0.5)';
     }
 
     // 获取当前页面中所有的video标签

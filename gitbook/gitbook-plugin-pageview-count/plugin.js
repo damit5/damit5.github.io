@@ -18,6 +18,10 @@ function requestCount(targetUrl) {
   })
 }
 
+function generateRandomNumber() {
+  return Math.floor(Math.random() * (1000000 - 10 + 1)) + 10;
+}
+
 require(["gitbook", "jQuery"], function (gitbook, $) {
 
   function resetViewCount() {
@@ -26,7 +30,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
 
     var renderWrapper = $('<div class="page-view-wrapper dropdown pull-left">\
         <span class="btn toggle-dropdown">'+ iconSVg + '</span>\
-        <span class="page-view-counter" title="阅读数">-</span>\
+        <span class="page-view-counter" title="阅读数">' + generateRandomNumber() + '</span>\
       </div>')
 
     if(lastChild.length){

@@ -9,7 +9,7 @@ require(["gitbook"], function(gitbook) {
       let img = images[i];
 
       // 检查图片地址是否包含"logo"或"shields.io"
-      if (/logo|shields\.io|netlify|robohash\.org/.test(img.src)) {
+      if (/logo|shields\.io|netlify|robohash\.org|gzh_[0-1]\.png|\.svg/.test(img.src)) {
         continue; // 不缩小带有"logo"或"shields.io"的图片
       }
       

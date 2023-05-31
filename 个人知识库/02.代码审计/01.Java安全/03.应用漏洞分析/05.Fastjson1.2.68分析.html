@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>05.Fastjson1.2.68分析 · d4m1ts 知识库</title>
+        <title>05.Fastjson1.2.68分析 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="04.Fastjson各版本漏洞分析.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,83 +4731,45 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b>1.1. </b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x5206;&#x6790;1"><b>1.2. </b>&#x5206;&#x6790;1</a></li><li><span class="title-icon "></span><a href="#&#x5206;&#x6790;2"><b>1.3. </b>&#x5206;&#x6790;2</a></li><li><span class="title-icon "></span><a href="#throwabledeserializer"><b>1.4. </b>ThrowableDeserializer</a></li><ul><li><span class="title-icon "></span><a href="#&#x5206;&#x6790;"><b>1.4.1. </b>&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;"><b>1.4.2. </b>&#x5229;&#x7528;</a></li></ul><li><span class="title-icon "></span><a href="#javabeandeserializer"><b>1.5. </b>JavaBeanDeserializer</a></li><ul><li><span class="title-icon "></span><a href="#&#x5206;&#x6790;_1"><b>1.5.1. </b>&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;_1"><b>1.5.2. </b>&#x5229;&#x7528;</a></li></ul><li><span class="title-icon "></span><a href="#autocloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;"><b>1.6. </b>AutoCloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5C0F;&#x77E5;&#x8BC6;1"><b>1.6.1. </b>&#x5C0F;&#x77E5;&#x8BC6;1</a></li><li><span class="title-icon "></span><a href="#&#x5C0F;&#x77E5;&#x8BC6;2"><b>1.6.2. </b>&#x5C0F;&#x77E5;&#x8BC6;2</a></li><li><span class="title-icon "></span><a href="#&#x597D;&#x5751;"><b>1.6.3. </b>&#x597D;&#x5751;</a></li><li><span class="title-icon "></span><a href="#&#x77E5;&#x8BC6;&#x70B9;3"><b>1.6.4. </b>&#x77E5;&#x8BC6;&#x70B9;3</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;"><b>1.6.5. </b>&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;</a></li></ul><li><span class="title-icon "></span><a href="#&#x94FE;&#x5229;&#x7528;"><b>1.7. </b>&#x94FE;&#x5229;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#mysql-jdbc-rce"><b>1.7.1. </b>Mysql JDBC RCE</a></li><li><span class="title-icon "></span><a href="#commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;"><b>1.7.2. </b>commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;</a></li><li><span class="title-icon "></span><a href="#commons-io2x&#x6587;&#x4EF6;&#x5199;&#x5165;"><b>1.7.3. </b>commons-io2.x&#x6587;&#x4EF6;&#x5199;&#x5165;</a></li></ul><li><span class="title-icon "></span><a href="#&#x603B;&#x7ED3;"><b>1.8. </b>&#x603B;&#x7ED3;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;"><b>1.9. </b>&#x53C2;&#x8003;&#x94FE;&#x63A5;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x524D;&#x8A00;">&#x524D;&#x8A00;</a><i></i></div></li>
-<li><div><a href="#&#x5206;&#x6790;1">&#x5206;&#x6790;1</a><i></i></div></li>
-<li><div><a href="#&#x5206;&#x6790;2">&#x5206;&#x6790;2</a><i></i></div></li>
-<li><div><a href="#throwabledeserializer">ThrowableDeserializer</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x5206;&#x6790;">&#x5206;&#x6790;</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;">&#x5229;&#x7528;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#javabeandeserializer">JavaBeanDeserializer</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x5206;&#x6790;">&#x5206;&#x6790;</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;">&#x5229;&#x7528;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#autocloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;">AutoCloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x5C0F;&#x77E5;&#x8BC6;1">&#x5C0F;&#x77E5;&#x8BC6;1</a><i></i></div></li>
-<li><div><a href="#&#x5C0F;&#x77E5;&#x8BC6;2">&#x5C0F;&#x77E5;&#x8BC6;2</a><i></i></div></li>
-<li><div><a href="#&#x597D;&#x5751;">&#x597D;&#x5751;</a><i></i></div></li>
-<li><div><a href="#&#x77E5;&#x8BC6;&#x70B9;3">&#x77E5;&#x8BC6;&#x70B9;3</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;">&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x94FE;&#x5229;&#x7528;">&#x94FE;&#x5229;&#x7528;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#mysql-jdbc-rce">Mysql JDBC RCE</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#mysql-51x-gt-5111">mysql 5.1.x &gt;= 5.1.11</a><i></i></div></li>
-<li><div><a href="#mysqlconnector-602-or-603">Mysqlconnector 6.0.2 or 6.0.3</a><i></i></div></li>
-<li><div><a href="#mysqlconnector-6x-or-lt-8020">Mysqlconnector 6.x or &lt; 8.0.20</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;">commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;</a><i></i></div></li>
-<li><div><a href="#commons-io2x&#x6587;&#x4EF6;&#x5199;&#x5165;">commons-io2.x&#x6587;&#x4EF6;&#x5199;&#x5165;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</a><i></i></div></li>
-<li><div><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a><i></i></div></li>
-</ul>
-</div>
-
-<h2 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x524D;&#x8A00;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
 <p>1.2.68&#x6709;safeMode&#xFF0C;&#x4F46;&#x662F;&#x9ED8;&#x8BA4;&#x4E0D;&#x662F;&#x5F00;&#x542F;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x662F;&#x6709;&#x98CE;&#x9669;</p>
-<h2 id="&#x5206;&#x6790;1"><a name="&#x5206;&#x6790;1" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6790;1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5206;&#x6790;1</h2>
+<h2 id="&#x5206;&#x6790;1">&#x5206;&#x6790;1</h2>
 <p>&#x6839;&#x636E;&#x7F51;&#x4E0A;&#x4FE1;&#x606F;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x8FD9;&#x6B21;&#x95EE;&#x9898;&#x70B9;&#x4E3B;&#x8981;&#x662F;&#x5728;<code>checkAutoType</code>&#x53C2;&#x6570;&#x671F;&#x671B;&#x7C7B;&#x8FD9;&#x4E2A;&#x5730;&#x65B9;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021132442704.png" data-lightbox="688aefd7-43b7-4d23-a918-afc6d54d452f" data-title="&#x671F;&#x671B;&#x7C7B;"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021132442704.png" alt="&#x671F;&#x671B;&#x7C7B;"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021132442704.png" data-lightbox="5946ec51-c54f-4a05-8942-3dd5388ed277" data-title="&#x671F;&#x671B;&#x7C7B;"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021132442704.png" alt="&#x671F;&#x671B;&#x7C7B;"></a></p>
 <p>&#x770B;&#x770B;&#x54EA;&#x4E9B;&#x5730;&#x65B9;&#x4F1A;&#x8C03;&#x7528;<code>checkAutoType</code>&#x65B9;&#x6CD5;&#x5E76;&#x4F7F;&#x7528;&#x5230;&#x671F;&#x671B;&#x7C7B;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021133310469.png" data-lightbox="141e573c-5452-4f98-8960-9cb058668d10" data-title="image-20211021133310469"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021133310469.png" alt="image-20211021133310469"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021133310469.png" data-lightbox="2605c904-2ee4-49ab-b1c8-1e69f07a2fb3" data-title="image-20211021133310469"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021133310469.png" alt="image-20211021133310469"></a></p>
 <p>&#x53D1;&#x73B0;&#x4E3B;&#x8981;&#x662F;2&#x4E2A;&#x5730;&#x65B9;&#x4F1A;&#x4F7F;&#x7528;&#x5230;</p>
 <ol>
 <li><code>com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer#deserialze</code></li>
 <li><code>com.alibaba.fastjson.parser.deserializer.ThrowableDeserializer#deserialze</code></li>
 </ol>
 <p>&#x90A3;&#x54EA;&#x4E9B;&#x5730;&#x65B9;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x7684;&#x5BF9;&#x5E94;&#x7684;<code>deserialze</code>&#x65B9;&#x6CD5;&#x5462;&#xFF1F;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021134945218.png" data-lightbox="4c829316-212a-4879-b807-f2c6adf91b83" data-title="image-20211021134945218"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021134945218.png" alt="image-20211021134945218"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021134945218.png" data-lightbox="884cfae7-be58-4f67-89ae-8ca27d1cf43d" data-title="image-20211021134945218"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021134945218.png" alt="image-20211021134945218"></a></p>
 <p>&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;&#x5730;&#x65B9;&#x521A;&#x597D;&#x662F;&#x5E38;&#x89C4;&#x7684;<code>@type</code>&#x8FDB;&#x884C;<code>checkAutoType</code>&#x68C0;&#x67E5;&#x540E;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8C03;&#x7528;&#x5230;&#xFF1B;</p>
 <p>&#x5148;&#x6784;&#x9020;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C;&#x6211;&#x4EEC;<code>@type</code>&#x7684;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x6784;&#x9020;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x662F;<code>JavaBeanDeserializer</code>&#x6216;&#x8005;<code>ThrowableDeserializer</code>&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;<code>deserialze</code>&#xFF0C;&#x540C;&#x65F6;&#x6709;&#x5E0C;&#x671B;&#x89E6;&#x53D1;&#x5E26;&#x6709;&#x671F;&#x671B;&#x7C7B;&#x53C2;&#x6570;&#x7684;<code>checkAutoType</code>&#x8FBE;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;</p>
 <blockquote>
 <p>&#x603B;&#x7ED3;&#x6210;&#x4E00;&#x53E5;&#x8BDD;&#x5C31;&#x662F;&#xFF1A;&#x5BFB;&#x627E;&#x600E;&#x4E48;&#x624D;&#x80FD;&#x8C03;&#x7528;&#x5230;&#x5E26;&#x6709;<code>expectClass</code>&#x53C2;&#x6570;&#x7684;<code>checkAutoType</code>&#x65B9;&#x6CD5;</p>
 </blockquote>
-<h2 id="&#x5206;&#x6790;2"><a name="&#x5206;&#x6790;2" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6790;2"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5206;&#x6790;2</h2>
+<h2 id="&#x5206;&#x6790;2">&#x5206;&#x6790;2</h2>
 <p>&#x90A3;&#x8FD9;&#x4FE9;&#x4E2A;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x662F;&#x600E;&#x4E48;&#x6784;&#x9020;&#x51FA;&#x6765;&#x7684;&#x5462;&#xFF1F;</p>
 <p>&#x6211;&#x4EEC;&#x8DDF;&#x4E00;&#x4E0B;<code>config.getDeserializer(clazz)</code></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135641255.png" data-lightbox="6a25e9a0-60ff-4391-9118-1a8eacba2276" data-title="image-20211021135641255"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135641255.png" alt="image-20211021135641255"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135641255.png" data-lightbox="eab7efc9-935a-4b25-97b2-04791bd3714c" data-title="image-20211021135641255"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135641255.png" alt="image-20211021135641255"></a></p>
 <p>&#x91CD;&#x8F7D;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5404;&#x79CD;class&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x5230;&#x4E86;&#x8FD9;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135848418.png" data-lightbox="2c29170f-f06d-44ea-b788-764963823363" data-title="image-20211021135848418"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135848418.png" alt="image-20211021135848418"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135848418.png" data-lightbox="81a8c854-0b6f-4e26-ab1b-e64b2e524a28" data-title="image-20211021135848418"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021135848418.png" alt="image-20211021135848418"></a></p>
 <p><strong>&#x5982;&#x679C;<code>clazz</code>&#x662F;<code>Throwable</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8FD4;&#x56DE;<code>ThrowableDeserializer</code></strong></p>
 <p>&#x5982;&#x679C;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x90FD;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x8C03;&#x7528;<code>createJavaBeanDeserializer</code>&#x53BB;&#x65B0;&#x5EFA;<code>JavaBeanDeserializer</code></p>
 <p>&#x8DDF;&#x8FDB;&#x65B0;&#x5EFA;&#x51FD;&#x6570;&#xFF0C;&#x53D1;&#x73B0;&#x662F;&#x63A5;&#x53E3;&#x7684;&#x60C5;&#x51B5;&#xFF0C;<code>asmEnable</code>&#x4E3A;false&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;<code>javaBeanDeserializer</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5426;&#x5219;&#x8C03;&#x7528;&#x7684;<code>asmFactory.createJavaBeanDeserializer</code>&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#xFF0C;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021152820160.png" data-lightbox="5f4317a8-9ff8-4d92-9b49-07933cca50d0" data-title="image-20211021152820160"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021152820160.png" alt="image-20211021152820160"></a></p>
-<h2 id="throwabledeserializer"><a name="throwabledeserializer" class="anchor-navigation-ex-anchor" href="#throwabledeserializer"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. ThrowableDeserializer</h2>
-<h3 id="&#x5206;&#x6790;"><a name="&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x5206;&#x6790;</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021152820160.png" data-lightbox="cf8c0954-6706-4bd2-9565-7f8089ff520c" data-title="image-20211021152820160"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021152820160.png" alt="image-20211021152820160"></a></p>
+<h2 id="throwabledeserializer">ThrowableDeserializer</h2>
+<h3 id="&#x5206;&#x6790;">&#x5206;&#x6790;</h3>
 <p>&#x8981;&#x4F7F;&#x7528;&#x5230;<code>com.alibaba.fastjson.parser.deserializer.ThrowableDeserializer</code>&#x8FD9;&#x4E2A;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;&#xFF0C;&#x6839;&#x636E;&#x4E0A;&#x9762;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;<code>@type</code>&#x4F20;&#x5165;&#x7684;&#x5C31;&#x5E94;&#x8BE5;&#x662F;<code>Throwable</code>&#x7684;&#x5B50;&#x7C7B;</p>
 <p>&#x6240;&#x4EE5;poc&#xFF08;&#x8FD9;&#x91CC;&#x5C31;&#x76F4;&#x63A5;&#x7528;&#x7684;&#x4ED6;&#x672C;&#x8EAB;&#x4E86;&#xFF09;</p>
 <blockquote>
@@ -4821,35 +4779,35 @@
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;java.lang.Throwable&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;a&quot;</span><span class="token operator">:</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">}</span>
 </code></pre>
 <p>&#x8FD0;&#x884C;&#xFF0C;&#x8DDF;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;<code>deserializer</code>&#x786E;&#x5B9E;&#x662F;&#x6211;&#x4EEC;&#x9884;&#x8BA1;&#x7684;<code>ThrowableDeserializer</code>&#x7C7B;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141154049.png" data-lightbox="bcfd6011-e640-4ca5-b234-774652525184" data-title="image-20211021141154049"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141154049.png" alt="image-20211021141154049"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141154049.png" data-lightbox="ba678f1f-fb42-448f-b8bf-63b114353991" data-title="image-20211021141154049"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141154049.png" alt="image-20211021141154049"></a></p>
 <p>&#x8FDB;&#x5165;<code>deserialize</code>&#xFF0C;&#x7136;&#x540E;&#x4E00;&#x76F4;F8&#xFF0C;&#x53D1;&#x73B0;payload&#x540E;&#x7EED;&#x53C2;&#x6570;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x952E;&#x662F;<code>@type</code>&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5E26;&#x6709;&#x671F;&#x671B;&#x7C7B;&#x53C2;&#x6570;&#x7684;<code>checkAutoType</code></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141400525.png" data-lightbox="2a7b9198-61a4-430f-b0fb-7f8b72d87f32" data-title="image-20211021141400525"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141400525.png" alt="image-20211021141400525"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141400525.png" data-lightbox="7edee1f1-38a6-40b1-ab23-90cccc1b43fc" data-title="image-20211021141400525"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021141400525.png" alt="image-20211021141400525"></a></p>
 <p>&#x6240;&#x4EE5;&#x4FEE;&#x6539;&#x4E00;&#x4E0B;<code>payload</code></p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;java.lang.Throwable&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;org.example.App&quot;</span><span class="token punctuation">}</span>
 </code></pre>
 <p>&#x7136;&#x540E;&#x8DDF;&#x5230;&#x521A;&#x624D;&#x7684;&#x5730;&#x65B9;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142530508.png" data-lightbox="fa09518c-23be-4a16-8c1b-878dfeb7ed9a" data-title="image-20211021142530508"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142530508.png" alt="image-20211021142530508"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142530508.png" data-lightbox="ea791b67-5bf1-4d52-8ccc-1b48dafb5e02" data-title="image-20211021142530508"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142530508.png" alt="image-20211021142530508"></a></p>
 <p><code>key</code>&#x4E3A;<code>@type</code>&#xFF0C;<code>exClass</code>&#x4E3A;&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x7684;<code>@type</code>&#x5BF9;&#x5E94;&#x7684;&#x503C;<code>org.example.App</code>&#xFF0C;&#x8FDB;&#x5165;<code>checkAutoType</code>&#xFF08;&#x671F;&#x671B;&#x7C7B;&#x4E3A;<code>Throwable.class</code>&#xFF0C;&#x5E73;&#x65F6;&#x4E00;&#x822C;&#x4E3A;null&#xFF09;</p>
 <p>&#x901A;&#x8FC7;&#x5404;&#x79CD;&#x9ED1;&#x767D;&#x540D;&#x5355;&#x7684;&#x68C0;&#x67E5;&#xFF0C;&#x4E00;&#x76F4;&#x5230;&#x8FD9;&#xFF0C;<code>loadClass</code>&#xFF08;&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;&#x5F00;&#x542F;&#x4E86;autoTypeSupport&#xFF0C;&#x6240;&#x4EE5;cacheClass&#x4E3A;true&#xFF09;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142746810.png" data-lightbox="7a12864f-e6cb-4060-a8a2-39f26b3d967b" data-title="image-20211021142746810"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142746810.png" alt="image-20211021142746810"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142746810.png" data-lightbox="53008440-6e49-4df9-8133-91a576f1d7f1" data-title="image-20211021142746810"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142746810.png" alt="image-20211021142746810"></a></p>
 <p>&#x8DDF;&#x8FDB;&#x770B;&#x770B;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x7ED9;&#x5B83;&#x52A0;&#x5230;<code>mapping</code>&#x4E2D;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142839630.png" data-lightbox="9f6a6e9e-c968-4417-82c2-c74eb4a567df" data-title="image-20211021142839630"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142839630.png" alt="image-20211021142839630"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142839630.png" data-lightbox="facbdbc4-8152-4bda-b474-f33c89e27caf" data-title="image-20211021142839630"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142839630.png" alt="image-20211021142839630"></a></p>
 <p>&#x518D;&#x8FD4;&#x56DE;&#x5230;<code>checkAutoType</code>&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#xFF0C;<strong>&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;<code>clazz</code>&#x662F;&#x671F;&#x671B;&#x7C7B;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x5C31;&#x901A;&#x8FC7;autoType&#x68C0;&#x67E5;&#x8FD4;&#x56DE;clazz</strong></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142946847.png" data-lightbox="2d82d8f2-42f0-44f5-b5fd-ea00da0a95e1" data-title="image-20211021142946847"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142946847.png" alt="image-20211021142946847"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142946847.png" data-lightbox="209409e1-41ae-4a80-bc03-1bbecb6d3c55" data-title="image-20211021142946847"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021142946847.png" alt="image-20211021142946847"></a></p>
 <p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;<code>@type</code>&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x5FC5;&#x987B;&#x662F;&#x671F;&#x671B;&#x7C7B;<code>java.lang.Throwable</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x662F;&#x81EA;&#x5DF1;&#x968F;&#x4FBF;&#x5199;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#x660E;&#x663E;&#x4E0D;&#x662F;<code>Throwable</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x6240;&#x4EE5;&#x627E;&#x4E00;&#x4E2A;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x6539;&#x4E00;&#x4E0B;<code>payload</code></p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;java.lang.Throwable&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;java.lang.Error&quot;</span><span class="token punctuation">}</span>
 </code></pre>
 <p>&#x8FD0;&#x884C;&#x5230;&#x521A;&#x624D;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6210;&#x529F;&#x8FD4;&#x56DE;clazz</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143315571.png" data-lightbox="d68bee69-ae1c-413f-b9f9-bf900d2d0a71" data-title="image-20211021143315571"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143315571.png" alt="image-20211021143315571"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143315571.png" data-lightbox="d487ad6d-7b5b-4852-b727-cfdbd3f44436" data-title="image-20211021143315571"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143315571.png" alt="image-20211021143315571"></a></p>
 <p>&#x5982;&#x679C;payload&#x4E2D;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5173;&#x952E;&#x53C2;&#x6570;&#x5982;<code>message</code>&#x4F1A;&#x88AB;&#x7528;&#x4F5C;&#x540E;&#x7EED;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x7B49;&#xFF0C;<code>otherValues</code>&#x5C31;&#x662F;&#x4F20;&#x5165;&#x7684;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;<code>&quot;a&quot;:&quot;b&quot;</code>&#x8FD9;&#x79CD;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x5B9E;&#x4F8B;&#x540E;&#x4F1A;&#x8FDB;&#x884C;<code>setValue</code>&#x64CD;&#x4F5C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143903968.png" data-lightbox="c7e72847-feda-408f-83b5-9bae3a630ad6" data-title="image-20211021143903968"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143903968.png" alt="image-20211021143903968"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143903968.png" data-lightbox="868bd9e0-2396-48d3-8ea4-45567121b07e" data-title="image-20211021143903968"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143903968.png" alt="image-20211021143903968"></a></p>
 <p>&#x518D;&#x5F80;&#x540E;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x7528;&#x4E0A;&#x521A;&#x624D;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x5565;&#x7684;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143429891.png" data-lightbox="c4c01c60-ccd8-4b04-97b9-f13b5263487d" data-title="image-20211021143429891"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143429891.png" alt="image-20211021143429891"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143429891.png" data-lightbox="6f866948-5dcb-4551-b68a-367a73729ac3" data-title="image-20211021143429891"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143429891.png" alt="image-20211021143429891"></a></p>
 <p>&#x8DDF;&#x8FDB;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x83B7;&#x53D6;&#x6784;&#x9020;&#x51FD;&#x6570;&#x518D;&#x521B;&#x5EFA;&#x5B9E;&#x4F8B;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143637169.png" data-lightbox="f04b12fc-e9f0-4051-a797-5d347050a1ed" data-title="image-20211021143637169"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143637169.png" alt="image-20211021143637169"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143637169.png" data-lightbox="1f59119f-0821-4620-8083-1855faf500f4" data-title="image-20211021143637169"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021143637169.png" alt="image-20211021143637169"></a></p>
 <p>&#x6709;&#x53C2;&#x6570;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x6267;&#x884C;<code>setValue</code>&#x64CD;&#x4F5C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4F1A;&#x8C03;&#x7528;<code>setXXX</code>&#x65B9;&#x6CD5;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021150550123.png" data-lightbox="b7855522-93c3-470f-8f30-108f54489318" data-title="image-20211021150550123"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021150550123.png" alt="image-20211021150550123"></a></p>
-<h3 id="&#x5229;&#x7528;"><a name="&#x5229;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x5229;&#x7528;</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021150550123.png" data-lightbox="98f7fccd-ab3d-44cc-b8ea-8afb0bb92cee" data-title="image-20211021150550123"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021150550123.png" alt="image-20211021150550123"></a></p>
+<h3 id="&#x5229;&#x7528;">&#x5229;&#x7528;</h3>
 <p>&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x5F00;&#x542F;ast&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x80FD;&#x627E;&#x5230;&#x4E00;&#x4E2A;<code>java.lang.Throwable</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x4E14;&#x5176;&#x7684;<code>setter</code>&#x6216;&#x8005;<code>getter</code>&#x80FD;&#x6267;&#x884C;&#x5371;&#x9669;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x6709;&#x53EF;&#x5229;&#x7528;&#x7684;&#x5ACC;&#x7591;</p>
 <blockquote>
 <ol>
@@ -4881,9 +4839,9 @@
 </ul>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;java.lang.Throwable&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;org.example.User&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;test&quot;</span><span class="token operator">:</span><span class="token string">&quot;hahahaha&quot;</span><span class="token punctuation">}</span>
 </code></pre>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021145702032.png" data-lightbox="fe87c6ae-5f1d-4b11-95eb-1b6a7b29f048" data-title="image-20211021145702032"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021145702032.png" alt="image-20211021145702032"></a></p>
-<h2 id="javabeandeserializer"><a name="javabeandeserializer" class="anchor-navigation-ex-anchor" href="#javabeandeserializer"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. JavaBeanDeserializer</h2>
-<h3 id="&#x5206;&#x6790;_1"><a name="&#x5206;&#x6790;_1" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6790;_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x5206;&#x6790;</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021145702032.png" data-lightbox="4717243a-9425-4253-acbd-44894719bb84" data-title="image-20211021145702032"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021145702032.png" alt="image-20211021145702032"></a></p>
+<h2 id="javabeandeserializer">JavaBeanDeserializer</h2>
+<h3 id="&#x5206;&#x6790;">&#x5206;&#x6790;</h3>
 <p>&#x5728;&#x83B7;&#x53D6;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x4E14;&#x91CC;&#x9762;&#x6240;&#x6709;&#x7684;&#x5224;&#x65AD;&#x90FD;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE;<code>JavaBeanDeserializer</code></p>
 <p>&#x6211;&#x4EEC;&#x968F;&#x4FBF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">org<span class="token punctuation">.</span>example</span><span class="token punctuation">;</span>
@@ -4895,27 +4853,27 @@
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;org.example.Test&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;test&quot;</span><span class="token operator">:</span><span class="token string">&quot;hahahaha&quot;</span><span class="token punctuation">}</span>
 </code></pre>
 <p>&#x8FD0;&#x884C;&#xFF0C;&#x4E00;&#x76F4;&#x5230;&#x83B7;&#x53D6;&#x4E86;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5668;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021153624574.png" data-lightbox="09632078-f441-4429-ade9-3ed515d79f99" data-title="image-20211021153624574"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021153624574.png" alt="image-20211021153624574"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021153624574.png" data-lightbox="1c966de6-d115-47d1-a09e-357742252ac9" data-title="image-20211021153624574"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021153624574.png" alt="image-20211021153624574"></a></p>
 <p>&#x8DDF;&#x8FDB;&#xFF0C;&#x770B;&#x770B;&#x91CC;&#x9762;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#xFF0C;&#x4E00;&#x9635;F8&#x540E;&#xFF0C;&#x770B;&#x5230;&#x4E86;&#x719F;&#x6089;&#x7684;&#x4E1C;&#x897F;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154019555.png" data-lightbox="940149f2-7c58-44f7-b113-33213ce4bb5e" data-title="image-20211021154019555"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154019555.png" alt="image-20211021154019555"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154019555.png" data-lightbox="398eb911-016d-4220-9465-b1450d635c82" data-title="image-20211021154019555"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154019555.png" alt="image-20211021154019555"></a></p>
 <p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x548C;&#x521A;&#x624D;&#x90A3;&#x4E2A;&#x4E00;&#x6837;&#xFF0C;&#x8FD8;&#x5F97;&#x9700;&#x8981;&#x4E00;&#x4E2A;<code>@type</code>&#xFF0C;&#x4FEE;&#x6539;payload</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;org.example.Test&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;org.example.Test1&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;test&quot;</span><span class="token operator">:</span><span class="token string">&quot;hahahaha&quot;</span><span class="token punctuation">}</span>
 </code></pre>
 <p>&#x719F;&#x6089;&#x7684;&#x5473;&#x9053;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154242362.png" data-lightbox="d7c11e43-4cc9-400d-a965-aba4ea183364" data-title="image-20211021154242362"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154242362.png" alt="image-20211021154242362"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154242362.png" data-lightbox="de68809c-f636-43de-bc72-3ea110af8e7e" data-title="image-20211021154242362"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154242362.png" alt="image-20211021154242362"></a></p>
 <p>&#x5F80;&#x4E0B;&#xFF0C;&#x8FDB;&#x5165;<code>checkAutoType</code>&#xFF0C;<code>expectClass</code>&#x4E3A;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154906926.png" data-lightbox="0cf537d5-0a07-4f69-89bb-3ca6700573b1" data-title="image-20211021154906926"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154906926.png" alt="image-20211021154906926"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154906926.png" data-lightbox="7f7ea7cc-dc86-46b4-aa2a-358155a4d8c8" data-title="image-20211021154906926"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021154906926.png" alt="image-20211021154906926"></a></p>
 <p>&#x53C8;&#x4E00;&#x76F4;F8&#xFF0C;&#x6765;&#x5230;&#x4E86;&#x719F;&#x6089;&#x7684;&#x5730;&#x65B9;&#xFF0C;<code>loadClass</code>&#xFF0C;&#x7ED9;&#x6211;&#x4EEC;&#x7684;&#x4F20;&#x5165;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;<code>@type</code>&#x7684;&#x7C7B;&#x52A0;&#x5165;&#x5230;<code>mapping</code>&#x4E2D;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155212926.png" data-lightbox="09ff6151-bf88-4df9-9240-2ce4c53b7b95" data-title="image-20211021155212926"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155212926.png" alt="image-20211021155212926"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155212926.png" data-lightbox="589b971a-5d32-435d-bd43-914064512988" data-title="image-20211021155212926"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155212926.png" alt="image-20211021155212926"></a></p>
 <p>&#x518D;&#x5F80;&#x540E;&#xFF0C;&#x8FD9;&#x51E0;&#x884C;&#x57FA;&#x672C;&#x675C;&#x7EDD;&#x4E86;JNDI&#x6CE8;&#x5165;&#x7684;&#x98CE;&#x9669;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155359515.png" data-lightbox="b09f372b-b0de-4777-8a71-060be128e09d" data-title="image-20211021155359515"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155359515.png" alt="image-20211021155359515"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155359515.png" data-lightbox="06b47f6b-0057-438d-a87f-54a5262c457b" data-title="image-20211021155359515"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155359515.png" alt="image-20211021155359515"></a></p>
 <p>&#x518D;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#xFF0C;<code>clazz</code>&#x5FC5;&#x987B;&#x662F;<code>expectClass</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x548C;&#x4E0A;&#x9762;&#x90A3;&#x4E2A;&#x7C7B;&#x4F3C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155502792.png" data-lightbox="253f8907-f8a9-4a47-9f8a-ec5ffb3b1951" data-title="image-20211021155502792"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155502792.png" alt="image-20211021155502792"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155502792.png" data-lightbox="6da2296e-4c53-4b78-8bb4-6cb46dc5edec" data-title="image-20211021155502792"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155502792.png" alt="image-20211021155502792"></a></p>
 <p>&#x6211;&#x4EEC;&#x628A;&#x63A5;&#x53E3;<code>Test1</code>&#x53D8;&#x6210;<code>Test</code>&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;</p>
 <p>&#x901A;&#x8FC7;&#x9A8C;&#x8BC1;&#xFF0C;ok&#xFF0C;&#x8FD4;&#x56DE;<code>clazz</code></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155718346.png" data-lightbox="b4c0867f-fc24-416f-a1b9-fb8f07f387f9" data-title="image-20211021155718346"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155718346.png" alt="image-20211021155718346"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155718346.png" data-lightbox="70b5c40e-f70c-4a6f-8b99-f109844beb42" data-title="image-20211021155718346"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021155718346.png" alt="image-20211021155718346"></a></p>
 <p>&#x8FD4;&#x56DE;&#x5C31;&#x662F;&#x5E38;&#x89C4;&#x7684;<code>setValue</code>&#x4E86;</p>
-<h3 id="&#x5229;&#x7528;_1"><a name="&#x5229;&#x7528;_1" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. &#x5229;&#x7528;</h3>
+<h3 id="&#x5229;&#x7528;">&#x5229;&#x7528;</h3>
 <p>&#x548C;&#x4E0A;&#x9762;&#x90A3;&#x4E2A;&#x5DEE;&#x4E0D;&#x591A;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x66F4;&#x5E7F;&#x6CDB;&#xFF0C;<strong>&#x53EA;&#x9700;&#x8981;&#x627E;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x7136;&#x540E;&#x627E;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#xFF0C;&#x7C7B;&#x4E2D;&#x6709;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x7684;&#x70B9;&#x5373;&#x53EF;</strong>&#xFF1B;&#x6700;&#x597D;&#x662F;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;<code>autoTypeSupport</code></p>
 <p><strong>&#x4E8E;&#x662F;&#x5927;&#x4F6C;&#x4EEC;&#x627E;&#x5230;&#x4E86;<code>java.lang.AutoCloseable</code>&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x4F4D;&#x4E8E;&#x9ED8;&#x8BA4;&#x7684;<code>mapping</code>&#x4E2D;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x5B50;&#x7C7B;&#xFF0C;&#x4E0D;&#x5F00;&#x542F;<code>autoTypeSupport</code>&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#xFF08;&#x5927;&#x4F6C;&#x4EEC;&#x771F;&#x725B;&#xFF09;</strong></p>
 <hr>
@@ -4941,9 +4899,9 @@
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;java.lang.AutoCloseable&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;@type&quot;</span><span class="token operator">:</span><span class="token string">&quot;org.example.User&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;test&quot;</span><span class="token operator">:</span><span class="token string">&quot;hahahaha&quot;</span><span class="token punctuation">}</span>
 </code></pre>
 <p>Bingo!!!</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021163800443.png" data-lightbox="4dd96067-ab70-440b-9458-a0d0dc58d136" data-title="image-20211021163800443"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021163800443.png" alt="image-20211021163800443"></a></p>
-<h2 id="autocloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;"><a name="autocloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#autocloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. AutoCloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;</h2>
-<h3 id="&#x5C0F;&#x77E5;&#x8BC6;1"><a name="&#x5C0F;&#x77E5;&#x8BC6;1" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x77E5;&#x8BC6;1"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. &#x5C0F;&#x77E5;&#x8BC6;1</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021163800443.png" data-lightbox="7856a8f1-7be8-4f56-80fc-a69646877083" data-title="image-20211021163800443"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211021163800443.png" alt="image-20211021163800443"></a></p>
+<h2 id="autocloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;">AutoCloseable&#x6DF1;&#x5165;&#x4F7F;&#x7528;</h2>
+<h3 id="&#x5C0F;&#x77E5;&#x8BC6;1">&#x5C0F;&#x77E5;&#x8BC6;1</h3>
 <p>fastjson&#x9664;&#x4E86;&#x4F7F;&#x7528;<code>setXXX</code>&#x7684;&#x65B9;&#x6CD5;&#x8D4B;&#x503C;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5BF9;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4F20;&#x503C;&#x53CD;&#x5E8F;&#x5217;&#x4E3A;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token class-name">String</span> test<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -4955,9 +4913,9 @@
     <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123123&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="&#x5C0F;&#x77E5;&#x8BC6;2"><a name="&#x5C0F;&#x77E5;&#x8BC6;2" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x77E5;&#x8BC6;2"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x5C0F;&#x77E5;&#x8BC6;2</h3>
+<h3 id="&#x5C0F;&#x77E5;&#x8BC6;2">&#x5C0F;&#x77E5;&#x8BC6;2</h3>
 <p>&#x5728;&#x5206;&#x6790;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53D1;&#x73B0;&#x5B58;&#x5728;&#x4E00;&#x4E2A;key <code>$ref</code>&#xFF0C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022141034218.png" data-lightbox="eaffb161-88cc-43dd-9eb2-4ca540c04843" data-title="image-20211022141034218"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022141034218.png" alt="image-20211022141034218"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022141034218.png" data-lightbox="b8c2385e-13e3-4f43-9882-33a90da3aa02" data-title="image-20211022141034218"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022141034218.png" alt="image-20211022141034218"></a></p>
 <p>&#x8FD9;&#x4E2A;<code>$ref</code>&#x53C2;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x5C31;&#x662F;&#x4ECE;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5F53;&#x4F5C;&#x53C2;&#x6570;&#x4F20;&#x8FDB;&#x53BB;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x8DDF;&#x4E00;&#x4E0B;&#xFF0C;&#x6211;&#x8DDF;&#x8FC7;&#x4E00;&#x6B21;&#x4E86;&#x5C31;&#x4E0D;&#x518D;&#x91CD;&#x590D;&#x4E86;</p>
 <table>
 <thead>
@@ -5059,7 +5017,7 @@ test value: test666
 call setUser
 {&quot;t&quot;:{&quot;user&quot;:{&quot;test&quot;:&quot;test666&quot;}},&quot;user&quot;:{&quot;$ref&quot;:&quot;$.t.user&quot;}}
 </code></pre>
-<h3 id="&#x597D;&#x5751;"><a name="&#x597D;&#x5751;" class="anchor-navigation-ex-anchor" href="#&#x597D;&#x5751;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. &#x597D;&#x5751;</h3>
+<h3 id="&#x597D;&#x5751;">&#x597D;&#x5751;</h3>
 <p>&#x7F51;&#x4E0A;&#x6D41;&#x4F20;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;Payload&#xFF0C;&#x6CA1;&#x6709;&#x5C31;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x6709;&#x5C31;&#x7F6E;&#x7A7A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
     &apos;@type&apos;<span class="token operator">:</span><span class="token string">&quot;java.lang.AutoCloseable&quot;</span><span class="token punctuation">,</span>
@@ -5072,7 +5030,7 @@ call setUser
 <pre class="language-"><code class="lang-Exception">Exception in thread &quot;main&quot; com.alibaba.fastjson.JSONException: default constructor not found. class java.io.FileWriter
 </code></pre>
 <p>&#x7136;&#x540E;&#x8DDF;&#x7740;&#x4E00;&#x987F;&#x8C03;&#x8BD5;&#xFF0C;&#x53D1;&#x73B0;&#x662F;<code>com.alibaba.fastjson.util.ASMUtils#lookupParameterNames</code>&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x80FD;&#x83B7;&#x53D6;&#x5230;<code>FileWriter</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x540D;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x6CA1;&#x6709;<code>public FileWriter(){}</code>&#x8FD9;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x751F;&#x6210;&#x5B9E;&#x4F8B;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x3002;&#x3002;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171314924.png" data-lightbox="7bef2f95-7dfc-4ae6-a4d1-057db406005b" data-title="image-20211022171314924"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171314924.png" alt="image-20211022171314924"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171314924.png" data-lightbox="f88306b6-fd81-4d6a-9916-b21f225d1d05" data-title="image-20211022171314924"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171314924.png" alt="image-20211022171314924"></a></p>
 <hr>
 <p>&#x81EA;&#x5DF1;&#x5199;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x5C1D;&#x8BD5;&#x53BB;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x53D1;&#x73B0;&#x53C8;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x540D;&#x3002;&#x3002;&#x3002;</p>
 <ul>
@@ -5107,7 +5065,7 @@ call setUser
     &apos;append&apos;<span class="token operator">:</span><span class="token boolean">false</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171929867.png" data-lightbox="9c7bde7e-5123-412c-bc7f-a8b063be2b82" data-title="image-20211022171929867"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171929867.png" alt="image-20211022171929867"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171929867.png" data-lightbox="73acf1cc-3be0-49cd-9d72-780065d24589" data-title="image-20211022171929867"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022171929867.png" alt="image-20211022171929867"></a></p>
 <hr>
 <p>&#x7136;&#x540E;&#x7ECF;&#x8FC7;&#x5404;&#x79CD;&#x67E5;&#x8D44;&#x6599;&#xFF0C;&#x53D1;&#x73B0; <a href="https://mp.weixin.qq.com/s/6fHJ7s6Xo4GEdEGpKFLOyg" target="_blank">https://mp.weixin.qq.com/s/6fHJ7s6Xo4GEdEGpKFLOyg</a> &#x4E2D;&#x6709;&#x8BF4;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;</p>
 <p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x5C31;&#x662F;&#xFF1A;</p>
@@ -5121,20 +5079,20 @@ call setUser
 <ul>
 <li>&#x770B;&#x4E0B;&#x6211;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x80FD;&#x8BC6;&#x522B;&#x5230;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7684;&#x53C2;&#x6570;&#x540D;&#x7684;<code>User</code>&#x7C7B;&#xFF0C;&#x786E;&#x5B9E;&#x6709;&#x53C2;&#x6570;&#x540D;&#x5728;&#x91CC;&#x9762;</li>
 </ul>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022173518873.png" data-lightbox="e80e7199-2490-490b-8549-9dbe52ec8996" data-title="image-20211022173518873"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022173518873.png" alt="image-20211022173518873"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022173518873.png" data-lightbox="25647021-f132-44f1-8e62-fb7305d2043e" data-title="image-20211022173518873"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022173518873.png" alt="image-20211022173518873"></a></p>
 <ul>
 <li>&#x770B;&#x4E0B;<code>FileWriter</code>&#x7C7B;&#xFF0C;&#x786E;&#x5B9E;&#x6CA1;&#x5F97;&#x53C2;&#x6570;&#x540D;&#x3002;&#x3002;&#x3002;</li>
 </ul>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022174246059.png" data-lightbox="f1108735-2c05-4164-8802-ce533ee56997" data-title="image-20211022174246059"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022174246059.png" alt="image-20211022174246059"></a></p>
-<h3 id="&#x77E5;&#x8BC6;&#x70B9;3"><a name="&#x77E5;&#x8BC6;&#x70B9;3" class="anchor-navigation-ex-anchor" href="#&#x77E5;&#x8BC6;&#x70B9;3"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.4. &#x77E5;&#x8BC6;&#x70B9;3</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022174246059.png" data-lightbox="8ec0907b-e3e3-4a02-9ff8-484d021b521d" data-title="image-20211022174246059"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211022174246059.png" alt="image-20211022174246059"></a></p>
+<h3 id="&#x77E5;&#x8BC6;&#x70B9;3">&#x77E5;&#x8BC6;&#x70B9;3</h3>
 <p>&#x901A;&#x8FC7;&#x5206;&#x6790;&#x53D1;&#x73B0;&#xFF0C;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x540D;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x662F;<strong>&#x7B2C;&#x4E00;&#x4E2A; &#x53C2;&#x6570;&#x540D;&#x6700;&#x591A; &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</strong>&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x540D;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;</p>
 <p>&#x6BD4;&#x5982;<code>org.apache.commons.io.output.FileWriterWithEncoding</code>&#xFF0C;&#x540C;&#x65F6;&#x6709;<code>public FileWriterWithEncoding(File file, CharsetEncoder encoding, boolean append)</code> &#x548C; <code>public FileWriterWithEncoding(String filename, CharsetEncoder encoding, boolean append)</code>2&#x4E2A;3&#x53C2;&#x6570;&#x540D;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;fastjson&#x5728;&#x8BC6;&#x522B;&#x5230;<code>file encoding append</code>&#x8FD9;3&#x4E2A;&#x53C2;&#x6570;&#x540D;&#x540E;&#xFF0C;&#x540E;&#x7EED;&#x5C31;&#x7B97;&#x8BC6;&#x522B;&#x5230;<code>filename encoding append</code>&#x4E5F;&#x4F1A;&#x8DF3;&#x8FC7;&#x53C2;&#x6570;&#x540D;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x7528;<code>filename</code>&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;<code>file</code>&#x3002;&#x3002;&#x3002;</p>
 <p>&#x6839;&#x636E;fastjson&#x7684;&#x8BC6;&#x522B;&#x673A;&#x5236;&#xFF0C;&#x5177;&#x4F53;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x4E3A;&#xFF1A;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023133337478.png" data-lightbox="ec5ca824-b5eb-4a3b-b2f3-95ce4127654d" data-title="image-20211023133337478"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023133337478.png" alt="image-20211023133337478"></a></p>
-<h3 id="&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;"><a name="&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.5. &#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023133337478.png" data-lightbox="f0960c1f-246c-4bb0-a1c3-f4e48a67b575" data-title="image-20211023133337478"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023133337478.png" alt="image-20211023133337478"></a></p>
+<h3 id="&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;">&#x5229;&#x7528;&#x94FE;&#x6316;&#x6398;</h3>
 <p><code>AutoCloseable</code>&#x63A5;&#x53E3;&#x4F4D;&#x4E8E;java.lang&#x5305;&#x4E0B;&#xFF0C;&#x4ECE;JDK1.7&#x5F00;&#x59CB;&#x5F15;&#x5165;&#xFF0C;java&#x7684;io&#x6D41;&#x95F4;&#x63A5;&#x6027;&#x7684;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x63A5;&#x53E3;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4ECE;jdk1.7&#x5F00;&#x59CB;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x53BB;&#x5173;&#x6D41;&#x3002;</p>
 <p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5173;&#x6CE8;&#x7684;&#x4E00;&#x4E9B;&#x5305;&#x4E3B;&#x8981;&#x662F;&#x8FDB;&#x884C;&#x6D41;&#x64CD;&#x4F5C;&#x7684;&#x5305;&#xFF0C;&#x4ECE;&#x4ED6;&#x7684;&#x5B50;&#x7C7B;&#x6216;&#x8005;&#x5B9E;&#x73B0;&#x7C7B;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#x3002;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023111532264.png" data-lightbox="37d21c8e-b887-48f4-ac49-f78f8416f5e0" data-title="image-20211023111532264"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023111532264.png" alt="image-20211023111532264"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023111532264.png" data-lightbox="3b21a9f9-e051-4ae7-b0a1-d1fe9ed7ac1b" data-title="image-20211023111532264"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023111532264.png" alt="image-20211023111532264"></a></p>
 <p>&#x6574;&#x7406;&#x4E00;&#x4E0B;&#x6211;&#x7684;&#x76F2;&#x6316;&#x6398;&#x7684;&#x601D;&#x8DEF;&#xFF1A;&#xFF08;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x4E13;&#x4E1A;&#xFF0C;&#x5927;&#x4F6C;&#x89C1;&#x8C05;&#xFF09;</p>
 <ol>
 <li>&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5305;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x7C7B;</li>
@@ -5264,9 +5222,9 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
 <p>&#x4EFB;&#x610F;&#x6587;&#x4EF6;&#x5199;&#x5165;&#x53C2;&#x8003;&#xFF1A;<a href="https://mp.weixin.qq.com/s/6fHJ7s6Xo4GEdEGpKFLOyg" target="_blank">https://mp.weixin.qq.com/s/6fHJ7s6Xo4GEdEGpKFLOyg</a></p>
 <p>&#x6211;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8D58;&#x8FF0;&#x4E86;&#xFF0C;&#x8D34;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x6587;&#x4EF6;&#x65B0;&#x5EFA;&#x6216;&#x8005;&#x7F6E;&#x7A7A;</p>
 <p>&#x7528;<code>org.apache.commons.io.output.FileWriterWithEncoding</code>&#x8FD9;&#x4E2A;&#x7C7B;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123702021.png" data-lightbox="427639d6-129b-4153-9aa3-73f202fa928e" data-title="image-20211023123702021"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123702021.png" alt="image-20211023123702021"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123702021.png" data-lightbox="3375db8c-6c2f-4f3f-8670-0367267a80f9" data-title="image-20211023123702021"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123702021.png" alt="image-20211023123702021"></a></p>
 <p>&#x8DDF;&#x4E00;&#x4E0B;<code>initWriter</code>&#xFF0C;&#x5F53;<code>append</code>&#x4E3A;false&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#xFF0C;&#x5C31;&#x7F6E;&#x7A7A;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x5C31;&#x65B0;&#x5EFA;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123749063.png" data-lightbox="477f7558-a279-4cd2-a8d8-a43a3118ed3c" data-title="image-20211023123749063"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123749063.png" alt="image-20211023123749063"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123749063.png" data-lightbox="c5e30ae6-930e-4c5d-a905-7f2eb4129b46" data-title="image-20211023123749063"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023123749063.png" alt="image-20211023123749063"></a></p>
 <p>&#x8BD5;&#x8BD5;&#xFF0C;POC</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
     <span class="token property">&quot;&#x7F6E;&#x7A7A;&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
@@ -5283,12 +5241,12 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
         <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023134917896.png" data-lightbox="7c35e2e5-653b-4f6b-8709-096dd55c7586" data-title="image-20211023134917896"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023134917896.png" alt="image-20211023134917896"></a></p>
-<h2 id="&#x94FE;&#x5229;&#x7528;"><a name="&#x94FE;&#x5229;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x94FE;&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x94FE;&#x5229;&#x7528;</h2>
-<h3 id="mysql-jdbc-rce"><a name="mysql-jdbc-rce" class="anchor-navigation-ex-anchor" href="#mysql-jdbc-rce"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. Mysql JDBC RCE</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023134917896.png" data-lightbox="4760a233-4926-440d-b745-9e1382742891" data-title="image-20211023134917896"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211023134917896.png" alt="image-20211023134917896"></a></p>
+<h2 id="&#x94FE;&#x5229;&#x7528;">&#x94FE;&#x5229;&#x7528;</h2>
+<h3 id="mysql-jdbc-rce">Mysql JDBC RCE</h3>
 <p>&#x642D;&#x914D;&#x4F7F;&#x7528; <a href="https://github.com/fnmsd/MySQL_Fake_Server" target="_blank">https://github.com/fnmsd/MySQL_Fake_Server</a></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025101212805.png" data-lightbox="de8b1a4c-a2b9-4e49-9235-9d5c5b1d3d8e" data-title="image-20211025101212805"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025101212805.png" alt="image-20211025101212805"></a></p>
-<h4 id="mysql-51x--5111"><a name="mysql-51x--5111" class="anchor-navigation-ex-anchor" href="#mysql-51x--5111"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mysql-51x--5111" class="anchor-navigation-ex-anchor" href="#mysql-51x--5111"><i class="fa fa-link" aria-hidden="true"></i></a>mysql 5.1.x &gt;= 5.1.11</h4>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025101212805.png" data-lightbox="404bf872-fe14-41ea-abc0-ae58925d90f2" data-title="image-20211025101212805"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025101212805.png" alt="image-20211025101212805"></a></p>
+<h4 id="mysql-51x--5111">mysql 5.1.x &gt;= 5.1.11</h4>
 <p>5.1.11&#x53CA;&#x4EE5;&#x4E0A;&#x7684;5.x&#x7248;&#x672C;</p>
 <p>&#x6240;&#x9700;&#x4F9D;&#x8D56;</p>
 <pre class="language-"><code class="lang-xml"><span class="token comment">&lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;</span>
@@ -5323,9 +5281,9 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025094836236.png" data-lightbox="1822ef0c-3b75-403b-90a6-da7869be2981" data-title="image-20211025094836236"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025094836236.png" alt="image-20211025094836236"></a></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025095018907.png" data-lightbox="5e2186c1-4731-4cd7-b9e0-6acd82e77d38" data-title="image-20211025095018907"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025095018907.png" alt="image-20211025095018907"></a></p>
-<h4 id="mysqlconnector-602-or-603"><a name="mysqlconnector-602-or-603" class="anchor-navigation-ex-anchor" href="#mysqlconnector-602-or-603"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mysqlconnector-602-or-603" class="anchor-navigation-ex-anchor" href="#mysqlconnector-602-or-603"><i class="fa fa-link" aria-hidden="true"></i></a>Mysqlconnector 6.0.2 or 6.0.3</h4>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025094836236.png" data-lightbox="7abe3151-dc4c-4a04-bf1d-0109ef05f901" data-title="image-20211025094836236"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025094836236.png" alt="image-20211025094836236"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025095018907.png" data-lightbox="648617aa-4593-40f8-93ce-40a222de7416" data-title="image-20211025095018907"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025095018907.png" alt="image-20211025095018907"></a></p>
+<h4 id="mysqlconnector-602-or-603">Mysqlconnector 6.0.2 or 6.0.3</h4>
 <p>&#x6240;&#x9700;&#x4F9D;&#x8D56;</p>
 <pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>mysql<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
@@ -5347,8 +5305,8 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100048649.png" data-lightbox="f924ef44-c54c-4ef5-8271-178952098b6a" data-title="image-20211025100048649"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100048649.png" alt="image-20211025100048649"></a></p>
-<h4 id="mysqlconnector-6x-or--8020"><a name="mysqlconnector-6x-or--8020" class="anchor-navigation-ex-anchor" href="#mysqlconnector-6x-or--8020"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mysqlconnector-6x-or--8020" class="anchor-navigation-ex-anchor" href="#mysqlconnector-6x-or--8020"><i class="fa fa-link" aria-hidden="true"></i></a>Mysqlconnector 6.x or &lt; 8.0.20</h4>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100048649.png" data-lightbox="96d91084-12b4-4c08-a8b3-224505c80535" data-title="image-20211025100048649"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100048649.png" alt="image-20211025100048649"></a></p>
+<h4 id="mysqlconnector-6x-or--8020">Mysqlconnector 6.x or &lt; 8.0.20</h4>
 <p>&#x6240;&#x9700;&#x4F9D;&#x8D56;</p>
 <pre class="language-"><code class="lang-xml"><span class="token comment">&lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
@@ -5389,8 +5347,8 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100548854.png" data-lightbox="e8a0a7a8-627b-4057-afc2-1cf9e098429d" data-title="image-20211025100548854"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100548854.png" alt="image-20211025100548854"></a></p>
-<h3 id="commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;"><a name="commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;" class="anchor-navigation-ex-anchor" href="#commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100548854.png" data-lightbox="c76969ce-4adf-4086-ad48-cd9dd72e4037" data-title="image-20211025100548854"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025100548854.png" alt="image-20211025100548854"></a></p>
+<h3 id="commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;">commons-io&#x6587;&#x4EF6;&#x8BFB;&#x53D6;</h3>
 <p>&#x6240;&#x9700;&#x4F9D;&#x8D56;</p>
 <pre class="language-"><code class="lang-xml">    <span class="token comment">&lt;!-- https://mvnrepository.com/artifact/commons-io/commons-io --&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
@@ -5447,9 +5405,9 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102230914.png" data-lightbox="30f8ce04-3325-4660-8d88-1a3d92467af1" data-title="image-20211025102230914"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102230914.png" alt="image-20211025102230914"></a></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102344236.png" data-lightbox="5f675f4b-e4de-4b50-a0c9-691a93e4d5c0" data-title="image-20211025102344236"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102344236.png" alt="image-20211025102344236"></a></p>
-<h3 id="commons-io2x&#x6587;&#x4EF6;&#x5199;&#x5165;"><a name="commons-io2x&#x6587;&#x4EF6;&#x5199;&#x5165;" class="anchor-navigation-ex-anchor" href="#commons-io2x&#x6587;&#x4EF6;&#x5199;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. commons-io2.x&#x6587;&#x4EF6;&#x5199;&#x5165;</h3>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102230914.png" data-lightbox="37f1ffca-81cc-4a7f-a52e-b3e599ec7f69" data-title="image-20211025102230914"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102230914.png" alt="image-20211025102230914"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102344236.png" data-lightbox="38597f98-faef-48c3-8131-4d1550708034" data-title="image-20211025102344236"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025102344236.png" alt="image-20211025102344236"></a></p>
+<h3 id="commons-io2x&#x6587;&#x4EF6;&#x5199;&#x5165;">commons-io2.x&#x6587;&#x4EF6;&#x5199;&#x5165;</h3>
 <p>&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;&#x5199;&#x5165;&#x5185;&#x5BB9;&#x7684;&#x957F;&#x5EA6;&#x5FC5;&#x987B;&#x8981;&gt;8192&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x5931;&#x8D25;&#xFF1B;&#x5B9E;&#x9645;&#x5199;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x53EA;&#x6709;&#x524D;8192&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x4E0D;&#x4F1A;&#x5199;&#x5165;</p>
 <p>commons-io 2.0 - 2.6 &#x7248;&#x672C;</p>
 <pre class="language-"><code class="lang-json">
@@ -5616,12 +5574,12 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
   <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;</p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025104941704.png" data-lightbox="e7bb5128-c552-49cb-944a-eecf1d9b2657" data-title="image-20211025104941704"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025104941704.png" alt="image-20211025104941704"></a></p>
-<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025105015575.png" data-lightbox="752c5f88-d2d8-4ccf-adf3-4a24cc5d76ec" data-title="image-20211025105015575"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025105015575.png" alt="image-20211025105015575"></a></p>
-<h2 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x603B;&#x7ED3;</h2>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025104941704.png" data-lightbox="eeb44905-bd2c-4fe9-9a7c-61f846ce366f" data-title="image-20211025104941704"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025104941704.png" alt="image-20211025104941704"></a></p>
+<p><a href="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025105015575.png" data-lightbox="8edf61fb-87c8-43dd-a033-c2cfb479214b" data-title="image-20211025105015575"><img src="15.fastjson1.2.68&#x5206;&#x6790;.assets/image-20211025105015575.png" alt="image-20211025105015575"></a></p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
 <p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5E26;&#x6709;&#x671F;&#x671B;&#x7C7B;&#x53C2;&#x6570;&#x7684;<code>checkAutoType</code>&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;payload&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#x662F;&#x671F;&#x671B;&#x7C7B;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x7C7B;&#x8981;&#x7EE7;&#x627F;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5185;&#x90E8;<code>mapping</code>&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x4F20;&#x5165;&#x6076;&#x610F;&#x7684;&#x53C2;&#x6570;&#x6784;&#x9020;&#x5229;&#x7528;&#x5373;&#x53EF;</p>
 <p>&#x4F46;&#x662F;&#x56E0;&#x4E3A;<code>checkAutoType</code>&#x4EE3;&#x7801;&#x9650;&#x5236;&#xFF0C;JNDI&#x6CE8;&#x5165;&#x7684;&#x7C7B;&#x57FA;&#x672C;&#x90FD;&#x88AB;&#x62E6;&#x622A;&#x4E86;&#xFF0C;&#x7ED5;&#x4E0D;&#x8FC7;&#x8FD8;</p>
-<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;"><a name="&#x53C2;&#x8003;&#x94FE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. &#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
 <ul>
 <li><a href="https://b1ue.cn/archives/348.html" target="_blank">fastjson 1.2.68 &#x6700;&#x65B0;&#x7248;&#x672C;&#x6709;&#x9650;&#x5236; autotype bypass</a></li>
 <li><a href="https://b1ue.cn/archives/382.html" target="_blank">fastjson 1.2.68 autotype bypass &#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6F0F;&#x6D1E; gadget &#x7684;&#x4E00;&#x79CD;&#x6316;&#x6398;&#x601D;&#x8DEF;</a></li>
@@ -5631,10 +5589,10 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-12-25 18:52:00
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -5651,30 +5609,29 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="04.Fastjson各版本漏洞分析.html" class="navigation navigation-prev " aria-label="Previous page: 04.Fastjson各版本漏洞分析">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="06.log4j2_rce分析.html" class="navigation navigation-next " aria-label="Next page: 06.log4j2_rce分析">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="04.Fastjson各版本漏洞分析.html" class="navigation navigation-prev " aria-label="Previous page: 04.Fastjson各版本漏洞分析">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="06.log4j2_rce分析.html" class="navigation navigation-next " aria-label="Next page: 06.log4j2_rce分析">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"05.Fastjson1.2.68分析","level":"1.3.1.3.5","depth":4,"next":{"title":"06.log4j2_rce分析","level":"1.3.1.3.6","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/06.log4j2_rce分析.md","ref":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/06.log4j2_rce分析.md","articles":[]},"previous":{"title":"04.Fastjson各版本漏洞分析","level":"1.3.1.3.4","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/04.Fastjson各版本漏洞分析.md","ref":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/04.Fastjson各版本漏洞分析.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/05.Fastjson1.2.68分析.md","mtime":"2021-12-25T10:52:00.402Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"05.Fastjson1.2.68分析","level":"1.3.1.3.5","depth":4,"next":{"title":"06.log4j2_rce分析","level":"1.3.1.3.6","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/06.log4j2_rce分析.md","ref":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/06.log4j2_rce分析.md","articles":[]},"previous":{"title":"04.Fastjson各版本漏洞分析","level":"1.3.1.3.4","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/04.Fastjson各版本漏洞分析.md","ref":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/04.Fastjson各版本漏洞分析.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/03.应用漏洞分析/05.Fastjson1.2.68分析.md","mtime":"2021-12-25T10:52:00.402Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -5684,31 +5641,7 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
     <script src="../../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5720,11 +5653,27 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5733,6 +5682,10 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
     
         
         <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -5756,11 +5709,11 @@ setXXX&#x53EF;&#x7528;&#xFF1A;public void org.apache.commons.io.input.BoundedInp
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

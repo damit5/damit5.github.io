@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>06.IDEA断点调试 · d4m1ts 知识库</title>
+        <title>06.IDEA断点调试 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="05.JNDI注入.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,65 +4731,45 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b>1.1. </b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x63A7;&#x5236;&#x9762;&#x677F;"><b>1.2. </b>&#x63A7;&#x5236;&#x9762;&#x677F;</a></li><li><span class="title-icon "></span><a href="#&#x65AD;&#x70B9;"><b>1.3. </b>&#x65AD;&#x70B9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;"><b>1.3.1. </b>&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;"><b>1.3.2. </b>&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;"><b>1.3.3. </b>&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x6761;&#x4EF6;&#x65AD;&#x70B9;"><b>1.3.4. </b>&#x6761;&#x4EF6;&#x65AD;&#x70B9;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x524D;&#x8A00;">&#x524D;&#x8A00;</a><i></i></div></li>
-<li><div><a href="#&#x63A7;&#x5236;&#x9762;&#x677F;">&#x63A7;&#x5236;&#x9762;&#x677F;</a><i></i></div></li>
-<li><div><a href="#&#x65AD;&#x70B9;">&#x65AD;&#x70B9;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;">&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;</a><i></i></div></li>
-<li><div><a href="#&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;">&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;">&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;">Line breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;">Temporary line breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;">Field watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;">Method breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;">Exception breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x6761;&#x4EF6;&#x65AD;&#x70B9;">&#x6761;&#x4EF6;&#x65AD;&#x70B9;</a><i></i></div></li>
-</ul></li>
-</ul>
-</div>
-
-<h2 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x524D;&#x8A00;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
 <p>&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;&#x8FC7;&#x7A0B;&#x4E2D;&#x80AF;&#x5B9A;&#x662F;&#x9700;&#x8981;&#x4E0B;&#x65AD;&#x70B9;&#x8BA9;&#x7A0B;&#x5E8F;&#x6682;&#x505C;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x91CD;&#x8981;&#xFF01;&#xFF01;&#xFF01;</p>
 <p><strong>&#x8C03;&#x8BD5;&#x6280;&#x80FD;&#x91CD;&#x8981;&#x6027;&#x751A;&#x2F84;&#x8D85;&#x8FC7;&#x5B66;&#x4E60;&#x2F00;&#x95E8;&#x8BED;&#x2F94;</strong>:hotsprings:</p>
 <blockquote>
 <p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;IDEA&#x8FDB;&#x884C;&#x65AD;&#x70B9;&#x8C03;&#x8BD5;&#xFF0C;IDEA YYDS</p>
 </blockquote>
 <p>&#x5728;&#x8C03;&#x8BD5;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x5F97;debug&#x6A21;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x70B9;&#x90A3;&#x4E2A;&#x7EFF;&#x8272;&#x7684;&#x7532;&#x866B;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x4EE3;&#x7801;&#x91CC;&#x9762;&#x65AD;&#x70B9;&#x8C03;&#x8BD5;&#x5566;&#x3002;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152859749.png" data-lightbox="61bd25d1-765e-4b02-8d86-96e39aab3157" data-title="image-20211013152859749"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152859749.png" alt="image-20211013152859749"></a><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152923583.png" data-lightbox="df300d82-8b29-4c86-a548-7b008d16904a" data-title="image-20211013152923583"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152923583.png" alt="image-20211013152923583"></a></p>
-<h2 id="&#x63A7;&#x5236;&#x9762;&#x677F;"><a name="&#x63A7;&#x5236;&#x9762;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x63A7;&#x5236;&#x9762;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x63A7;&#x5236;&#x9762;&#x677F;</h2>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152859749.png" data-lightbox="f5b9d12b-cf66-4b65-94c1-f36d5808d808" data-title="image-20211013152859749"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152859749.png" alt="image-20211013152859749"></a><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152923583.png" data-lightbox="f87cdd56-1c44-4c6d-96ac-ed5bf98c56a3" data-title="image-20211013152923583"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013152923583.png" alt="image-20211013152923583"></a></p>
+<h2 id="&#x63A7;&#x5236;&#x9762;&#x677F;">&#x63A7;&#x5236;&#x9762;&#x677F;</h2>
 <blockquote>
 <p>&#x53C2;&#x8003;<a href="https://blog.csdn.net/f641385712/article/details/93145454" target="_blank">https://blog.csdn.net/f641385712/article/details/93145454</a></p>
 <p>&#x5927;&#x591A;&#x6570;&#x8BF4;&#x660E;&#x56FE;&#x7247;&#x5C31;&#x76F4;&#x63A5;Copy&#x8FC7;&#x6765;&#x7684;&#xFF0C;&#x4E0D;&#x8DB3;&#x70B9;&#x518D;&#x6DFB;&#x52A0;&#x8865;&#x5145;&#x8BF4;&#x660E;</p>
 </blockquote>
 <p>&#x8FDB;&#x5165;&#x65AD;&#x70B9;&#x7BA1;&#x7406;&#x754C;&#x9762;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013134933309.png" data-lightbox="94c9c0e4-7137-4a44-94a9-148402da9dac" data-title="image-20211013134933309"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013134933309.png" alt="image-20211013134933309"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013134933309.png" data-lightbox="95caa312-f205-4487-a706-2273ddd8b272" data-title="image-20211013134933309"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013134933309.png" alt="image-20211013134933309"></a></p>
 <p>&#x8BF4;&#x660E;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70.png" data-lightbox="111c8203-fe35-42d6-9ed9-74048fbacbba" data-title="&#x8BF4;&#x660E;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70.png" alt="&#x8BF4;&#x660E;"></a></p>
-<h2 id="&#x65AD;&#x70B9;"><a name="&#x65AD;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x65AD;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x65AD;&#x70B9;</h2>
-<h3 id="&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;"><a name="&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;</h3>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70.png" data-lightbox="611364ea-099f-4817-b2ae-8f04895bc689" data-title="&#x8BF4;&#x660E;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70.png" alt="&#x8BF4;&#x660E;"></a></p>
+<h2 id="&#x65AD;&#x70B9;">&#x65AD;&#x70B9;</h2>
+<h3 id="&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;">&#x4EC0;&#x4E48;&#x662F;&#x65AD;&#x70B9;</h3>
 <p>&#x65AD;&#x70B9;&#x4F60;&#x53EF;&#x80FD;&#x5929;&#x5929;&#x90FD;&#x5728;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x82E5;&#x771F;&#x8981;&#x4F60;&#x5BF9;&#x5B83;&#x4E0B;&#x5B9A;&#x4E49;&#xFF0C;&#x4F30;&#x8BA1;&#x4E00;&#x65F6;&#x95F4;&#x8FD8;&#x6709;&#x70B9;&#x61F5;&#x903C;&#x5462;&#x6709;&#x6728;&#x6709;&#xFF1F;</p>
 <p><code>&#x65AD;&#x70B9;</code>&#xFF1A;&#x662F;&#x4E00;&#x79CD;<strong>&#x9644;&#x52A0;&#x5728;&#x6E90;&#x4EE3;&#x7801;&#x4E0A;&#x9762;</strong>&#x7684;&#x7279;&#x6B8A;&#x6807;&#x8BB0;&#xFF0C;<strong>&#x5728;<code>&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;(debug&#x6A21;&#x5F0F;)</code>&#x4E0B;&#x53EF;&#x4EE5;&#x89E6;&#x53D1;<code>&#x7279;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;</code></strong>&#xFF0C;&#x6BD4;&#x5982;&#x6253;&#x5370;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x6808;&#x4FE1;&#x606F;&#x3001;&#x8BA1;&#x7B97;&#x503C;&#x3001;&#x6253;&#x5370;&#x6307;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x7B49;&#x7B49;&#x3002;</p>
 <blockquote>
 <p>Tips&#xFF1A;&#x65AD;&#x70B9;&#x4E00;&#x4F46;&#x8BBE;&#x7F6E;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x4FDD;&#x5B58;&#x5728;&#x5DE5;&#x7A0B;&#x4E2D;&#x76F4;&#x5230;&#x624B;&#x52A8;&#x5220;&#x9664;~</p>
 </blockquote>
-<h3 id="&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;"><a name="&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;</h3>
+<h3 id="&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;">&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF08;&#x65AD;&#x70B9;&#x5C5E;&#x6027;&#xFF09;</h3>
 <p>&#x65AD;&#x70B9;&#x5E76;&#x4E0D;&#x662F;&#x4EC5;&#x4EC5;&#x662F;&#x5B64;&#x7ACB;&#x7684;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>&#x53C2;&#x6570;</code>&#x8FDB;&#x884C;&#x5B9A;&#x5236;&#x5316;&#xFF0C;&#x8FD9;&#x4E9B;&#x53EB;<code>&#x65AD;&#x70B9;&#x53C2;&#x6570;</code>&#x3002;
 <strong>&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x65AD;&#x70B9;&#x652F;&#x6301;&#x7684;&#x65AD;&#x70B9;&#x53C2;&#x6570;&#x4E5F;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;</strong>&#xFF0C;&#x5728;&#x4E0B;&#x9762;&#x5177;&#x4F53;&#x4ECB;&#x7ECD;&#x65F6;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;~</p>
-<h3 id="&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;"><a name="&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;</h3>
+<h3 id="&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;">&#x65AD;&#x70B9;&#x7684;&#x79CD;&#x7C7B;</h3>
 <p>&#x636E;&#x6211;&#x7C97;&#x7565;&#x8C03;&#x67E5;&#xFF0C;<code>80%</code>&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x6253;&#x65AD;&#x70B9;&#x53EA;&#x4F1A;&#x91C7;&#x7528;<strong>&#x4EE3;&#x7801;&#x884C;&#x5DE6;&#x8FB9;&#x9F20;&#x6807;&#x5355;&#x51FB;</strong>&#x8FD9;&#x79CD;&#x6700;&#x57FA;&#x7840;&#x7684;&#x65B9;&#x5F0F;&#x6253;&#x65AD;&#x70B9;&#x7136;&#x540E;&#x8C03;&#x8BD5;&#x3002;&#x5176;&#x5B9E;&#x5728;&#x73B0;&#x5B9E;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x6709;&#x975E;&#x5E38;&#x975E;&#x5E38;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5C06;&#x5F88;&#x96BE;<code>&#x5FEB;&#x901F;&#x5B9A;&#x4F4D;</code>&#x5230;&#x95EE;&#x9898;&#x6240;&#x5728;&#xFF0C;&#x56E0;&#x6B64;&#x4E86;&#x89E3;&#x65AD;&#x70B9;&#x5206;&#x7C7B;&#x3001;&#x8C03;&#x8BD5;&#x6280;&#x5DE7;&#x5C31;&#x663E;&#x5F97;&#x6709;&#x70B9;&#x5FC5;&#x987B;&#x4E86;</p>
 <p>&#x6B8A;&#x4E0D;&#x77E5;&#xFF0C;<code>IDEA</code>&#x7ED9;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E30;&#x5BCC;&#x7684;&#x65AD;&#x70B9;&#x7C7B;&#x578B;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8C03;&#x8BD5;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x65AD;&#x70B9;&#x7C7B;&#x578B;&#x6765;<strong>&#x5927;&#x5927;&#x63D0;&#x9AD8;</strong>&#x6211;&#x4EEC;&#x7684;&#x8C03;&#x8BD5;&#x6548;&#x7387;&#xFF0C;&#x6BD5;&#x7ADF;<code>&#x6548;&#x7387;&#x5C31;&#x662F;&#x65F6;&#x95F4;</code>&#xFF0C;&#x800C;<code>&#x65F6;&#x95F4;&#x5C31;&#x662F;&#x751F;&#x547D;</code>&#x3002;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013144300419.png" data-lightbox="8388e147-c3fb-477d-bec4-0fde66602274" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013144300419.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013144300419.png" data-lightbox="f1d1e4fa-0414-4025-b8ea-f9f8404a7df2" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013144300419.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p>&#x4ECE;idea&#x65AD;&#x70B9;&#x5BF9;&#x8BDD;&#x6846;&#x91CC;&#x4E5F;&#x80FD;&#x591F;&#x770B;&#x51FA;&#x65AD;&#x70B9;&#x662F;&#x5206;&#x7C7B;&#x7684;&#x3002;&#x7136;&#x540E;&#x4E0B;&#x9762;&#x6211;&#x5BF9;&#x65AD;&#x70B9;&#x7684;&#x5206;&#x7C7B;&#x8BB2;&#x89E3;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x6309;&#x6B64;&#x5206;&#x7C7B;&#xFF0C;&#x6211;&#x7684;&#x5206;&#x7C7B;&#x4F1A;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
 <li><code>Line breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;</code>&#xFF1A;&#x5728;&#x6307;&#x5B9A;&#x4EE3;&#x7801;&#x884C;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;&#xFF0C;&#x5C5E;&#x4E8E;&#x884C;&#x7EA7;&#x522B;&#x7684;&#x65AD;&#x70B9;</li>
@@ -4802,9 +4778,9 @@
 <li><code>Method breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;</code>&#xFF1A;&#x5B83;&#x662F;&#x6807;&#x8BB0;&#x5728;&#x65B9;&#x6CD5;&#x90A3;&#x4E00;&#x884C;&#x7684;&#x65AD;&#x70B9;&#xFF0C;&#x6709;&#x81EA;&#x5DF1;&#x7279;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x53C2;&#x6570;</li>
 <li><code>Exception breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;</code>&#xFF1A;&#x5F53;&#x7A0B;&#x5E8F;&#x629B;&#x51FA;&#x6307;&#x5B9A;&#x5F02;&#x5E38;&#x65F6;&#x4F1A;&#x6FC0;&#x6D3B;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#x3002;&#x4E0E;&#x884C;&#x65AD;&#x70B9;&#x4E0D;&#x540C;&#xFF0C;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#x4E0D;&#x9700;&#x8981;&#x4E0E;&#x6E90;&#x4EE3;&#x7801;&#x6620;&#x5C04;&#xFF08;&#x4E0D;&#x9700;&#x8981;&#x6253;&#x5728;&#x5177;&#x4F53;&#x67D0;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x4E0A;&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;<strong>&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7EA7;&#x522B;&#x7684;</strong></li>
 </ol>
-<h4 id="line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><a name="line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><code>Line breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;</code></h4>
+<h4 id="line-breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><code>Line breakpoint&#xFF08;&#x884C;&#x65AD;&#x70B9;&#xFF09;</code></h4>
 <p>&#x8FD9;&#x662F;&#x4F7F;&#x7528;&#x5F97;<strong>&#x6700;&#x4E3A;&#x5E7F;&#x6CDB;</strong>&#x7684;&#x4E00;&#x79CD;&#x65AD;&#x70B9;&#x3002;&#x793A;&#x4F8B;&#x64CD;&#x4F5C;&#x201C;&#x89C6;&#x9891;&#x201C;&#xFF1A;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621020749586.gif" data-lightbox="8fd24415-c051-4aa3-8808-833cb8a73d53" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621020749586.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621020749586.gif" data-lightbox="f0aeb74e-76de-4d6c-94bf-8475b0589de8" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621020749586.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p><strong>&#x65AD;&#x70B9;&#x53C2;&#x6570;</strong></p>
 <p>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x4ECB;&#x7ECD;&#x7684;&#x65AD;&#x70B9;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x5FC5;&#x8981;&#x5168;&#x9762;&#x7684;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x4E0A;&#x9762;&#x884C;&#x65AD;&#x70B9;&#x64CD;&#x4F5C;&#x7684;&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
@@ -4822,20 +4798,20 @@
 </ul>
 </li>
 </ul>
-<h4 id="temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><a name="temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><code>Temporary line breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;</code></h4>
+<h4 id="temporary-line-breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;"><code>Temporary line breakpoint&#xFF08;&#x4E34;&#x65F6;&#x884C;&#x65AD;&#x70B9;&#xFF09;</code></h4>
 <p>&#x521B;&#x5EFA;&#x65B9;&#x6CD5;&#x4E0D;&#x8BF4;&#x4E86;&#xFF0C;&#x540C;&#x4E0A;&#x3002;&#x548C;&#x4E0A;&#x9762;&#x7684;&#x552F;&#x4E00;&#x533A;&#x522B;&#x662F;&#xFF1A;&#x628A;<code>Remove once hit</code>&#x8FD9;&#x4E2A;&#x590D;&#x9009;&#x6846;&#x7ED9;&#x52FE;&#x9009;&#x4E0A;&#xFF08;&#x6B64;&#x7C7B;&#x578B;&#x65AD;&#x70B9;&#x5176;&#x5B9E;&#x4F7F;&#x7528;&#x8F83;&#x5C11;&#xFF09;&#x3002;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013151509009.png" data-lightbox="1210cd9f-6a40-4f95-b22a-e0bf2b0e6524" data-title="image-20211013151509009"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013151509009.png" alt="image-20211013151509009"></a></p>
-<h4 id="field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;"><a name="field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><code>Field watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;</code></h4>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013151509009.png" data-lightbox="8ddee72b-9dc3-4b67-afaf-78f5fe9aa18a" data-title="image-20211013151509009"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013151509009.png" alt="image-20211013151509009"></a></p>
+<h4 id="field-watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;"><code>Field watchpoint&#xFF08;&#x5C5E;&#x6027;&#x65AD;&#x70B9;&#xFF09;</code></h4>
 <p>&#x521B;&#x5EFA;&#x7684;&#x65B9;&#x5F0F;&#x548C;&#x4E0A;&#x65E0;&#x5DEE;&#x5F02;&#x3002;&#xFF08;&#x76EE;&#x524D;&#x53D1;&#x73B0;&#x662F;&#x9488;&#x5BF9;&#x7684;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF09;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022319263.gif" data-lightbox="fe1df262-4f18-43b7-933a-c4e57fc56007" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022319263.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022319263.gif" data-lightbox="2aac8d04-26a8-45b1-a3c5-0a28c825fb7b" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022319263.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p><strong>&#x65AD;&#x70B9;&#x53C2;&#x6570;</strong></p>
 <p>&#x7531;&#x4E8E;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x53C2;&#x6570;&#x7B2C;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x8BB2;&#x8FF0;&#x4E86;&#xFF0C;so&#x8FD9;&#x91CC;&#x53EA;&#x5269;&#x4E00;&#x4E2A;&#x5B83;<strong>&#x72EC;&#x6709;&#x7684;</strong>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
 <li><code>Watch</code>&#xFF1A;&#x9009;&#x4E2D;&quot;Filed Access&quot; &#x8BFB;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x65AD;&#x4F4F;&#x3002;&#x9009;&#x4E2D;&quot;Filed madification&quot;&#x8868;&#x793A;&#x4FEE;&#x6539;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x65AD;&#x4F4F;</li>
 </ul>
-<h4 id="method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;"><a name="method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><code>Method breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;</code></h4>
+<h4 id="method-breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;"><code>Method breakpoint&#xFF08;&#x65B9;&#x6CD5;&#x65AD;&#x70B9;&#xFF09;</code></h4>
 <p>&#x6253;&#x65AD;&#x70B9;&#x65B9;&#x5F0F;&#x540C;&#x4E0A;&#xFF0C;&#x53EA;&#x662F;&#x5B83;&#x662F;<strong>&#x5FC5;&#x987B;&#x628A;&#x65AD;&#x70B9;&#x6253;&#x5728;&#x65B9;&#x6CD5;&#x90A3;&#x4E00;&#x884C;&#x4E0A;</strong>&#x3002;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621142953893.gif" data-lightbox="642beb7d-f634-4f44-94bd-835ad31aa3c8" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621142953893.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621142953893.gif" data-lightbox="3011d38c-51d3-4ae5-bc8e-0da151919240" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621142953893.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p>&#x5B83;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;<strong>&#x72EC;&#x6709;&#x7684;</strong>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
 <li><code>Watch</code>&#xFF1A;
@@ -4843,12 +4819,12 @@
   - &#x201C;Method exit&#x201D;&#xFF1A;&#x51FA;&#x53BB;&#x65B9;&#x6CD5;&#x65F6;&#x6FC0;&#x6D3B;&#x65AD;&#x70B9;
   - &#x201C;Emulated&#x201D;&#xFF1A;&#x76EE;&#x524D;&#x53D1;&#x73B0;&#x6CA1;&#x5565;&#x5375;&#x7528;&#xFF08;&#x6C42;&#x5C0F;&#x4F19;&#x4F34;&#x4E0D;&#x8981;&#x55B7;&#x6211;~&#xFF09;</li>
 </ul>
-<h4 id="exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;"><a name="exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><code>Exception breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;</code></h4>
+<h4 id="exception-breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;"><code>Exception breakpoint&#xFF08;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#xFF09;</code></h4>
 <p>&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#x5C5E;&#x4E8E;&#x975E;&#x5E38;&#x7279;&#x6B8A;&#x7684;&#x4E00;&#x79CD;&#x65AD;&#x70B9;&#x7C7B;&#x578B;&#xFF0C;<code>&#x5B83;&#x4E0D;&#x5BF9;&#x5E94;&#x4EFB;&#x4F55;&#x4E00;&#x884C;&#x4EE3;&#x7801;</code>&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5C5E;&#x4E8E;<strong>&#x7A0B;&#x5E8F;&#x7EA7;&#x522B;&#x7684;&#x65AD;&#x70B9;</strong>&#x3002;</p>
 <p>&#x5B83;&#x4E0D;&#x80FD;&#x50CF;&#x4E0A;&#x9762;&#x5728;&#x4EE3;&#x7801;&#x5904;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x65AD;&#x70B9;&#x5BF9;&#x8BDD;&#x6846;&#x6765;&#x521B;&#x5EFA;&#x3002;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621144211746.gif" data-lightbox="912f14a3-14e1-447f-9ade-4bd8dab27a12" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621144211746.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621144211746.gif" data-lightbox="75d129e6-aa89-401c-9c96-afe87999ad11" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621144211746.gif" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p>&#x6B64;&#x5904;&#x6CE8;&#x610F;&#xFF1A;&#x5F02;&#x5E38;&#x65AD;&#x70B9;&#x4E2D;&#x5F88;&#x591A;&#x9009;&#x9879;&#x5C31;&#x662F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#xFF08;&#x7070;&#x8272;&#xFF09;&#x5982;&#x4E0B;&#x56FE;&#x793A;&#xFF1A;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013152457625.png" data-lightbox="80a08ef0-4931-4ad4-ab67-c64d06c3e75f" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013152457625.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013152457625.png" data-lightbox="25556602-b851-44dd-8038-524c2e47ffea" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Y2NDEzODU3MTI=,size_16,color_FFFFFF,t_70-20211013152457625.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p><strong>&#x65AD;&#x70B9;&#x53C2;&#x6570;</strong></p>
 <p>&#x4F46;&#x662F;&#x540C;&#x7406;&#xFF0C;&#x5B83;&#x4E5F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7279;&#x6709;&#x7684;&#x65AD;&#x70B9;&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
@@ -4857,16 +4833,16 @@
   - &#x201C;Uncatch excetion&#x201D;&#xFF1A;&#x4E0D;catch&#x6355;&#x83B7;&#x5F02;&#x5E38;&#x65F6;&#x6FC0;&#x6D3B;&#x65AD;&#x70B9;</li>
 </ul>
 <p><strong>&#x5C0F;&#x7EC6;&#x8282;</strong>&#xFF1A;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x65AD;&#x70B9;&#xFF0C;&#x6253;&#x6869;&#x540E;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x7684;<strong>&#x56FE;&#x6807;</strong>&#x4E5F;&#x662F;&#x6709;&#x5DEE;&#x5F02;&#x7684;&#xFF0C;&#x5982;&#x56FE;&#xFF1A;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022144590.png" data-lightbox="8c881cfd-6e99-4076-b67f-0a05c8fe039d" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022144590.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
-<h3 id="&#x6761;&#x4EF6;&#x65AD;&#x70B9;"><a name="&#x6761;&#x4EF6;&#x65AD;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x6761;&#x4EF6;&#x65AD;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. &#x6761;&#x4EF6;&#x65AD;&#x70B9;</h3>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022144590.png" data-lightbox="3d229812-46a3-464e-af82-ae93ac851825" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/20190621022144590.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
+<h3 id="&#x6761;&#x4EF6;&#x65AD;&#x70B9;">&#x6761;&#x4EF6;&#x65AD;&#x70B9;</h3>
 <p>&#x5C31;&#x662F;&#x65AD;&#x70B9;&#x5728;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E00;&#x822C;&#x4E5F;&#x53EA;&#x80FD;&#x4E66;&#x5199;&#x4E00;&#x4E9B;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x5224;&#x5B9A;</p>
-<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013155752854.png" data-lightbox="2d35744d-58c6-4e1b-8cd5-b6240da69931" data-title="image-20211013155752854"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013155752854.png" alt="image-20211013155752854"></a></p>
+<p><a href="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013155752854.png" data-lightbox="d29bcd57-6005-4f1f-995d-d75b312029fe" data-title="image-20211013155752854"><img src="IDEA&#x65AD;&#x70B9;&#x8C03;&#x8BD5;.assets/image-20211013155752854.png" alt="image-20211013155752854"></a></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-12-25 18:51:59
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -4883,30 +4859,29 @@
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="05.JNDI注入.html" class="navigation navigation-prev " aria-label="Previous page: 05.JNDI注入">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="07.Java加载字节码.html" class="navigation navigation-next " aria-label="Next page: 07.Java加载字节码">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="05.JNDI注入.html" class="navigation navigation-prev " aria-label="Previous page: 05.JNDI注入">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="07.Java加载字节码.html" class="navigation navigation-next " aria-label="Next page: 07.Java加载字节码">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"06.IDEA断点调试","level":"1.3.1.1.6","depth":4,"next":{"title":"07.Java加载字节码","level":"1.3.1.1.7","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/01.审计基础/07.Java加载字节码.md","ref":"个人知识库/02.代码审计/01.Java安全/01.审计基础/07.Java加载字节码.md","articles":[]},"previous":{"title":"05.JNDI注入","level":"1.3.1.1.5","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/01.审计基础/05.JNDI注入.md","ref":"个人知识库/02.代码审计/01.Java安全/01.审计基础/05.JNDI注入.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/01.审计基础/06.IDEA断点调试.md","mtime":"2021-12-25T10:51:59.756Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"06.IDEA断点调试","level":"1.3.1.1.6","depth":4,"next":{"title":"07.Java加载字节码","level":"1.3.1.1.7","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/01.审计基础/07.Java加载字节码.md","ref":"个人知识库/02.代码审计/01.Java安全/01.审计基础/07.Java加载字节码.md","articles":[]},"previous":{"title":"05.JNDI注入","level":"1.3.1.1.5","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/01.审计基础/05.JNDI注入.md","ref":"个人知识库/02.代码审计/01.Java安全/01.审计基础/05.JNDI注入.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/01.审计基础/06.IDEA断点调试.md","mtime":"2021-12-25T10:51:59.756Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4916,31 +4891,7 @@
     <script src="../../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4952,11 +4903,27 @@
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4965,6 +4932,10 @@
     
         
         <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -4988,11 +4959,11 @@
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

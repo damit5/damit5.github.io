@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>02.绕过TLS:akamai指纹护盾 · d4m1ts 知识库</title>
+        <title>02.绕过TLS:akamai指纹护盾 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="01.WAF绕过通用思路.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,57 +4731,29 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b>1. </b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#tls&#x6307;&#x7EB9;&#x76F8;&#x5173;"><b>2. </b>TLS&#x6307;&#x7EB9;&#x76F8;&#x5173;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;"><b>2.1. </b>&#x4EC0;&#x4E48;&#x662F;TLS&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;"><b>2.2. </b>&#x6D4B;&#x8BD5;TLS&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;"><b>2.3. </b>&#x7ED5;&#x8FC7;TLS&#x6307;&#x7EB9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib"><b>2.3.1. </b>&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;"><b>2.3.2. </b>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;"><b>2.3.3. </b>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;"><b>2.3.4. </b>&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;</a></li></ul></ul><li><span class="title-icon "></span><a href="#akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;"><b>3. </b>Akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;HTTP/2&#x6307;&#x7EB9;&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;"><b>3.1. </b>&#x4EC0;&#x4E48;&#x662F;Akamai&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;"><b>3.2. </b>&#x6D4B;&#x8BD5;Akamai&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;"><b>3.3. </b>&#x7ED5;&#x8FC7;Akamai&#x6307;&#x7EB9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;_1"><b>3.3.1. </b>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x6700;&#x7EC8;&#x6548;&#x679C;"><b>4. </b>&#x6700;&#x7EC8;&#x6548;&#x679C;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>5. </b>&#x53C2;&#x8003;</a></li></ul></div><a href="#&#x524D;&#x8A00;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b></b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#tls&#x6307;&#x7EB9;&#x76F8;&#x5173;"><b></b>TLS&#x6307;&#x7EB9;&#x76F8;&#x5173;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;"><b></b>&#x4EC0;&#x4E48;&#x662F;TLS&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;"><b></b>&#x6D4B;&#x8BD5;TLS&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;"><b></b>&#x7ED5;&#x8FC7;TLS&#x6307;&#x7EB9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib"><b></b>&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;"><b></b>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;"><b></b>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;"><b></b>&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;</a></li></ul></ul><li><span class="title-icon "></span><a href="#akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;"><b></b>Akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;HTTP/2&#x6307;&#x7EB9;&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;"><b></b>&#x4EC0;&#x4E48;&#x662F;Akamai&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;"><b></b>&#x6D4B;&#x8BD5;Akamai&#x6307;&#x7EB9;</a></li><li><span class="title-icon "></span><a href="#&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;"><b></b>&#x7ED5;&#x8FC7;Akamai&#x6307;&#x7EB9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;_1"><b></b>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x6700;&#x7EC8;&#x6548;&#x679C;"><b></b>&#x6700;&#x7EC8;&#x6548;&#x679C;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b></b>&#x53C2;&#x8003;</a></li></ul></div><a href="#&#x524D;&#x8A00;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x524D;&#x8A00;">&#x524D;&#x8A00;</a><i></i></div></li>
-<li><div><a href="#tls&#x6307;&#x7EB9;&#x76F8;&#x5173;">TLS&#x6307;&#x7EB9;&#x76F8;&#x5173;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;">&#x4EC0;&#x4E48;&#x662F;TLS&#x6307;&#x7EB9;</a><i></i></div></li>
-<li><div><a href="#&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;">&#x6D4B;&#x8BD5;TLS&#x6307;&#x7EB9;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;">&#x7ED5;&#x8FC7;TLS&#x6307;&#x7EB9;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib">&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib</a><i></i></div></li>
-<li><div><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;">&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</a><i></i></div></li>
-<li><div><a href="#&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;">&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;</a><i></i></div></li>
-<li><div><a href="#&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;">&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;</a><i></i></div></li>
-</ul></li>
-</ul></li>
-<li><div><a href="#akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;">Akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;HTTP/2&#x6307;&#x7EB9;&#xFF09;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;">&#x4EC0;&#x4E48;&#x662F;Akamai&#x6307;&#x7EB9;</a><i></i></div></li>
-<li><div><a href="#&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;">&#x6D4B;&#x8BD5;Akamai&#x6307;&#x7EB9;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;">&#x7ED5;&#x8FC7;Akamai&#x6307;&#x7EB9;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;">&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</a><i></i></div></li>
-</ul></li>
-</ul></li>
-<li><div><a href="#&#x6700;&#x7EC8;&#x6548;&#x679C;">&#x6700;&#x7EC8;&#x6548;&#x679C;</a><i></i></div></li>
-<li><div><a href="#&#x53C2;&#x8003;">&#x53C2;&#x8003;</a><i></i></div></li>
-</ul>
-</div>
-
-<h1 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x524D;&#x8A00;</h1>
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h1>
 <p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x53D1;&#x73B0;&#x4E00;&#x4E9B;&#x7F51;&#x7AD9;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x4F1A;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x6BD4;&#x5982;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x6B63;&#x5E38;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;python&#x5199;&#x811A;&#x672C;&#x6216;&#x8005;curl&#x8BF7;&#x6C42;&#x5C31;&#x4F1A;&#x88AB;&#x62E6;&#x622A;&#xFF0C;&#x5F53;&#x65F6;&#x4E5F;&#x5C1D;&#x8BD5;&#x6570;&#x636E;&#x5305;1:1&#x8FD8;&#x539F;&#xFF0C;&#x4F46;&#x8FD8;&#x662F;&#x4E0D;&#x80FD;&#x89E3;&#x51B3;&#x3002;</p>
 <p>&#x6D4B;&#x8BD5;&#x6307;&#x7EB9;&#x62E6;&#x622A;&#x7AD9;&#x70B9;&#xFF1A;<a href="https://ascii2d.net" target="_blank">https://ascii2d.net</a></p>
 <p>&#x6700;&#x8FD1;&#x62DC;&#x8BFB;&#x4E86;&#x5E08;&#x5085;&#x7684;&#x6587;&#x7AE0;&#x300A;<a href="https://sxyz.blog/bypass-cloudflare-shield/" target="_blank">&#x7ED5;&#x8FC7; Cloudflare &#x6307;&#x7EB9;&#x62A4;&#x76FE;</a>&#x300B;&#xFF0C;&#x5F88;&#x6709;&#x611F;&#x89E6;&#xFF0C;&#x611F;&#x89C9;&#x4E4B;&#x524D;&#x9047;&#x5230;&#x7684;&#x5E94;&#x8BE5;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF1B;&#x4E4B;&#x524D;&#x5199;&#x722C;&#x866B;&#x9047;&#x5230;&#x7C7B;&#x4F3C;&#x8FD9;&#x79CD;&#x6307;&#x7EB9;&#x62A4;&#x76FE;&#xFF08;&#x53CD;&#x722C;&#x673A;&#x5236;&#xFF09;&#xFF0C;&#x4E5F;&#x90FD;&#x662F;&#x5C1D;&#x8BD5;&#x901A;&#x8FC7;selenium&#x6A21;&#x62DF;&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x7ED5;&#x8FC7;&#x7684;&#xFF0C;&#x8FD9;&#x4E00;&#x6B21;&#x4E5F;&#x7B97;&#x662F;&#x89C1;&#x4E86;&#x4E16;&#x9762;&#xFF0C;&#x5B66;&#x5230;&#x4E86;&#x4E00;&#x4E9B;&#x65B0;&#x7684;&#x4E1C;&#x897F;&#x3002;</p>
 <blockquote>
 <p>&#x672C;&#x6B21;&#x5185;&#x5BB9;&#x4E3B;&#x8981;&#x5206;&#x4E3A;2&#x90E8;&#x5206;&#xFF0C;1&#x662F;&#x7ED5;&#x8FC7;TLS&#x6307;&#x7EB9;&#x8BC6;&#x522B;&#xFF0C;2&#x662F;&#x7ED5;&#x8FC7;Akamai&#x6307;&#x7EB9;&#xFF08;HTTP/2&#x6307;&#x7EB9;&#xFF09;&#x8BC6;&#x522B;</p>
 </blockquote>
-<h1 id="tls&#x6307;&#x7EB9;&#x76F8;&#x5173;"><a name="tls&#x6307;&#x7EB9;&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#tls&#x6307;&#x7EB9;&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>2. TLS&#x6307;&#x7EB9;&#x76F8;&#x5173;</h1>
-<h2 id="&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;"><a name="&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x4EC0;&#x4E48;&#x662F;TLS&#x6307;&#x7EB9;</h2>
+<h1 id="tls&#x6307;&#x7EB9;&#x76F8;&#x5173;">TLS&#x6307;&#x7EB9;&#x76F8;&#x5173;</h1>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;tls&#x6307;&#x7EB9;">&#x4EC0;&#x4E48;&#x662F;TLS&#x6307;&#x7EB9;</h2>
 <p>TLS&#x6307;&#x7EB9;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x8BC6;&#x522B;&#x548C;&#x9A8C;&#x8BC1;TLS&#xFF08;&#x4F20;&#x8F93;&#x5C42;&#x5B89;&#x5168;&#xFF09;&#x901A;&#x4FE1;&#x7684;&#x6280;&#x672F;&#x3002;</p>
 <p>TLS&#x6307;&#x7EB9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x68C0;&#x67E5;TLS&#x63E1;&#x624B;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x7684;<strong>&#x5BC6;&#x7801;&#x5957;&#x4EF6;&#x3001;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x548C;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7B49;&#x4FE1;&#x606F;</strong>&#x6765;&#x786E;&#x5B9A;TLS&#x901A;&#x4FE1;&#x7684;&#x7279;&#x5F81;&#x3002;&#x7531;&#x4E8E;&#x6BCF;&#x4E2A;TLS&#x5B9E;&#x73B0;&#x4F7F;&#x7528;&#x7684;&#x5BC6;&#x7801;&#x5957;&#x4EF6;&#x3001;&#x534F;&#x8BAE;&#x7248;&#x672C;&#x548C;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x4E0D;&#x540C;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6BD4;&#x8F83;TLS&#x6307;&#x7EB9;&#x6765;&#x5224;&#x65AD;&#x901A;&#x4FE1;&#x662F;&#x5426;&#x6765;&#x81EA;&#x9884;&#x671F;&#x7684;&#x6E90;&#x6216;&#x76EE;&#x6807;&#x3002;</p>
 <p>TLS&#x6307;&#x7EB9;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x7F51;&#x7EDC;&#x6B3A;&#x9A97;&#x3001;&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;&#x3001;&#x95F4;&#x8C0D;&#x6D3B;&#x52A8;&#x7B49;&#x5B89;&#x5168;&#x5A01;&#x80C1;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8BC6;&#x522B;&#x548C;&#x7BA1;&#x7406;&#x8BBE;&#x5907;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;</p>
 <p>TLS&#x6307;&#x7EB9;&#x8BC6;&#x522B;&#x539F;&#x7406;&#xFF08;ja3&#x7B97;&#x6CD5;&#xFF09;&#xFF1A;<a href="https://github.com/salesforce/ja3" target="_blank">https://github.com/salesforce/ja3</a></p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112740792.png" data-lightbox="627edf17-d579-4d49-aa97-41c16671f9fa" data-title="ja3&#x7B97;&#x6CD5;"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112740792.png" alt="ja3&#x7B97;&#x6CD5;"></a></p>
-<h2 id="&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;"><a name="&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x6D4B;&#x8BD5;TLS&#x6307;&#x7EB9;</h2>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112740792.png" data-lightbox="82e5aee0-bf09-4535-b80b-693efdc9c1ca" data-title="ja3&#x7B97;&#x6CD5;"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112740792.png" alt="ja3&#x7B97;&#x6CD5;"></a></p>
+<h2 id="&#x6D4B;&#x8BD5;tls&#x6307;&#x7EB9;">&#x6D4B;&#x8BD5;TLS&#x6307;&#x7EB9;</h2>
 <p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x4E0D;&#x540C;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x95F4;&#x7684;&#x6307;&#x7EB9;&#x5DEE;&#x5F02;&#xFF08;ja3_hash&#xFF09;</p>
 <blockquote>
 <p>&#x6DF1;&#x5165;&#x5206;&#x6790;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x7528;wireshark&#x6293;TLS&#x5305;&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#x5206;&#x6790;</p>
@@ -4794,23 +4762,23 @@
 <ul>
 <li>CURL v7.79.1</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112944762.png" data-lightbox="704818e7-fae8-4826-b074-f32b9b746c3d" data-title="curl v7.79.1"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112944762.png" alt="curl v7.79.1"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112944762.png" data-lightbox="abda8c35-5ccf-458c-bc4b-7aadd6b39cf1" data-title="curl v7.79.1"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;112944762.png" alt="curl v7.79.1"></a></p>
 <ul>
 <li>CURL 7.68.0</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113055858.png" data-lightbox="0022dbfc-278e-4044-a034-afa41e5f1ee1" data-title="CURL 7.68.0"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113055858.png" alt="CURL 7.68.0"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113055858.png" data-lightbox="f25f0b91-cebf-40dc-b209-bcfda45ba503" data-title="CURL 7.68.0"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113055858.png" alt="CURL 7.68.0"></a></p>
 <ul>
 <li>Chrome 112.0.5615.137&#xFF08;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#xFF09; (x86_64)</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113234072.png" data-lightbox="99af4d50-41ec-4db0-9db6-55ccaf7eac2a" data-title="Chrome 112.0.5615.137&#xFF08;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#xFF09; (x86_64)"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113234072.png" alt="Chrome 112.0.5615.137&#xFF08;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#xFF09; (x86_64)"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113234072.png" data-lightbox="242deb7d-632c-4ace-8ec1-ee80cfd6a227" data-title="Chrome 112.0.5615.137&#xFF08;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#xFF09; (x86_64)"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113234072.png" alt="Chrome 112.0.5615.137&#xFF08;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#xFF09; (x86_64)"></a></p>
 <ul>
 <li>Burp Chromium 103.0.5060.114&#xFF08;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#xFF09; (x86_64)</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113630016.png" data-lightbox="5bce82e8-1212-40b6-b641-a20de8a450c3" data-title="Burp Chromium"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113630016.png" alt="Burp Chromium"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113630016.png" data-lightbox="b1dbe89e-ca06-4eef-9269-7e766907fd81" data-title="Burp Chromium"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113630016.png" alt="Burp Chromium"></a></p>
 <ul>
 <li>Python 2.11.1</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113510067.png" data-lightbox="dd6fb13f-50d1-46f4-8524-26b39fce3d84" data-title="Python 2.11.1"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113510067.png" alt="Python 2.11.1"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113510067.png" data-lightbox="01fe0fa9-6be9-4c08-b080-88e656877dd7" data-title="Python 2.11.1"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0A;&#x5348;113510067.png" alt="Python 2.11.1"></a></p>
 <p>&#x53EF;&#x89C1;&#x4E0D;&#x540C;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x90FD;&#x5B58;&#x5728;&#x533A;&#x522B;&#xFF0C;&#x9488;&#x5BF9;&#x6700;&#x540E;&#x4E00;&#x4E2A;python&#x7684;ja3_text&#x505A;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x660E;</p>
 <ul>
 <li>&#x7B2C;&#x4E00;&#x4E2A;&#x503C; <code>771</code>&#xFF1A;&#x8868;&#x793A; JA3 &#x7248;&#x672C;&#xFF0C;&#x5373;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x6307;&#x7EB9;&#x7684; JA3 &#x811A;&#x672C;&#x7684;&#x7248;&#x672C;&#x3002;</li>
@@ -4819,9 +4787,9 @@
 <li>&#x7B2C;&#x56DB;&#x4E2A;&#x503C; <code>29-23-30-25-24</code>&#xFF1A;&#x8868;&#x793A;&#x652F;&#x6301;&#x7684; TLS &#x6269;&#x5C55;&#xFF0C;&#x5982; SNI&#x3002;</li>
 <li>&#x7B2C;&#x4E94;&#x4E2A;&#x503C; <code>0-1-2</code>&#xFF1A;&#x8868;&#x793A;&#x652F;&#x6301;&#x7684; elliptic curves&#xFF0C;&#x5373;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x7B97;&#x6CD5;&#x3002;</li>
 </ul>
-<h2 id="&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;"><a name="&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x7ED5;&#x8FC7;TLS&#x6307;&#x7EB9;</h2>
+<h2 id="&#x7ED5;&#x8FC7;tls&#x6307;&#x7EB9;">&#x7ED5;&#x8FC7;TLS&#x6307;&#x7EB9;</h2>
 <p>&#x65E2;&#x7136;&#x90FD;&#x77E5;&#x9053;&#x539F;&#x7406;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x7ED5;&#x8FC7;&#x5C31;&#x662F;&#x4F2A;&#x9020;&#x6210;&#x5408;&#x6CD5;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x884C;&#xFF0C;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x4F2A;&#x88C5;ja3_text&#x503C;&#xFF0C;&#x8BA9;&#x5176;&#x4E0D;&#x88AB;&#x62E6;&#x622A;&#x5373;&#x53EF;&#xFF0C;&#x4EE5;&#x4FEE;&#x6539;&#x652F;&#x6301;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x4E3A;&#x4E3B;&#x3002;</p>
-<h3 id="&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib"><a name="&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1. &#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib</h3>
+<h3 id="&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib">&#x65B9;&#x6CD5;&#x96F6;&#xFF1A;&#x4F7F;&#x7528;&#x539F;&#x751F;urllib</h3>
 <pre class="language-"><code class="lang-python"><span class="token keyword">import</span> urllib<span class="token punctuation">.</span>request
 <span class="token keyword">import</span> ssl
 
@@ -4839,8 +4807,8 @@ req <span class="token operator">=</span> urllib<span class="token punctuation">
 resp <span class="token operator">=</span> urllib<span class="token punctuation">.</span>request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span>req<span class="token punctuation">,</span> context<span class="token operator">=</span>context<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>resp<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;70919048.png" data-lightbox="fd852d37-e077-4a6e-be68-a2213b242c30" data-title="urllib"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;70919048.png" alt="urllib"></a></p>
-<h3 id="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;"><a name="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.2. &#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</h3>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;70919048.png" data-lightbox="e3d30f52-4624-43ae-b936-d44c948b714f" data-title="urllib"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;70919048.png" alt="urllib"></a></p>
+<h3 id="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;">&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</h3>
 <p>&#x53EF;&#x4EE5;&#x8BD5;&#x8BD5;<a href="https://github.com/yifeikong/curl_cffi" target="_blank"><code>curl_cffi</code></a>&#x8FD9;&#x4E2A;&#x5E93;&#xFF0C;&#x4E3B;&#x6253;&#x7684;&#x5C31;&#x662F;&#x6A21;&#x62DF;&#x5404;&#x79CD;&#x6307;&#x7EB9;</p>
 <p>Python binding for curl-impersonate via cffi. A http client that can impersonate browser tls/ja3/http2 fingerprints.</p>
 <blockquote>
@@ -4861,7 +4829,7 @@ r <span class="token operator">=</span> requests<span class="token punctuation">
 <span class="token keyword">print</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;ja3_hash&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;44440082.png" data-lightbox="750c938d-e96b-4010-ad90-0871ef31892c" data-title="curl_cffi"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;44440082.png" alt="curl_cffi"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;44440082.png" data-lightbox="4a5c0660-790d-46c5-8529-6ae2df18c7f3" data-title="curl_cffi"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;44440082.png" alt="curl_cffi"></a></p>
 <p>&#x652F;&#x6301;&#x4F2A;&#x9020;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x5217;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token comment"># curl_cffi.requests.session.BrowserType</span>
 <span class="token keyword">class</span> <span class="token class-name">BrowserType</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">,</span> Enum<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -4877,12 +4845,12 @@ r <span class="token operator">=</span> requests<span class="token punctuation">
     safari15_3 <span class="token operator">=</span> <span class="token string">&quot;safari15_3&quot;</span>
     safari15_5 <span class="token operator">=</span> <span class="token string">&quot;safari15_5&quot;</span>
 </code></pre>
-<h3 id="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;"><a name="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.3. &#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;</h3>
+<h3 id="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;">&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x6302;&#x4E00;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7406;</h3>
 <p>&#x8FD9;&#x91CC;&#x662F;&#x7528;burp&#x53BB;&#x5B8C;&#x6210;TLS&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#xFF0C;&#x524D;&#x63D0;&#x662F;burp&#x7684;TLS&#x6307;&#x7EB9;&#x4E0D;&#x4F1A;&#x88AB;&#x62E6;&#x622A;&#x3002;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;30421464.png" data-lightbox="14807128-36ee-446c-b330-6445734ce979" data-title="burp"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;30421464.png" alt="burp"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;30421464.png" data-lightbox="08bcaa05-c009-4db2-a107-0d73454e75d6" data-title="burp"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;30421464.png" alt="burp"></a></p>
 <p>Burp&#x7684;TLS&#x6307;&#x7EB9;&#x53EF;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4FEE;&#x6539;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;73736723.png" data-lightbox="3b0ef398-eb30-461e-a939-3d934f90aba7" data-title="&#x4FEE;&#x6539;burp TLS&#x6307;&#x7EB9;"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;73736723.png" alt="&#x4FEE;&#x6539;burp TLS&#x6307;&#x7EB9;"></a></p>
-<h3 id="&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;"><a name="&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.4. &#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;</h3>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;73736723.png" data-lightbox="d4fcbcaf-752e-4bb7-88dd-268b344af3be" data-title="&#x4FEE;&#x6539;burp TLS&#x6307;&#x7EB9;"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;73736723.png" alt="&#x4FEE;&#x6539;burp TLS&#x6307;&#x7EB9;"></a></p>
+<h3 id="&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;">&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;&#x4FEE;&#x6539;requests&#x5E95;&#x5C42;&#x4EE3;&#x7801;</h3>
 <p>requests &#x5E93;&#x7684; SSL/TLS &#x8BA4;&#x8BC1;&#x662F;&#x57FA;&#x4E8E; urllib3 &#x5E93;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6539;&#x5E95;&#x5C42;&#x5C31;&#x662F;&#x6539;urllib3&#x7684;&#x4EE3;&#x7801;</p>
 <p>&#x67E5;&#x770B;<code>urllib3</code>&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;</p>
 <pre class="language-"><code class="lang-shell">python3 -c <span class="token string">&quot;import urllib3; print(urllib3.__file__)&quot;</span>
@@ -4910,15 +4878,15 @@ r <span class="token operator">=</span> requests<span class="token punctuation">
 <span class="token punctuation">)</span>
 </code></pre>
 <p>&#x64CD;&#x4F5C;&#x7684;&#x7A7A;&#x95F4;&#x5F88;&#x591A;&#xFF0C;&#x50CF;&#x6211;&#x8FD9;&#x79CD;&#x811A;&#x672C;&#x5C0F;&#x5B50;&#x4E00;&#x822C;&#x5C31;&#x4EE5;&#x5220;&#x9664;&#x548C;&#x8C03;&#x6362;&#x4F4D;&#x7F6E;&#x4E3A;&#x4E3B;&#xFF0C;&#x5BF9;&#x6BD4;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;40250059.png" data-lightbox="28dd43a4-d3a1-41b2-9d65-04b510c15ca5" data-title="vs"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;40250059.png" alt="vs"></a></p>
-<h1 id="akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;"><a name="akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;HTTP/2&#x6307;&#x7EB9;&#xFF09;</h1>
-<h2 id="&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;"><a name="&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x4EC0;&#x4E48;&#x662F;Akamai&#x6307;&#x7EB9;</h2>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;40250059.png" data-lightbox="5859717e-ee4d-4576-9784-8539c9d80ab3" data-title="vs"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;40250059.png" alt="vs"></a></p>
+<h1 id="akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;http2&#x6307;&#x7EB9;&#xFF09;">Akamai&#x6307;&#x7EB9;&#x76F8;&#x5173;&#xFF08;HTTP/2&#x6307;&#x7EB9;&#xFF09;</h1>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;akamai&#x6307;&#x7EB9;">&#x4EC0;&#x4E48;&#x662F;Akamai&#x6307;&#x7EB9;</h2>
 <p>Akamai Fingerprint&#x662F;Akamai Technologies&#x516C;&#x53F8;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x9632;&#x6B62;&#x6076;&#x610F;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x81EA;&#x52A8;&#x5316;&#x653B;&#x51FB;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x5B83;&#x57FA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x6307;&#x7EB9;&#x8BC6;&#x522B;&#x6280;&#x672F;&#x3002;</p>
 <p>&#x6D4F;&#x89C8;&#x5668;&#x6307;&#x7EB9;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x8BC6;&#x522B;Web&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x6536;&#x96C6;&#x5E76;&#x5206;&#x6790;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5404;&#x79CD;&#x5C5E;&#x6027;&#x548C;&#x884C;&#x4E3A;&#xFF0C;&#x5982;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x63D2;&#x4EF6;&#x3001;&#x5B57;&#x4F53;&#x3001;&#x8BED;&#x8A00;&#x3001;&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;&#x7B49;&#x4FE1;&#x606F;&#x6765;&#x8BC6;&#x522B;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x6307;&#x7EB9;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x5B89;&#x5168;&#x9886;&#x57DF;&#x5F97;&#x5230;&#x4E86;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x548C;&#x8BC6;&#x522B;&#x6076;&#x610F;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x6B3A;&#x8BC8;&#x884C;&#x4E3A;&#x3001;&#x7F51;&#x7EDC;&#x9493;&#x9C7C;&#x7B49;&#x3002;</p>
 <p>Akamai Fingerprint&#x5229;&#x7528;&#x4E86;&#x6D4F;&#x89C8;&#x5668;&#x6307;&#x7EB9;&#x6280;&#x672F;&#xFF0C;&#x5C06;&#x5176;&#x4E0E;&#x5176;&#x4ED6;&#x5B89;&#x5168;&#x6280;&#x672F;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x4EE5;&#x8BC6;&#x522B;&#x548C;&#x62E6;&#x622A;&#x81EA;&#x52A8;&#x5316;&#x653B;&#x51FB;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x5F71;&#x54CD;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5BF9;&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8FDB;&#x884C;&#x8BC6;&#x522B;&#x548C;&#x9A8C;&#x8BC1;&#xFF0C;&#x9632;&#x6B62;&#x81EA;&#x52A8;&#x5316;&#x653B;&#x51FB;&#x3001;&#x8D26;&#x6237;&#x6EE5;&#x7528;&#x548C;&#x6570;&#x636E;&#x6CC4;&#x9732;&#x7B49;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x3002;</p>
 <hr>
 <p>&#x53EF;&#x4EE5;&#x5728; <a href="https://tls.peet.ws/api/all" target="_blank">https://tls.peet.ws/api/all</a> &#x770B;&#x5230;&#x8BE6;&#x7EC6;&#x7684;&#x6307;&#x7EB9;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;85345384.png" data-lightbox="39a56d9e-3037-4359-bb6b-7c755a2d1731" data-title="HTTP2"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;85345384.png" alt="HTTP2"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;85345384.png" data-lightbox="dea97de1-c2c0-4712-be21-a388eb8bb43a" data-title="HTTP2"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;85345384.png" alt="HTTP2"></a></p>
 <p>&#x6307;&#x7EB9;&#x4E3A;&#xFF1A;<code>1:65536,2:0,3:1000,4:6291456,6:262144|15663105|0|m,a,s,p</code></p>
 <ol>
 <li><code>1:65536</code>: <code>HEADER_TABLE_SIZE</code>&#xFF0C;&#x5373;&#x5934;&#x90E8;&#x8868;&#x5927;&#x5C0F;&#x4E3A;64KB&#xFF0C;&#x6307;&#x7684;&#x662F;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8BF7;&#x6C42;&#x5934;&#x548C;&#x54CD;&#x5E94;&#x5934;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x5B83;&#x662F;&#x53EF;&#x4EE5;&#x8C03;&#x6574;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6307;&#x660E;&#x4E86;&#x4F7F;&#x7528;64KB&#x7684;&#x5934;&#x90E8;&#x8868;&#x5927;&#x5C0F;&#x3002;</li>
@@ -4934,24 +4902,24 @@ r <span class="token operator">=</span> requests<span class="token punctuation">
 </li>
 </ol>
 <p>&#x53EF;&#x5728;<a href="https://www.blackhat.com/docs/eu-17/materials/eu-17-Shuster-Passive-Fingerprinting-Of-HTTP2-Clients-wp.pdf" target="_blank">Passive Fingerprinting of HTTP/2 Clients</a>&#x4E2D;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x7EC6;&#x8282;</p>
-<h2 id="&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;"><a name="&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x6D4B;&#x8BD5;Akamai&#x6307;&#x7EB9;</h2>
+<h2 id="&#x6D4B;&#x8BD5;akamai&#x6307;&#x7EB9;">&#x6D4B;&#x8BD5;Akamai&#x6307;&#x7EB9;</h2>
 <p>&#x6D4B;&#x8BD5;&#x7F51;&#x7AD9;&#xFF1A;<a href="https://tls.browserleaks.com/json" target="_blank">https://tls.browserleaks.com/json</a></p>
 <ul>
 <li>CURL</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50603033.png" data-lightbox="5f586442-ceca-43af-a6e7-2557fe8af7a5" data-title="curl"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50603033.png" alt="curl"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50603033.png" data-lightbox="e3a8a54e-03fa-45ad-a377-7094eb83b408" data-title="curl"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50603033.png" alt="curl"></a></p>
 <ul>
 <li>Chrome</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50716193.png" data-lightbox="e2c3a057-b47e-4448-9c31-5b51e1953d62" data-title="chrome"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50716193.png" alt="chrome"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50716193.png" data-lightbox="13a9571a-456f-45bc-8256-fc803877c0de" data-title="chrome"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50716193.png" alt="chrome"></a></p>
 <ul>
 <li>Python</li>
 </ul>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50803277.png" data-lightbox="e0861927-455e-4c70-9920-838e71df310a" data-title="python"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50803277.png" alt="python"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50803277.png" data-lightbox="afd19014-a041-4bc9-a437-ea77fbcf324e" data-title="python"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;50803277.png" alt="python"></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7528;python requests&#x76F4;&#x63A5;&#x4E3A;&#x7A7A;&#xFF0C;&#x722C;&#x866B;&#x5C0F;&#x5B50;&#x76F4;&#x63A5;&#x88AB;&#x62E6;&#x622A;&#x5728;&#x5916;&#x4E86;&#x3002;</p>
-<h2 id="&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;"><a name="&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x7ED5;&#x8FC7;Akamai&#x6307;&#x7EB9;</h2>
+<h2 id="&#x7ED5;&#x8FC7;akamai&#x6307;&#x7EB9;">&#x7ED5;&#x8FC7;Akamai&#x6307;&#x7EB9;</h2>
 <p>&#x4F2A;&#x9020;&#x6307;&#x7EB9;&#x4E2D;&#x7279;&#x5B9A;&#x7684;&#x5B57;&#x6BB5;&#x5373;&#x53EF;&#x3002;</p>
-<h3 id="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;_1"><a name="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;_1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;_1"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.1. &#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</h3>
+<h3 id="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;">&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x6210;&#x719F;&#x5E93;&#x1F31F;</h3>
 <p>&#x8FD8;&#x662F;&#x521A;&#x624D;&#x7684;<a href="https://github.com/yifeikong/curl_cffi" target="_blank"><code>curl_cffi</code></a>&#x8FD9;&#x4E2A;&#x5E93;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x5E93;&#x4E3B;&#x6253;&#x7684;&#x5C31;&#x662F;&#x6A21;&#x62DF;&#x5404;&#x79CD;&#x6307;&#x7EB9;</p>
 <p>Python binding for curl-impersonate via cffi. A http client that can impersonate browser tls/ja3/http2 fingerprints.</p>
 <pre class="language-"><code class="lang-shell">pip <span class="token function">install</span> --upgrade curl_cffi
@@ -4964,7 +4932,7 @@ r <span class="token operator">=</span> requests<span class="token punctuation">
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;safari15_3:&quot;</span><span class="token punctuation">,</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;https://tls.browserleaks.com/json&quot;</span><span class="token punctuation">,</span> impersonate<span class="token operator">=</span><span class="token string">&quot;safari15_3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;akamai_hash&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;51109672.png" data-lightbox="20e7e219-fd24-48f7-8bd7-4b16b9bdf539" data-title="akamai"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;51109672.png" alt="akamai"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;51109672.png" data-lightbox="d39c3d60-d117-43a6-85cb-9e80b4bb3502" data-title="akamai"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;51109672.png" alt="akamai"></a></p>
 <p>&#x652F;&#x6301;&#x4F2A;&#x9020;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x5217;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token comment"># curl_cffi.requests.session.BrowserType</span>
 <span class="token keyword">class</span> <span class="token class-name">BrowserType</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">,</span> Enum<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -4980,10 +4948,10 @@ r <span class="token operator">=</span> requests<span class="token punctuation">
     safari15_3 <span class="token operator">=</span> <span class="token string">&quot;safari15_3&quot;</span>
     safari15_5 <span class="token operator">=</span> <span class="token string">&quot;safari15_5&quot;</span>
 </code></pre>
-<h1 id="&#x6700;&#x7EC8;&#x6548;&#x679C;"><a name="&#x6700;&#x7EC8;&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x7EC8;&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6700;&#x7EC8;&#x6548;&#x679C;</h1>
+<h1 id="&#x6700;&#x7EC8;&#x6548;&#x679C;">&#x6700;&#x7EC8;&#x6548;&#x679C;</h1>
 <p><a href="https://ascii2d.net" target="_blank">https://ascii2d.net</a> &#x5B58;&#x5728;CloudFlare&#x7684;&#x6307;&#x7EB9;&#x62A4;&#x76FE;&#xFF0C;&#x62D2;&#x7EDD;&#x722C;&#x866B;&#xFF0C;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x3002;</p>
 <p>&#x76F4;&#x63A5;CURL&#xFF0C;&#x88AB;&#x62E6;&#x622A;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53411888.png" data-lightbox="4fa1a4fc-d63f-4e52-b066-35ea2e749c9a" data-title="banned"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53411888.png" alt="banned"></a></p>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53411888.png" data-lightbox="1c6dcc95-a55a-4025-a450-ad731d29af83" data-title="banned"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53411888.png" alt="banned"></a></p>
 <p>&#x7ED5;&#x8FC7;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">from</span> curl_cffi <span class="token keyword">import</span> requests
 
@@ -4991,8 +4959,8 @@ req <span class="token operator">=</span> requests<span class="token punctuation
 <span class="token keyword">print</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
 </code></pre>
 <p>&#x53EF;&#x6B63;&#x5E38;&#x83B7;&#x53D6;&#x9875;&#x9762;</p>
-<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53458127.png" data-lightbox="56c22615-91c7-4932-a1e3-d01ebb06e0aa" data-title="normal"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53458127.png" alt="normal"></a></p>
-<h1 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x53C2;&#x8003;</h1>
+<p><a href="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53458127.png" data-lightbox="a82af60b-52f0-4adc-bb2f-a933e80cc00c" data-title="normal"><img src="02.&#x7ED5;&#x8FC7;TLS:akamai&#x6307;&#x7EB9;&#x62A4;&#x76FE;.assets/image-20230427&#x4E0B;&#x5348;53458127.png" alt="normal"></a></p>
+<h1 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h1>
 <ul>
 <li><p><a href="https://sxyz.blog/bypass-cloudflare-shield/" target="_blank">&#x7ED5;&#x8FC7; Cloudflare &#x6307;&#x7EB9;&#x62A4;&#x76FE;</a></p>
 </li>
@@ -5003,10 +4971,10 @@ req <span class="token operator">=</span> requests<span class="token punctuation
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2023-04-28 10:38:31
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -5023,30 +4991,29 @@ req <span class="token operator">=</span> requests<span class="token punctuation
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="01.WAF绕过通用思路.html" class="navigation navigation-prev " aria-label="Previous page: 01.WAF绕过通用思路">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../08.攻防演练/" class="navigation navigation-next " aria-label="Next page: 08.攻防演练">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="01.WAF绕过通用思路.html" class="navigation navigation-prev " aria-label="Previous page: 01.WAF绕过通用思路">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="../08.攻防演练/" class="navigation navigation-next " aria-label="Next page: 08.攻防演练">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"02.绕过TLS:akamai指纹护盾","level":"1.2.7.2","depth":3,"next":{"title":"08.攻防演练","level":"1.2.8","depth":2,"path":"个人知识库/01.渗透测试/08.攻防演练/README.md","ref":"个人知识库/01.渗透测试/08.攻防演练/README.md","articles":[{"title":"01.打点思路","level":"1.2.8.1","depth":3,"path":"个人知识库/01.渗透测试/08.攻防演练/01.打点思路.md","ref":"个人知识库/01.渗透测试/08.攻防演练/01.打点思路.md","articles":[]},{"title":"02.防守思路","level":"1.2.8.2","depth":3,"path":"个人知识库/01.渗透测试/08.攻防演练/02.防守思路.md","ref":"个人知识库/01.渗透测试/08.攻防演练/02.防守思路.md","articles":[]}]},"previous":{"title":"01.WAF绕过通用思路","level":"1.2.7.1","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","mtime":"2023-04-28T02:38:31.214Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"02.绕过TLS:akamai指纹护盾","level":"1.2.7.2","depth":3,"next":{"title":"08.攻防演练","level":"1.2.8","depth":2,"path":"个人知识库/01.渗透测试/08.攻防演练/README.md","ref":"个人知识库/01.渗透测试/08.攻防演练/README.md","articles":[{"title":"01.打点思路","level":"1.2.8.1","depth":3,"path":"个人知识库/01.渗透测试/08.攻防演练/01.打点思路.md","ref":"个人知识库/01.渗透测试/08.攻防演练/01.打点思路.md","articles":[]},{"title":"02.防守思路","level":"1.2.8.2","depth":3,"path":"个人知识库/01.渗透测试/08.攻防演练/02.防守思路.md","ref":"个人知识库/01.渗透测试/08.攻防演练/02.防守思路.md","articles":[]}]},"previous":{"title":"01.WAF绕过通用思路","level":"1.2.7.1","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","mtime":"2023-04-28T02:38:31.214Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -5056,31 +5023,7 @@ req <span class="token operator">=</span> requests<span class="token punctuation
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5092,11 +5035,27 @@ req <span class="token operator">=</span> requests<span class="token punctuation
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5105,6 +5064,10 @@ req <span class="token operator">=</span> requests<span class="token punctuation
     
         
         <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -5128,11 +5091,11 @@ req <span class="token operator">=</span> requests<span class="token punctuation
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

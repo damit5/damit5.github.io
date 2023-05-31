@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>01.adb使用 · d4m1ts 知识库</title>
+        <title>01.adb使用 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="../00.前置基础知识/02.HTTP单向验证+双向验证解释.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,93 +4731,15 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#adb&#x4ECB;&#x7ECD;"><b>1.1. </b>ADB&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;&#x73AF;&#x5883;"><b>1.2. </b>&#x6D4B;&#x8BD5;&#x73AF;&#x5883;</a></li><li><span class="title-icon "></span><a href="#&#x57FA;&#x7840;&#x4F7F;&#x7528;"><b>1.3. </b>&#x57FA;&#x7840;&#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><b>1.3.1. </b>&#x57FA;&#x672C;&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;"><b>1.3.2. </b>&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x505C;&#x6B62;"><b>1.3.3. </b>&#x542F;&#x52A8;/&#x505C;&#x6B62;</a></li><li><span class="title-icon "></span><a href="#&#x7248;&#x672C;"><b>1.3.4. </b>&#x7248;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd"><b>1.3.5. </b>&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd</a></li><li><span class="title-icon "></span><a href="#&#x6307;&#x5B9A;adb-server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;"><b>1.3.6. </b>&#x6307;&#x5B9A;adb server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;&#x7BA1;&#x7406;"><b>1.4. </b>&#x5E94;&#x7528;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;"><b>1.4.1. </b>&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;"><b>1.4.2. </b>&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</a></li><li><span class="title-icon "></span><a href="#&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"><b>1.4.3. </b>&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;apk"><b>1.4.4. </b>&#x5B89;&#x88C5;APK</a></li><li><span class="title-icon "></span><a href="#&#x5378;&#x8F7D;apk"><b>1.4.5. </b>&#x5378;&#x8F7D;APK</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x524D;&#x53F0;activity"><b>1.4.6. </b>&#x67E5;&#x770B;&#x524D;&#x53F0;Activity</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;services"><b>1.4.7. </b>&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;Services</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;"><b>1.4.8. </b>&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;&#x4EA4;&#x4E92;"><b>1.5. </b>&#x5E94;&#x7528;&#x4EA4;&#x4E92;</a></li><ul><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x5E94;&#x7528;-&#x8C03;&#x8D77;-activity"><b>1.5.1. </b>&#x542F;&#x52A8;&#x5E94;&#x7528;/ &#x8C03;&#x8D77; Activity</a></li><li><span class="title-icon "></span><a href="#&#x8C03;&#x7528;service"><b>1.5.2. </b>&#x8C03;&#x7528;Service</a></li><li><span class="title-icon "></span><a href="#&#x505C;&#x6B62;-service"><b>1.5.3. </b>&#x505C;&#x6B62; Service</a></li><li><span class="title-icon "></span><a href="#&#x53D1;&#x9001;&#x5E7F;&#x64AD;"><b>1.5.4. </b>&#x53D1;&#x9001;&#x5E7F;&#x64AD;</a></li><li><span class="title-icon "></span><a href="#&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;"><b>1.5.5. </b>&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x6536;&#x7D27;&#x5185;&#x5B58;"><b>1.5.6. </b>&#x6536;&#x7D27;&#x5185;&#x5B58;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x7BA1;&#x7406;"><b>1.6. </b>&#x6587;&#x4EF6;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;---&#x7535;&#x8111;"><b>1.6.1. </b>&#x8BBE;&#x5907; -&gt; &#x7535;&#x8111;</a></li><li><span class="title-icon "></span><a href="#&#x7535;&#x8111;---&#x8BBE;&#x5907;"><b>1.6.2. </b>&#x7535;&#x8111; -&gt; &#x8BBE;&#x5907;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6A21;&#x62DF;&#x6309;&#x952E;&#x8F93;&#x5165;"><b>1.7. </b>&#x6A21;&#x62DF;&#x6309;&#x952E;/&#x8F93;&#x5165;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6A21;&#x62DF;&#x8F93;&#x5165;"><b>1.7.1. </b>&#x6A21;&#x62DF;&#x8F93;&#x5165;</a></li><li><span class="title-icon "></span><a href="#&#x6A21;&#x62DF;&#x6309;&#x952E;"><b>1.7.2. </b>&#x6A21;&#x62DF;&#x6309;&#x952E;</a></li><li><span class="title-icon "></span><a href="#&#x6A21;&#x62DF;&#x70B9;&#x51FB;"><b>1.7.3. </b>&#x6A21;&#x62DF;&#x70B9;&#x51FB;</a></li><li><span class="title-icon "></span><a href="#&#x6A21;&#x62DF;&#x62D6;&#x52A8;"><b>1.7.4. </b>&#x6A21;&#x62DF;&#x62D6;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x8F93;&#x5165;&#x4E2D;&#x6587;"><b>1.7.5. </b>&#x8F93;&#x5165;&#x4E2D;&#x6587;</a></li></ul><li><span class="title-icon "></span><a href="#&#x65E5;&#x5FD7;"><b>1.8. </b>&#x65E5;&#x5FD7;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;"><b>1.8.1. </b>&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</a></li><li><span class="title-icon "></span><a href="#&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;"><b>1.8.2. </b>&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;</a></li><li><span class="title-icon "></span><a href="#&#x6309;-tag-&#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;"><b>1.8.3. </b>&#x6309; tag &#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</a></li><li><span class="title-icon "></span><a href="#&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;"><b>1.8.4. </b>&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;"><b>1.9. </b>&#x8BBE;&#x5907;&#x4FE1;&#x606F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x578B;&#x53F7;"><b>1.9.1. </b>&#x578B;&#x53F7;</a></li><li><span class="title-icon "></span><a href="#&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;"><b>1.9.2. </b>&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;"><b>1.9.3. </b>&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</a></li><li><span class="title-icon "></span><a href="#ip&#x5730;&#x5740;"><b>1.9.4. </b>IP&#x5730;&#x5740;</a></li><li><span class="title-icon "></span><a href="#mac&#x5730;&#x5740;"><b>1.9.5. </b>MAC&#x5730;&#x5740;</a></li><li><span class="title-icon "></span><a href="#&#x5185;&#x5B58;&#x4FE1;&#x606F;"><b>1.9.6. </b>&#x5185;&#x5B58;&#x4FE1;&#x606F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B9E;&#x7528;&#x529F;&#x80FD;"><b>1.10. </b>&#x5B9E;&#x7528;&#x529F;&#x80FD;</a></li><ul><li><span class="title-icon "></span><a href="#&#x622A;&#x5C4F;"><b>1.10.1. </b>&#x622A;&#x5C4F;</a></li><li><span class="title-icon "></span><a href="#&#x5F55;&#x5C4F;"><b>1.10.2. </b>&#x5F55;&#x5C4F;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;wi-fi&#x5BC6;&#x7801;"><b>1.10.3. </b>&#x67E5;&#x770B;WI-FI&#x5BC6;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x5F00;&#x542F;&#x5173;&#x95ED;wi-fi"><b>1.10.4. </b>&#x5F00;&#x542F;/&#x5173;&#x95ED;WI-FI</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;"><b>1.10.5. </b>&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x542F;"><b>1.10.6. </b>&#x91CD;&#x542F;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x8FDB;&#x7A0B;"><b>1.10.7. </b>&#x67E5;&#x770B;&#x8FDB;&#x7A0B;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#adb&#x4ECB;&#x7ECD;">ADB&#x4ECB;&#x7ECD;</a><i></i></div></li>
-<li><div><a href="#&#x6D4B;&#x8BD5;&#x73AF;&#x5883;">&#x6D4B;&#x8BD5;&#x73AF;&#x5883;</a><i></i></div></li>
-<li><div><a href="#&#x57FA;&#x7840;&#x4F7F;&#x7528;">&#x57FA;&#x7840;&#x4F7F;&#x7528;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x57FA;&#x672C;&#x8BED;&#x6CD5;">&#x57FA;&#x672C;&#x8BED;&#x6CD5;</a><i></i></div></li>
-<li><div><a href="#&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;">&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;</a><i></i></div></li>
-<li><div><a href="#&#x542F;&#x52A8;&#x505C;&#x6B62;">&#x542F;&#x52A8;/&#x505C;&#x6B62;</a><i></i></div></li>
-<li><div><a href="#&#x7248;&#x672C;">&#x7248;&#x672C;</a><i></i></div></li>
-<li><div><a href="#&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd">&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd</a><i></i></div></li>
-<li><div><a href="#&#x6307;&#x5B9A;adb-server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;">&#x6307;&#x5B9A;adb server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x5E94;&#x7528;&#x7BA1;&#x7406;">&#x5E94;&#x7528;&#x7BA1;&#x7406;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;">&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;</a><i></i></div></li>
-<li><div><a href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;">&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</a><i></i></div></li>
-<li><div><a href="#&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;">&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;</a><i></i></div></li>
-<li><div><a href="#&#x5B89;&#x88C5;apk">&#x5B89;&#x88C5;APK</a><i></i></div></li>
-<li><div><a href="#&#x5378;&#x8F7D;apk">&#x5378;&#x8F7D;APK</a><i></i></div></li>
-<li><div><a href="#&#x67E5;&#x770B;&#x524D;&#x53F0;activity">&#x67E5;&#x770B;&#x524D;&#x53F0;Activity</a><i></i></div></li>
-<li><div><a href="#&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;services">&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;Services</a><i></i></div></li>
-<li><div><a href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x5E94;&#x7528;&#x4EA4;&#x4E92;">&#x5E94;&#x7528;&#x4EA4;&#x4E92;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x542F;&#x52A8;&#x5E94;&#x7528;-&#x8C03;&#x8D77;-activity">&#x542F;&#x52A8;&#x5E94;&#x7528;/ &#x8C03;&#x8D77; Activity</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;">&#x6307;&#x5B9A;Activity&#x540D;&#x79F0;&#x542F;&#x52A8;</a><i></i></div></li>
-<li><div><a href="#&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;">&#x4E0D;&#x6307;&#x5B9A;Activity&#x540D;&#x79F0;&#x542F;&#x52A8;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x8C03;&#x7528;service">&#x8C03;&#x7528;Service</a><i></i></div></li>
-<li><div><a href="#&#x505C;&#x6B62;-service">&#x505C;&#x6B62; Service</a><i></i></div></li>
-<li><div><a href="#&#x53D1;&#x9001;&#x5E7F;&#x64AD;">&#x53D1;&#x9001;&#x5E7F;&#x64AD;</a><i></i></div></li>
-<li><div><a href="#&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;">&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;</a><i></i></div></li>
-<li><div><a href="#&#x6536;&#x7D27;&#x5185;&#x5B58;">&#x6536;&#x7D27;&#x5185;&#x5B58;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x6587;&#x4EF6;&#x7BA1;&#x7406;">&#x6587;&#x4EF6;&#x7BA1;&#x7406;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x8BBE;&#x5907;--gt-&#x7535;&#x8111;">&#x8BBE;&#x5907; -&gt; &#x7535;&#x8111;</a><i></i></div></li>
-<li><div><a href="#&#x7535;&#x8111;--gt-&#x8BBE;&#x5907;">&#x7535;&#x8111; -&gt; &#x8BBE;&#x5907;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x6A21;&#x62DF;&#x6309;&#x952E;&#x8F93;&#x5165;">&#x6A21;&#x62DF;&#x6309;&#x952E;/&#x8F93;&#x5165;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x6A21;&#x62DF;&#x8F93;&#x5165;">&#x6A21;&#x62DF;&#x8F93;&#x5165;</a><i></i></div></li>
-<li><div><a href="#&#x6A21;&#x62DF;&#x6309;&#x952E;">&#x6A21;&#x62DF;&#x6309;&#x952E;</a><i></i></div></li>
-<li><div><a href="#&#x6A21;&#x62DF;&#x70B9;&#x51FB;">&#x6A21;&#x62DF;&#x70B9;&#x51FB;</a><i></i></div></li>
-<li><div><a href="#&#x6A21;&#x62DF;&#x62D6;&#x52A8;">&#x6A21;&#x62DF;&#x62D6;&#x52A8;</a><i></i></div></li>
-<li><div><a href="#&#x8F93;&#x5165;&#x4E2D;&#x6587;">&#x8F93;&#x5165;&#x4E2D;&#x6587;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x65E5;&#x5FD7;">&#x65E5;&#x5FD7;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;">&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</a><i></i></div></li>
-<li><div><a href="#&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;">&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;</a><i></i></div></li>
-<li><div><a href="#&#x6309;-tag-&#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;">&#x6309; tag &#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</a><i></i></div></li>
-<li><div><a href="#&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;">&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;">&#x8BBE;&#x5907;&#x4FE1;&#x606F;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x578B;&#x53F7;">&#x578B;&#x53F7;</a><i></i></div></li>
-<li><div><a href="#&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;">&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;</a><i></i></div></li>
-<li><div><a href="#&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;">&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</a><i></i></div></li>
-<li><div><a href="#ip&#x5730;&#x5740;">IP&#x5730;&#x5740;</a><i></i></div></li>
-<li><div><a href="#mac&#x5730;&#x5740;">MAC&#x5730;&#x5740;</a><i></i></div></li>
-<li><div><a href="#&#x5185;&#x5B58;&#x4FE1;&#x606F;">&#x5185;&#x5B58;&#x4FE1;&#x606F;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x5B9E;&#x7528;&#x529F;&#x80FD;">&#x5B9E;&#x7528;&#x529F;&#x80FD;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x622A;&#x5C4F;">&#x622A;&#x5C4F;</a><i></i></div></li>
-<li><div><a href="#&#x5F55;&#x5C4F;">&#x5F55;&#x5C4F;</a><i></i></div></li>
-<li><div><a href="#&#x67E5;&#x770B;wi-fi&#x5BC6;&#x7801;">&#x67E5;&#x770B;WI-FI&#x5BC6;&#x7801;</a><i></i></div></li>
-<li><div><a href="#&#x5F00;&#x542F;&#x5173;&#x95ED;wi-fi">&#x5F00;&#x542F;/&#x5173;&#x95ED;WI-FI</a><i></i></div></li>
-<li><div><a href="#&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;">&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</a><i></i></div></li>
-<li><div><a href="#&#x91CD;&#x542F;">&#x91CD;&#x542F;</a><i></i></div></li>
-<li><div><a href="#&#x67E5;&#x770B;&#x8FDB;&#x7A0B;">&#x67E5;&#x770B;&#x8FDB;&#x7A0B;</a><i></i></div></li>
-</ul></li>
-</ul>
-</div>
-
-<h2 id="adb&#x4ECB;&#x7ECD;"><a name="adb&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#adb&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. ADB&#x4ECB;&#x7ECD;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="adb&#x4ECB;&#x7ECD;">ADB&#x4ECB;&#x7ECD;</h2>
 <p>adb&#xFF08;Android Debug Bridge&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x5728; Android  &#x8BBE;&#x5907;&#x548C;&#x8BA1;&#x7B97;&#x673A;&#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8C03;&#x8BD5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3001;&#x5B89;&#x88C5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3001;&#x5907;&#x4EFD;&#x548C;&#x6062;&#x590D;&#x8BBE;&#x5907;&#x6570;&#x636E;&#x3001;&#x5728;&#x8BBE;&#x5907;&#x548C;&#x8BA1;&#x7B97;&#x673A;&#x4E4B;&#x95F4;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x7B49;&#x3002;&#x4F7F;&#x7528;  adb&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x8BBE;&#x5907;&#x65F6;&#x8FD0;&#x884C;&#x5404;&#x79CD;&#x547D;&#x4EE4;&#x6765;&#x6267;&#x884C;&#x5404;&#x79CD;&#x4EFB;&#x52A1;&#x3002;adb &#x662F; Android SDK&#xFF08;Software Development  Kit&#xFF09;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
 <p>&#x5B89;&#x88C5;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">brew cask <span class="token function">install</span> android-platform-tools
@@ -4831,14 +4749,14 @@
 <li><a href="https://adbshell.com/commands" target="_blank">https://adbshell.com/commands</a></li>
 <li><a href="https://github.com/mzlogin/awesome-adb" target="_blank">https://github.com/mzlogin/awesome-adb</a></li>
 </ul>
-<h2 id="&#x6D4B;&#x8BD5;&#x73AF;&#x5883;"><a name="&#x6D4B;&#x8BD5;&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6D4B;&#x8BD5;&#x73AF;&#x5883;</h2>
+<h2 id="&#x6D4B;&#x8BD5;&#x73AF;&#x5883;">&#x6D4B;&#x8BD5;&#x73AF;&#x5883;</h2>
 <p>&#x7F51;&#x6613;mumu 1.9.55 (20211206)</p>
-<h2 id="&#x57FA;&#x7840;&#x4F7F;&#x7528;"><a name="&#x57FA;&#x7840;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x57FA;&#x7840;&#x4F7F;&#x7528;</h2>
-<h3 id="&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><a name="&#x57FA;&#x672C;&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x57FA;&#x672C;&#x8BED;&#x6CD5;</h3>
+<h2 id="&#x57FA;&#x7840;&#x4F7F;&#x7528;">&#x57FA;&#x7840;&#x4F7F;&#x7528;</h2>
+<h3 id="&#x57FA;&#x672C;&#x8BED;&#x6CD5;">&#x57FA;&#x672C;&#x8BED;&#x6CD5;</h3>
 <pre class="language-"><code class="lang-shell">adb <span class="token punctuation">[</span>-d<span class="token operator">|</span>-e<span class="token operator">|</span>-s <span class="token operator">&lt;</span>serialNumber<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8BBE;&#x5907;/&#x6A21;&#x62DF;&#x5668;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x6389; <code>[-d|-e|-s <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>serialNumber</span><span class="token punctuation">&gt;</span></span>]</code> &#x8FD9;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>adb <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>command</span><span class="token punctuation">&gt;</span></span></code>&#x3002;</p>
-<h3 id="&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;"><a name="&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;</h3>
+<h3 id="&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;">&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x8BBE;&#x5907;</h3>
 <p>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x8BBE;&#x5907;/&#x6A21;&#x62DF;&#x5668;&#x8FDE;&#x63A5;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x4E3A;&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x76EE;&#x6807;&#x8BBE;&#x5907;&#x3002;</p>
 <table>
 <thead>
@@ -4872,16 +4790,16 @@ emulator-5554    device
 <p>&#x7136;&#x540E;<code>-s</code>&#x6307;&#x5B9A;&#x5373;&#x53EF;</p>
 <pre class="language-"><code class="lang-shell">adb -s <span class="token string">&apos;emulator-5554&apos;</span> shell <span class="token function">whoami</span>
 </code></pre>
-<h3 id="&#x542F;&#x52A8;&#x505C;&#x6B62;"><a name="&#x542F;&#x52A8;&#x505C;&#x6B62;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x505C;&#x6B62;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x542F;&#x52A8;/&#x505C;&#x6B62;</h3>
+<h3 id="&#x542F;&#x52A8;&#x505C;&#x6B62;">&#x542F;&#x52A8;/&#x505C;&#x6B62;</h3>
 <blockquote>
 <p>&#x4E00;&#x822C;&#x65E0;&#x9700;&#x624B;&#x52A8;&#x6267;&#x884C;&#x6B64;&#x547D;&#x4EE4;&#xFF0C;&#x5728;&#x8FD0;&#x884C; adb &#x547D;&#x4EE4;&#x65F6;&#x82E5;&#x53D1;&#x73B0; adb server &#x6CA1;&#x6709;&#x542F;&#x52A8;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x8D77;&#x3002;</p>
 </blockquote>
 <pre class="language-"><code class="lang-shell">adb kill-server <span class="token operator">&amp;&amp;</span> adb start-server
 </code></pre>
-<h3 id="&#x7248;&#x672C;"><a name="&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. &#x7248;&#x672C;</h3>
+<h3 id="&#x7248;&#x672C;">&#x7248;&#x672C;</h3>
 <pre class="language-"><code class="lang-shell">adb version
 </code></pre>
-<h3 id="&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd"><a name="&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd" class="anchor-navigation-ex-anchor" href="#&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. &#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd</h3>
+<h3 id="&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd">&#x4EE5;root&#x6743;&#x9650;&#x8FD0;&#x884C;adbd</h3>
 <p>adb &#x7684;&#x8FD0;&#x884C;&#x539F;&#x7406;&#x662F; PC &#x7AEF;&#x7684; adb server &#x4E0E;&#x624B;&#x673A;&#x7AEF;&#x7684;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B; adbd &#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x7136;&#x540E; PC &#x7AEF;&#x7684; adb client &#x901A;&#x8FC7; adb server &#x8F6C;&#x53D1;&#x547D;&#x4EE4;&#xFF0C;adbd &#x63A5;&#x6536;&#x547D;&#x4EE4;&#x540E;&#x89E3;&#x6790;&#x8FD0;&#x884C;&#x3002;</p>
 <blockquote>
 <p>adbd&#x4EE3;&#x8868;&#x201C;Android Debug Bridge Daemon&#x201D;&#xFF0C;&#x662F;&#x8FD0;&#x884C;&#x5728;Android&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B83;&#x4E0E;Android Debug Bridge&#xFF08;ADB&#xFF09;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x4FE1;&#xFF0C;&#x5141;&#x8BB8;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4EE5;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#x4E0E;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;</p>
@@ -4898,14 +4816,14 @@ adb unroot
 <blockquote>
 <p>&#x8FD8;&#x662F;&#x4E0D;&#x80FD;&#x89E3;&#x51B3;&#x5EFA;&#x8BAE;&#x653E;&#x5F03;&#xFF0C;&#x5751;&#x592A;&#x591A;&#x4E86;&#xFF0C;&#x6539;debug&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6539;&#x4E86;&#x4E5F;&#x6CA1;&#x7528;&#x3002;</p>
 </blockquote>
-<h3 id="&#x6307;&#x5B9A;adb-server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;"><a name="&#x6307;&#x5B9A;adb-server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x5B9A;adb-server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6. &#x6307;&#x5B9A;adb server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;</h3>
+<h3 id="&#x6307;&#x5B9A;adb-server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;">&#x6307;&#x5B9A;adb server&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;</h3>
 <blockquote>
 <p>&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x4E3A; 5037&#x3002;</p>
 </blockquote>
 <pre class="language-"><code class="lang-shell">adb -P <span class="token operator">&lt;</span>port<span class="token operator">&gt;</span> start-server
 </code></pre>
-<h2 id="&#x5E94;&#x7528;&#x7BA1;&#x7406;"><a name="&#x5E94;&#x7528;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5E94;&#x7528;&#x7BA1;&#x7406;</h2>
-<h3 id="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;"><a name="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;</h3>
+<h2 id="&#x5E94;&#x7528;&#x7BA1;&#x7406;">&#x5E94;&#x7528;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;">&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5217;&#x8868;</h3>
 <pre class="language-"><code class="lang-shell">adb shell pm list packages
 </code></pre>
 <blockquote>
@@ -4967,17 +4885,17 @@ adb unroot
 </code></pre>
 </li>
 </ul>
-<h3 id="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;"><a name="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</h3>
+<h3 id="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;">&#x67E5;&#x770B;&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</h3>
 <pre class="language-"><code class="lang-shell">adb shell pm path <span class="token operator">&lt;</span>PACKAGE<span class="token operator">&gt;</span>
 </code></pre>
 <ul>
 <li><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PACKAGE</span><span class="token punctuation">&gt;</span></span></code>&#x4E3A;&#x5305;&#x540D;</li>
 </ul>
-<h3 id="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"><a name="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. &#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;</h3>
+<h3 id="&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;">&#x6E05;&#x9664;&#x5E94;&#x7528;&#x6570;&#x636E;&#x4E0E;&#x7F13;&#x5B58;</h3>
 <pre class="language-"><code class="lang-shell">adb shell pm <span class="token function">clear</span> <span class="token operator">&lt;</span>packagename<span class="token operator">&gt;</span>
 </code></pre>
 <p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>packagename</span><span class="token punctuation">&gt;</span></span></code> &#x8868;&#x793A;&#x5E94;&#x7528;&#x540D;&#x5305;&#xFF0C;&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x7684;&#x6548;&#x679C;&#x76F8;&#x5F53;&#x4E8E;&#x5728;&#x8BBE;&#x7F6E;&#x91CC;&#x7684;&#x5E94;&#x7528;&#x4FE1;&#x606F;&#x754C;&#x9762;&#x70B9;&#x51FB;&#x4E86;&#x300C;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x300D;&#x548C;&#x300C;&#x6E05;&#x9664;&#x6570;&#x636E;&#x300D;&#x3002;</p>
-<h3 id="&#x5B89;&#x88C5;apk"><a name="&#x5B89;&#x88C5;apk" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;apk"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.4. &#x5B89;&#x88C5;APK</h3>
+<h3 id="&#x5B89;&#x88C5;apk">&#x5B89;&#x88C5;APK</h3>
 <pre class="language-"><code class="lang-shell">adb <span class="token function">install</span> <span class="token punctuation">[</span>-lrtsdg<span class="token punctuation">]</span> <span class="token punctuation">[</span>--instant<span class="token punctuation">]</span> PACKAGE
 </code></pre>
 <p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x53C2;&#x6570;&#x6765;&#x63A7;&#x5236;&#x5B89;&#x88C5; APK &#x7684;&#x884C;&#x4E3A;</p>
@@ -5299,7 +5217,7 @@ adb unroot
 </tr>
 </tbody>
 </table>
-<h3 id="&#x5378;&#x8F7D;apk"><a name="&#x5378;&#x8F7D;apk" class="anchor-navigation-ex-anchor" href="#&#x5378;&#x8F7D;apk"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.5. &#x5378;&#x8F7D;APK</h3>
+<h3 id="&#x5378;&#x8F7D;apk">&#x5378;&#x8F7D;APK</h3>
 <pre class="language-"><code class="lang-shell">adb uninstall <span class="token punctuation">[</span>-k<span class="token punctuation">]</span> PACKAGE
 </code></pre>
 <ul>
@@ -5311,21 +5229,21 @@ adb unroot
 <p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">adb uninstall com.chehejia.oc.m01
 </code></pre>
-<h3 id="&#x67E5;&#x770B;&#x524D;&#x53F0;activity"><a name="&#x67E5;&#x770B;&#x524D;&#x53F0;activity" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x524D;&#x53F0;activity"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.6. &#x67E5;&#x770B;&#x524D;&#x53F0;Activity</h3>
+<h3 id="&#x67E5;&#x770B;&#x524D;&#x53F0;activity">&#x67E5;&#x770B;&#x524D;&#x53F0;Activity</h3>
 <pre class="language-"><code class="lang-shell">adb shell dumpsys activity activities <span class="token operator">|</span> <span class="token function">grep</span> mResumedActivity
 </code></pre>
 <p>&#x5C31;&#x662F;&#x8BBE;&#x5907;&#x5F53;&#x524D;&#x5C55;&#x793A;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF0C;&#x7ED3;&#x679C;&#x5982;</p>
 <pre class="language-"><code class="lang-shell"><span class="token comment"># &#x5FAE;&#x4FE1;&#x542F;&#x52A8;&#x9875;&#x9762;</span>
 mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af u0 com.tencent.mm/.plugin.account.ui.WelcomeActivity t349<span class="token punctuation">}</span>
 </code></pre>
-<h3 id="&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;services"><a name="&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;services" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;services"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.7. &#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;Services</h3>
+<h3 id="&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;services">&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;Services</h3>
 <pre class="language-"><code class="lang-shell">adb shell dumpsys activity services <span class="token punctuation">[</span><span class="token operator">&lt;</span>packagename<span class="token operator">&gt;</span><span class="token punctuation">]</span>
 </code></pre>
 <ul>
 <li><code>[<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>packagename</span><span class="token punctuation">&gt;</span></span>]</code>&#x4E3A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x8FC7;&#x6EE4;&#x54EA;&#x4E00;&#x4E2A;package&#x7684;&#xFF0C;&#x4E0D;&#x7136;&#x9ED8;&#x8BA4;&#x662F;&#x8F93;&#x51FA;&#x6240;&#x6709;&#x7684;services</li>
 <li><code>[<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>packagename</span><span class="token punctuation">&gt;</span></span>]</code>&#x5199;&#x4E2A;&#x5173;&#x952E;&#x8BCD;&#x4E5F;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#xFF0C;&#x6BD4;&#x5982;<code>qihoo360</code></li>
 </ul>
-<h3 id="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;"><a name="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.8. &#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h3>
+<h3 id="&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</h3>
 <pre class="language-"><code class="lang-shell">adb shell dumpsys package <span class="token operator">&lt;</span>packagename<span class="token operator">&gt;</span>
 </code></pre>
 <ul>
@@ -5338,7 +5256,7 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 <p><strong>&#x83B7;&#x53D6;&#x5305;&#x4E2D;&#x7684;&#x6240;&#x6709;<code>service</code></strong></p>
 <pre class="language-"><code class="lang-shell">adb shell dumpsys package <span class="token operator">&lt;</span>packagename<span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token function">grep</span> -E <span class="token string">&apos;Service|filter&apos;</span>
 </code></pre>
-<h2 id="&#x5E94;&#x7528;&#x4EA4;&#x4E92;"><a name="&#x5E94;&#x7528;&#x4EA4;&#x4E92;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x4EA4;&#x4E92;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x5E94;&#x7528;&#x4EA4;&#x4E92;</h2>
+<h2 id="&#x5E94;&#x7528;&#x4EA4;&#x4E92;">&#x5E94;&#x7528;&#x4EA4;&#x4E92;</h2>
 <p>&#x4E3B;&#x8981;&#x662F;&#x4F7F;&#x7528; <code>am <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>command</span><span class="token punctuation">&gt;</span></span></code> &#x547D;&#x4EE4;&#xFF0C;&#x53C2;&#x6570;&#x5F88;&#x591A;&#xFF0C;&#x53EF;&#x4EE5;<code>am</code>&#x67E5;&#x770B;</p>
 <blockquote>
 <p>Activity Manager (am)&#x662F;Android&#x7CFB;&#x7EDF;&#x7684;&#x4E00;&#x4E2A;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x7BA1;&#x7406;Activity&#x3001;Service&#x3001;Broadcast  Receiver&#x7B49;&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x4EE5;&#x53CA;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x3001;&#x6743;&#x9650;&#x7BA1;&#x7406;&#x7B49;&#x64CD;&#x4F5C;&#x3002;&#x901A;&#x8FC7;adb shell am&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x5411;Activity  Manager&#x53D1;&#x9001;&#x5404;&#x79CD;&#x547D;&#x4EE4;&#xFF0C;&#x4EE5;&#x63A7;&#x5236;Android&#x5E94;&#x7528;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
@@ -5452,8 +5370,8 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 </tr>
 </tbody>
 </table>
-<h3 id="&#x542F;&#x52A8;&#x5E94;&#x7528;-&#x8C03;&#x8D77;-activity"><a name="&#x542F;&#x52A8;&#x5E94;&#x7528;-&#x8C03;&#x8D77;-activity" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x5E94;&#x7528;-&#x8C03;&#x8D77;-activity"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x542F;&#x52A8;&#x5E94;&#x7528;/ &#x8C03;&#x8D77; Activity</h3>
-<h4 id="&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;"><a name="&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6307;&#x5B9A;Activity&#x540D;&#x79F0;&#x542F;&#x52A8;</h4>
+<h3 id="&#x542F;&#x52A8;&#x5E94;&#x7528;-&#x8C03;&#x8D77;-activity">&#x542F;&#x52A8;&#x5E94;&#x7528;/ &#x8C03;&#x8D77; Activity</h3>
+<h4 id="&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;">&#x6307;&#x5B9A;Activity&#x540D;&#x79F0;&#x542F;&#x52A8;</h4>
 <pre class="language-"><code class="lang-shell">adb shell am start <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token operator">&lt;</span>INTENT<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x5982;&#xFF1A;</p>
@@ -5465,7 +5383,7 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 <p>&#x4F20;&#x9012;&#x6570;&#x636E;</p>
 <pre class="language-"><code class="lang-shell">adb shell am start -n com.tencent.mm/.plugin.account.ui.ContactsSyncUI --es <span class="token string">&quot;aaa&quot;</span> <span class="token string">&quot;12345&quot;</span>
 </code></pre>
-<h4 id="&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;"><a name="&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0D;&#x6307;&#x5B9A;Activity&#x540D;&#x79F0;&#x542F;&#x52A8;</h4>
+<h4 id="&#x4E0D;&#x6307;&#x5B9A;activity&#x540D;&#x79F0;&#x542F;&#x52A8;">&#x4E0D;&#x6307;&#x5B9A;Activity&#x540D;&#x79F0;&#x542F;&#x52A8;</h4>
 <pre class="language-"><code class="lang-shell">adb shell monkey -p <span class="token operator">&lt;</span>packagename<span class="token operator">&gt;</span> -c android.intent.category.LAUNCHER <span class="token number">1</span>
 </code></pre>
 <p>&#x5982;&#xFF1A;</p>
@@ -5477,16 +5395,16 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 <li><code>-c android.intent.category.LAUNCHER</code>&#xFF1A;&#x6307;&#x5B9A;&#x8981;&#x542F;&#x52A8;&#x7684;Activity&#x7EC4;&#x4EF6;&#x7684;&#x7C7B;&#x522B;&#xFF0C;&#x5373;&#x901A;&#x8FC7;&#x201C;&#x542F;&#x52A8;&#x5668;&#x201D;&#xFF08;Launcher&#xFF09;&#x542F;&#x52A8;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x5728;Android&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;Activity&#x7EC4;&#x4EF6;&#x901A;&#x5E38;&#x901A;&#x8FC7;&#x5176;Intent&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#x7684;&#x7C7B;&#x522B;&#x6765;&#x6807;&#x8BC6;&#x81EA;&#x5DF1;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;<code>android.intent.category.LAUNCHER</code>&#xFF0C;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x8BE5;&#x7EC4;&#x4EF6;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4E3B;&#x5165;&#x53E3;&#x70B9;&#x3002;</li>
 <li><code>1</code>&#xFF1A;&#x6307;&#x5B9A;&#x8981;&#x6267;&#x884C;&#x7684;&#x968F;&#x673A;&#x4E8B;&#x4EF6;&#x6570;&#x91CF;&#xFF0C;&#x5373;&#x5728;&#x542F;&#x52A8;&#x5FAE;&#x4FE1;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x540E;&#xFF0C;&#x5C06;&#x6A21;&#x62DF;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x64CD;&#x4F5C;&#x3002;</li>
 </ul>
-<h3 id="&#x8C03;&#x7528;service"><a name="&#x8C03;&#x7528;service" class="anchor-navigation-ex-anchor" href="#&#x8C03;&#x7528;service"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. &#x8C03;&#x7528;Service</h3>
+<h3 id="&#x8C03;&#x7528;service">&#x8C03;&#x7528;Service</h3>
 <pre class="language-"><code class="lang-shell">adb shell am startservice <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token operator">&lt;</span>INTENT<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x5982;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">adb shell am startservice -n com.tencent.mm/.plugin.account.model.ContactsSyncService
 </code></pre>
-<h3 id="&#x505C;&#x6B62;-service"><a name="&#x505C;&#x6B62;-service" class="anchor-navigation-ex-anchor" href="#&#x505C;&#x6B62;-service"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.3. &#x505C;&#x6B62; Service</h3>
+<h3 id="&#x505C;&#x6B62;-service">&#x505C;&#x6B62; Service</h3>
 <pre class="language-"><code class="lang-shell">adb shell am stopservice <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token operator">&lt;</span>INTENT<span class="token operator">&gt;</span>
 </code></pre>
-<h3 id="&#x53D1;&#x9001;&#x5E7F;&#x64AD;"><a name="&#x53D1;&#x9001;&#x5E7F;&#x64AD;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;&#x5E7F;&#x64AD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.4. &#x53D1;&#x9001;&#x5E7F;&#x64AD;</h3>
+<h3 id="&#x53D1;&#x9001;&#x5E7F;&#x64AD;">&#x53D1;&#x9001;&#x5E7F;&#x64AD;</h3>
 <pre class="language-"><code class="lang-shel">adb shell am broadcast [options] <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>INTENT</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>&#x53EF;&#x4EE5;&#x5411;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x5E7F;&#x64AD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53EA;&#x5411;&#x6307;&#x5B9A;&#x7EC4;&#x4EF6;&#x5E7F;&#x64AD;&#x3002;</p>
@@ -5599,7 +5517,7 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 </tr>
 </tbody>
 </table>
-<h3 id="&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;"><a name="&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.5. &#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;</h3>
+<h3 id="&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;">&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x5E94;&#x7528;</h3>
 <pre class="language-"><code class="lang-shell">adb shell am force-stop <span class="token operator">&lt;</span>packagename<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x505C;&#x6B62;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x548C;&#x670D;&#x52A1;&#xFF0C;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5C06;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
@@ -5616,7 +5534,7 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 <p>&#x5982;</p>
 <pre class="language-"><code class="lang-shell">adb shell am force-stop com.tencent.mm
 </code></pre>
-<h3 id="&#x6536;&#x7D27;&#x5185;&#x5B58;"><a name="&#x6536;&#x7D27;&#x5185;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x6536;&#x7D27;&#x5185;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.6. &#x6536;&#x7D27;&#x5185;&#x5B58;</h3>
+<h3 id="&#x6536;&#x7D27;&#x5185;&#x5B58;">&#x6536;&#x7D27;&#x5185;&#x5B58;</h3>
 <pre class="language-"><code class="lang-shell">adb shell am send-trim-memory <span class="token operator">&lt;</span>pid<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>level<span class="token operator">&gt;</span>
 </code></pre>
 <ul>
@@ -5635,14 +5553,14 @@ mResumedActivity: ActivityRecord<span class="token punctuation">{</span>1ce38af 
 <p>&#x5982;</p>
 <pre class="language-"><code class="lang-shell">adb shell am send-trim-memory <span class="token number">12345</span> RUNNING_LOW
 </code></pre>
-<h2 id="&#x6587;&#x4EF6;&#x7BA1;&#x7406;"><a name="&#x6587;&#x4EF6;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x6587;&#x4EF6;&#x7BA1;&#x7406;</h2>
-<h3 id="&#x8BBE;&#x5907;---&#x7535;&#x8111;"><a name="&#x8BBE;&#x5907;---&#x7535;&#x8111;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;---&#x7535;&#x8111;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. &#x8BBE;&#x5907; -&gt; &#x7535;&#x8111;</h3>
+<h2 id="&#x6587;&#x4EF6;&#x7BA1;&#x7406;">&#x6587;&#x4EF6;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x8BBE;&#x5907;---&#x7535;&#x8111;">&#x8BBE;&#x5907; -&gt; &#x7535;&#x8111;</h3>
 <pre class="language-"><code class="lang-shell">adb pull <span class="token operator">&lt;</span>&#x8BBE;&#x5907;&#x91CC;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;<span class="token operator">&gt;</span> <span class="token punctuation">[</span>&#x7535;&#x8111;&#x4E0A;&#x7684;&#x76EE;&#x5F55;<span class="token punctuation">]</span>
 </code></pre>
-<h3 id="&#x7535;&#x8111;---&#x8BBE;&#x5907;"><a name="&#x7535;&#x8111;---&#x8BBE;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x7535;&#x8111;---&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x7535;&#x8111; -&gt; &#x8BBE;&#x5907;</h3>
+<h3 id="&#x7535;&#x8111;---&#x8BBE;&#x5907;">&#x7535;&#x8111; -&gt; &#x8BBE;&#x5907;</h3>
 <pre class="language-"><code class="lang-shell">adb push <span class="token operator">&lt;</span>&#x7535;&#x8111;&#x91CC;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x76EE;&#x5F55;<span class="token operator">&gt;</span>
 </code></pre>
-<h2 id="&#x6A21;&#x62DF;&#x6309;&#x952E;&#x8F93;&#x5165;"><a name="&#x6A21;&#x62DF;&#x6309;&#x952E;&#x8F93;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x62DF;&#x6309;&#x952E;&#x8F93;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x6A21;&#x62DF;&#x6309;&#x952E;/&#x8F93;&#x5165;</h2>
+<h2 id="&#x6A21;&#x62DF;&#x6309;&#x952E;&#x8F93;&#x5165;">&#x6A21;&#x62DF;&#x6309;&#x952E;/&#x8F93;&#x5165;</h2>
 <p>&#x4E3B;&#x8981;&#x662F;&#x7528;<code>input</code>&#x547D;&#x4EE4;</p>
 <pre class="language-"><code class="lang-shell">Usage: input <span class="token punctuation">[</span><span class="token operator">&lt;</span>source<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>arg<span class="token operator">&gt;</span><span class="token punctuation">..</span>.<span class="token punctuation">]</span>
 
@@ -5666,10 +5584,10 @@ The commands and default sources are:
       press <span class="token punctuation">(</span>Default: trackball<span class="token punctuation">)</span>
       roll <span class="token operator">&lt;</span>dx<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>dy<span class="token operator">&gt;</span> <span class="token punctuation">(</span>Default: trackball<span class="token punctuation">)</span>
 </code></pre>
-<h3 id="&#x6A21;&#x62DF;&#x8F93;&#x5165;"><a name="&#x6A21;&#x62DF;&#x8F93;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x62DF;&#x8F93;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. &#x6A21;&#x62DF;&#x8F93;&#x5165;</h3>
+<h3 id="&#x6A21;&#x62DF;&#x8F93;&#x5165;">&#x6A21;&#x62DF;&#x8F93;&#x5165;</h3>
 <pre class="language-"><code class="lang-shell">adb shell input text <span class="token string">&quot;hello\ world&quot;</span>
 </code></pre>
-<h3 id="&#x6A21;&#x62DF;&#x6309;&#x952E;"><a name="&#x6A21;&#x62DF;&#x6309;&#x952E;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x62DF;&#x6309;&#x952E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. &#x6A21;&#x62DF;&#x6309;&#x952E;</h3>
+<h3 id="&#x6A21;&#x62DF;&#x6309;&#x952E;">&#x6A21;&#x62DF;&#x6309;&#x952E;</h3>
 <pre class="language-"><code class="lang-shell">adb shell input keyevent <span class="token operator">&lt;</span>keycode<span class="token operator">&gt;</span>
 <span class="token comment"># &#x5982;&#xFF1A;&#x6309;&#x4E0B;HOME&#x952E;</span>
 adb shell input keyevent <span class="token number">3</span>
@@ -5809,7 +5727,7 @@ adb shell input keyevent <span class="token number">3</span>
 </tr>
 </tbody>
 </table>
-<h3 id="&#x6A21;&#x62DF;&#x70B9;&#x51FB;"><a name="&#x6A21;&#x62DF;&#x70B9;&#x51FB;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x62DF;&#x70B9;&#x51FB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. &#x6A21;&#x62DF;&#x70B9;&#x51FB;</h3>
+<h3 id="&#x6A21;&#x62DF;&#x70B9;&#x51FB;">&#x6A21;&#x62DF;&#x70B9;&#x51FB;</h3>
 <pre class="language-"><code class="lang-shell">adb shell input tap <span class="token operator">&lt;</span>x<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>y<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x9700;&#x8981;&#x77E5;&#x9053;x&#x3001;y&#x5750;&#x6807;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x6765;&#x5B9A;&#x4F4D;&#x5750;&#x6807;&#xFF1A;</p>
@@ -5836,14 +5754,14 @@ adb shell input keyevent <span class="token number">3</span>
 </code></pre>
 </li>
 </ol>
-<h3 id="&#x6A21;&#x62DF;&#x62D6;&#x52A8;"><a name="&#x6A21;&#x62DF;&#x62D6;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x62DF;&#x62D6;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.4. &#x6A21;&#x62DF;&#x62D6;&#x52A8;</h3>
+<h3 id="&#x6A21;&#x62DF;&#x62D6;&#x52A8;">&#x6A21;&#x62DF;&#x62D6;&#x52A8;</h3>
 <pre class="language-"><code class="lang-shell">adb shell input swipe <span class="token operator">&lt;</span>&#x8D77;&#x70B9;x&#x5750;&#x6807;<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>&#x8D77;&#x70B9;y&#x5750;&#x6807;<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>&#x7EC8;&#x70B9;x&#x5750;&#x6807;<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>&#x7EC8;&#x70B9;y&#x5750;&#x6807;<span class="token operator">&gt;</span> <span class="token punctuation">[</span>&#x6ED1;&#x52A8;&#x65F6;&#x95F4;ms<span class="token punctuation">]</span>
 </code></pre>
 <p>&#x5B9A;&#x4F4D;&#x5750;&#x6807;&#x65B9;&#x5F0F;&#x53C2;&#x8003;<a href="#&#x6A21;&#x62DF;&#x70B9;&#x51FB;">&#x6A21;&#x62DF;&#x70B9;&#x51FB;</a></p>
 <pre class="language-"><code class="lang-shell">adb shell input swipe <span class="token number">510</span> <span class="token number">636</span> <span class="token number">556</span> <span class="token number">343</span>
 adb shell input swipe <span class="token number">510</span> <span class="token number">636</span> <span class="token number">556</span> <span class="token number">343</span> <span class="token number">2000</span>
 </code></pre>
-<h3 id="&#x8F93;&#x5165;&#x4E2D;&#x6587;"><a name="&#x8F93;&#x5165;&#x4E2D;&#x6587;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x4E2D;&#x6587;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.5. &#x8F93;&#x5165;&#x4E2D;&#x6587;</h3>
+<h3 id="&#x8F93;&#x5165;&#x4E2D;&#x6587;">&#x8F93;&#x5165;&#x4E2D;&#x6587;</h3>
 <blockquote>
 <p>&#x4E0A;&#x65B9;&#x76F4;&#x63A5;&#x8F93;&#x5165;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x9700;&#x8981;&#x5B89;&#x88C5;<a href="README.assets/ADBKeyboard.apk">ADBKeyboard</a></p>
 </blockquote>
@@ -5854,7 +5772,7 @@ adb shell ime <span class="token builtin class-name">set</span> com.android.adbk
 <span class="token comment"># &#x8F93;&#x5165;&#x4E2D;&#x6587;</span>
 adb shell am broadcast -a ADB_INPUT_TEXT --es msg <span class="token string">&apos;&#x4E2D;&#x6587;&#x6D4B;&#x8BD5;&apos;</span>
 </code></pre>
-<h2 id="&#x65E5;&#x5FD7;"><a name="&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x65E5;&#x5FD7;</h2>
+<h2 id="&#x65E5;&#x5FD7;">&#x65E5;&#x5FD7;</h2>
 <pre class="language-"><code class="lang-shell">adb logcat
 </code></pre>
 <p>&#x9ED8;&#x8BA4;&#x7ED3;&#x679C;&#x4E3E;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -5872,13 +5790,13 @@ adb shell am broadcast -a ADB_INPUT_TEXT --es msg <span class="token string">&ap
 <li>F (Fatal)&#xFF1A;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x81F4;&#x547D;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x4E9B;&#x9519;&#x8BEF;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;&#x3002;</li>
 <li>S(Silent): &#x6700;&#x9AD8;&#x7EA7;&#x522B;&#xFF0C;&#x6291;&#x5236;&#x6240;&#x6709;&#x8F93;&#x51FA;</li>
 </ul>
-<h3 id="&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;"><a name="&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.1. &#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</h3>
+<h3 id="&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;">&#x6309;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</h3>
 <ul>
 <li>&#x8F93;&#x51FA;&gt;=W&#x7EA7;&#x522B;&#x7684;&#x65E5;&#x5FD7;&#xFF08;&#x5C06; Warning&#x3001;Error&#x3001;Fatal &#x548C; Silent &#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#xFF09;</li>
 </ul>
 <pre class="language-"><code class="lang-shell">adb logcat <span class="token string">&quot;*:W&quot;</span>
 </code></pre>
-<h3 id="&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;"><a name="&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.2. &#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;</h3>
+<h3 id="&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;">&#x6309;&#x7167;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x6EE4;&#x65E5;&#x5FD7;</h3>
 <pre class="language-"><code class="lang-shel">adb logcat -v <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>format</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>format</span><span class="token punctuation">&gt;</span></span></code>&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -5917,35 +5835,35 @@ adb shell am broadcast -a ADB_INPUT_TEXT --es msg <span class="token string">&ap
 <p>&#x5982;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">adb logcat -v long
 </code></pre>
-<h3 id="&#x6309;-tag-&#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;"><a name="&#x6309;-tag-&#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x6309;-tag-&#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.3. &#x6309; tag &#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</h3>
+<h3 id="&#x6309;-tag-&#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;">&#x6309; tag &#x548C;&#x7EA7;&#x522B;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;</h3>
 <ul>
 <li>&#x8F93;&#x51FA;<code>ActivityManager</code>&#x6807;&#x7B7E;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4E14;&#x4EC5;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x7EA7;&#x522B;&#x4E3A;Info&#x6216;&#x66F4;&#x9AD8;&#x7684;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x3002;</li>
 </ul>
 <pre class="language-"><code>adb logcat &quot;ActivityManager:I&quot; &quot;*:S&quot;
-</code></pre><h3 id="&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;"><a name="&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.4. &#x6E05;&#x7A7A;&#x65E5;&#x5FD7;</h3>
+</code></pre><h3 id="&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;">&#x6E05;&#x7A7A;&#x65E5;&#x5FD7;</h3>
 <pre class="language-"><code class="lang-shell">adb logcat -c
 </code></pre>
-<h2 id="&#x8BBE;&#x5907;&#x4FE1;&#x606F;"><a name="&#x8BBE;&#x5907;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. &#x8BBE;&#x5907;&#x4FE1;&#x606F;</h2>
-<h3 id="&#x578B;&#x53F7;"><a name="&#x578B;&#x53F7;" class="anchor-navigation-ex-anchor" href="#&#x578B;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.1. &#x578B;&#x53F7;</h3>
+<h2 id="&#x8BBE;&#x5907;&#x4FE1;&#x606F;">&#x8BBE;&#x5907;&#x4FE1;&#x606F;</h2>
+<h3 id="&#x578B;&#x53F7;">&#x578B;&#x53F7;</h3>
 <pre class="language-"><code class="lang-shell">adb shell getprop ro.product.model
 </code></pre>
-<h3 id="&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;"><a name="&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;" class="anchor-navigation-ex-anchor" href="#&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.2. &#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;</h3>
+<h3 id="&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;">&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;</h3>
 <pre class="language-"><code class="lang-shell">adb shell wm size
 </code></pre>
-<h3 id="&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;"><a name="&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.3. &#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</h3>
+<h3 id="&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;">&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</h3>
 <pre class="language-"><code class="lang-shell">adb shell getprop ro.build.version.release
 </code></pre>
-<h3 id="ip&#x5730;&#x5740;"><a name="ip&#x5730;&#x5740;" class="anchor-navigation-ex-anchor" href="#ip&#x5730;&#x5740;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.4. IP&#x5730;&#x5740;</h3>
+<h3 id="ip&#x5730;&#x5740;">IP&#x5730;&#x5740;</h3>
 <pre class="language-"><code class="lang-shell">adb shell <span class="token function">ifconfig</span> <span class="token operator">|</span> <span class="token function">grep</span> Mask
 </code></pre>
-<h3 id="mac&#x5730;&#x5740;"><a name="mac&#x5730;&#x5740;" class="anchor-navigation-ex-anchor" href="#mac&#x5730;&#x5740;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.5. MAC&#x5730;&#x5740;</h3>
+<h3 id="mac&#x5730;&#x5740;">MAC&#x5730;&#x5740;</h3>
 <pre class="language-"><code class="lang-shell">adb shell <span class="token function">cat</span> /sys/class/net/wlan0/address
 </code></pre>
-<h3 id="&#x5185;&#x5B58;&#x4FE1;&#x606F;"><a name="&#x5185;&#x5B58;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x5B58;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.6. &#x5185;&#x5B58;&#x4FE1;&#x606F;</h3>
+<h3 id="&#x5185;&#x5B58;&#x4FE1;&#x606F;">&#x5185;&#x5B58;&#x4FE1;&#x606F;</h3>
 <pre class="language-"><code class="lang-shell">adb shell <span class="token function">cat</span> /proc/meminfo
 </code></pre>
-<h2 id="&#x5B9E;&#x7528;&#x529F;&#x80FD;"><a name="&#x5B9E;&#x7528;&#x529F;&#x80FD;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x7528;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. &#x5B9E;&#x7528;&#x529F;&#x80FD;</h2>
-<h3 id="&#x622A;&#x5C4F;"><a name="&#x622A;&#x5C4F;" class="anchor-navigation-ex-anchor" href="#&#x622A;&#x5C4F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.1. &#x622A;&#x5C4F;</h3>
+<h2 id="&#x5B9E;&#x7528;&#x529F;&#x80FD;">&#x5B9E;&#x7528;&#x529F;&#x80FD;</h2>
+<h3 id="&#x622A;&#x5C4F;">&#x622A;&#x5C4F;</h3>
 <p><strong>&#x622A;&#x5C4F;&#x4FDD;&#x5B58;&#x5230;&#x7535;&#x8111;&#x672C;&#x5730;&#xFF1A;</strong></p>
 <pre class="language-"><code class="lang-shell">adb exec-out screencap -p <span class="token operator">&gt;</span> sc.png
 </code></pre>
@@ -5955,23 +5873,23 @@ adb shell am broadcast -a ADB_INPUT_TEXT --es msg <span class="token string">&ap
 <p><strong>&#x622A;&#x5C4F;&#x4FDD;&#x5B58;&#x5230;&#x8BBE;&#x5907;&#x672C;&#x5730;&#xFF1A;</strong></p>
 <pre class="language-"><code class="lang-shell">adb shell screencap -p /sdcard/sc.png
 </code></pre>
-<h3 id="&#x5F55;&#x5C4F;"><a name="&#x5F55;&#x5C4F;" class="anchor-navigation-ex-anchor" href="#&#x5F55;&#x5C4F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.2. &#x5F55;&#x5C4F;</h3>
+<h3 id="&#x5F55;&#x5C4F;">&#x5F55;&#x5C4F;</h3>
 <pre class="language-"><code class="lang-shell">adb shell screenrecord /sdcard/filename.mp4
 </code></pre>
 <p>&#x901A;&#x8FC7;<code>Ctrl + C</code> &#x624B;&#x52A8;&#x505C;&#x6B62;&#xFF0C;&#x9ED8;&#x8BA4;&#x5F55;&#x5236;&#x65F6;&#x95F4;&#x548C;&#x6700;&#x957F;&#x5F55;&#x5236;&#x65F6;&#x95F4;&#x90FD;&#x662F; 180 &#x79D2;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>adb pull</code>&#x4F20;&#x9012;&#x5230;&#x7535;&#x8111;&#x4E0A;&#x3002;</p>
-<h3 id="&#x67E5;&#x770B;wi-fi&#x5BC6;&#x7801;"><a name="&#x67E5;&#x770B;wi-fi&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;wi-fi&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.3. &#x67E5;&#x770B;WI-FI&#x5BC6;&#x7801;</h3>
+<h3 id="&#x67E5;&#x770B;wi-fi&#x5BC6;&#x7801;">&#x67E5;&#x770B;WI-FI&#x5BC6;&#x7801;</h3>
 <pre class="language-"><code class="lang-shell"><span class="token comment"># root&#x6743;&#x9650;</span>
 
 adb shell <span class="token function">cat</span> <span class="token string">&quot;/data/misc/wifi/*.conf&quot;</span>
 <span class="token comment"># or</span>
 adb shell <span class="token function">cat</span> /data/misc/wifi/WifiConfigStore.xml
 </code></pre>
-<h3 id="&#x5F00;&#x542F;&#x5173;&#x95ED;wi-fi"><a name="&#x5F00;&#x542F;&#x5173;&#x95ED;wi-fi" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x542F;&#x5173;&#x95ED;wi-fi"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.4. &#x5F00;&#x542F;/&#x5173;&#x95ED;WI-FI</h3>
+<h3 id="&#x5F00;&#x542F;&#x5173;&#x95ED;wi-fi">&#x5F00;&#x542F;/&#x5173;&#x95ED;WI-FI</h3>
 <pre class="language-"><code class="lang-shell"><span class="token comment"># root&#x6743;&#x9650;</span>
 adb shell svc wifi <span class="token builtin class-name">enable</span>
 adb shell svc wifi disable
 </code></pre>
-<h3 id="&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;"><a name="&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.5. &#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</h3>
+<h3 id="&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;">&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</h3>
 <pre class="language-"><code class="lang-shell"><span class="token comment"># root&#x6743;&#x9650;</span>
 adb shell <span class="token function">date</span> -s <span class="token number">20160823.131500</span>
 </code></pre>
@@ -5981,18 +5899,18 @@ adb shell settings put global auto_time <span class="token number">0</span>
 <span class="token comment"># &#x4FEE;&#x6539;&#x65F6;&#x95F4; date $(date +%m%d%H%M%Y.%S)</span>
 adb shell <span class="token function">date</span> 031313012023.13
 </code></pre>
-<h3 id="&#x91CD;&#x542F;"><a name="&#x91CD;&#x542F;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x542F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.6. &#x91CD;&#x542F;</h3>
+<h3 id="&#x91CD;&#x542F;">&#x91CD;&#x542F;</h3>
 <pre class="language-"><code class="lang-shell">adb <span class="token function">reboot</span>
 </code></pre>
-<h3 id="&#x67E5;&#x770B;&#x8FDB;&#x7A0B;"><a name="&#x67E5;&#x770B;&#x8FDB;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x8FDB;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10.7. &#x67E5;&#x770B;&#x8FDB;&#x7A0B;</h3>
+<h3 id="&#x67E5;&#x770B;&#x8FDB;&#x7A0B;">&#x67E5;&#x770B;&#x8FDB;&#x7A0B;</h3>
 <pre class="language-"><code class="lang-shell">adb shell <span class="token function">ps</span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2023-04-12 09:57:49
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -6009,30 +5927,29 @@ adb shell <span class="token function">date</span> 031313012023.13
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="../00.前置基础知识/02.HTTP单向验证+双向验证解释.html" class="navigation navigation-prev " aria-label="Previous page: 02.HTTP单向验证+双向验证解释">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../02.drozer测试四大组件/" class="navigation navigation-next " aria-label="Next page: 02.drozer测试四大组件">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="../00.前置基础知识/02.HTTP单向验证+双向验证解释.html" class="navigation navigation-prev " aria-label="Previous page: 02.HTTP单向验证+双向验证解释">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="../02.drozer测试四大组件/" class="navigation navigation-next " aria-label="Next page: 02.drozer测试四大组件">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"01.adb使用","level":"1.5.2","depth":2,"next":{"title":"02.drozer测试四大组件","level":"1.5.3","depth":2,"path":"个人知识库/04.移动安全/02.drozer测试四大组件/README.md","ref":"个人知识库/04.移动安全/02.drozer测试四大组件/README.md","articles":[]},"previous":{"title":"02.HTTP单向验证+双向验证解释","level":"1.5.1.2","depth":3,"path":"个人知识库/04.移动安全/00.前置基础知识/02.HTTP单向验证+双向验证解释.md","ref":"个人知识库/04.移动安全/00.前置基础知识/02.HTTP单向验证+双向验证解释.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/04.移动安全/01.adb使用/README.md","mtime":"2023-04-12T01:57:49.584Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"01.adb使用","level":"1.5.2","depth":2,"next":{"title":"02.drozer测试四大组件","level":"1.5.3","depth":2,"path":"个人知识库/04.移动安全/02.drozer测试四大组件/README.md","ref":"个人知识库/04.移动安全/02.drozer测试四大组件/README.md","articles":[]},"previous":{"title":"02.HTTP单向验证+双向验证解释","level":"1.5.1.2","depth":3,"path":"个人知识库/04.移动安全/00.前置基础知识/02.HTTP单向验证+双向验证解释.md","ref":"个人知识库/04.移动安全/00.前置基础知识/02.HTTP单向验证+双向验证解释.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/04.移动安全/01.adb使用/README.md","mtime":"2023-04-12T01:57:49.584Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -6042,31 +5959,7 @@ adb shell <span class="token function">date</span> 031313012023.13
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -6078,11 +5971,27 @@ adb shell <span class="token function">date</span> 031313012023.13
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -6091,6 +6000,10 @@ adb shell <span class="token function">date</span> 031313012023.13
     
         
         <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -6114,11 +6027,11 @@ adb shell <span class="token function">date</span> 031313012023.13
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

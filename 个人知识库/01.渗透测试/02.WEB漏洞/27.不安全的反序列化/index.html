@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>27.不安全的反序列化 · d4m1ts 知识库</title>
+        <title>27.不安全的反序列化 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="../26.越权漏洞/" />
     
 
-    
-        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,34 +4731,20 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><b>1.1. </b>&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;"><b>1.2. </b>&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x73B0;&#x8FC7;&#x7A0B;"><b>1.3. </b>&#x590D;&#x73B0;&#x8FC7;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;"><b>1.3.1. </b>pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#&#x9B54;&#x672F;&#x65B9;&#x6CD5;-reduce"><b>1.3.2. </b>&#x9B54;&#x672F;&#x65B9;&#x6CD5; __reduce__()</a></li><li><span class="title-icon "></span><a href="#&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;"><b>1.3.3. </b>&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;"><b>1.4. </b>&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;"><b>1.5. </b>&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;">&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</a><i></i></div></li>
-<li><div><a href="#&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;">&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;</a><i></i></div></li>
-<li><div><a href="#&#x590D;&#x73B0;&#x8FC7;&#x7A0B;">&#x590D;&#x73B0;&#x8FC7;&#x7A0B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;">pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;</a><i></i></div></li>
-<li><div><a href="#&#x9B54;&#x672F;&#x65B9;&#x6CD5;-reduce">&#x9B54;&#x672F;&#x65B9;&#x6CD5; <strong>reduce</strong>()</a><i></i></div></li>
-<li><div><a href="#&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;">&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;">&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;</a><i></i></div></li>
-<li><div><a href="#&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;">&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;</a><i></i></div></li>
-</ul>
-</div>
-
-<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><a name="&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;">&#x4EC0;&#x4E48;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</h2>
 <p>&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x662F;&#x6307;&#x7528;&#x4E8E;&#x5C06;&#x5BF9;&#x8C61;&#x6216;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x8282;&#x6D41;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x4E0D;&#x540C;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x4F20;&#x8F93;&#x6216;&#x5B58;&#x50A8;&#xFF0C;&#x5E76;&#x5728;&#x9700;&#x8981;&#x65F6;&#x91CD;&#x65B0;&#x6784;&#x9020;&#x3002;</p>
 <p><strong>&#x5E8F;&#x5217;&#x5316;&#x662F;&#x6307;&#x5C06;&#x5BF9;&#x8C61;&#x6216;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x8282;&#x6D41;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</strong>&#x5728;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x548C;&#x6570;&#x636E;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x7CFB;&#x5217;&#x5B57;&#x8282;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x4F20;&#x8F93;&#x6216;&#x5B58;&#x50A8;&#x3002;&#x5E8F;&#x5217;&#x5316;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x5C06;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5230;&#x78C1;&#x76D8;&#x6216;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x53D1;&#x9001;&#x5230;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x3002;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x5B57;&#x8282;&#x6D41;&#x53EF;&#x4EE5;&#x88AB;&#x4FDD;&#x5B58;&#x4E0B;&#x6765;&#xFF0C;&#x4EE5;&#x540E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x5BF9;&#x8C61;&#x5E76;&#x6062;&#x590D;&#x5176;&#x72B6;&#x6001;&#x548C;&#x6570;&#x636E;&#x3002;</p>
 <p><strong>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x662F;&#x6307;&#x5C06;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x5B57;&#x8282;&#x6D41;&#x8F6C;&#x6362;&#x56DE;&#x5BF9;&#x8C61;&#x6216;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</strong>&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5B57;&#x8282;&#x6D41;&#x88AB;&#x8BFB;&#x53D6;&#x5E76;&#x89E3;&#x6790;&#xFF0C;&#x4EE5;&#x8FD8;&#x539F;&#x4E3A;&#x539F;&#x59CB;&#x7684;&#x5BF9;&#x8C61;&#x6216;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x4ECE;&#x78C1;&#x76D8;&#x52A0;&#x8F7D;&#x4FDD;&#x5B58;&#x7684;&#x5BF9;&#x8C61;&#x6216;&#x63A5;&#x6536;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#x3002;&#x901A;&#x8FC7;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x5BF9;&#x8C61;&#x5E76;&#x6062;&#x590D;&#x5176;&#x4E4B;&#x524D;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x72B6;&#x6001;&#x548C;&#x6570;&#x636E;&#x3002;</p>
 <p>&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5728;&#x8BB8;&#x591A;&#x9886;&#x57DF;&#x90FD;&#x6709;&#x5E7F;&#x6CDB;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x3001;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x3001;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x4EE5;&#x53CA;&#x8DE8;&#x5E73;&#x53F0;&#x901A;&#x4FE1;&#x3002;&#x5B83;&#x4EEC;&#x5141;&#x8BB8;&#x5C06;&#x590D;&#x6742;&#x7684;&#x5BF9;&#x8C61;&#x6216;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x8282;&#x6D41;&#x8FDB;&#x884C;&#x4F20;&#x8F93;&#x6216;&#x5B58;&#x50A8;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x548C;&#x5171;&#x4EAB;&#x3002;</p>
-<h2 id="&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;"><a name="&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;</h2>
+<h2 id="&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;">&#x6F0F;&#x6D1E;&#x4ECB;&#x7ECD;</h2>
 <p>&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x662F;&#x6307;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#x5B58;&#x5728;&#x6F5C;&#x5728;&#x5B89;&#x5168;&#x98CE;&#x9669;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x63A7;&#xFF0C;&#x5728;&#x4F20;&#x9012;&#x7ED9;&#x5E94;&#x7528;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6267;&#x884C;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x6216;&#x89E6;&#x53D1;&#x5176;&#x4ED6;&#x4E0D;&#x53D7;&#x63A7;&#x5236;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
 <p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x4E0D;&#x5B89;&#x5168;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x60C5;&#x51B5;&#xFF1A;</p>
 <ol>
@@ -4771,11 +4753,11 @@
 <li><strong>&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x903B;&#x8F91;</strong>&#xFF1A;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x903B;&#x8F91;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x5B89;&#x5168;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x5E93;&#x6216;&#x6846;&#x67B6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x3002;&#x81EA;&#x5B9A;&#x4E49;&#x903B;&#x8F91;&#x53EF;&#x80FD;&#x7F3A;&#x4E4F;&#x5FC5;&#x8981;&#x7684;&#x5B89;&#x5168;&#x9A8C;&#x8BC1;&#x548C;&#x8FC7;&#x6EE4;&#x6B65;&#x9AA4;&#xFF0C;&#x4ECE;&#x800C;&#x5BB9;&#x6613;&#x53D7;&#x5230;&#x653B;&#x51FB;&#x3002;</li>
 <li><strong>&#x6076;&#x610F;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;</strong>&#xFF1A;&#x5982;&#x679C;&#x653B;&#x51FB;&#x8005;&#x80FD;&#x591F;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x4E2D;&#x63D0;&#x4F9B;&#x6076;&#x610F;&#x6784;&#x9020;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6216;&#x5176;&#x4ED6;&#x4E0D;&#x53D7;&#x63A7;&#x5236;&#x7684;&#x884C;&#x4E3A;&#x3002;</li>
 </ol>
-<h2 id="&#x590D;&#x73B0;&#x8FC7;&#x7A0B;"><a name="&#x590D;&#x73B0;&#x8FC7;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x73B0;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x590D;&#x73B0;&#x8FC7;&#x7A0B;</h2>
+<h2 id="&#x590D;&#x73B0;&#x8FC7;&#x7A0B;">&#x590D;&#x73B0;&#x8FC7;&#x7A0B;</h2>
 <p>&#x7F51;&#x4E0A;&#x5927;&#x591A;&#x662F;&#x91C7;&#x7528;&#x7684;php&#x8FDB;&#x884C;&#x590D;&#x73B0;&#xFF0C;&#x4E00;&#x641C;&#x4E00;&#x5927;&#x5806;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7528;Python&#x7684;<code>pickle</code>&#x6A21;&#x5757;&#x6765;&#x8FDB;&#x884C;&#x590D;&#x73B0;&#x3002;</p>
-<h3 id="pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;"><a name="pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;</h3>
+<h3 id="pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;">pickle&#x6A21;&#x5757;&#x4ECB;&#x7ECD;</h3>
 <p>&#x53C2;&#x8003; <a href="https://docs.python.org/zh-cn/3/library/pickle.html" target="_blank">doc</a>&#xFF0C;&#x53EF;&#x89C1;&#x662F;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x5316;&#x6A21;&#x5757;&#x3002;</p>
-<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;31146958.png" data-lightbox="7457d0d8-4aeb-4cbf-8cfc-a6eb04847a20" data-title="pickle doc"><img src="README.assets/image-20230522&#x4E0B;&#x5348;31146958.png" alt="pickle doc"></a></p>
+<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;31146958.png" data-lightbox="f861f9dd-890d-4900-baa2-b2b479c74d4d" data-title="pickle doc"><img src="README.assets/image-20230522&#x4E0B;&#x5348;31146958.png" alt="pickle doc"></a></p>
 <p>&#x57FA;&#x7840;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">import</span> pickle
 
@@ -4802,8 +4784,8 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;name: </span><span class="token interpolation"><span class="token punctuation">{</span>deserialized_person<span class="token punctuation">.</span>name<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>  <span class="token comment"># &#x8F93;&#x51FA;: d4m1ts</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;age: </span><span class="token interpolation"><span class="token punctuation">{</span>deserialized_person<span class="token punctuation">.</span>age<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>  <span class="token comment"># &#x8F93;&#x51FA;: 18</span>
 </code></pre>
-<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;32623062.png" data-lightbox="d13544e5-9942-495e-8014-58e14c56a55b" data-title="data"><img src="README.assets/image-20230522&#x4E0B;&#x5348;32623062.png" alt="data"></a></p>
-<h3 id="&#x9B54;&#x672F;&#x65B9;&#x6CD5;-reduce"><a name="&#x9B54;&#x672F;&#x65B9;&#x6CD5;-reduce" class="anchor-navigation-ex-anchor" href="#&#x9B54;&#x672F;&#x65B9;&#x6CD5;-reduce"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x9B54;&#x672F;&#x65B9;&#x6CD5; __reduce__()</h3>
+<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;32623062.png" data-lightbox="a518bd07-c15e-4d6a-8a72-810a784a4e8b" data-title="data"><img src="README.assets/image-20230522&#x4E0B;&#x5348;32623062.png" alt="data"></a></p>
+<h3 id="&#x9B54;&#x672F;&#x65B9;&#x6CD5;-reduce">&#x9B54;&#x672F;&#x65B9;&#x6CD5; <code>__reduce__()</code></h3>
 <p>&#x5728;Python&#x4E2D;&#xFF0C;<code>__reduce__()</code>&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x884C;&#x4E3A;&#x3002;&#x5F53;&#x4F7F;&#x7528;<code>pickle</code>&#x6A21;&#x5757;&#x5BF9;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x65F6;&#xFF0C;<code>__reduce__()</code>&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
 <p><code>__reduce__()</code>&#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;<code>()</code>&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6216;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x5143;&#x7EC4;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x7528;&#x4E8E;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x4F20;&#x9012;&#x7ED9;&#x6784;&#x5EFA;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#xFF09;&#xFF0C;&#x800C;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x662F;&#x7528;&#x4E8E;&#x6062;&#x590D;&#x5BF9;&#x8C61;&#x72B6;&#x6001;&#x7684;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x3002;</p>
 <p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x91CD;&#x5199;<code>__reduse__()</code>&#x51FD;&#x6570;&#xFF0C;&#x6765;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
@@ -4840,8 +4822,8 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;age: </span><span class="token interpolation"><span class="token punctuation">{</span>deserialized_person<span class="token punctuation">.</span>age<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>  <span class="token comment"># &#x8F93;&#x51FA;: 18</span>
 </code></pre>
 <p>&#x53EF;&#x89C1;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x662F;&#x6211;&#x4EEC;&#x91CD;&#x5199;&#x65F6;&#x7528;&#x7684;<code>print</code>&#x65B9;&#x6CD5;&#x3002;</p>
-<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;40526211.png" data-lightbox="cc1c071e-1a8f-4d1c-8d83-f3baffe5fdfe" data-title="unser"><img src="README.assets/image-20230522&#x4E0B;&#x5348;40526211.png" alt="unser"></a></p>
-<h3 id="&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;"><a name="&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;</h3>
+<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;40526211.png" data-lightbox="ee796da1-a5ba-473d-bc49-254260e70499" data-title="unser"><img src="README.assets/image-20230522&#x4E0B;&#x5348;40526211.png" alt="unser"></a></p>
+<h3 id="&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;">&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#x590D;&#x73B0;</h3>
 <p>&#x5047;&#x8BBE;&#x6F0F;&#x6D1E;&#x573A;&#x666F;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF0C;&#x5176;&#x4E2D;<code>userInput</code>&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x8F93;&#x5165;&#x7684;&#x5730;&#x65B9;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">import</span> pickle
 <span class="token keyword">import</span> base64
@@ -4886,19 +4868,19 @@ userInput <span class="token operator">=</span> <span class="token string">&quot
 deserialized_person <span class="token operator">=</span> pickle<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>base64<span class="token punctuation">.</span>b64decode<span class="token punctuation">(</span>userInput<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x5BF9;&#x8C61;&#x6240;&#x5C5E;&#x7C7B;: </span><span class="token interpolation"><span class="token punctuation">{</span>deserialized_person<span class="token punctuation">.</span>__class__<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
 </code></pre>
-<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;41822212.png" data-lightbox="044ff158-0faf-4593-a7b7-734035118261" data-title="success"><img src="README.assets/image-20230522&#x4E0B;&#x5348;41822212.png" alt="success"></a></p>
+<p><a href="README.assets/image-20230522&#x4E0B;&#x5348;41822212.png" data-lightbox="b94b7370-bb53-4c81-a086-567f16d75006" data-title="success"><img src="README.assets/image-20230522&#x4E0B;&#x5348;41822212.png" alt="success"></a></p>
 <p>&#x53EF;&#x89C1;&#x6210;&#x529F;&#x6267;&#x884C;&#x4E86;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x3002;</p>
 <blockquote>
 <p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x590D;&#x73B0;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C31;&#x662F;&#x5199;&#x4E00;&#x4E2A;<code>__reduse__</code>&#x51FD;&#x6570;&#x6765;&#x6539;&#x53D8;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x884C;&#x4E3A;&#x5373;&#x53EF;&#x3002;</p>
 </blockquote>
-<h2 id="&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;"><a name="&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;" class="anchor-navigation-ex-anchor" href="#&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x6F0F;&#x6D1E;&#x5371;&#x5BB3;</h2>
+<h2 id="&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;">&#x6F0F;&#x6D1E;&#x5371;&#x5BB3;</h2>
 <ol>
 <li>&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x6267;&#x884C;&#xFF1A;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x6076;&#x610F;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#x6CE8;&#x5165;&#x548C;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x4EE3;&#x7801;&#xFF0C;&#x4ECE;&#x800C;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#x76EE;&#x6807;&#x7CFB;&#x7EDF;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x6076;&#x610F;&#x64CD;&#x4F5C;&#x3002;</li>
 <li>&#x8FDC;&#x7A0B;&#x547D;&#x4EE4;&#x6267;&#x884C;&#xFF1A;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6F0F;&#x6D1E;&#x5728;&#x76EE;&#x6807;&#x7CFB;&#x7EDF;&#x4E0A;&#x6267;&#x884C;&#x8FDC;&#x7A0B;&#x547D;&#x4EE4;&#xFF0C;&#x4ECE;&#x800C;&#x5BF9;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x6216;&#x7F51;&#x7EDC;&#x8D44;&#x6E90;&#x9020;&#x6210;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x5A01;&#x80C1;&#x3002;</li>
 <li>&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#xFF1A;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6F0F;&#x6D1E;&#x8BFB;&#x53D6;&#x548C;&#x83B7;&#x53D6;&#x76EE;&#x6807;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x6570;&#x636E;&#x5E93;&#x51ED;&#x636E;&#x3001;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x3001;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x7B49;&#x3002;</li>
 <li>&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#xFF08;DoS&#xFF09;&#x653B;&#x51FB;&#xFF1A;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#x6076;&#x610F;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#x6765;&#x89E6;&#x53D1;&#x5F02;&#x5E38;&#x6216;&#x6D88;&#x8017;&#x8FC7;&#x591A;&#x7684;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#xFF0C;&#x5BFC;&#x81F4;&#x7CFB;&#x7EDF;&#x5D29;&#x6E83;&#x6216;&#x65E0;&#x6CD5;&#x63D0;&#x4F9B;&#x6B63;&#x5E38;&#x7684;&#x670D;&#x52A1;&#x3002;</li>
 </ol>
-<h2 id="&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;"><a name="&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x4FEE;&#x590D;&#x5EFA;&#x8BAE;</h2>
+<h2 id="&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;">&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;</h2>
 <ul>
 <li>&#x4F7F;&#x7528;&#x5B89;&#x5168;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x5E93;&#x6216;&#x6846;&#x67B6;&#xFF0C;&#x8FD9;&#x4E9B;&#x5E93;&#x7ECF;&#x8FC7;&#x4E25;&#x683C;&#x6D4B;&#x8BD5;&#x548C;&#x5BA1;&#x67E5;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x9002;&#x5F53;&#x7684;&#x5B89;&#x5168;&#x9632;&#x62A4;&#x673A;&#x5236;&#x3002;</li>
 <li>&#x5BF9;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x4E25;&#x683C;&#x7684;&#x9A8C;&#x8BC1;&#x548C;&#x8FC7;&#x6EE4;&#xFF0C;&#x53EA;&#x63A5;&#x53D7;&#x9884;&#x671F;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x548C;&#x5185;&#x5BB9;&#x3002;</li>
@@ -4908,10 +4890,10 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2023-05-22 16:29:43
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -4928,30 +4910,29 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="../26.越权漏洞/" class="navigation navigation-prev " aria-label="Previous page: 26.越权漏洞">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../28.任意URL跳转/" class="navigation navigation-next " aria-label="Next page: 28.任意URL跳转">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="../26.越权漏洞/" class="navigation navigation-prev " aria-label="Previous page: 26.越权漏洞">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="../28.任意URL跳转/" class="navigation navigation-next " aria-label="Next page: 28.任意URL跳转">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"27.不安全的反序列化","level":"1.2.2.27","depth":3,"next":{"title":"28.任意URL跳转","level":"1.2.2.28","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/28.任意URL跳转/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/28.任意URL跳转/README.md","articles":[]},"previous":{"title":"26.越权漏洞","level":"1.2.2.26","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/27.不安全的反序列化/README.md","mtime":"2023-05-22T08:29:43.087Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"27.不安全的反序列化","level":"1.2.2.27","depth":3,"next":{"title":"28.任意URL跳转","level":"1.2.2.28","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/28.任意URL跳转/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/28.任意URL跳转/README.md","articles":[]},"previous":{"title":"26.越权漏洞","level":"1.2.2.26","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/27.不安全的反序列化/README.md","mtime":"2023-05-22T08:29:43.087Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4961,31 +4942,7 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
     <script src="../../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4997,11 +4954,27 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5010,6 +4983,10 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
     
         
         <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -5033,11 +5010,11 @@ deserialized_person <span class="token operator">=</span> pickle<span class="tok
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>25.XPATH注入 · d4m1ts 知识库</title>
+        <title>25.XPATH注入 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="../24.列目录漏洞/" />
     
 
-    
-        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,36 +4731,26 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1.1. </b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#xpath&#x8BED;&#x6CD5;"><b>1.2. </b>XPath&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x653B;&#x51FB;&#x4E3E;&#x4F8B;"><b>1.3. </b>&#x653B;&#x51FB;&#x4E3E;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;"><b>1.4. </b>&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;</a></li><li><span class="title-icon "></span><a href="#&#x9632;&#x5FA1;"><b>1.5. </b>&#x9632;&#x5FA1;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.6. </b>&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</a><i></i></div></li>
-<li><div><a href="#xpath&#x8BED;&#x6CD5;">XPath&#x8BED;&#x6CD5;</a><i></i></div></li>
-<li><div><a href="#&#x653B;&#x51FB;&#x4E3E;&#x4F8B;">&#x653B;&#x51FB;&#x4E3E;&#x4F8B;</a><i></i></div></li>
-<li><div><a href="#&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;">&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;</a><i></i></div></li>
-<li><div><a href="#&#x9632;&#x5FA1;">&#x9632;&#x5FA1;</a><i></i></div></li>
-<li><div><a href="#&#x53C2;&#x8003;">&#x53C2;&#x8003;</a><i></i></div></li>
-</ul>
-</div>
-
-<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B80;&#x4ECB;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
 <p>XPath &#x662F;&#x4E00;&#x95E8;&#x5728; XML &#x6587;&#x6863;&#x4E2D;&#x67E5;&#x627E;&#x4FE1;&#x606F;&#x7684;&#x8BED;&#x8A00;&#x3002;</p>
 <p>XPath&#x6CE8;&#x5165;&#x4E5F;&#x662F;&#x6CE8;&#x5165;&#xFF0C;&#x4E5F;&#x662F;&#x8F93;&#x5165;&#x4E00;&#x4E9B;&#x6076;&#x610F;&#x7684;&#x67E5;&#x8BE2;&#x7B49;&#x4EE3;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4ECE;&#x800C;&#x5BF9;&#x7F51;&#x7AD9;&#x8FDB;&#x884C;&#x653B;&#x51FB;&#x3002;</p>
 <p>XPath&#x6CE8;&#x5165;&#x653B;&#x51FB;&#x662F;&#x6307;&#x5229;&#x7528;XPath&#x89E3;&#x6790;&#x5668;&#x7684;&#x677E;&#x6563;&#x8F93;&#x5165;&#x548C;&#x5BB9;&#x9519;&#x7279;&#x6027;&#xFF0C;&#x80FD;&#x591F;&#x5728; URL&#x3001;&#x8868;&#x5355;&#x6216;&#x5176;&#x5B83;&#x4FE1;&#x606F;&#x4E0A;&#x9644;&#x5E26;&#x6076;&#x610F;&#x7684;XPath &#x67E5;&#x8BE2;&#x4EE3;&#x7801;&#xFF0C;&#x4EE5;&#x83B7;&#x5F97;&#x6743;&#x9650;&#x4FE1;&#x606F;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x5E76;&#x66F4;&#x6539;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x3002;XPath&#x6CE8;&#x5165;&#x653B;&#x51FB;&#x662F;&#x9488;&#x5BF9;Web&#x670D;&#x52A1;&#x5E94;&#x7528;&#x65B0;&#x7684;&#x653B;&#x51FB;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x653B;&#x51FB;&#x8005;&#x5728;&#x4E8B;&#x5148;&#x4E0D;&#x77E5;&#x9053;XPath&#x67E5;&#x8BE2;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x901A;&#x8FC7;XPath&#x67E5;&#x8BE2;&#x5F97;&#x5230;&#x4E00;&#x4E2A;XML&#x6587;&#x6863;&#x7684;&#x5B8C;&#x6574;&#x5185;&#x5BB9;&#x3002;</p>
 <blockquote>
 <p>&#x9047;&#x5230;&#x7684;&#x5E38;&#x89C1;&#x6BD4;&#x8F83;&#x5C11;&#xFF0C;&#x611F;&#x89C9;&#x51E0;&#x4E4E;&#x6CA1;&#x4EBA;&#x8FD9;&#x6837;&#x505A;&#x3002;&#x3002;&#x3002;</p>
 </blockquote>
-<h2 id="xpath&#x8BED;&#x6CD5;"><a name="xpath&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#xpath&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. XPath&#x8BED;&#x6CD5;</h2>
+<h2 id="xpath&#x8BED;&#x6CD5;">XPath&#x8BED;&#x6CD5;</h2>
 <ul>
 <li><a href="https://www.runoob.com/xpath/xpath-tutorial.html" target="_blank">XPath&#x6559;&#x7A0B;</a></li>
 </ul>
-<h2 id="&#x653B;&#x51FB;&#x4E3E;&#x4F8B;"><a name="&#x653B;&#x51FB;&#x4E3E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x653B;&#x51FB;&#x4E3E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x653B;&#x51FB;&#x4E3E;&#x4F8B;</h2>
+<h2 id="&#x653B;&#x51FB;&#x4E3E;&#x4F8B;">&#x653B;&#x51FB;&#x4E3E;&#x4F8B;</h2>
 <p>XPath&#x6CE8;&#x5165;&#x653B;&#x51FB;&#x4E3B;&#x8981;&#x662F;&#x901A;&#x8FC7;&#x6784;&#x5EFA;&#x7279;&#x6B8A;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x8FD9;&#x4E9B;&#x8F93;&#x5165;&#x5F80;&#x5F80;&#x662F;XPath&#x8BED;&#x6CD5;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x7EC4;&#x5408;&#xFF0C;&#x8FD9;&#x4E9B;&#x8F93;&#x5165;&#x5C06;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165;Web &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x8FC7;&#x6267;&#x884C;XPath&#x67E5;&#x8BE2;&#x800C;&#x6267;&#x884C;&#x5165;&#x4FB5;&#x8005;&#x60F3;&#x8981;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
 <hr>
 <p>&#x4E0B;&#x9762;&#x4EE5;&#x767B;&#x5F55;&#x9A8C;&#x8BC1;&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x4E3A;&#x4F8B;&#xFF0C;&#x8BF4;&#x660E;XPath&#x6CE8;&#x5165;&#x653B;&#x51FB;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x3002;</p>
@@ -4793,11 +4779,11 @@
 </code></pre><p>&#x5408;&#x5E76;&#x4E00;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-xquery"><span class="token punctuation">/</span><span class="token punctuation">/</span>users<span class="token punctuation">/</span>user<span class="token punctuation">[</span>loginID<span class="token punctuation">/</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token keyword-operator operator">or</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span> <span class="token keyword-operator operator">or</span> <span class="token string">&apos;&apos;</span><span class="token operator">=</span><span class="token string">&apos;&apos;</span> <span class="token keyword-operator operator">and</span> password<span class="token punctuation">/</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token string">&apos;&apos;</span> <span class="token keyword-operator operator">or</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span> <span class="token keyword-operator operator">or</span> <span class="token string">&apos;&apos;</span><span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">]</span>
 </code></pre>
-<h2 id="&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;"><a name="&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;</h2>
+<h2 id="&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;">&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;</h2>
 <ul>
 <li><a href="https://xcat.readthedocs.io/en/latest/" target="_blank">xcat</a></li>
 </ul>
-<h2 id="&#x9632;&#x5FA1;"><a name="&#x9632;&#x5FA1;" class="anchor-navigation-ex-anchor" href="#&#x9632;&#x5FA1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x9632;&#x5FA1;</h2>
+<h2 id="&#x9632;&#x5FA1;">&#x9632;&#x5FA1;</h2>
 <ol>
 <li>&#x53C2;&#x6570;&#x5316;</li>
 <li>&#x6570;&#x636E;&#x63D0;&#x4EA4;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7AEF;&#xFF0C;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x6B63;&#x5F0F;&#x5904;&#x7406;&#x8FD9;&#x6279;&#x6570;&#x636E;&#x4E4B;&#x524D;&#xFF0C;&#x5BF9;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x7684;&#x5408;&#x6CD5;&#x6027;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;</li>
@@ -4805,16 +4791,16 @@
 <li>&#x5BF9;&#x4E8E;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;IE&#x9519;&#x8BEF;&#x7F16;&#x7801;&#x4FE1;&#x606F;&#x66FF;&#x6362;&#xFF0C;&#x5C4F;&#x853D;&#x7CFB;&#x7EDF;&#x672C;&#x8EAB;&#x7684;&#x51FA;&#x9519;&#x4FE1;&#x606F;</li>
 <li>&#x901A;&#x8FC7;MD5&#x3001;SSL&#x7B49;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x5BF9;&#x4E8E;&#x6570;&#x636E;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x548C;&#x5728;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x8FC7;&#x7A0B;&#x4E2D;&#x52A0;&#x5BC6;&#xFF0C;&#x5373;&#x4F7F;&#x67D0;&#x4E9B;&#x975E;&#x6CD5;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x975E;&#x6CD5;&#x624B;&#x6CD5;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x770B;&#x5230;&#x7684;&#x4E5F;&#x662F;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x4FE1;&#x606F;</li>
 </ol>
-<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://blog.csdn.net/quiet_girl/article/details/50588130" target="_blank">&#x5B89;&#x5168;&#x6D4B;&#x8BD5;&#x4E4B;XPath&#x6CE8;&#x5165;&#x653B;&#x51FB;</a></li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2022-01-08 15:12:17
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -4831,30 +4817,29 @@
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="../24.列目录漏洞/" class="navigation navigation-prev " aria-label="Previous page: 24.列目录漏洞">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../26.越权漏洞/" class="navigation navigation-next " aria-label="Next page: 26.越权漏洞">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="../24.列目录漏洞/" class="navigation navigation-prev " aria-label="Previous page: 24.列目录漏洞">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="../26.越权漏洞/" class="navigation navigation-next " aria-label="Next page: 26.越权漏洞">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"25.XPATH注入","level":"1.2.2.25","depth":3,"next":{"title":"26.越权漏洞","level":"1.2.2.26","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","articles":[]},"previous":{"title":"24.列目录漏洞","level":"1.2.2.24","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/24.列目录漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/24.列目录漏洞/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/25.XPATH注入/README.md","mtime":"2022-01-08T07:12:17.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"25.XPATH注入","level":"1.2.2.25","depth":3,"next":{"title":"26.越权漏洞","level":"1.2.2.26","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/26.越权漏洞/README.md","articles":[]},"previous":{"title":"24.列目录漏洞","level":"1.2.2.24","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/24.列目录漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/24.列目录漏洞/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/25.XPATH注入/README.md","mtime":"2022-01-08T07:12:17.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4864,31 +4849,7 @@
     <script src="../../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4900,11 +4861,27 @@
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4913,6 +4890,10 @@
     
         
         <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -4936,11 +4917,11 @@
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

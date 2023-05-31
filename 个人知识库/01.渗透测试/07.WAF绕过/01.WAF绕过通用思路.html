@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>01.WAF绕过通用思路 · d4m1ts 知识库</title>
+        <title>01.WAF绕过通用思路 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -122,37 +109,38 @@
     
     
 
-    
-        <link rel="shortcut icon" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4709,16 +4697,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4733,79 +4729,50 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x6982;&#x8FF0;"><b>1.1. </b>&#x6982;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x5927;&#x5C0F;&#x5199;"><b>1.2. </b>&#x5927;&#x5C0F;&#x5199;</a></li><li><span class="title-icon "></span><a href="#&#x53CC;&#x5199;"><b>1.3. </b>&#x53CC;&#x5199;</a></li><li><span class="title-icon "></span><a href="#&#x7F16;&#x7801;"><b>1.4. </b>&#x7F16;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x91CA;"><b>1.5. </b>&#x6CE8;&#x91CA;</a></li><li><span class="title-icon "></span><a href="#&#x5783;&#x573E;&#x5B57;&#x7B26;"><b>1.6. </b>&#x5783;&#x573E;&#x5B57;&#x7B26;</a></li><li><span class="title-icon "></span><a href="#&#x5206;&#x5757;&#x4F20;&#x8F93;"><b>1.7. </b>&#x5206;&#x5757;&#x4F20;&#x8F93;</a></li><li><span class="title-icon "></span><a href="#http&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;"><b>1.8. </b>HTTP&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;</a></li><ul><li><span class="title-icon "></span><a href="#http-09"><b>1.8.1. </b>HTTP 0.9</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;hpp&#xFF09;"><b>1.8.2. </b>&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;HPP&#xFF09;</a></li><li><span class="title-icon "></span><a href="#pipeline&#xFF08;keep-alive&#xFF09;"><b>1.8.3. </b>Pipeline&#xFF08;keep-alive&#xFF09;</a></li><li><span class="title-icon "></span><a href="#http-charset"><b>1.8.4. </b>HTTP charset</a></li></ul><li><span class="title-icon "></span><a href="#waf&#x7279;&#x6027;"><b>1.9. </b>WAF&#x7279;&#x6027;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E91;waf&#x7ED5;&#x8FC7;"><b>1.9.1. </b>&#x4E91;WAF&#x7ED5;&#x8FC7;</a></li><li><span class="title-icon "></span><a href="#&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;"><b>1.9.2. </b>&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;</a></li><li><span class="title-icon "></span><a href="#&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;"><b>1.9.3. </b>&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;</a></li><li><span class="title-icon "></span><a href="#content-type&#x7ED5;&#x8FC7;"><b>1.9.4. </b>Content-Type&#x7ED5;&#x8FC7;</a></li><li><span class="title-icon "></span><a href="#&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;"><b>1.9.5. </b>&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;"><b>1.9.6. </b>&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5BB9;&#x5668;&#x7279;&#x6027;"><b>1.10. </b>&#x5BB9;&#x5668;&#x7279;&#x6027;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.11. </b>&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</a><i></i></div></li>
-<li><div><a href="#&#x5927;&#x5C0F;&#x5199;">&#x5927;&#x5C0F;&#x5199;</a><i></i></div></li>
-<li><div><a href="#&#x53CC;&#x5199;">&#x53CC;&#x5199;</a><i></i></div></li>
-<li><div><a href="#&#x7F16;&#x7801;">&#x7F16;&#x7801;</a><i></i></div></li>
-<li><div><a href="#&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</a><i></i></div></li>
-<li><div><a href="#&#x5783;&#x573E;&#x5B57;&#x7B26;">&#x5783;&#x573E;&#x5B57;&#x7B26;</a><i></i></div></li>
-<li><div><a href="#&#x5206;&#x5757;&#x4F20;&#x8F93;">&#x5206;&#x5757;&#x4F20;&#x8F93;</a><i></i></div></li>
-<li><div><a href="#http&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;">HTTP&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#http-09">HTTP 0.9</a><i></i></div></li>
-<li><div><a href="#&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;hpp&#xFF09;">&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;HPP&#xFF09;</a><i></i></div></li>
-<li><div><a href="#pipeline&#xFF08;keep-alive&#xFF09;">Pipeline&#xFF08;keep-alive&#xFF09;</a><i></i></div></li>
-<li><div><a href="#http-charset">HTTP charset</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#waf&#x7279;&#x6027;">WAF&#x7279;&#x6027;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#&#x4E91;waf&#x7ED5;&#x8FC7;">&#x4E91;WAF&#x7ED5;&#x8FC7;</a><i></i></div></li>
-<li><div><a href="#&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;">&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;</a><i></i></div></li>
-<li><div><a href="#&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;">&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;</a><i></i></div></li>
-<li><div><a href="#content-type&#x7ED5;&#x8FC7;">Content-Type&#x7ED5;&#x8FC7;</a><i></i></div></li>
-<li><div><a href="#&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;">&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;</a><i></i></div></li>
-<li><div><a href="#&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;">&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;</a><i></i></div></li>
-</ul></li>
-<li><div><a href="#&#x5BB9;&#x5668;&#x7279;&#x6027;">&#x5BB9;&#x5668;&#x7279;&#x6027;</a><i></i></div></li>
-<li><div><a href="#&#x53C2;&#x8003;">&#x53C2;&#x8003;</a><i></i></div></li>
-</ul>
-</div>
-
-<h2 id="&#x6982;&#x8FF0;"><a name="&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6982;&#x8FF0;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
 <p>&#x901A;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x4EC5;&#x9650;&#x4E8E;SQL&#x6CE8;&#x5165;&#xFF0C;&#x5C31;&#x662F;&#x4E07;&#x91D1;&#x6CB9;&#xFF0C;&#x65E0;&#x975E;&#x5C31;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x3001;&#x53CC;&#x5199;&#x3001;&#x7F16;&#x7801;&#x3001;&#x6CE8;&#x91CA;&#x3001;&#x5783;&#x573E;&#x5B57;&#x7B26;&#x3001;&#x5206;&#x5757;&#x4F20;&#x8F93;&#x3001;HPP&#x3001;WAF&#x7279;&#x6027;&#x7B49;</p>
 <p><strong>&#x6838;&#x5FC3;&#xFF1A;</strong>&#x6240;&#x6709;&#x80FD;&#x6539;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x90FD;&#x6363;&#x9F13;&#x6363;&#x9F13;&#x6539;&#x6539;&#xFF0C;&#x589E;&#x52A0;&#x5C31;&#x52A0;&#xFF0C;&#x80FD;&#x5220;&#x5C31;&#x5220;&#xFF0C;&#x591A;&#x62FF;&#x70B9;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x6765;&#x6DF7;&#x6DC6;&#x89C6;&#x542C;&#x3002;</p>
-<h2 id="&#x5927;&#x5C0F;&#x5199;"><a name="&#x5927;&#x5C0F;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x5927;&#x5C0F;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5927;&#x5C0F;&#x5199;</h2>
+<h2 id="&#x5927;&#x5C0F;&#x5199;">&#x5927;&#x5C0F;&#x5199;</h2>
 <pre class="language-"><code class="lang-sql"><span class="token keyword">unIoN</span> <span class="token keyword">Select</span>
 </code></pre>
-<h2 id="&#x53CC;&#x5199;"><a name="&#x53CC;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x53CC;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x53CC;&#x5199;</h2>
+<h2 id="&#x53CC;&#x5199;">&#x53CC;&#x5199;</h2>
 <p>&#x4E00;&#x4E9B;&#x540E;&#x7AEF;&#x53EF;&#x80FD;&#x4F1A;&#x76F4;&#x63A5;&#x7ED9;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;&#x4E3A;&#x7A7A;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x53CC;&#x5199;&#x6765;&#x7ED5;&#x8FC7;</p>
 <pre class="language-"><code class="lang-sql">ununionion <span class="token operator">=</span><span class="token operator">=</span><span class="token operator">&gt;</span> &#x53BB;&#x6389;<span class="token keyword">union</span> <span class="token operator">=</span><span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">union</span>
 </code></pre>
-<h2 id="&#x7F16;&#x7801;"><a name="&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x7F16;&#x7801;</h2>
+<h2 id="&#x7F16;&#x7801;">&#x7F16;&#x7801;</h2>
 <ol>
 <li>URL&#x7F16;&#x7801;</li>
 <li>Unicode&#x7F16;&#x7801;</li>
 <li>&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;</li>
 <li>&#x5176;&#x4ED6;&#x540E;&#x7AEF;&#x4F1A;&#x89E3;&#x6790;&#x7684;&#x7F16;&#x7801;</li>
 </ol>
-<h2 id="&#x6CE8;&#x91CA;"><a name="&#x6CE8;&#x91CA;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x6CE8;&#x91CA;</h2>
+<h2 id="&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</h2>
 <p>&#x5982;mysql&#x4E2D;&#x7684;&#x5185;&#x8054;&#x6CE8;&#x91CA;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4EE3;&#x66FF;&#x7A7A;&#x683C;</p>
 <p>&#x6CE8;&#x91CA;&#x4E5F;&#x53EF;&#x4EE5;&#x548C;&#x6362;&#x884C;&#x642D;&#x914D;&#x4F7F;&#x7528;&#xFF0C;&#x6CE8;&#x91CA;&#x6389;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x6362;&#x884C;&#x9003;&#x9038;&#x5230;&#x6CE8;&#x91CA;&#x4E4B;&#x5916;</p>
 <pre class="language-"><code class="lang-sql">test<span class="token punctuation">.</span>php?id<span class="token operator">=</span><span class="token number">1</span> <span class="token comment">/*!order*/</span><span class="token comment">/**/</span><span class="token operator">%</span><span class="token number">23</span>A<span class="token operator">%</span><span class="token number">0</span>A<span class="token comment">/**/</span><span class="token operator">%</span><span class="token number">23</span>A<span class="token operator">%</span><span class="token number">0</span>A<span class="token comment">/*!by*/</span><span class="token comment">/**/</span><span class="token number">2</span>
 </code></pre>
-<h2 id="&#x5783;&#x573E;&#x5B57;&#x7B26;"><a name="&#x5783;&#x573E;&#x5B57;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x5783;&#x573E;&#x5B57;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x5783;&#x573E;&#x5B57;&#x7B26;</h2>
+<h2 id="&#x5783;&#x573E;&#x5B57;&#x7B26;">&#x5783;&#x573E;&#x5B57;&#x7B26;</h2>
 <p>&#x4E00;&#x4E9B;WAF&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x6EE4;&#x7684;&#x6570;&#x636E;&#x5305;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x5305;&#x592A;&#x5927;&#x592A;&#x957F;&#xFF0C;&#x4E3A;&#x4E86;&#x8003;&#x8651;&#x6027;&#x80FD;&#x5C31;&#x4F1A;&#x76F4;&#x63A5;&#x7565;&#x8FC7;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5305;</p>
 <pre class="language-"><code class="lang-http"><span class="token request-line"><span class="token property">GET</span> /foo?sqli=111...80&#x4E07;&#x4E2A;1...111&apos;+and+2*3=6+--+ HTTP/1.1</span>
 <span class="token header-name keyword">User-Agent:</span> Mozilla/5.0
 <span class="token header-name keyword">Host:</span> Host
 <span class="token header-name keyword">Accept:</span> */*
 </code></pre>
-<h2 id="&#x5206;&#x5757;&#x4F20;&#x8F93;"><a name="&#x5206;&#x5757;&#x4F20;&#x8F93;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x5757;&#x4F20;&#x8F93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x5206;&#x5757;&#x4F20;&#x8F93;</h2>
+<h2 id="&#x5206;&#x5757;&#x4F20;&#x8F93;">&#x5206;&#x5757;&#x4F20;&#x8F93;</h2>
 <p>burp&#x63D2;&#x4EF6;&#xFF1A;<a href="https://github.com/c0ny1/chunked-coding-converter.git" target="_blank">https://github.com/c0ny1/chunked-coding-converter.git</a></p>
 <p>&#x5728;&#x5934;&#x90E8;&#x52A0;&#x5165; <code>Transfer-Encoding: chunked</code> &#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4EE3;&#x8868;&#x8FD9;&#x4E2A;&#x62A5;&#x6587;&#x91C7;&#x7528;&#x4E86;&#x5206;&#x5757;&#x7F16;&#x7801;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;post&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x90E8;&#x5206;&#x9700;&#x8981;&#x6539;&#x4E3A;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x5206;&#x5757;&#x6765;&#x4F20;&#x8F93;&#x3002;&#x6BCF;&#x4E2A;&#x5206;&#x5757;&#x5305;&#x542B;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7684;&#x957F;&#x5EA6;&#x503C;&#x548C;&#x6570;&#x636E;&#xFF0C;&#x957F;&#x5EA6;&#x503C;&#x72EC;&#x5360;&#x4E00;&#x884C;&#xFF0C;&#x957F;&#x5EA6;&#x4E0D;&#x5305;&#x62EC;&#x5B83;&#x7ED3;&#x5C3E;&#x7684;&#xFF0C;&#x4E5F;&#x4E0D;&#x5305;&#x62EC;&#x5206;&#x5757;&#x6570;&#x636E;&#x7ED3;&#x5C3E;&#x7684;&#xFF0C;&#x4E14;&#x6700;&#x540E;&#x9700;&#x8981;&#x7528;0&#x72EC;&#x5360;&#x4E00;&#x884C;&#x8868;&#x793A;&#x7ED3;&#x675F;&#x3002;</p>
-<h2 id="http&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;"><a name="http&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#http&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. HTTP&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;</h2>
-<h3 id="http-09"><a name="http-09" class="anchor-navigation-ex-anchor" href="#http-09"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.1. HTTP 0.9</h3>
+<h2 id="http&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;">HTTP&#x534F;&#x8BAE;&#x7ED5;&#x8FC7;</h2>
+<h3 id="http-09">HTTP 0.9</h3>
 <p>HTTP 0.9&#x534F;&#x8BAE;&#x53EA;&#x6709;GET&#x65B9;&#x6CD5;&#xFF0C;&#x4E14;&#x6CA1;&#x6709;HEADER&#x4FE1;&#x606F;&#x7B49;&#xFF0C;WAF&#x5C31;&#x53EF;&#x80FD;&#x8BA4;&#x4E0D;&#x51FA;&#x8FD9;&#x79CD;&#x7684;&#x8BF7;&#x6C42;&#x5305;&#xFF0C;&#x4E8E;&#x662F;&#x8FBE;&#x5230;&#x7ED5;&#x8FC7;WAF&#x7684;&#x6548;&#x679C;</p>
-<h3 id="&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;hpp&#xFF09;"><a name="&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;hpp&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;hpp&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.2. &#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;HPP&#xFF09;</h3>
+<h3 id="&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;hpp&#xFF09;">&#x53C2;&#x6570;&#x6C61;&#x67D3;&#xFF08;HPP&#xFF09;</h3>
 <p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x540C;&#x540D;&#x53C2;&#x6570;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x903B;&#x8F91;&#x5C42;&#x548C;WAF&#x5C42;&#x5BF9;&#x53C2;&#x6570;&#x7684;&#x53D6;&#x503C;&#x4E0D;&#x540C;&#xFF0C;&#x5373;&#x53EF;&#x80FD;&#x903B;&#x8F91;&#x5C42;&#x4F7F;&#x7528;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x800C;WAF&#x5C42;&#x4F7F;&#x7528;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x6B63;&#x5E38;&#xFF0C;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x63D2;&#x5165;payload&#xFF0C;&#x8FD9;&#x6837;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;WAF&#xFF0C;&#x5982;&#x4E0B;&#x6570;&#x636E;&#x5305;&#xFF1A;</p>
 <pre class="language-"><code class="lang-http"><span class="token request-line"><span class="token property">GET</span> /foo?par=first&amp;par=last HTTP/1.1</span>
 <span class="token header-name keyword">User-Agent:</span> Mozilla/5.0
@@ -4849,13 +4816,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="pipeline&#xFF08;keep-alive&#xFF09;"><a name="pipeline&#xFF08;keep-alive&#xFF09;" class="anchor-navigation-ex-anchor" href="#pipeline&#xFF08;keep-alive&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.3. Pipeline&#xFF08;keep-alive&#xFF09;</h3>
+<h3 id="pipeline&#xFF08;keep-alive&#xFF09;">Pipeline&#xFF08;keep-alive&#xFF09;</h3>
 <p>http&#x8BF7;&#x6C42;&#x5934;&#x90E8;&#x4E2D;&#x6709;<code>Connection</code>&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5EFA;&#x7ACB;&#x7684;tcp&#x8FDE;&#x63A5;&#x4F1A;&#x6839;&#x636E;&#x6B64;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x65AD;&#x5F00;&#xFF0C;&#x5F53;&#x53D1;&#x9001;&#x7684;&#x5185;&#x5BB9;&#x592A;&#x5927;&#xFF0C;&#x8D85;&#x8FC7;&#x4E00;&#x4E2A;http&#x5305;&#x5BB9;&#x91CF;&#xFF0C;&#x9700;&#x8981;&#x5206;&#x591A;&#x6B21;&#x53D1;&#x9001;&#x65F6;&#xFF0C;&#x503C;&#x4F1A;&#x53D8;&#x6210;<code>keep-alive</code>&#xFF0C;&#x5373;&#x672C;&#x6B21;&#x53D1;&#x8D77;&#x7684;http&#x8BF7;&#x6C42;&#x6240;&#x5EFA;&#x7ACB;&#x7684;tcp&#x8FDE;&#x63A5;&#x4E0D;&#x65AD;&#x5F00;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x53D1;&#x9001;&#x5185;&#x5BB9;&#x7ED3;&#x675F;<code>Connection</code>&#x4E3A;<code>close</code>&#x4E3A;&#x6B62;</p>
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x5C06;&#x6B64;&#x503C;&#x7F6E;&#x4E3A;keep-alive&#xFF0C;&#x7136;&#x540E;&#x5728;http&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#x4E2D;&#x6784;&#x9020;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x5C06;&#x6076;&#x610F;&#x4EE3;&#x7801;&#x9690;&#x85CF;&#x5728;&#x7B2C;n&#x4E2A;&#x8BF7;&#x6C42;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x7ED5;&#x8FC7;waf</p>
 <blockquote>
 <p>&#x8BB0;&#x5F97;&#x628A;brupsuite&#x81EA;&#x52A8;&#x66F4;&#x65B0;<code>Content-Length</code>&#x7684;&#x52FE;&#x53BB;&#x6389;</p>
 </blockquote>
-<p><a href="README.assets/image-20220308134714761.png" data-lightbox="117fbe82-7f5a-4a38-8272-d7803fbd8e41" data-title="image-20220308134714761"><img src="README.assets/image-20220308134714761.png" alt="image-20220308134714761"></a></p>
+<p><a href="README.assets/image-20220308134714761.png" data-lightbox="74c71617-da2b-4111-a64f-e37a9497b696" data-title="image-20220308134714761"><img src="README.assets/image-20220308134714761.png" alt="image-20220308134714761"></a></p>
 <p>&#x5927;&#x6982;&#x6570;&#x636E;&#x5305;&#x5C31;&#x662F;&#x8FD9;&#x6837;</p>
 <pre class="language-"><code class="lang-http">POST / HTTP/1.1
 <span class="token header-name keyword">Host:</span> www.baidu.com
@@ -4877,16 +4844,16 @@ a=1GET / HTTP/1.1
 <span class="token header-name keyword">Upgrade-Insecure-Requests:</span> 1
 <span class="token header-name keyword">Connection:</span> close
 </code></pre>
-<h3 id="http-charset"><a name="http-charset" class="anchor-navigation-ex-anchor" href="#http-charset"><i class="fa fa-link" aria-hidden="true"></i></a>1.8.4. HTTP charset</h3>
+<h3 id="http-charset">HTTP charset</h3>
 <p>&#x5229;&#x7528;<code>Content-Type: xxx;charset=xxx</code>&#x7F16;&#x7801;&#x7ED5;&#x8FC7;&#xFF0C;payload&#x8F6C;&#x4E49;&#x540E;&#xFF0C;&#x7531;&#x4E8E;&#x5927;&#x90E8;&#x5206;&#x7684;WAF&#x9ED8;&#x8BA4;&#x7528;UTF8&#x7F16;&#x7801;&#x68C0;&#x6D4B;&#xFF0C;&#x6240;&#x4EE5;&#x80FD;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x8FBE;&#x5230;&#x7ED5;&#x8FC7;&#x5173;&#x952E;&#x8BCD;&#x8FC7;&#x6EE4;&#x7684;&#x6548;&#x679C;</p>
 <pre class="language-"><code>application/x-www-form-urlencoded; charset=ibm037
 multipart/form-data; charset=ibm037, boundary=blah
 multipart/form-data; boundary=blah ; charset=ibm037
-</code></pre><h2 id="waf&#x7279;&#x6027;"><a name="waf&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#waf&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. WAF&#x7279;&#x6027;</h2>
-<h3 id="&#x4E91;waf&#x7ED5;&#x8FC7;"><a name="&#x4E91;waf&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x4E91;waf&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.1. &#x4E91;WAF&#x7ED5;&#x8FC7;</h3>
+</code></pre><h2 id="waf&#x7279;&#x6027;">WAF&#x7279;&#x6027;</h2>
+<h3 id="&#x4E91;waf&#x7ED5;&#x8FC7;">&#x4E91;WAF&#x7ED5;&#x8FC7;</h3>
 <p>&#x627E;&#x5230;&#x771F;&#x5B9E;IP&#xFF0C;&#x4FEE;&#x6539;&#x672C;&#x5730;hosts&#x6587;&#x4EF6;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x5728;burp&#x4E2D;&#x6307;&#x5B9A;&#x89E3;&#x6790;&#xFF0C;&#x907F;&#x514D;&#x6D41;&#x91CF;&#x8D70;&#x5230;&#x4E91;WAF&#x4E0A;&#x5373;&#x53EF;&#x3002;</p>
-<p><a href="README.assets/image-20220308140105438.png" data-lightbox="d7091f8f-7b5e-4819-95f8-63a35dd99a51" data-title="image-20220308140105438"><img src="README.assets/image-20220308140105438.png" alt="image-20220308140105438"></a></p>
-<h3 id="&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;"><a name="&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.2. &#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;</h3>
+<p><a href="README.assets/image-20220308140105438.png" data-lightbox="99e05f14-5d7f-42f5-87e4-aa0a9b5a34a1" data-title="image-20220308140105438"><img src="README.assets/image-20220308140105438.png" alt="image-20220308140105438"></a></p>
+<h3 id="&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;">&#x767D;&#x540D;&#x5355;&#x7ED5;&#x8FC7;</h3>
 <p>&#x4E00;&#x4E9B;WAF&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5982;&#x767B;&#x9646;&#x529F;&#x80FD;&#x6B63;&#x5E38;&#xFF0C;&#x4F1A;&#x5728;&#x5185;&#x90E8;&#x8BBE;&#x7ACB;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x767D;&#x540D;&#x5355;&#xFF0C;&#x6216;&#x5185;&#x5BB9;&#x767D;&#x540D;&#x5355;&#xFF0C;&#x53EA;&#x8981;&#x548C;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x6216;&#x5185;&#x5BB9;&#x6709;&#x5173;&#xFF0C;&#x65E0;&#x8BBA;&#x600E;&#x4E48;&#x6D4B;&#x8BD5;&#xFF0C;&#x90FD;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x62E6;&#x622A;&#x3002;</p>
 <p>&#x5982;&#xFF1A;WAF&#x8BBE;&#x7ACB;&#x4E86;&#x767D;&#x540D;&#x5355;<code>/admin</code>&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;payload&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x7684;&#x624B;&#x6CD5;&#x6765;&#x7ED5;&#x8FC7;</p>
 <pre class="language-"><code class="lang-sql"><span class="token comment"># &#x539F;&#x6765;&#x88AB;&#x62E6;&#x622A;</span>
@@ -4894,7 +4861,7 @@ http:<span class="token comment">//a.a/?id=123 and 2*3=6</span>
 <span class="token comment"># &#x73B0;&#x5728;&#x4E0D;&#x62E6;&#x622A;</span>
 http:<span class="token comment">//a.a/?a=/admin&amp;id=123 and 2*3=6</span>
 </code></pre>
-<h3 id="&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;"><a name="&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.3. &#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;</h3>
+<h3 id="&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;">&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7ED5;&#x8FC7;</h3>
 <p>&#x4E00;&#x4E9B;WAF&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x670D;&#x52A1;&#x5668;&#x7684;&#x538B;&#x529B;&#xFF0C;&#x4F1A;&#x5BF9;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x5982;<code>.png</code>&#x3001;<code>.css</code>&#x7B49;&#x76F4;&#x63A5;&#x653E;&#x884C;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F2A;&#x88C5;&#x6210;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x6765;&#x7ED5;&#x8FC7;</p>
 <p>&#x5982;&#xFF1A;</p>
 <pre class="language-"><code class="lang-sql"><span class="token comment"># &#x539F;&#x6765;&#x88AB;&#x62E6;&#x622A;</span>
@@ -4902,22 +4869,22 @@ http:<span class="token comment">//a.a/?id=123 and 2*3=6</span>
 <span class="token comment"># &#x73B0;&#x5728;&#x4E0D;&#x62E6;&#x622A;</span>
 http:<span class="token comment">//a.a/?1.jpg&amp;id=123 and 2*3=6</span>
 </code></pre>
-<h3 id="content-type&#x7ED5;&#x8FC7;"><a name="content-type&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#content-type&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.4. Content-Type&#x7ED5;&#x8FC7;</h3>
+<h3 id="content-type&#x7ED5;&#x8FC7;">Content-Type&#x7ED5;&#x8FC7;</h3>
 <p>&#x4E00;&#x4E9B;WAF&#x8BC6;&#x522B;&#x5230;&#x7279;&#x5B9A;&#x7684;content-type&#x540E;&#xFF0C;&#x5219;&#x4F1A;&#x5224;&#x5B9A;&#x4E3A;&#x8BE5;&#x8BF7;&#x6C42;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#xFF1A;</p>
 <p>&#x53D1;&#x73B0;<code>Content-Type</code>&#x4E3A;<code>multipart/form-data</code>&#x65F6;&#xFF0C;&#x4F1A;&#x8BA4;&#x4E3A;&#x8FD9;&#x5C5E;&#x4E8E;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4ECE;&#x800C;&#x53EA;&#x68C0;&#x6D4B;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x6F0F;&#x6D1E;&#xFF0C;&#x5BFC;&#x81F4;&#x4E0D;&#x62E6;&#x622A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;payload</p>
-<h3 id="&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;"><a name="&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.5. &#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;</h3>
+<h3 id="&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;">&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;</h3>
 <ol>
 <li>&#x4E00;&#x4E9B;WAF&#x5BF9;&#x4E8E;<code>get</code>&#x8BF7;&#x6C42;&#x548C;<code>post</code>&#x8BF7;&#x6C42;&#x7684;&#x5904;&#x7406;&#x673A;&#x5236;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x80FD;&#x5BF9;POST&#x8BF7;&#x6C42;&#x7A0D;&#x52A0;&#x677E;&#x61C8;&#xFF0C;&#x56E0;&#x6B64;&#x7ED9;<code>GET</code>&#x8BF7;&#x6C42;&#x53D8;&#x6210;<code>POST</code>&#x8BF7;&#x6C42;&#x6709;&#x53EF;&#x80FD;&#x7ED5;&#x8FC7;&#x62E6;&#x622A;&#x3002;</li>
 <li>&#x4E00;&#x4E9B;WAF&#x68C0;&#x6D4B;&#x5230;<code>POST</code>&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x5BF9;<code>GET</code>&#x643A;&#x5E26;&#x7684;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x68C0;&#x6D4B;&#xFF0C;&#x56E0;&#x6B64;&#x5BFC;&#x81F4;&#x88AB;&#x7ED5;&#x8FC7;&#x3002;</li>
 </ol>
-<h3 id="&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;"><a name="&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.6. &#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;</h3>
+<h3 id="&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;">&#x89E3;&#x6790;&#x517C;&#x5BB9;&#x6027;</h3>
 <p>&#x4E00;&#x4E9B;WAF&#x68C0;&#x6D4B;&#x65F6;&#xFF0C;&#x5B8C;&#x5168;&#x6309;&#x7167;&#x6807;&#x51C6;&#x7684;HTTP&#x534F;&#x8BAE;&#x53BB;&#x5339;&#x914D;&#xFF0C;&#x4F46;WEB&#x5BB9;&#x5668;&#x4F1A;&#x505A;&#x4E00;&#x4E9B;&#x517C;&#x5BB9;&#x6027;&#x9002;&#x914D;&#xFF0C;&#x5982;&#x4E0A;&#x4F20;&#x65F6;</p>
 <pre class="language-"><code>filename=&quot;shell.php&quot;
 </code></pre><p>&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x7A0D;&#x52A0;&#x4FEE;&#x6539;&#xFF0C;&#x90A3;&#x4E48;&#x6309;&#x7167;&#x6807;&#x51C6;&#x534F;&#x8BAE;&#x53BB;&#x89E3;&#x6790;&#x5C31;&#x627E;&#x4E0D;&#x5230;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x4ECE;&#x800C;&#x7ED5;&#x8FC7;&#x62E6;&#x622A;</p>
 <pre class="language-"><code>filename=&quot;shell.php
 filename=&apos;shell.php&apos;
 filename=shell.php
-</code></pre><h2 id="&#x5BB9;&#x5668;&#x7279;&#x6027;"><a name="&#x5BB9;&#x5668;&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. &#x5BB9;&#x5668;&#x7279;&#x6027;</h2>
+</code></pre><h2 id="&#x5BB9;&#x5668;&#x7279;&#x6027;">&#x5BB9;&#x5668;&#x7279;&#x6027;</h2>
 <blockquote>
 <p>[!tip]</p>
 <p>&#x53EF;&#x901A;&#x8FC7;&#x6240;&#x6709;fuzz&#x4E00;&#x904D;&#xFF0C;&#x770B;&#x770B;&#x5BB9;&#x5668;&#x662F;&#x5982;&#x4F55;&#x5904;&#x7406;&#x7684;</p>
@@ -4931,16 +4898,16 @@ filename=shell.php
 </code></pre><p><strong>tomcat:</strong></p>
 <p>&#x8DEF;&#x5F84;&#x7A7F;&#x8D8A;</p>
 <pre class="language-"><code>/path1/path2/ == ;/path1;foo/path2;bar/;
-</code></pre><h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.11. &#x53C2;&#x8003;</h2>
+</code></pre><h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://www.anquanke.com/post/id/212272" target="_blank">waf&#x7ED5;&#x8FC7;&#x62CD;&#x4E86;&#x62CD;&#x4F60;</a></li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2022-03-08 14:45:19
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -4957,26 +4924,25 @@ filename=shell.php
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                
-                <a href="02.绕过TLS:akamai指纹护盾.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02.绕过TLS:akamai指纹护盾">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        
+        <a href="02.绕过TLS:akamai指纹护盾.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02.绕过TLS:akamai指纹护盾">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"01.WAF绕过通用思路","level":"1.2.7.1","depth":3,"next":{"title":"02.绕过TLS:akamai指纹护盾","level":"1.2.7.2","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","articles":[]},"previous":{"title":"07.WAF绕过","level":"1.2.7","depth":2,"ref":"","articles":[{"title":"01.WAF绕过通用思路","level":"1.2.7.1","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","articles":[]},{"title":"02.绕过TLS:akamai指纹护盾","level":"1.2.7.2","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","mtime":"2022-03-08T06:45:19.032Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"01.WAF绕过通用思路","level":"1.2.7.1","depth":3,"next":{"title":"02.绕过TLS:akamai指纹护盾","level":"1.2.7.2","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","articles":[]},"previous":{"title":"07.WAF绕过","level":"1.2.7","depth":2,"ref":"","articles":[{"title":"01.WAF绕过通用思路","level":"1.2.7.1","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","articles":[]},{"title":"02.绕过TLS:akamai指纹护盾","level":"1.2.7.2","depth":3,"path":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","ref":"个人知识库/01.渗透测试/07.WAF绕过/02.绕过TLS:akamai指纹护盾.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/07.WAF绕过/01.WAF绕过通用思路.md","mtime":"2022-03-08T06:45:19.032Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4986,31 +4952,7 @@ filename=shell.php
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5022,11 +4964,27 @@ filename=shell.php
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -5035,6 +4993,10 @@ filename=shell.php
     
         
         <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -5058,11 +5020,11 @@ filename=shell.php
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

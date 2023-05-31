@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>01.利用SourceMap还原前端js代码 · d4m1ts 知识库</title>
+        <title>01.利用SourceMap还原前端js代码 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,14 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
@@ -45,27 +45,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -74,6 +54,10 @@
             
                 
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -88,6 +72,10 @@
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
         
 
     
@@ -107,7 +95,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -122,37 +109,38 @@
     
     
 
-    
-        <link rel="shortcut icon" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://markdown.gm7.org/" target="_blank">markdown在线</a>
+            </li><li>
+                <a href="https://rshell.gm7.org/" target="_blank">Reverse Shell Generator</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -4709,16 +4697,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -4733,29 +4729,18 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;"><b>1. </b>&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#f12----&#x8C03;&#x8BD5;&#x5668;"><b>1.1. </b>F12 --&gt; &#x8C03;&#x8BD5;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;-reverse-sourcemap"><b>1.2. </b>&#x5229;&#x7528; reverse-sourcemap</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><b>1.3. </b>&#x5229;&#x7528; restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><b>1.4. </b>&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</a></li></ul></ul></div><a href="#&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;"><b></b>&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;</a></li><ul><li><span class="title-icon "></span><a href="#f12----&#x8C03;&#x8BD5;&#x5668;"><b></b>F12 --&gt; &#x8C03;&#x8BD5;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;-reverse-sourcemap"><b></b>&#x5229;&#x7528; reverse-sourcemap</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><b></b>&#x5229;&#x7528; restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><b></b>&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</a></li></ul></ul></div><a href="#&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;">&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
-<ul>
-<li><div><a href="#f12---gt-&#x8C03;&#x8BD5;&#x5668;">F12 --&gt; &#x8C03;&#x8BD5;&#x5668;</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;-reverse-sourcemap">&#x5229;&#x7528; reverse-sourcemap</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;">&#x5229;&#x7528; restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;">&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</a><i></i></div></li>
-</ul></li>
-</ul>
-</div>
-
-<h1 id="&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;"><a name="&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;</h1>
-<h2 id="f12----&#x8C03;&#x8BD5;&#x5668;"><a name="f12----&#x8C03;&#x8BD5;&#x5668;" class="anchor-navigation-ex-anchor" href="#f12----&#x8C03;&#x8BD5;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. F12 --&gt; &#x8C03;&#x8BD5;&#x5668;</h2>
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="&#x5229;&#x7528;sourcemap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;">&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;</h1>
+<h2 id="f12----&#x8C03;&#x8BD5;&#x5668;"><code>F12</code> --&gt; &#x8C03;&#x8BD5;&#x5668;</h2>
 <p>&#x4F1A;&#x53D1;&#x73B0;&#x591A;&#x4E00;&#x4E2A;webpack&#x9009;&#x9879;&#xFF0C;&#x56E0;&#x4E3A;&#x5B58;&#x5728;<code>.js.map</code>&#x6587;&#x4EF6;&#xFF0C;&#x80FD;&#x591F;&#x8FD8;&#x539F;</p>
-<h2 id="&#x5229;&#x7528;-reverse-sourcemap"><a name="&#x5229;&#x7528;-reverse-sourcemap" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;-reverse-sourcemap"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5229;&#x7528; reverse-sourcemap</h2>
+<h2 id="&#x5229;&#x7528;-reverse-sourcemap">&#x5229;&#x7528; <code>reverse-sourcemap</code></h2>
 <ul>
 <li>&#x5B89;&#x88C5; <code>reverse-sourcemap</code></li>
 </ul>
@@ -4766,8 +4751,8 @@
 </ul>
 <pre class="language-"><code class="lang-bash">reverse-sourcemap -v app.63304d959258070ef3be.js.map -o output
 </code></pre>
-<p><a href="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200929223206583.png" data-lightbox="ae5a3c24-c973-431e-b6b7-d7da2d23ecb7" data-title="image-20200929223206583"><img src="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200929223206583.png" alt="image-20200929223206583"></a></p>
-<h2 id="&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><a name="&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5229;&#x7528; restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</h2>
+<p><a href="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200929223206583.png" data-lightbox="95bcdaf4-47a2-4ded-ba09-fc2ec10a056c" data-title="image-20200929223206583"><img src="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200929223206583.png" alt="image-20200929223206583"></a></p>
+<h2 id="&#x5229;&#x7528;-restore-source-tree&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;">&#x5229;&#x7528; <code>restore-source-tree</code>&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</h2>
 <blockquote>
 <p><a href="https://github.com/alexkuz/restore-source-tree" target="_blank">https://github.com/alexkuz/restore-source-tree</a></p>
 </blockquote>
@@ -4778,14 +4763,14 @@
 <span class="token builtin class-name">cd</span> restore-source-tree
 <span class="token function">npm</span> i -g restore-source-tree
 </code></pre>
-<p><a href="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200928214529136.png" data-lightbox="ca716308-fd78-45d8-a7e8-06d2d88fe68c" data-title="image-20200928214529136"><img src="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200928214529136.png" alt="image-20200928214529136"></a></p>
+<p><a href="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200928214529136.png" data-lightbox="5cda75c6-039d-4a27-afe7-c3d18c348dd7" data-title="image-20200928214529136"><img src="&#x5229;&#x7528;SourceMap&#x8FD8;&#x539F;&#x524D;&#x7AEF;js&#x4EE3;&#x7801;.assets/image-20200928214529136.png" alt="image-20200928214529136"></a></p>
 <ul>
 <li>&#x8FD8;&#x539F;&#x4EE3;&#x7801;</li>
 </ul>
 <pre class="language-"><code class="lang-bash">restore-source-tree chunk-vendors.6b92c4bd.js.map
 </code></pre>
 <p>&#x4F1A;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;&#x5230; <code>output</code> &#x4E0B;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x4E0D;&#x662F;&#x6709;bug</p>
-<h2 id="&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><a name="&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</h2>
+<h2 id="&#x5229;&#x7528;shuji&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;">&#x5229;&#x7528;<strong>shuji</strong>&#xFF08;&#x5931;&#x8D25;&#x4E86;&#xFF09;</h2>
 <blockquote>
 <p><a href="https://github.com/paazmaya/shuji" target="_blank">https://github.com/paazmaya/shuji</a></p>
 </blockquote>
@@ -4793,10 +4778,10 @@
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-10-09 15:03:08
-</span></footer></body></html>
-                                
-                                </section>
-                            
+</span></footer>
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -4813,26 +4798,25 @@
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                
-                <a href="02.任意用户密码重置的10种姿势.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02.任意用户密码重置的10种姿势">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        
+        <a href="02.任意用户密码重置的10种姿势.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02.任意用户密码重置的10种姿势">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"01.利用SourceMap还原前端js代码","level":"1.2.3.1","depth":3,"next":{"title":"02.任意用户密码重置的10种姿势","level":"1.2.3.2","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","ref":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","articles":[]},"previous":{"title":"03.思路技巧","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"01.利用SourceMap还原前端js代码","level":"1.2.3.1","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","ref":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","articles":[]},{"title":"02.任意用户密码重置的10种姿势","level":"1.2.3.2","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","ref":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","articles":[]},{"title":"03.API接口测试","level":"1.2.3.3","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/03.API接口测试.md","ref":"个人知识库/01.渗透测试/03.思路技巧/03.API接口测试.md","articles":[]},{"title":"04.Weblogic上传shell路径","level":"1.2.3.4","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/04.Weblogic上传shell路径.md","ref":"个人知识库/01.渗透测试/03.思路技巧/04.Weblogic上传shell路径.md","articles":[]},{"title":"05.网页接口加密暴破","level":"1.2.3.5","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/05.网页接口加密暴破.md","ref":"个人知识库/01.渗透测试/03.思路技巧/05.网页接口加密暴破.md","articles":[]},{"title":"06.某SRC挖掘实例","level":"1.2.3.6","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/06.某SRC挖掘实例.md","ref":"个人知识库/01.渗透测试/03.思路技巧/06.某SRC挖掘实例.md","articles":[]},{"title":"07.多服务器并发测试","level":"1.2.3.7","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/07.多服务器并发测试.md","ref":"个人知识库/01.渗透测试/03.思路技巧/07.多服务器并发测试.md","articles":[]},{"title":"08.通过TOR绕过IP锁定","level":"1.2.3.8","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.md","ref":"个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; d4m1ts","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","mtime":"2021-10-09T07:03:08.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-30T05:54:54.906Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"01.利用SourceMap还原前端js代码","level":"1.2.3.1","depth":3,"next":{"title":"02.任意用户密码重置的10种姿势","level":"1.2.3.2","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","ref":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","articles":[]},"previous":{"title":"03.思路技巧","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"01.利用SourceMap还原前端js代码","level":"1.2.3.1","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","ref":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","articles":[]},{"title":"02.任意用户密码重置的10种姿势","level":"1.2.3.2","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","ref":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","articles":[]},{"title":"03.API接口测试","level":"1.2.3.3","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/03.API接口测试.md","ref":"个人知识库/01.渗透测试/03.思路技巧/03.API接口测试.md","articles":[]},{"title":"04.Weblogic上传shell路径","level":"1.2.3.4","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/04.Weblogic上传shell路径.md","ref":"个人知识库/01.渗透测试/03.思路技巧/04.Weblogic上传shell路径.md","articles":[]},{"title":"05.网页接口加密暴破","level":"1.2.3.5","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/05.网页接口加密暴破.md","ref":"个人知识库/01.渗透测试/03.思路技巧/05.网页接口加密暴破.md","articles":[]},{"title":"06.某SRC挖掘实例","level":"1.2.3.6","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/06.某SRC挖掘实例.md","ref":"个人知识库/01.渗透测试/03.思路技巧/06.某SRC挖掘实例.md","articles":[]},{"title":"07.多服务器并发测试","level":"1.2.3.7","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/07.多服务器并发测试.md","ref":"个人知识库/01.渗透测试/03.思路技巧/07.多服务器并发测试.md","articles":[]},{"title":"08.通过TOR绕过IP锁定","level":"1.2.3.8","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.md","ref":"个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","mtime":"2021-10-09T07:03:08.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T10:06:32.950Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4842,31 +4826,7 @@
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4878,11 +4838,27 @@
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -4891,6 +4867,10 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
@@ -4914,11 +4894,11 @@
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 

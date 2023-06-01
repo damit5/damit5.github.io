@@ -55,6 +55,37 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $('.summary .divider').hide();
     }
 
+    // 移动设备适配
+    function mobileAdaptation(){
+      // 检测是否是移动端访问
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone|Mobile|Tablet/i.test(navigator.userAgent)) {
+        // 如果是移动端访问，隐藏.book-anchor
+        var bookAnchor = document.querySelector('.book-anchor');
+        bookAnchor.style.display = 'none';
+
+        // 调整.page-inner的padding属性
+        var pageInner = document.querySelector('.page-inner');
+        pageInner.style.padding = '40px 20px 40px 40px';
+        pageInner.style.maxWidth = 'none';
+
+        // 如果是手机而不是平板，则搜索框下移适配
+        if (window.innerWidth <= 800) {
+            // 搜索框下移适配
+            var bookSearchInput = document.getElementById('book-search-input');
+            // 下移元素 20 个像素
+            bookSearchInput.style.position = 'relative';
+            bookSearchInput.style.top = '20px';
+            // 将元素置于最上层
+            bookSearchInput.style.zIndex = '1';
+
+            // head下移适配
+            var bookHeader = document.querySelector('.book-header');
+            bookHeader.style.padding = '19px 8px';
+
+        }
+      }
+    };
+
     gitbook.events.on('start', function() {
 
     });
@@ -62,5 +93,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     gitbook.events.on('page.change', function() {
         setBase();
         generateSectionNavigator();
+        mobileAdaptation();
     });
 });

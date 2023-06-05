@@ -250,3 +250,11 @@ body {
 .book-anchor .anchor-h3{
     padding-left: 30px;
 }
+
+.book-anchor .anchor-h4{
+    padding-left: 40px;
+}
+
+.book-anchor .anchor-h5{
+    padding-left: 50px;
+}

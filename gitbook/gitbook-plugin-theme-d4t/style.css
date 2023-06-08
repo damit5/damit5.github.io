@@ -64,6 +64,8 @@ body {
 }
 .book-summary{
     bottom: inherit;
+    max-height: 90%;
+    overflow: auto;
 }
 .book-summary,
 .book-body {
@@ -212,6 +214,8 @@ body {
     z-index: 999;
     user-select: none;
     border-left: 1px solid #ececec;
+    max-height: 90%;
+    overflow: auto;
 }
 
 .book-anchor-title {

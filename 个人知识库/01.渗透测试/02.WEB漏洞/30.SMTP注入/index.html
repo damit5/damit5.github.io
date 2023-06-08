@@ -105,6 +105,8 @@
     <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../31.逻辑漏洞/" />
+    
     
     <link rel="prev" href="../29.信息泄漏/13.robots.txt信息泄漏.html" />
     
@@ -2022,6 +2024,19 @@
             
                     
                     30.SMTP注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.31" data-path="../31.逻辑漏洞/">
+            
+                <a href="../31.逻辑漏洞/">
+            
+                    
+                    31.逻辑漏洞
             
                 </a>
             
@@ -4710,6 +4725,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.10" data-path="../../../../致谢.html">
+            
+                <a href="../../../../致谢.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -4850,7 +4878,7 @@
 </tbody>
 </table>
 <p>&#x4E3A;&#x4E86;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x83B7;&#x53D6;&#x5B9E;&#x7528;&#x7684;&#x90AE;&#x4EF6;&#x5934;&#xFF0C;&#x4F7F;&#x7528;&#x6284;&#x9001;+&#x5BC6;&#x9001;&#x7684;&#x65B9;&#x5F0F;&#x53D1;&#x4E00;&#x5C01;&#x90AE;&#x4EF6;&#xFF0C;&#x67E5;&#x770B;&#x539F;&#x6587;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x53D1;&#x9001;&#x7684;&#x5B9E;&#x9645;&#x5185;&#x5BB9;&#x3002;</p>
-<p><a href="README.assets/image-20230606&#x4E0A;&#x5348;101752560.png" data-lightbox="88c2421e-94f0-4c2b-bb48-456a376e60f1" data-title="header"><img src="README.assets/image-20230606&#x4E0A;&#x5348;101752560.png" alt="header"></a></p>
+<p><a href="README.assets/image-20230606&#x4E0A;&#x5348;101752560.png" data-lightbox="46b2b089-40d9-4eed-bedd-924fa2873d0b" data-title="header"><img src="README.assets/image-20230606&#x4E0A;&#x5348;101752560.png" alt="header"></a></p>
 <h2 id="&#x6F0F;&#x6D1E;&#x590D;&#x73B0;">&#x6F0F;&#x6D1E;&#x590D;&#x73B0;</h2>
 <h3 id="&#x6F0F;&#x6D1E;&#x73AF;&#x5883;">&#x6F0F;&#x6D1E;&#x73AF;&#x5883;</h3>
 <p>&#x5047;&#x8BBE;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6CE8;&#x518C;&#x529F;&#x80FD;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x90AE;&#x7BB1;&#x540E;&#xFF0C;&#x7F51;&#x7AD9;&#x7ED9;&#x6211;&#x4EEC;&#x53D1;&#x9001;&#x6FC0;&#x6D3B;&#x94FE;&#x63A5;&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#x3002;</p>
@@ -4897,10 +4925,10 @@ Subject: =?utf-8?b?</span><span class="token interpolation"><span class="token p
     send_email<span class="token punctuation">(</span>from_addr<span class="token punctuation">,</span> to_addr<span class="token punctuation">,</span> subject<span class="token punctuation">,</span> mail_text<span class="token punctuation">,</span> smtp_host<span class="token punctuation">,</span> smtp_port<span class="token punctuation">,</span> smtp_username<span class="token punctuation">,</span> smtp_password<span class="token punctuation">)</span>
 </code></pre>
 <p>&#x6B63;&#x5E38;&#x53D1;&#x9001;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p><a href="README.assets/image-20230606&#x4E0B;&#x5348;33411668.png" data-lightbox="1da62214-32bc-4590-8276-dda881a2e546" data-title="normal"><img src="README.assets/image-20230606&#x4E0B;&#x5348;33411668.png" alt="normal"></a></p>
+<p><a href="README.assets/image-20230606&#x4E0B;&#x5348;33411668.png" data-lightbox="364b8ad4-d84c-4fdd-9272-67d63cd6a423" data-title="normal"><img src="README.assets/image-20230606&#x4E0B;&#x5348;33411668.png" alt="normal"></a></p>
 <h3 id="&#x590D;&#x73B0;&#x8FC7;&#x7A0B;">&#x590D;&#x73B0;&#x8FC7;&#x7A0B;</h3>
 <p>&#x4E0A;&#x65B9;&#x4EE3;&#x7801;&#x53EF;&#x89C1;<code>to_addr</code>&#x4E3A;&#x6536;&#x4EF6;&#x4EBA;&#x53EF;&#x63A7;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5176;&#x8F93;&#x5165;&#x4E3A;<code>ntoouuzovrlfy@baybabes.com%0aCc: rocaced977@soremap.com</code>&#x5E76;&#x53D1;&#x9001;</p>
-<p><a href="README.assets/image-20230606&#x4E0B;&#x5348;33712492.png" data-lightbox="d2d20bf6-6527-479a-9b4b-33e44618a88d" data-title="insecure"><img src="README.assets/image-20230606&#x4E0B;&#x5348;33712492.png" alt="insecure"></a></p>
+<p><a href="README.assets/image-20230606&#x4E0B;&#x5348;33712492.png" data-lightbox="5a3b88d2-91fb-443e-92a0-51d899afeea9" data-title="insecure"><img src="README.assets/image-20230606&#x4E0B;&#x5348;33712492.png" alt="insecure"></a></p>
 <p>&#x53EF;&#x89C1;&#x6210;&#x529F;&#x6CE8;&#x5165;&#x4E86;SMTP&#x90AE;&#x4EF6;&#x5934;Cc&#xFF08;&#x6284;&#x9001;&#xFF09;&#xFF0C;&#x6B64;&#x65F6;&#x6CE8;&#x5165;&#x7684;&#x6076;&#x610F;&#x90AE;&#x7BB1;<code>rocaced977@soremap.com</code>&#x4E5F;&#x5C06;&#x6536;&#x5230;&#x548C;<code>ntoouuzovrlfy@baybabes.com</code>&#x4E00;&#x6837;&#x7684;&#x90AE;&#x4EF6;&#x3002;</p>
 <h2 id="&#x6F0F;&#x6D1E;&#x5E38;&#x89C1;&#x70B9;">&#x6F0F;&#x6D1E;&#x5E38;&#x89C1;&#x70B9;</h2>
 <p>&#x6240;&#x6709;&#x548C;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x6709;&#x5173;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x90FD;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5C1D;&#x8BD5;&#xFF0C;&#x5982;&#x90AE;&#x7BB1;&#x6CE8;&#x518C;&#x3001;&#x90AE;&#x7BB1;&#x627E;&#x56DE;&#x5BC6;&#x7801;&#x7B49;...</p>
@@ -4946,10 +4974,14 @@ From:sender@domain.com%0ASubject:This&#x2019;s%20Fake%20Subject
 
         
         
-        <a href="../29.信息泄漏/13.robots.txt信息泄漏.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 13.robots.txt信息泄漏">
+        <a href="../29.信息泄漏/13.robots.txt信息泄漏.html" class="navigation navigation-prev " aria-label="Previous page: 13.robots.txt信息泄漏">
             <i class="fa fa-angle-left"></i>
         </a>
         
+        
+        <a href="../31.逻辑漏洞/" class="navigation navigation-next " aria-label="Next page: 31.逻辑漏洞">
+            <i class="fa fa-angle-right"></i>
+        </a>
         
         
         
@@ -4957,7 +4989,7 @@ From:sender@domain.com%0ASubject:This&#x2019;s%20Fake%20Subject
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"30.SMTP注入","level":"1.2.2.30","depth":3,"next":{"title":"03.思路技巧","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"01.利用SourceMap还原前端js代码","level":"1.2.3.1","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","ref":"个人知识库/01.渗透测试/03.思路技巧/01.利用SourceMap还原前端js代码.md","articles":[]},{"title":"02.任意用户密码重置的10种姿势","level":"1.2.3.2","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","ref":"个人知识库/01.渗透测试/03.思路技巧/02.任意用户密码重置的10种姿势.md","articles":[]},{"title":"03.API接口测试","level":"1.2.3.3","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/03.API接口测试.md","ref":"个人知识库/01.渗透测试/03.思路技巧/03.API接口测试.md","articles":[]},{"title":"04.Weblogic上传shell路径","level":"1.2.3.4","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/04.Weblogic上传shell路径.md","ref":"个人知识库/01.渗透测试/03.思路技巧/04.Weblogic上传shell路径.md","articles":[]},{"title":"05.网页接口加密暴破","level":"1.2.3.5","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/05.网页接口加密暴破.md","ref":"个人知识库/01.渗透测试/03.思路技巧/05.网页接口加密暴破.md","articles":[]},{"title":"06.某SRC挖掘实例","level":"1.2.3.6","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/06.某SRC挖掘实例.md","ref":"个人知识库/01.渗透测试/03.思路技巧/06.某SRC挖掘实例.md","articles":[]},{"title":"07.多服务器并发测试","level":"1.2.3.7","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/07.多服务器并发测试.md","ref":"个人知识库/01.渗透测试/03.思路技巧/07.多服务器并发测试.md","articles":[]},{"title":"08.通过TOR绕过IP锁定","level":"1.2.3.8","depth":3,"path":"个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.md","ref":"个人知识库/01.渗透测试/03.思路技巧/08.通过TOR绕过IP锁定.md","articles":[]}]},"previous":{"title":"13.robots.txt信息泄漏","level":"1.2.2.29.13","depth":4,"path":"个人知识库/01.渗透测试/02.WEB漏洞/29.信息泄漏/13.robots.txt信息泄漏.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/29.信息泄漏/13.robots.txt信息泄漏.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/30.SMTP注入/README.md","mtime":"2023-06-06T08:46:34.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-07T07:16:54.404Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"30.SMTP注入","level":"1.2.2.30","depth":3,"next":{"title":"31.逻辑漏洞","level":"1.2.2.31","depth":3,"path":"个人知识库/01.渗透测试/02.WEB漏洞/31.逻辑漏洞/README.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/31.逻辑漏洞/README.md","articles":[]},"previous":{"title":"13.robots.txt信息泄漏","level":"1.2.2.29.13","depth":4,"path":"个人知识库/01.渗透测试/02.WEB漏洞/29.信息泄漏/13.robots.txt信息泄漏.md","ref":"个人知识库/01.渗透测试/02.WEB漏洞/29.信息泄漏/13.robots.txt信息泄漏.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","d4test","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"d4test":{},"github":{"url":"https://github.com/damit5"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"d4m1ts","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[{"url":"https://markdown.gm7.org/","target":"_blank","name":"markdown在线"},{"url":"https://rshell.gm7.org/","target":"_blank","name":"Reverse Shell Generator"}]}},"title":"d4m1ts 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"个人知识库/01.渗透测试/02.WEB漏洞/30.SMTP注入/README.md","mtime":"2023-06-06T08:46:34.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-08T08:20:18.192Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>

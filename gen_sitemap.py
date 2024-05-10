@@ -18,6 +18,8 @@ def generate_sitemap():
         f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
 
         for html_file in html_files:
+            if "&" in html_file[2:]:
+                html_file = html_file.replace("&", "%26")
             # 获取相对路径并生成每个HTML文件的URL
             url = f'<url>\n'
             url += f'    <loc>https://blog.gm7.org/{html_file[2:]}</loc>\n'

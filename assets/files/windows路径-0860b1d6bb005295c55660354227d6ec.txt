@@ -1,0 +1,106 @@
+/NetServer\bin\stable\apache\php.ini
+/NetServer\bin\stable\apache\php.ini%00
+/PHP\php.ini
+/PHP\php.ini%00
+/Program Files\Apache Group\Apache2\conf\httpd.conf
+/Program Files\Apache Group\Apache2\conf\httpd.conf%00
+/Program Files\Apache Group\Apache\conf\httpd.conf
+/Program Files\Apache Group\Apache\conf\httpd.conf%00
+/Program Files\Apache Group\Apache\logs\access.log
+/Program Files\Apache Group\Apache\logs\access.log%00
+/Program Files\Apache Group\Apache\logs\error.log
+/Program Files\Apache Group\Apache\logs\error.log%00
+/Program Files\xampp\apache\conf\httpd.conf
+/Program Files\xampp\apache\conf\httpd.conf%00
+/Volumes/Macintosh_HD1/opt/apache/conf/httpd.conf
+/Volumes/Macintosh_HD1/opt/apache/conf/httpd.conf%00
+/Volumes/Macintosh_HD1/opt/apache2/conf/httpd.conf
+/Volumes/Macintosh_HD1/opt/apache2/conf/httpd.conf%00
+/Volumes/Macintosh_HD1/opt/httpd/conf/httpd.conf
+/Volumes/Macintosh_HD1/opt/httpd/conf/httpd.conf%00
+/Volumes/Macintosh_HD1/usr/local/php/httpd.conf.php
+/Volumes/Macintosh_HD1/usr/local/php/httpd.conf.php%00
+/Volumes/Macintosh_HD1/usr/local/php/lib/php.ini
+/Volumes/Macintosh_HD1/usr/local/php/lib/php.ini%00
+/Volumes/Macintosh_HD1/usr/local/php4/httpd.conf.php
+/Volumes/Macintosh_HD1/usr/local/php4/httpd.conf.php%00
+/Volumes/Macintosh_HD1/usr/local/php5/httpd.conf.php
+/Volumes/Macintosh_HD1/usr/local/php5/httpd.conf.php%00
+/Volumes/webBackup/opt/apache2/conf/httpd.conf
+/Volumes/webBackup/opt/apache2/conf/httpd.conf%00
+/Volumes/webBackup/private/etc/httpd/httpd.conf
+/Volumes/webBackup/private/etc/httpd/httpd.conf%00
+/Volumes/webBackup/private/etc/httpd/httpd.conf.default
+/Volumes/webBackup/private/etc/httpd/httpd.conf.default%00
+/WINDOWS\php.ini
+/WINDOWS\php.ini%00
+/WINNT\php.ini
+/WINNT\php.ini%00C:\WINDOWS\php.ini
+C:\WINDOWS\win.ini
+C:\WINNT\php.ini
+C:\boot.ini
+\Program Files (x86)\Apache Group\Apache\logs\access.log
+\Program Files (x86)\Apache Group\Apache\logs\error.log
+\Program Files\Apache Group\Apache2\conf\httpd.conf
+\Program Files\Apache Group\Apache\conf\httpd.conf
+\Program Files\Apache Group\Apache\logs\access.log
+\Program Files\Apache Group\Apache\logs\error.log
+\Program Files\xampp\apache\conf\httpd.conf
+\apache2\log\access.log
+\apache2\log\access_log
+\apache2\log\error.log
+\apache2\log\error_log
+\apache2\logs\access.log
+\apache2\logs\access_log
+\apache2\logs\error.log
+\apache2\logs\error_log
+\apache\log\access.log
+\apache\log\access_log
+\apache\log\error.log
+\apache\log\error_log
+\apache\logs\access.log
+\apache\logs\access_log
+\apache\logs\error.log
+\apache\logs\error_log
+\log\access.log
+\log\access_log
+\log\error.log
+\log\error_log
+\log\httpd\access_log
+\log\httpd\error_log
+\logs\access.log
+\logs\access_log
+\logs\error.log
+\logs\error_log
+\logs\httpd\access_log
+\logs\httpd\error_log
+\mysql\bin\my.ini
+\opt\xampp\logs\access.log
+\opt\xampp\logs\access_log
+\opt\xampp\logs\error.log
+\opt\xampp\logs\error_log
+\xampp\FileZillaFTP\FileZilla Server.xml
+\xampp\FileZillaFTP\Logs
+\xampp\FileZillaFTP\Logs\access.log
+\xampp\FileZillaFTP\Logs\error.log
+\xampp\MercuryMail\LOGS\access.log
+\xampp\MercuryMail\LOGS\error.log
+\xampp\MercuryMail\mercury.ini
+\xampp\apache\conf\httpd.conf
+\xampp\apache\logs\access.log
+\xampp\apache\logs\error.log
+\xampp\mysql\data\mysql.err
+\xampp\phpMyAdmin\config.inc
+\xampp\phpMyAdmin\config.inc.php
+\xampp\phpMyAdmin\phpinfo.php
+\xampp\php\php.ini
+\xampp\phpmyadmin\config.inc
+\xampp\phpmyadmin\config.inc.php
+\xampp\phpmyadmin\phpinfo.php
+\xampp\sendmail\sendmail.ini
+\xampp\sendmail\sendmail.log
+\xampp\tomcat\conf\tomcat-users.xml
+\xampp\tomcat\conf\web.xml
+\xampp\webalizer\webalizer.conf
+\xampp\webdav\webdav.txt
+php://input

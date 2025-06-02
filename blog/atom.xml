@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.gm7.org/blog</id>
+    <title>d4m1ts 知识库 Blog</title>
+    <updated>2025-05-27T08:35:25.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.gm7.org/blog"/>
+    <subtitle>d4m1ts 知识库 Blog</subtitle>
+    <icon>https://blog.gm7.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[index]]></title>
+        <id>https://blog.gm7.org/blog/index</id>
+        <link href="https://blog.gm7.org/blog/index"/>
+        <updated>2025-05-27T08:35:25.000Z</updated>
+        <summary type="html"><![CDATA[NO BLOG ANY MORE!]]></summary>
+        <content type="html"><![CDATA[<p>NO BLOG ANY MORE!</p>
+<p>NO MORE!</p>]]></content>
+    </entry>
+</feed>
